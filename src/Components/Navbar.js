@@ -103,13 +103,13 @@ function Navbar() {
                 <div
                   className={`mv-navi__drawer ${
                     dropdownOpen ? "hidden" : "block"
-                  } lg:absolute top-full lg:mt-0 mt-2 left-0 w-full lg::block`}
+                  } lg:absolute top-full  lg:mt-4 left-0 w-full lg::block`}
                 >
-                  <ul className="flex flex-col dropmenu">
+                  <ul className="flex flex-col dropmenu lg:py-2">
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-purple-800"
+                        className="block px-4 py-2  hover:bg-gray-100 hover:text-[#7a12d4]"
                       >
                         Knowledgebase
                       </a>
@@ -117,7 +117,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-purple-800"
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
                       >
                         Blog
                       </a>
@@ -125,7 +125,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-purple-800"
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
                       >
                         FAQs
                       </a>
@@ -133,7 +133,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-purple-800"
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
                       >
                         Generate Ticket
                       </a>
@@ -141,7 +141,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-purple-800"
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
                       >
                         Contact
                       </a>

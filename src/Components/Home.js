@@ -13,12 +13,6 @@ export default function Home() {
     }
   }
 
-  function resetIframe() {
-    const iframe = iframeRef.current;
-    if (iframe) {
-      iframe.src = originalSrc;
-    }
-  }
 
   return (
     <>
@@ -52,7 +46,7 @@ export default function Home() {
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-400"
+                      className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
                       data-test="webinars-button"
                     >
                       Become a member
