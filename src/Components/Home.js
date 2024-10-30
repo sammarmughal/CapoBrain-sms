@@ -1,5 +1,10 @@
-import React,{useRef , useEffect , useState} from "react";
+import React, { useRef, useState } from "react";
 import Img from "../img/main-section-bg.png";
+import Features from "./Features";
+import Keyfeatures from "./Keyfeatures";
+import Welcome from "./Welcome";
+import Clients from "./Clients";
+import { Benefits } from "./Benefits";
 export default function Home() {
   const iframeRef = useRef(null);
   const [originalSrc] = useState(
@@ -12,7 +17,6 @@ export default function Home() {
       iframe.src = "";
     }
   }
-
 
   return (
     <>
@@ -28,17 +32,16 @@ export default function Home() {
             >
               <div className="absloute py-8 md:pb-12 lg:pt-10 lg:pb-14 min-h-fit">
                 <div className="w-full lg:w-5/6 lg:mx-auto text-center relative text-white pt-20 cb-container min-h-fit">
-                  <div className="pb-4 min-h-fit mb-3 lg:mb-5">
-                    <h1 className="text-5xl lg:text-7xl font-black">
-                      A better you
+                  <div className="pb-4 min-h-fit mb-3">
+                    <h1 className="text-5xl lg:text-7xl font-[1000]">
+                      Free Online School
                       <br />
-                      every day
+                      Management Software
                     </h1>
                   </div>
                   <div className="pb-4 min-h-fit text-cool-grey-300">
-                    <p className="text-lg lg:text-2xl">
-                      Be part of the world’s most powerful life transformation
-                      platform
+                    <p className="p-text">
+                      Easy to use complete all-in-one School Management System
                     </p>
                   </div>
                   <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-center mt-6 mb-10 lg:mb-12 lg:w-1/2 m-auto min-h-fit">
@@ -62,11 +65,9 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div className="w-full max-w-[940px] max-h-[529px] lg:w-2/3 lg:mx-auto cb-container min-h-fit">
-                  <div className="overflow-hidden mx-auto video-js hide-play-button rounded-lg">
-                    <div
-                      data-backdrop="static"
-                    >
+                <div className="w-full max-w-[940px] max-h-[1029px] lg:w-2/3 lg:mx-auto min-h-fit">
+                  <div className="overflow-hidden mx-auto video-js hide-play-button rounded-3xl">
+                    <div data-backdrop="static">
                       <div className="rounded-0 relative">
                         <div className="">
                           <button
@@ -82,8 +83,8 @@ export default function Home() {
                           <div className="w-full h-full aspect-video ">
                             <iframe
                               ref={iframeRef}
-                              width="560"
-                              height="315"
+                              width="860"
+                              height="915"
                               src={originalSrc}
                               title="YouTube video player"
                               frameBorder="0"
@@ -103,6 +104,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Welcome/>
+      <Features />
+      <Keyfeatures/>
+      <Clients/>
+      <Benefits/>
     </>
   );
 }

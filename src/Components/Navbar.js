@@ -15,9 +15,9 @@ function Navbar() {
 
   return (
     <>
-      <header className="fixed w-full lg:bg-transparent bg-white z-50">
+      <header className="absolute w-full lg:bg-transparent bg-white z-50">
         <nav className="cb-container w-full flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
-          <Link className="flex-shrink-0" to="/">
+          <Link className="flex-shrink-0 pt-1" to="/">
             <img
               src={navLogo}
               width="224"
@@ -34,7 +34,6 @@ function Navbar() {
               isOpen ? "active" : ""
             } cursor-pointer w-5 h-3 relative lg:hidden flex flex-col justify-between`}
           >
-            {/* Icon bars */}
             <span
               className={`line line-1 ${
                 isOpen
@@ -55,7 +54,7 @@ function Navbar() {
             />
           </div>
           <div
-            className={`lg:flex lg:space-x-8 ${
+            className={`lg:flex lg:space-x-8 pt-1 ${
               isOpen ? "block" : "hidden"
             } lg:block`}
           >
@@ -149,15 +148,19 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <div className="lg:hidden">
+              <div className="lg:hidden gap-2 block">
+              <a href="#" className="">Log in</a>
+              </div>
+              <div className="lg:hidden gap-2 block">
                 <a href="#" className="">
                   Request a Demo
                 </a>
               </div>
             </ul>
           </div>
-          <div className="lg:flex hidden">
-            <a href="#" className="btn-a">
+          <div className="lg:flex hidden justify-around items-center">
+          <a  href="#" className="text-white mr-3 font-medium text-lg nav-list pt-1">Log in</a>
+            <a href="#" className="btn h-[2.2rem]">
               Request a Demo
             </a>
           </div>
