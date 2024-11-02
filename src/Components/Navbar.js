@@ -73,9 +73,9 @@ function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-6  nav-mob">
               <li>
-                <a href="#" className="nav-list">
+                <Link href="/" className="nav-list">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/about" className="nav-list">
