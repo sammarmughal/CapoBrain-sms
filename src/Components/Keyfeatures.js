@@ -1,6 +1,6 @@
 import React from "react";
-import schoolimg from "../img/school-management-system.jpg";
-import schoolimg2 from "../img/school-management-software.jpg";
+import schoolimg from "../img/training_online_1.png";
+import schoolimg2 from "../img/student-management-system.png";
 
 export default function Keyfeatures() {
   return (

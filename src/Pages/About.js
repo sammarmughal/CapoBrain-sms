@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import bgp from "../img/background-pattern-desktop.svg";
 import about_bg from "../img/about-background-school-management-system.jpg";
 import open from "../img/icon-plus.svg";
@@ -10,6 +10,23 @@ import Desktop from "../img/capobrain-desktop.png";
 import About from "../img/about-us-sms.jpg";
 import Testimonials from "../Components/Testimonials";
 const AboutSection = () => {
+  const [state, setState] = useState(false);
+
+  // Replace javascript:void(0) paths with your paths
+  const navigation = [
+    { title: "Features", path: "javascript:void(0)" },
+    { title: "Integrations", path: "javascript:void(0)" },
+    { title: "Customers", path: "javascript:void(0)" },
+    { title: "Pricing", path: "javascript:void(0)" },
+  ];
+
+  useEffect(() => {
+    document.onclick = (e) => {
+      const target = e.target;
+      if (!target.closest(".menu-btn")) setState(false);
+    };
+  }, []);
+
   const testimonials = [
     {
       text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
@@ -152,11 +169,58 @@ const AboutSection = () => {
       id: 7,
     },
   ];
+  const Brand = () => (
+    <div className="flex items-center justify-between py-5 md:block">
+      <a href="javascript:void(0)">
+        <img
+          src="https://www.floatui.com/logo-dark.svg"
+          width={120}
+          height={50}
+          alt="Float UI logo"
+        />
+      </a>
+      <div className="md:hidden">
+        <button
+          className="menu-btn text-gray-400 hover:text-gray-300"
+          onClick={() => setState(!state)}
+        >
+          {state ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+    </div>
+  );
   return (
     <>
-      <section className="relative z-0">
+      {/* <section className="relative z-0">
         <div className="block z-30 absolute inset-0 opacity-50  bg-black"></div>
-
         <img
           src={about_bg}
           alt="image"
@@ -166,7 +230,7 @@ const AboutSection = () => {
         <div className="py-14 lg:py-24 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center z-50">
           <h1 className="max-w-2xl mx-auto text-center font-manrope font-bold text-4xl text-white mb-5 md:text-5xl md:leading-normal">
             Transforming Education with <br />{" "}
-            <span className="text-[#7a12d4]">
+            <span className="text-white">
               Premier School Management System
             </span>
           </h1>
@@ -175,8 +239,31 @@ const AboutSection = () => {
             wealth easily with our School Management System (SMS).
           </p>
         </div>
+      </section> */}
+      <section className="relative bg-purple-900">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
+          <div className="space-y-5 max-w-8xl mx-auto text-center">
+            {/* <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
+              Transforming Education with the Premier School Management System
+            </h2> */}
+            <h1 className="text-5xl lg:text-6xl font-[1000] text-white" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
+            Transforming Education with the 
+                      <br />
+                      Premier School Management System                    </h1>
+            <p className="max-w-2xl mx-auto text-gray-200">
+              Invest intelligently and discover a better way to manage your
+              entire wealth easily with our School Management System (SMS).
+            </p>
+          </div>
+        </div>
+        <div
+          className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+          style={{
+            background:
+              "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
+          }}
+        ></div>
       </section>
-
       <section className="py-14 lg:py-24 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
@@ -410,7 +497,7 @@ const AboutSection = () => {
           </defs>
         </svg> */}
       </section>
-      <Testimonials/>
+      <Testimonials />
     </>
   );
 };

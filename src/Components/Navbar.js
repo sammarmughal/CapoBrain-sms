@@ -73,7 +73,7 @@ function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-6  nav-mob">
               <li>
-                <Link href="/" className="nav-list">
+                <Link to="/" className="nav-list">
                   Home
                 </Link>
               </li>
