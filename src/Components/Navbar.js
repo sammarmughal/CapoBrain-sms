@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import navLogo from "../img/capobrain-logo.png";
+import navLogo from "../img/capobrain-logo-white.png";
+import navLogoMob from "../img/capobrain-logo.png";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +19,24 @@ function Navbar() {
     <>
       <header className="absolute w-full lg:bg-transparent bg-white z-50">
         <nav className="cb-container w-full flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
-          <Link className="flex-shrink-0 pt-1" to="/">
+          <Link className="hidden lg:flex flex-shrink-0 pt-1" to="/">
             <img
               src={navLogo}
               width="224"
-              height="56"
-              className="h-12 w-auto"
-              style={{ maxWidth: "14rem" }}
+              height="57"
+              className="h-12  w-full object-fit"
+              style={{ maxWidth: "18rem" }}
+              alt="school-management-software"
+            />
+            <span className="hidden">School Management Software</span>
+          </Link>
+          <Link className="lg:hidden flex flex-shrink-0 pt-1" to="/">
+            <img
+              src={navLogoMob}
+              width="224"
+              height="100"
+              className="h-12 w-full object-fit"
+              style={{ maxWidth: "18rem" }}
               alt="school-management-software"
             />
             <span className="hidden">School Management Software</span>
@@ -82,33 +95,21 @@ function Navbar() {
               <li className="relative">
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center nav-list focus:outline-none justify-between"
+                  className="flex items-center nav-list focus:outline-none"
                 >
                   Help Center
-                  <svg
-                    className="w-5 h-5 ml-1"
-                    fill="none"
-                    viewBox="0 0 20 20"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M7 7l3-3 3 3m0 6l-3 3-3-3"
-                    />
-                  </svg>
+                  <RiArrowDropDownLine className="w-8 h-8" />
                 </button>
                 <div
                   className={`mv-navi__drawer ${
                     dropdownOpen ? "hidden" : "block"
-                  } lg:absolute top-full  lg:mt-4 left-0 w-full lg::block`}
+                  } lg:absolute top-full  lg:mt-2 left-0 w-full lg::block`}
                 >
                   <ul className="flex flex-col dropmenu lg:py-2">
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2  hover:bg-gray-100 hover:text-[#7a12d4]"
+                        className="block px-4 py-2  hover:text-[#ba62fd]"
                       >
                         Knowledgebase
                       </a>
@@ -116,7 +117,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
+                        className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Blog
                       </a>
@@ -124,7 +125,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
+                        className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         FAQs
                       </a>
@@ -132,7 +133,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
+                        className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Generate Ticket
                       </a>
@@ -140,7 +141,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#7a12d4]"
+                        className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Contact
                       </a>
@@ -149,7 +150,9 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-              <a href="#" className="">Log in</a>
+                <a href="#" className="">
+                  Log in
+                </a>
               </div>
               <div className="lg:hidden gap-2 block">
                 <a href="#" className="">
@@ -159,7 +162,12 @@ function Navbar() {
             </ul>
           </div>
           <div className="lg:flex hidden justify-around items-center">
-          <a  href="#" className="text-white mr-3 font-medium text-lg nav-list pt-1">Log in</a>
+            <a
+              href="#"
+              className="text-white mr-3 font-medium text-lg nav-list"
+            >
+              Log in
+            </a>
             <a href="#" className="btn h-[2.2rem]">
               Request a Demo
             </a>

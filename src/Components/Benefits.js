@@ -2,7 +2,7 @@ import React from "react";
 export const Benefits = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12">
         <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-violet-600 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
@@ -29,11 +29,11 @@ export const Benefits = () => {
             </svg>
             <span className="relative"></span>
           </span>{" "}
-          Benefits of Using Capobrain's Educational Management Software
-        </h2>
+          Benefits of Using CapoBrain's School Management Software
+          </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+        CapoBrain's school management software simplifies academic and administrative processes, enhancing productivity and ensuring seamless communication between teachers, students, and parents.
+
         </p>
       </div>
       <div className="grid mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0 lg:divide-x">
@@ -46,7 +46,7 @@ export const Benefits = () => {
             </div>
             <div>
               <h6 className="mb-3 text-xl font-bold leading-5">
-              Automated Attendance Tracking
+              Automated Attendance Tracking with School Management System
               </h6>
               <p className="text-sm text-gray-900">
               Simplifies attendance management through our school management system (SMS) by automatically recording student attendance, reducing manual entry errors, and saving time for teachers.
@@ -61,14 +61,14 @@ export const Benefits = () => {
             </div>
             <div>
               <h6 className="mb-3 text-xl font-bold leading-5">
-              Fee Management System              </h6>
+              School Fee Management System              </h6>
               <p className="text-sm text-gray-900">
-              Simplifies fee collection with detailed financial reports, tracks payments, and manages student accounts effectively.
+              Streamline fee collection, generate comprehensive financial reports, track payments, and efficiently manage student accounts with our school management software.
               </p>
             </div>
           </div>
         
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -79,11 +79,11 @@ export const Benefits = () => {
               Grade and Report Card Generation
               </h6>
               <p className="text-sm text-gray-900">
-              Automatically calculates and generates grades and report cards using our school ERP software solutions, ensuring accuracy and timely delivery.
+              Effortlessly calculate and generate accurate grades and report cards with our school ERP software solutions, ensuring timely and efficient results.
               </p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -93,11 +93,11 @@ export const Benefits = () => {
               <h6 className="mb-3 text-xl font-bold leading-5">
               Data Security  </h6>
               <p className="text-sm text-gray-900">
-              Protects sensitive student and staff data with robust security measures and regular backups, ensuring compliance with educational data regulations.
+              Safeguard sensitive student and staff information with advanced security features and routine backups, ensuring compliance with educational data protection standards.
               </p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -108,13 +108,13 @@ export const Benefits = () => {
               Detailed Student Profiles
               </h6>
               <p className="text-sm text-gray-900">
-              Maintains comprehensive student profiles, including academic records, attendance, and personal information, all in one place.
+              Our School Management System (SMS) maintains detailed student profiles, including academic records, attendance, and personal information in one place. 
               </p>
             </div>
           </div>
         </div>
         <div className="space-y-6 sm:pl-10">
-        <div className="flex flex-col px-2 sm:flex-row">
+        <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -129,7 +129,7 @@ export const Benefits = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -140,11 +140,11 @@ export const Benefits = () => {
               Intuitive Design
               </h6>
               <p className="text-sm text-gray-900">
-              Ensures ease of use with a user-friendly interface that requires minimal training for staff and students, enhancing user experience.
+              Our Best School Management Software ensures ease of use with a user-friendly interface that requires minimal training, enhancing the user experience for staff and students.
               </p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -155,11 +155,11 @@ export const Benefits = () => {
               Library Management System
               </h6>
               <p className="text-sm text-gray-900">
-              Simplifies the management of library resources, including book issuance, returns, and cataloging, tailored for educational institutions.
+              Our School Management System (SMS) simplifies the management of library resources, including book issuance, returns, and cataloging, specifically tailored for educational institutions.
               </p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
@@ -169,23 +169,23 @@ export const Benefits = () => {
               <h6 className="mb-3 text-xl font-bold leading-5">
               Enhanced Communication             </h6>
               <p className="text-sm text-gray-900">
-              Facilitates seamless communication between stakeholders, including parents, teachers, and administrators, through instant messaging and notifications.              </p>
+              Our School Management System (SMS) facilitates seamless communication between stakeholders, including parents, teachers, and administrators, through instant messaging and notifications</p>
             </div>
           </div>
-          <div className="flex flex-col px-2 sm:flex-row">
+          <div className="flex flex-col sm:flex-row">
             <div className="mb-4 mr-4">
              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-violet-50">
                   <i className="fa-solid fa-star-of-david text-deep-purple-accent-400"></i>
               </div>
             </div>
-            <div>
-              <h6 className="mb-3 text-xl font-bold leading-5">
-              Customizable Modules
-              </h6>
-              <p className="text-sm text-gray-900">
-              Tailors the software to meet the specific needs of your institution with customizable modules and features for different educational environments.
-              </p>
-            </div>
+              <div>
+                <h6 className="mb-3 text-xl font-bold leading-5">
+                Customizable Modules
+                </h6>
+                <p className="text-sm text-gray-900">
+                Tailors the best School Management Software to meet the specific needs of your institution with customizable modules and features for different educational environments.
+                </p>
+              </div>
           </div>
         </div>
       </div>

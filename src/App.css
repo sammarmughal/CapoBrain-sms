@@ -19,6 +19,23 @@
 .slick-dots li.slick-active button:before {
   color: blue; 
 }
+.verticel-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+.slide-item {
+  margin: 0 10px; /* Add horizontal gap between slides */
+}
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fits well without distortion */
+}
+.img-fit {
+ height: 100%; 
+ width: auto; 
+  object-fit: cover;
+}
 .navbar-scroll {
   transform: translateZ(0);
   transition: all .3s ease-out;
@@ -89,7 +106,6 @@
 
 .mv-navi__burger .line {
   width: 100%;
-
   background: #0f131a;
   border-radius: 1.5px;
   display: block;
@@ -120,4 +136,12 @@
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   word-break: initial;
+}
+.btn-anim{
+  background: #9b37f2;
+  background: linear-gradient(180deg, #9b37f2, #7a12d4);
+
+}
+.btn-anim:hover{
+  background: #7a12d4;
 }

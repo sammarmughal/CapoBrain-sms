@@ -5,7 +5,7 @@ import Client1 from "../img/client1.avif";
 import Client2 from "../img/client2.avif";
 import Client3 from "../img/client4.avif";
 import Client4 from "../img/client5.avif";
-import Client5 from "../img/client5.png";
+import Client5 from "../img/5.png";
 import Client6 from "../img/client6.avif";
 import Client7 from "../img/client7.avif";
 import Client8 from "../img/client8.avif";
@@ -41,7 +41,7 @@ const Clients = () => {
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       {/* Title */}
-      <div className="sm:w-1/2 xl:w-1/3 mx-auto text-center mb-6">
+      <div className="cb-container sm:w-1/2 xl:w-1/3 mx-auto text-center mb-6">
         <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
           Our Trusted Clients{" "}
         </h2>

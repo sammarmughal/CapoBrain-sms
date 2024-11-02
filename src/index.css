@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: "hanken-grotesk", sans-serif;
+  /* font-family: "grotesk-medium", sans-serif; */
+  font-family:  'Noto Sans', Verdana , -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -13,17 +14,18 @@ body {
   color: black;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
+@font-face { font-family: 'Grotesk-Medium'; src: url('./fonts/Grotesk-Medium.ttf') format('ttf'), url('./fonts/Grotesk-Medium.ttf') format('truetype'); font-weight: 400; font-style: normal; }
 @layer components {
   .btn{
-    @apply flex items-center justify-center bg-transparent text-white rounded-full shadow-[inset_0_0_0_1px_#fff] cursor-pointer  text-base px-6 text-center no-underline tracking-[.015625em] leading-5 w-fit pt-1;
+    @apply flex items-center justify-center bg-transparent text-white rounded-full shadow-[inset_0_0_0_1px_#fff] cursor-pointer  text-base px-6 text-center no-underline tracking-[.015625em] leading-5 w-fit;
 
   }
  .btn-a{
-  @apply flex items-center font-normal justify-center bg-white text-[#7a12d4] rounded-full shadow-[inset_0_0_0_2px_#fff] cursor-pointer  text-base h-12 min-w-full px-6 text-center no-underline tracking-[.015625em] leading-5 pt-1 w-fit;
+  @apply flex items-center font-normal justify-center bg-white text-[#7a12d4] rounded-full shadow-[inset_0_0_0_2px_#fff] cursor-pointer  text-base h-10 min-w-full px-4 text-center no-underline tracking-[.015625em] leading-5 w-fit;
  }
   /* Adjustments for Dark Mode */
   .dark .btn-a {

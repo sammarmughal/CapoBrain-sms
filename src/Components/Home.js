@@ -5,6 +5,10 @@ import Keyfeatures from "./Keyfeatures";
 import Welcome from "./Welcome";
 import Clients from "./Clients";
 import { Benefits } from "./Benefits";
+import Logos from "./Logos";
+import Avatars from "./Avater";
+import PostSlider from "./PostSlider";
+import FeatureSlider from "./FeatureSlider";
 export default function Home() {
   const iframeRef = useRef(null);
   const [originalSrc] = useState(
@@ -31,10 +35,10 @@ export default function Home() {
               }}
             >
               <div className="absloute py-8 md:pb-12 lg:pt-10 lg:pb-14 min-h-fit">
-                <div className="w-full lg:w-5/6 lg:mx-auto text-center relative text-white pt-20 cb-container min-h-fit">
+                <div className="w-full lg:w-5/6 lg:mx-auto text-center relative text-white pt-28 cb-container min-h-fit">
                   <div className="pb-4 min-h-fit mb-3">
-                    <h1 className="text-5xl lg:text-7xl font-[1000]">
-                      Free Online School
+                    <h1 className="text-5xl lg:text-7xl font-[1000]" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
+                       Online Best School
                       <br />
                       Management Software
                     </h1>
@@ -104,10 +108,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Welcome/>
-      <Features />
+      <Logos/>
+      <Avatars/>
+      <PostSlider/>
+     <FeatureSlider/>
+      {/* <Welcome/> */}
       <Keyfeatures/>
-      <Clients/>
       <Benefits/>
     </>
   );
