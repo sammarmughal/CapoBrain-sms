@@ -85,14 +85,14 @@ const Footer = () => {
                       <i className="fab fa-linkedin-in text-black"></i>
                       <span className="hidden">In</span>
                     </a>
-                    <a
+                    {/* <a
                       href="https://www.instagram.com/CapoBrain"
                       target="blank"
                       className="nav-fill btn-sm-square rounded-circle me-2"
                     >
                       <i className="fa-brands fa-instagram text-black"></i>
                       <span className="hidden">gram</span>
-                    </a>
+                    </a> */}
                     <a
                       href="https://wa.me/923111122144"
                       target="blank"

@@ -78,9 +78,9 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="nav-list">
+                <Link to="/about" className="nav-list">
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="nav-list">
