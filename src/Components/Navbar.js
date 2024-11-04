@@ -156,7 +156,6 @@ function Navbar() {
               </li>
               <div className="lg:hidden gap-2 block">
                 <a href="#" className="flex items-center">
-                  Log in{" "}
                   <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
                 </a>
               </div>
@@ -186,7 +185,6 @@ function Navbar() {
               href="#"
               className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
             >
-              Log in{" "}
               <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
             </a>
             <a href="#" className="btn h-[2.2rem]">
