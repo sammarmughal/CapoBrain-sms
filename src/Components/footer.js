@@ -5,9 +5,9 @@ const Footer = () => {
     <>
       <footer className="relative z-10 bg-violet-100 pb-10 pt-10">
     <section className="max-w-[1200px] mx-auto">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-10 sm:w-2/3 lg:w-4/12">
+        <div className="container px-8 lg:px-4">
+          <div className="flex flex-wrap">
+            <div className="w-full lg:px-4 sm:w-2/3 lg:w-4/12">
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                   <img
@@ -35,7 +35,7 @@ const Footer = () => {
               <NavLink link="/#" label="Setting & Privacy" />
             </LinkGroup>
 
-            <div className="w-full px-4 sm:w-1/2 lg:w-4/12">
+            <div className="w-full sm:w-1/2 lg:w-4/12">
               <div className="mb-10 w-full">
               <h3 className="mb-9 text-lg font-semibold text-dark">Contact Us</h3>
                   <div className="mt-4 d-flex flex-column contact-link">
@@ -174,7 +174,7 @@ export default Footer;
 const LinkGroup = ({ children, header }) => {
   return (
     <>
-      <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+      <div className="w-full sm:w-1/2 lg:w-2/12">
         <div className="mb-10 w-full">
           <h4 className="mb-9 text-lg font-semibold text-dark">
             {header}

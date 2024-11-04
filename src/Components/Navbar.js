@@ -4,6 +4,8 @@ import navLogoMob from "../img/capobrain-logo.png";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { MdLogin } from "react-icons/md";
+import { TbExternalLink } from "react-icons/tb";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,9 +85,9 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="nav-list">
+                <Link to="/features" className="nav-list">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="nav-list">
@@ -107,28 +109,31 @@ function Navbar() {
                 >
                   <ul className="flex flex-col dropmenu lg:py-2">
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/help"
+                        onClick={toggleDropdown}
                         className="block px-4 py-2  hover:text-[#ba62fd]"
                       >
                         Knowledgebase
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/blog"
+                        onClick={toggleDropdown}
                         className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/faq"
+                        onClick={toggleDropdown}
                         className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         FAQs
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a
@@ -150,13 +155,28 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-                <a href="#" className="">
-                  Log in
+                <a href="#" className="flex items-center">
+                  Log in{" "}
+                  <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
                 </a>
               </div>
               <div className="lg:hidden gap-2 block">
-                <a href="#" className="">
+                <a href="#" className="flex items-center gap-1">
                   Request a Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="size-4"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
                 </a>
               </div>
             </ul>
@@ -164,12 +184,27 @@ function Navbar() {
           <div className="lg:flex hidden justify-around items-center">
             <a
               href="#"
-              className="text-white mr-3 font-medium text-lg nav-list"
+              className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
             >
-              Log in
+              Log in{" "}
+              <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
             </a>
             <a href="#" className="btn h-[2.2rem]">
-              Request a Demo
+              Request a Demo{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
             </a>
           </div>
         </nav>

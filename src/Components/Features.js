@@ -4,18 +4,6 @@ const Features = () => {
   return (
     <section className="pb-12 dark:bg-dark lg:pb-[90px] lg:pt-10">
       <div className="container mx-auto">
-        <div className="flex flex-wrap">
-          <div className="w-full px-4">
-            <div className="mx-auto mb-12 max-w-[710px] text-center lg:mb-20">
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
-              Key Features of Capobrain's School Management System{" "}
-              </h2>
-              <p className="text-xl text-body-color">
-              Over 20+ Modules you <i className="fa fa-heart heart heartcolor text-red-600"></i>{" "}
-              to use CapoBrain              </p>
-            </div>
-          </div>
-        </div>
 
         <div className="flex flex-wrap gap-4 max-w-[1200px] justify-center mx-auto">
           <FeaturesCard
@@ -77,6 +65,104 @@ const Features = () => {
                               communication tools for enhanced engagement."
             icon={
                 <i className="fas fa-users fa-3x"></i>
+            }
+          />
+            <FeaturesCard
+            title="Online Daily Diary Feature"
+            details="Stay organized and informed with Capobrain's online daily diary feature, allowing students and teachers to record tasks, deadlines, and progress updates effortlessly."
+            icon={
+                <i className="far fa-calendar-alt fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="School Management Mobile App"
+            details="Stay connected on the go with Capobrain's mobile app support. Enable access to key features and updates anytime, anywhere, ensuring convenience for students and educators."
+            icon={
+                <i className="fa-solid fa-mobile-screen-button fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="WhatsApp Messaging"
+            details="Effortlessly communicate with students, parents, and staff through CapoBrain's integrated WhatsApp messaging feature, facilitating instant updates and announcements for enhanced school communication."
+            icon={
+                <i className="fa-brands fa-whatsapp fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Biometric Attendance"
+            details="Ensure accurate attendance tracking with CapoBrain's biometric attendance feature, providing a secure and efficient method for monitoring student and staff presence, enhancing accountability in your school."
+            icon={
+                <i className="fa-solid fa-clipboard-user fa-3x"></i>
+            }
+          />
+           <FeaturesCard
+            title="Salary & Fee Management"
+            details="Efficiently manage salaries and fees with CapoBrain's integrated salary and fee management system, simplifying payroll processing and financial transactions for staff and students, streamlining financial operations in your institution."
+            icon={
+                <i className="fas fa-money-check-alt fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Inventory Management"
+            details="Keep track of resources seamlessly with CapoBrain's inventory management feature, enabling efficient monitoring and replenishment of school supplies and equipment, ensuring your institution is always well-stocked."
+            icon={
+                <i className="fas fa-box-open fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Student & Staff Ledgers"
+            details="Maintain comprehensive financial records for students and staff with CapoBrain's ledger management feature, ensuring transparency and accuracy in accounting processes for effective financial oversight."
+            icon={
+                <i className="fas fa-file-invoice-dollar fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Reminders For Fee Collection"
+            details="Never miss a payment deadline with Capobrain's fee collection reminder feature, ensuring timely notifications for students and parents to stay on top of financial obligations."
+            icon={
+                <i className="far fa-bell fa-3x"></i>
+            }
+          />
+           <FeaturesCard
+            title="Expense & Assets Management"
+            details="Efficiently track expenses and manage assets with CapoBrain's comprehensive management tools, providing insights and control over financial resources for optimized school operations and budgeting."
+            icon={
+                <i className="fas fa-chart-pie fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Online Paper Generation"
+            details="Generate exams and assignments effortlessly with CapoBrain's online paper generation feature, enabling teachers to create, customize, and distribute digital assessments with ease for enhanced academic efficiency."
+            icon={
+                <i className="far fa-file-alt fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Exams & Results Management"
+            details="Streamline the examination process and manage results effectively with CapoBrain's comprehensive exams and results management module, ensuring smooth administration and timely reporting for academic success."
+            icon={
+                <i className="fas fa-clipboard-list fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="Comprehensive Reporting"
+            details="Gain valuable insights with CapoBrain's comprehensive reporting features, offering analytics and customizable reports for informed decision-making and enhanced school performance evaluation."
+            icon={
+                <i className="fas fa-chart-bar fa-3x"></i>
+            }
+          />
+            <FeaturesCard
+            title="Multi Campuses Management"
+            details="Effortlessly manage multiple branches or campuses with CapoBrain's integrated system, enabling centralized administration and coordination across diverse locations for seamless educational governance."
+            icon={
+                <i className="fas fa-sitemap fa-3x"></i>
+            }
+          />
+          <FeaturesCard
+            title="School/ College Front Website"
+            details="Showcase your school or college with CapoBrain's customizable front website feature, highlighting important information, events, and achievements for a professional online presence that engages your community."
+            icon={
+                <i className="fas fa-globe fa-3x"></i>
             }
           />
         </div>

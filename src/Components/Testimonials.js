@@ -3,11 +3,11 @@ import React,{useState} from  "react";
 	const [testimonialActive, setTestimonialActive] = useState(2);
 
 	const handlePrevious = () => {
-	  setTestimonialActive(testimonialActive === 1 ? 3 : testimonialActive - 1);
+	  setTestimonialActive(testimonialActive === 1 ? 4 : testimonialActive - 1);
 	};
   
 	const handleNext = () => {
-	  setTestimonialActive(testimonialActive >= 3 ? 1 : testimonialActive + 1);
+	  setTestimonialActive(testimonialActive >= 4 ? 1 : testimonialActive + 1);
 	};
   
 	return (
@@ -48,23 +48,24 @@ import React,{useState} from  "react";
 			<div className="h-full relative z-10">
 			  {testimonialActive === 1 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-				  Leverage agile frameworks to provide a robust synopsis for high-level overviews...
-				</p>
+				"CapoBrain's user-friendly interface has streamlined our student management, class scheduling, and attendance tracking, making these tasks effortless."				</p>
 			  )}
 			  {testimonialActive === 2 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-				  Bring to the table win-win survival strategies to ensure proactive domination...
-				</p>
+				"CapoBrain has transformed our administrative processes, enhancing efficiency and allowing us to concentrate on student success."				</p>
 			  )}
 			  {testimonialActive === 3 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-				  Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test...
-				</p>
+				"With CapoBrain, our teachers efficiently assign tasks and communicate with parents, fostering a collaborative learning environment."				</p>
+			  )}
+			  {testimonialActive === 4 && (
+				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+				"CapoBrain has enhanced our communication and strengthened relationships, promoting parental engagement in their children's education."				</p>
 			  )}
 			</div>
   
 			<div className="flex my-4 justify-center items-center">
-			  {['JD', 'WD', 'JW'].map((label, index) => {
+			  {['NI', 'AR', 'SNC' , 'FM'].map((label, index) => {
 				const active = index + 1 === testimonialActive;
 				return (
 				  <button
@@ -85,20 +86,26 @@ import React,{useState} from  "react";
 			<div className="flex justify-center px-6 pt-2 pb-6 md:py-6">
 			  {testimonialActive === 1 && (
 				<div className="text-center">
-				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">John Doe</h2>
-				  <small className="text-gray-500 text-xs md:text-sm truncate">CEO, ABC Inc.</small>
+				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Nimra Ihsan</h2>
+				  <small className="text-gray-500 text-xs md:text-sm truncate">Manager HR (The Educators).</small>
 				</div>
 			  )}
 			  {testimonialActive === 2 && (
 				<div className="text-center">
-				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Winter Doe</h2>
-				  <small className="text-gray-500 text-xs md:text-sm truncate">CTO, XYZ Corp.</small>
+				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Asim Rasool</h2>
+				  <small className="text-gray-500 text-xs md:text-sm truncate">Director (Apex College)</small>
 				</div>
 			  )}
 			  {testimonialActive === 3 && (
 				<div className="text-center">
-				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">John Wick</h2>
-				  <small className="text-gray-500 text-xs md:text-sm truncate">Product Manager, Fake Corp.</small>
+				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Sikandar Nawaz Cheema</h2>
+				  <small className="text-gray-500 text-xs md:text-sm truncate">Principal (Falcon Central School).</small>
+				</div>
+			  )}
+			  {testimonialActive === 4 && (
+				<div className="text-center">
+				  <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Faizan Minhas</h2>
+				  <small className="text-gray-500 text-xs md:text-sm truncate">Genral Manager (Dar e Arqam Schools).</small>
 				</div>
 			  )}
 			</div>

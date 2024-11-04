@@ -59,14 +59,14 @@ const FeatureSlider = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 1.3,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2.5,
-          slidesToScroll: 1,
+          slidesToScroll: 1.3,
         },
       },
     ],

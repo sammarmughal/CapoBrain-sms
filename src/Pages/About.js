@@ -123,52 +123,7 @@ const AboutSection = () => {
         />
       ),
     },
-  ];
-  const [active, setActive] = useState(0);
-  const data = [
-    {
-      heading: "What is CapoBrain?",
-      paragraph:
-        "CapoBrain is a comprehensive College &amp; School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
-      id: 1,
-    },
-    {
-      heading: "Which programming languages are used to develop CapoBrain?",
-      paragraph:
-        "CapoBrain is developed using modern programming languages to ensure efficiency, scalability, and reliability, making it a top choice for educational institutions.",
-      id: 2,
-    },
-    {
-      heading: "Is CapoBrain suitable for both schools and colleges?",
-      paragraph:
-        "Yes, CapoBrain is designed to cater to the needs of both schools and colleges, offering tailored modules to fit each educational setting.",
-      id: 3,
-    },
-    {
-      heading: "How does the Postal Dispatch feature work?",
-      paragraph:
-        "The Postal Dispatch feature allows you to manage outgoing mail, track deliveries, and maintain a record of dispatched items, enhancing your administrative efficiency.",
-      id: 4,
-    },
-    {
-      heading: "Can I log phone calls using CapoBrain?",
-      paragraph:
-        "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your school management processes.",
-      id: 5,
-    },
-    {
-      heading: "How can I add teaching and non-teaching staff to CapoBrain?",
-      paragraph:
-        "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain software.",
-      id: 6,
-    },
-    {
-      heading: "What is the Staff ToDo's feature used for?",
-      paragraph:
-        "The Staff ToDo's feature helps staff members manage their tasks, set priorities, and track progress on various assignments, making it an essential tool in our school ERP software.",
-      id: 7,
-    },
-  ];
+  ];  
   const Brand = () => (
     <div className="flex items-center justify-between py-5 md:block">
       <a href="javascript:void(0)">
@@ -219,34 +174,13 @@ const AboutSection = () => {
   );
   return (
     <>
-      {/* <section className="relative z-0">
-        <div className="block z-30 absolute inset-0 opacity-50  bg-black"></div>
-        <img
-          src={about_bg}
-          alt="image"
-          className="h-full w-full opacity-100  object-cover absolute index-0 object-center"
-        />
-
-        <div className="py-14 lg:py-24 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center z-50">
-          <h1 className="max-w-2xl mx-auto text-center font-manrope font-bold text-4xl text-white mb-5 md:text-5xl md:leading-normal">
-            Transforming Education with <br />{" "}
-            <span className="text-white">
-              Premier School Management System
-            </span>
-          </h1>
-          <p className="max-w-xl mx-auto text-center text-base font-normal leading-7 text-white mb-9">
-            Invest intelligently and discover a better way to manage your entire
-            wealth easily with our School Management System (SMS).
-          </p>
-        </div>
-      </section> */}
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             {/* <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
               Transforming Education with the Premier School Management System
             </h2> */}
-            <h1 className="text-5xl lg:text-6xl font-[1000] text-white" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
+            <h1 className="text-4xl lg:text-6xl font-[1000] text-white" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
             Transforming Education with the 
                       <br />
                       Premier School Management System                    </h1>
@@ -274,7 +208,7 @@ const AboutSection = () => {
                 height="557"
                 loading="eager"
                 alt="Meditation on iPhone"
-                className="amax-lg:mx-auto object-cover hidden lg:flex"
+                className="lg:mx-auto object-cover hidden lg:flex"
               />
               <img
                 src={tablet}
@@ -282,7 +216,7 @@ const AboutSection = () => {
                 height="557"
                 loading="eager"
                 alt="Meditation on iPhone"
-                className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden sm:flex lg:hidden"
+                className="lg:mx-auto object-cover hidden sm:flex lg:hidden"
               />
               <img
                 src={phone}
@@ -290,10 +224,10 @@ const AboutSection = () => {
                 height="557"
                 loading="eager"
                 alt="Meditation on iPhone"
-                className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
+                className="lg:mx-auto object-cover flex sm:hidden"
               />
             </div>
-            <div className="lg:pl-[100px] flex items-center col-span-2">
+            <div className="lg:pl-[100px] flex items-center lg:col-span-2">
               <div className="data w-full">
                 <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center relative">
                   Welcome To Capobrain School Management Software{" "}
@@ -319,11 +253,6 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">
               <div className="data w-full">
-                <img
-                  src="#"
-                  alt="About Us tailwind page"
-                  className="block lg:hidden mb-9 mx-auto object-cover"
-                />
                 <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center">
                   We are Creative Since 2020
                 </h2>
@@ -339,17 +268,17 @@ const AboutSection = () => {
               <img
                 src={About}
                 alt="About Us School Management System"
-                className="hidden lg:block object-cover"
+                className="block object-cover"
               />
             </div>
           </div>
         </div>
       </section>
       <section className="container relative mx-auto px-6 py-8">
-        <div className="absolute top-20 left-2 w-[500px] h-[500px] bg-[#D1208A80] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob"></div>
-        <div className="absolute top-20 right-32 w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="hidden xl:block absolute bottom-10 left-32 w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
-        <div className="absolute bottom-10 right-52 w-[500px] h-[500px] bg-[#CAEEF580] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-2 w-[250px] sm:w-[500px] h-[500px] bg-[#D1208A80] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob"></div>
+        <div className="absolute top-20 right-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="hidden xl:block absolute bottom-10 left-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute bottom-10 right-52 w-[250px] sm:w-[500px] h-[500px] bg-[#CAEEF580] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
         <h1 className="text-4xl font-bold text-center text-black mb-12 animate-fade-in">
           Technic Mentors IT Consulting Services
         </h1>
@@ -378,7 +307,7 @@ const AboutSection = () => {
           ))}
         </div>
       </section>
-      <section className="py-20 bg-white">
+      <section className="pt-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-manrope text-4xl text-center text-gray-900 font-bold mb-14">
             Our results in numbers
@@ -387,15 +316,14 @@ const AboutSection = () => {
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
-                  240%
+                  50+
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                    Company growth
+                  Schools Using Our Software
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                    Company's remarkable growth journey as we continually
-                    innovate and drive towards new heights of success.
+                  Trusted by over 500 schools to streamline operations, manage student data, and enhance educational outcomes.
                   </p>
                 </div>
               </div>
@@ -403,15 +331,14 @@ const AboutSection = () => {
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
-                  175+
+                  120+
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                    Company growth
+                  Students Managed
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                    Our very talented team members are the powerhouse of
-                    pagedone and pillars of our success.
+                  Our platform manages data for over 120,000 students, ensuring seamless academic and administrative workflows.
                   </p>
                 </div>
               </div>
@@ -419,83 +346,20 @@ const AboutSection = () => {
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
-                  625+
+                99%
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                    Projects Completed
+                  Customer Satisfaction Rate
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                    We have accomplished more than 625 projects worldwide and we
-                    are still counting many more.
+                  Achieving a 99% satisfaction rate by delivering reliable, user-friendly, and efficient software solutions.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="w-[100vw] h-auto flex relative justify-center items-center bg-Light_pink pb-10">
-        <img
-          src={bgp}
-          alt="Pattern in purple"
-          className="h-[250px] object-cover w-[100vw] absolute z-0 top-0"
-        />
-        <div className="w-[400px] md:max-w-[800px] md:w-auto z-10 rounded-lg flex flex-col p-3 text-Dark_purple bg-white">
-          <div className="flex items-center my-4">
-            <img src={avatar} alt="" className="w-[1.6em] mr-6 md:w-[2em]" />
-            <h1 className="text-3xl text-Dark_purple font-bold md:text-4xl">
-              FAQs
-            </h1>
-          </div>
-          <div className="flex flex-col gap-4">
-            {data.map((item) => (
-              <div className="">
-                <div className="flex justify-between p-2 hover:text-[#7a12d4] items-center">
-                  <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
-                    {item.heading}
-                  </h1>
-                  <img
-                    src={active === item.id ? close : open}
-                    alt="open or close"
-                    className="cursor-pointer w-[2.3em] md:w-[2.8em]"
-                    onClick={() =>
-                      active === item.id ? setActive(0) : setActive(item.id)
-                    }
-                  />
-                </div>
-                {active === item.id ? (
-                  <p className="text-Grayish_purple p-2 text-[15px] duration-300 md:text-[16px] animate-fadeIn">
-                    {item.paragraph}
-                  </p>
-                ) : (
-                  <p></p>
-                )}
-                <hr />
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* <svg
-          viewBox="0 0 1024 1024"
-          className="absolute left-1/2 top-2/3 -z-10 w-auto -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-          aria-hidden="true"
-        >
-          <circle
-            cx="512"
-            cy="512"
-            r="512"
-            fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-            fillOpacity="0.7"
-          ></circle>
-          <defs>
-            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-              <stop stopColor="#3b82f6"></stop>
-              <stop offset="1" stopColor="#1d4ed8"></stop>
-            </radialGradient>
-          </defs>
-        </svg> */}
       </section>
       <Testimonials />
     </>
