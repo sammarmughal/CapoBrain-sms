@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdLogin } from "react-icons/md";
-import { TbExternalLink } from "react-icons/tb";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -144,12 +143,13 @@ function Navbar() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/contact"
+                        onClick={toggleDropdown}
                         className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

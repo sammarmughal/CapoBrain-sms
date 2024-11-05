@@ -246,6 +246,13 @@ const Help = () => {
       </div>
       <div className="my-10">
       <FAQs/>
+      <div className="flex justify-center items-center w-full">
+      <button className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group">
+      <Link to="/faq">
+        View More Faqs
+        </Link>
+      </button>
+      </div>
       </div>
     </>
   );

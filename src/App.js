@@ -15,7 +15,7 @@ import Features from "./Pages/Features";
 import Help from "./Pages/Help";
 import Blog from "./Pages/Blog";
 import FAQs from "./Pages/Faq";
-
+import Contact from "./Pages/Contact";
 function App() {
   return (
     <>
@@ -28,7 +28,7 @@ function App() {
           <Route path="/help" element={<Help/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/faq" element={<FAQs/>} />
-
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>
