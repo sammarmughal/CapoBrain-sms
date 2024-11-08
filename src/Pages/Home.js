@@ -1,14 +1,11 @@
 import React, { useRef, useState } from "react";
 import Img from "../img/main-section-bg.png";
-import Features from "./Features";
-import Keyfeatures from "./Keyfeatures";
-import Welcome from "./Welcome";
-import Clients from "./Clients";
-import { Benefits } from "./Benefits";
-import Logos from "./Logos";
-import Avatars from "./Avater";
-import PostSlider from "./PostSlider";
-import FeatureSlider from "./FeatureSlider";
+import Keyfeatures from "../Components/Keyfeatures";
+import { Benefits } from "../Components/Benefits";
+import Logos from "../Components/Logos";
+import Avatars from "../Components/Avater";
+import PostSlider from "../Components/PostSlider";
+import FeatureSlider from "../Components/FeatureSlider";
 export default function Home() {
   const iframeRef = useRef(null);
   const [originalSrc] = useState(

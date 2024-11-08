@@ -89,7 +89,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="nav-list">
+                <a to="#" className="nav-list">
                   User Manual
                 </a>
               </li>
@@ -135,12 +135,12 @@ function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="/userlogin"
                         className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Generate Ticket
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -155,12 +155,12 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-                <a href="#" className="flex items-center">
+                <Link to="/userlogin" className="flex items-center">
                   <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
-                </a>
+                </Link>
               </div>
               <div className="lg:hidden gap-2 block">
-                <a href="#" className="flex items-center gap-1">
+                <Link to="/requestdemo" className="flex items-center gap-1">
                   Request a Demo
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,18 +176,18 @@ function Navbar() {
                       d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </ul>
           </div>
           <div className="lg:flex hidden justify-around items-center">
-            <a
-              href="#"
+            <Link
+              to="/userlogin"
               className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
             >
               <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
-            </a>
-            <a href="#" className="btn h-[2.2rem]">
+            </Link>
+            <Link to="/requestdemo" className="btn h-[2.2rem]">
               Request a Demo{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +203,7 @@ function Navbar() {
                   d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </nav>
       </header>

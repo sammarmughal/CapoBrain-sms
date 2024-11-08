@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
+import Home from "./Pages/Home";
 import Footer from "./Components/footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fontsource/noto-sans/400.css";
@@ -16,6 +16,9 @@ import Help from "./Pages/Help";
 import Blog from "./Pages/Blog";
 import FAQs from "./Pages/Faq";
 import Contact from "./Pages/Contact";
+import Login from "./Pages/Login";
+import SignUp from "./Pages/Signup";
+import RequestDemo from "./Pages/RequestDemo";
 function App() {
   return (
     <>
@@ -29,6 +32,9 @@ function App() {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/faq" element={<FAQs/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/userlogin" element={<Login/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/requestdemo" element={<RequestDemo/>}/>
         </Routes>
         <Footer />
       </Router>
