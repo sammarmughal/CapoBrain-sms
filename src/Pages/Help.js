@@ -34,7 +34,6 @@ const Help = () => {
       </div>
       <div className="h-full w-full bg-gray-100 py-12 lg:py-28 p-4 lg:p-8">
         <div className="grid gap-14 md:grid-cols-3 md:gap-5">
-          {/* First Card */}
           <div className="rounded-xl bg-white p-6 text-center shadow-xl">
             <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-400 shadow-lg shadow-purple-500/40">
               <FaTicket className="h-10 w-10 text-white" />
@@ -49,7 +48,6 @@ const Help = () => {
             </p>
           </div>
 
-          {/* Second Card */}
           <div
             data-aos-delay="150"
             className="rounded-xl bg-white p-6 text-center shadow-xl"

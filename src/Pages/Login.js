@@ -60,7 +60,7 @@ const Login = () => {
                       Password
                     </label>
                   </div>
-               
+
                   <div className="relative py-2">
                     <button className="text-white rounded-md px-6 py-1 btn-anim">
                       Login
@@ -72,7 +72,7 @@ const Login = () => {
                       to="/signup"
                       className="font-medium text-indigo-600 hover:underline"
                     >
-                      Sign in
+                      Sign up
                     </Link>
                   </p>
                 </div>

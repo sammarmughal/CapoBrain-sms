@@ -1,6 +1,7 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Features = () => {
+
   return (
     <section className="pb-12 dark:bg-dark lg:pb-[90px] lg:pt-10">
       <div className="container mx-auto">
@@ -174,6 +175,9 @@ const Features = () => {
 export default Features;
 
 const FeaturesCard = ({ icon, title, details }) => {
+  const createSlug = (title) => title.toLowerCase().replace(/ /g, "-").replace(/[^\w-]+/g, "");
+  const slug = createSlug(title);
+
   return (
     <>
       <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
@@ -192,12 +196,12 @@ const FeaturesCard = ({ icon, title, details }) => {
 
           <div className="pt-5 text-base font-semibold leading-7">
             <p>
-              <a
-                href="#"
-                className="text-violet-500 transition-all duration-300 group-hover:text-white"
-              >
-                Read the docs &rarr;
-              </a>
+            <Link
+              to={`/features/${slug}`}
+              className="text-violet-500 transition-all duration-300 group-hover:text-white"
+            >
+              Read the docs &rarr;
+            </Link>
             </p>
           </div>
         </div>

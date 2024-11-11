@@ -19,22 +19,30 @@ import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/Signup";
 import RequestDemo from "./Pages/RequestDemo";
+import UserManual from "./Pages/Usermanual";
+import FeaturePage from "./Pages/FeaturePage";
+import UserManualData from "./Pages/UsermanualData";
 function App() {
   return (
     <>
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/features" element={<Features/>} />
-          <Route path="/help" element={<Help/>} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/faq" element={<FAQs/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/userlogin" element={<Login/>}/>
-          <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/requestdemo" element={<RequestDemo/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/features/:slug" element={<FeaturePage />} />
+
+          <Route path="/help" element={<Help />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/faq" element={<FAQs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/userlogin" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/requestdemo" element={<RequestDemo />} />
+          <Route path="/usermanual" element={<UserManual />} />
+          <Route path="/usermanual/:id" element={<UserManualData />} />
+
         </Routes>
         <Footer />
       </Router>

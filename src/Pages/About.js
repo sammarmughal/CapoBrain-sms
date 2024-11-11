@@ -12,7 +12,6 @@ import Testimonials from "../Components/Testimonials";
 const AboutSection = () => {
   const [state, setState] = useState(false);
 
-  // Replace javascript:void(0) paths with your paths
   const navigation = [
     { title: "Features", path: "javascript:void(0)" },
     { title: "Integrations", path: "javascript:void(0)" },

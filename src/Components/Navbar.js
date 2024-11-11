@@ -89,9 +89,9 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <a to="#" className="nav-list">
+                <Link to="/usermanual" className="nav-list">
                   User Manual
-                </a>
+                </Link>
               </li>
               <li className="relative">
                 <button
@@ -137,6 +137,7 @@ function Navbar() {
                     <li>
                       <Link
                         to="/userlogin"
+                        onClick={toggleDropdown}
                         className="block px-4 py-2 hover:text-[#ba62fd]"
                       >
                         Generate Ticket
@@ -155,12 +156,13 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-                <Link to="/userlogin" className="flex items-center">
+                <Link to="/userlogin" onClick={toggleDropdown} className="flex items-center">
+                
                   <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
                 </Link>
               </div>
               <div className="lg:hidden gap-2 block">
-                <Link to="/requestdemo" className="flex items-center gap-1">
+                <Link to="/requestdemo" onClick={toggleDropdown} className="flex items-center gap-1">
                   Request a Demo
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
