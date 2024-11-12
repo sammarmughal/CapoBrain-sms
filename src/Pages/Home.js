@@ -6,6 +6,8 @@ import Logos from "../Components/Logos";
 import Avatars from "../Components/Avater";
 import PostSlider from "../Components/PostSlider";
 import FeatureSlider from "../Components/FeatureSlider";
+import Pricing from "../Components/Pricing";
+
 export default function Home() {
   const iframeRef = useRef(null);
   const [originalSrc] = useState(
@@ -111,6 +113,7 @@ export default function Home() {
      <FeatureSlider/>
       {/* <Welcome/> */}
       <Keyfeatures/>
+      <Pricing/>
       <Benefits/>
     </>
   );

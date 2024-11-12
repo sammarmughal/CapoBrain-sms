@@ -262,7 +262,216 @@
                 "alt": "Add Feedback"
               }
             }
-          },              
+          },
+          {
+            "id": "new-admission",
+            "meta": {
+              "title": "New Admission | CapoBrain School Management System",
+              "description": "Easily enroll new students through the New Admission module in CapoBrain's School Management System. Complete personal, family, and guardian details, set up fee structure, and receive a unique student ID for portal access."
+            },
+            "content": {
+              "heading": "New Admission",
+              "description": "To enroll students, you need to complete the student admission form, which includes sections for personal details, family information, and guardian details. Before starting, ensure to add the fee structure, classes, and sections in the configuration module. You will input student details step by step, selecting the desired class for admission and the type of fee structure (monthly or annually). Upon submission, you will receive a unique student ID for portal access.",
+              "details": [
+                "First, set the Fee Structure, classes, and sections in the configuration module.",
+                "Image Format: Must be JPG, JPEG, or PNG.",
+                "Image size should be less than or equal to 100 KB.",
+                "Document Format: Must be JPG, JPEG, PDF, or PNG.",
+                "The file size for instructor documents should be less than or equal to 300 KB."
+              ],
+              "image": {
+                "src": "/img/New-Admission.avif",
+                "alt": "New Admission"
+              }
+            }
+          },
+          {
+            "id": "students-list",
+            "meta": {
+              "title": "Comprehensive Student List | CapoBrain School Management System",
+              "description": "Access the complete student list in CapoBrain's School Management System to view documents, login details, and manage student entries with ease."
+            },
+            "content": {
+              "heading": "Comprehensive Student List",
+              "description": "The student list provides a comprehensive view of all students, allowing you to access documents, view login details, and modify or delete any entries as needed.",
+              "details": [
+                "Image Format: Must be JPG, JPEG, or PNG.",
+                "Image size should be less than or equal to 100 KB.",
+                "Document Format: Must be JPG, JPEG, PDF, or PNG.",
+                "The file size required in the instructor document area is less than or equal to 300 KB."
+              ],
+              "image": {
+                "src": "/img/Student-List.avif",
+                "alt": "Student List"
+              }
+            }
+          }
+,
+{
+    "id": "feedback-record",
+    "meta": {
+      "title": "Feedback Record | CapoBrain School Management System",
+      "description": "Easily manage and access student feedback through CapoBrain's Feedback Record module, allowing school users to post and view reviews on students."
+    },
+    "content": {
+      "heading": "Feedback Record",
+      "description": "If a school user wants to post a review about any student, they may search by student ID in the feedback record system. There is a feedback box where they can enter their comments, which can then be saved. This system will display a comprehensive list of all student comments for easy access and review.",
+      "details": [
+        "Search for a student using the Student ID.",
+        "Enter comments in the feedback box provided.",
+        "Save the feedback to add it to the system.",
+        "Access a comprehensive list of all feedback entries for review."
+      ],
+      "image": {
+        "src": "/img/Add-Students-Feedback.avif",
+        "alt": "Add Students Feedback"
+      }
+    }
+  },
+  {
+    "id": "family-record",
+    "meta": {
+      "title": "Family Record | CapoBrain School Management System",
+      "description": "Manage and access comprehensive family records of students using CapoBrain's Family Record module, allowing you to see multiple students from the same family."
+    },
+    "content": {
+      "heading": "Family Record",
+      "description": "Access a comprehensive list of student family records. This feature allows you to see how many students belong to the same family. Clicking on the view button will display detailed information including the student's name, ID, class, and section.",
+      "details": [
+        "Access the family record list to view all family-linked students.",
+        "Click on the 'View' button to see detailed information for each family.",
+        "Information includes student name, ID, class, and section.",
+        "Provides a quick overview of students related by family within the system."
+      ],
+      "image": {
+        "src": "/img/Family-Detail.avif",
+        "alt": "Family Detail"
+      }
+    }
+  },
+  {
+    "id": "online-admissions",
+    "meta": {
+      "title": "Online Admissions | CapoBrain School Management System",
+      "description": "Manage and view all online student applications with CapoBrain's Online Admissions module, a streamlined part of our School Management System (SMS) and School ERP Software Solutions."
+    },
+    "content": {
+      "heading": "Online Admissions",
+      "description": "This module displays a list of all students who applied online in the Online Admission submodule of our School Management System (SMS). The online admission submodule can receive all applications submitted through the website, making it an essential part of our School ERP Software Solutions. Each school can develop their own website by adding content such as About, Gallery, Events, and more. When you navigate to the admissions section, prospective students can apply for admission, which will be recorded in the online complaints list submodule. Users can easily enter some basic information on the website, and upon viewing the list, there is an edit option available. By clicking on it, the appropriate admission form is displayed, allowing for seamless integration of students into the student list.",
+      "details": [
+        "Displays all online admission applications.",
+        "Applications are submitted through the school’s website and integrated into the system.",
+        "The school can customize its website with content such as About, Gallery, Events, etc.",
+        "An edit option is available to update admission forms before adding students to the main student list."
+      ],
+      "image": {
+        "src": "/img/Online-Admission.avif",
+        "alt": "Online Admission"
+      }
+    }
+  },
+  {
+    "id": "passout-students",
+    "meta": {
+      "title": "Passout Students | CapoBrain School Management System",
+      "description": "Manage passout students in CapoBrain's School Management System by withdrawing students and maintaining accurate records of their status."
+    },
+    "content": {
+      "heading": "Passout Students",
+      "description": "If you want to enter the data of passout students in the School Management System (SMS), you may do so by searching the student by ID and then entering the reason for passout. After you withdraw that student, their data will be removed from the main student list and displayed in the passout students list, helping to maintain an accurate record of student status.",
+      "details": [
+        "Search for the student by ID before entering the reason for passout.",
+        "Withdraw the student to move their data to the passout students list.",
+        "The student's data will be removed from the main student list once they are marked as passout.",
+        "Maintains accurate student records by displaying passout students separately."
+      ],
+      "image": {
+        "src": "/img/Add-passout-Student.avif",
+        "alt": "Add Passout Student"
+      }
+    }
+  },
+  {
+    "id": "promote-students",
+    "meta": {
+      "title": "Promote Students | CapoBrain School Management System",
+      "description": "Promote students to the next class in CapoBrain's School Management System using either single student promotion or full class promotion options."
+    },
+    "content": {
+      "heading": "Promote Students",
+      "description": "In the School Management System (SMS), there are two options for student promotion: single student promotion and promoting students as a full class. If you want to promote a single student to the next class, use the single student promotion option. You can search for a student by ID and then select the class and section to which the student will be promoted.",
+      "details": [
+        "First, add classes and sections to the configuration module in the School Management System (SMS).",
+        "Select single student promotion to promote students to the next class.",
+        "Promoting a full class option can be used for mass promotion of students in one go."
+      ],
+      "image": {
+        "src": "/img/Promote-Student.avif",
+        "alt": "Promote Student"
+      }
+    }
+  },
+  {
+    "id": "students-review",
+    "meta": {
+      "title": "Student Review | CapoBrain School Management System",
+      "description": "Add and manage student reviews in CapoBrain's School Management System by searching students by ID, providing ratings, and tracking evaluations."
+    },
+    "content": {
+      "heading": "Student Review",
+      "description": "If a school user wants to post a review about any student in the School Management System (SMS), they may search by ID. There are questions and a rating box where you can provide a rating based on their performance. Once saved, it will display a list of all student reviews, allowing for easy tracking and management of student evaluations.",
+      "details": [
+        "Search by student ID to find the student.",
+        "Provide ratings based on the student's performance.",
+        "Save the review and track it in the review list."
+      ],
+      "image": {
+        "src": "/img/Add-Student-Review.avif",
+        "alt": "Add Student Review"
+      }
+    }
+  },
+  {
+    "id": "student-review",
+    "meta": {
+      "title": "Student Review | CapoBrain School Management System",
+      "description": "Add and manage student reviews in CapoBrain's School Management System by searching students by ID, providing ratings, and tracking evaluations."
+    },
+    "content": {
+      "heading": "Student Review",
+      "description": "If a school user wants to post a review about any student in the School Management System (SMS), they may search by ID. There are questions and a rating box where you can provide a rating based on their performance. Once saved, it will display a list of all student reviews, allowing for easy tracking and management of student evaluations.",
+      "details": [
+        "Search by student ID to find the student.",
+        "Provide ratings based on the student's performance.",
+        "Save the review and track it in the review list."
+      ],
+      "image": {
+        "src": "/img/Add-Student-Review.avif",
+        "alt": "Add Student Review"
+      }
+    }
+  },
+  {
+    "id": "withdraw-students",
+    "meta": {
+      "title": "Withdraw Students | CapoBrain School Management System",
+      "description": "Easily withdraw students from the School Management System by searching for their ID, entering the reason for withdrawal, and tracking their status in the withdrawn students list."
+    },
+    "content": {
+      "heading": "Withdraw Students",
+      "description": "If you want to withdraw any student from the school, you can do so by searching for the student by ID and entering the reason for withdrawal. After the student is withdrawn, they will be removed from the active student list and will be added to the list of withdrawn students along with the provided reasons. This feature ensures that all withdrawal records are maintained efficiently in the School Management System (SMS).",
+      "details": [
+        "Search for the student by ID.",
+        "Enter the reason for the withdrawal.",
+        "Withdrawn students will be moved to the withdrawn list with the reasons recorded."
+      ],
+      "image": {
+        "src": "/img/Add-Withdraw-Student.avif",
+        "alt": "Add Withdraw Student"
+      }
+    }
+  },
+                        
             {
                 "id": "family-wise-account",
                 "meta": {

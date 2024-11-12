@@ -11,7 +11,7 @@ const Help = () => {
         <div className="relative z-40 mx-auto max-w-5xl px-6 py-20 text-center md:px-12 md:py-16">
           <h1 className="text-3xl leading-[60px] mt-20 text-white font-semibold md:text-4xl lg:text-5xl">
             <div className="sm:mt-2">
-              <span className="underline decoration-purple-600 underline-offset-4">
+              <span className="underline decoration-purple-700 underline-offset-4">
                 Capobrain Help Center
               </span>
             </div>
@@ -35,7 +35,7 @@ const Help = () => {
       <div className="h-full w-full bg-gray-100 py-12 lg:py-28 p-4 lg:p-8">
         <div className="grid gap-14 md:grid-cols-3 md:gap-5">
           <div className="rounded-xl bg-white p-6 text-center shadow-xl">
-            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-400 shadow-lg shadow-purple-500/40">
+            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-700 shadow-lg shadow-purple-500/40">
               <FaTicket className="h-10 w-10 text-white" />
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
@@ -52,7 +52,7 @@ const Help = () => {
             data-aos-delay="150"
             className="rounded-xl bg-white p-6 text-center shadow-xl"
           >
-            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-400 shadow-lg shadow-purple-500/40">
+            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-700 shadow-lg shadow-purple-500/40">
               <MdOutlineSupportAgent className="h-10 w-10 text-white" />
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
@@ -68,7 +68,7 @@ const Help = () => {
             data-aos-delay="300"
             className="rounded-xl bg-white p-6 text-center shadow-xl"
           >
-            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-400 shadow-inodgo-400/40">
+            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-700 shadow-inodgo-400/40">
               <MdOutlineQueryStats className="h-10 w-10 text-white" />
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
@@ -85,7 +85,7 @@ const Help = () => {
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div>
             <h2 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight">
-              <span className="text-purple-400">Uh Oh! </span>
+              <span className="text-purple-700">Uh Oh! </span>
               Having An Issue?
             </h2>
             <p className="mt-3 text-lg text-gray-800">

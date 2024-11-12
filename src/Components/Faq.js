@@ -67,7 +67,7 @@ const FAQs = () => {
           <div className="flex flex-col gap-4">
             {data.map((item) => (
               <div className="">
-                <div className="flex justify-between p-2 hover:text-purple-600 items-center">
+                <div className="flex justify-between p-2 hover:text-purple-700 items-center">
                   <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
                     {item.heading}
                   </h1>

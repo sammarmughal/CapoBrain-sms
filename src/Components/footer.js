@@ -23,16 +23,22 @@ const Footer = () => {
             </div>
 
             <LinkGroup header="Resources">
-              <NavLink link="/#" label="SaaS Development" />
-              <NavLink link="/#" label="Our Products" />
-              <NavLink link="/#" label="User Flow" />
-              <NavLink link="/#" label="User Strategy" />
+              <NavLink link="/requestdemo" label="Demo & Tutorials" />
+              <NavLink link="/usermanual" label="User Manual" />
+              <NavLink link="/blog" label="Blog" />
+              <NavLink link="/faq" label="FAQs" />
+              <NavLink link="/help" label="Knowledge Base" />
+              <NavLink link="/about" label="About Us" />
+
             </LinkGroup>
-            <LinkGroup header="Company">
-              <NavLink link="/#" label="About TailGrids" />
-              <NavLink link="/#" label="Contact & Support" />
-              <NavLink link="/#" label="Success History" />
-              <NavLink link="/#" label="Setting & Privacy" />
+            <LinkGroup header="Product">
+              <NavLink link="/features" label="Features Overview" />
+              <NavLink link="/features/data-security" label="Data Security" />
+              <NavLink link="/features/school-management-mobile-app" label="Mobile App" />
+              <NavLink link="/features/online-daily-diary-feature" label="Online Daily Diary" />
+              <NavLink link="/features/exams--results-management" label="Exams & Results " />
+              <NavLink link="/features/biometric-attendance" label="Biometric Attendance" />
+
             </LinkGroup>
 
             <div className="w-full sm:w-1/2 lg:w-4/12">
@@ -165,6 +171,19 @@ const Footer = () => {
         </div>
       </section>
       </footer>
+      <div className="bg-purple-800 py-4  text-gray-100">
+      <div className="cb-container mx-auto px-4">
+        <div className="-mx-4 flex flex-wrap justify-between">
+          <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+          Capobrain © 2020
+            {new Date().getFullYear() > 2020 && ` - ${new Date().getFullYear()}`} All Rights Reserved.
+          </div>
+          <a href="https://technicmentors.com/" className="px-4 w-full text-center sm:w-auto sm:text-left">
+            Made with ❤️ by Technic Mentors.
+          </a>
+        </div>
+      </div>
+    </div>
     </>
   );
 };

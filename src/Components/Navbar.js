@@ -74,22 +74,30 @@ function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-6  nav-mob">
               <li>
-                <Link to="/" className="nav-list">
+                <Link to="/" className="nav-list"
+                            onClick={handleToggle}
+                            >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="nav-list">
+                <Link to="/about" className="nav-list"
+                            onClick={handleToggle}
+                            >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/features" className="nav-list">
+                <Link to="/features" className="nav-list"
+                            onClick={handleToggle}
+                            >
                   Features
                 </Link>
               </li>
               <li>
-                <Link to="/usermanual" className="nav-list">
+                <Link to="/usermanual" className="nav-list"
+                            onClick={handleToggle}
+                            >
                   User Manual
                 </Link>
               </li>

@@ -176,9 +176,6 @@ const AboutSection = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            {/* <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
-              Transforming Education with the Premier School Management System
-            </h2> */}
             <h1 className="text-4xl lg:text-6xl font-[1000] text-white" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
             Transforming Education with the 
                       <br />
@@ -312,7 +309,7 @@ const AboutSection = () => {
             Our results in numbers
           </h2>
           <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
-            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
+            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl transform transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
                   50+
@@ -327,7 +324,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
+            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white transform transition-all duration-300 hover:scale-105 animate-fade-in p-6 rounded-2xl shadow-lg shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
                   120+
@@ -342,7 +339,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl shadow-md shadow-gray-100">
+            <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white transform transition-all duration-300 hover:scale-105 animate-fade-in p-6 rounded-2xl shadow-lg shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-indigo-600">
                 99%

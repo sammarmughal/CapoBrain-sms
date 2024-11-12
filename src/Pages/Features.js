@@ -38,7 +38,7 @@ const Features = () => {
               <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block animate-pulse"
               >
                 <defs>
                   <pattern
@@ -82,7 +82,7 @@ const Features = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
             Maximize efficiency with CapoBrain, your school management software. Simplify operations and prioritize student success.</p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
-              <a href="/register" className="btn-a" rel="noreferrer">
+              <a href="/register" className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]" rel="noreferrer">
                 Get in touch with us →
               </a>
             </div>

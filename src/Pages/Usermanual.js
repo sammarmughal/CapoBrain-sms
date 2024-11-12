@@ -6,7 +6,7 @@ const UserManual = () => {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    setMenu(data.sidemenu);  // Load the menu from the JSON file
+    setMenu(data.sidemenu); // Load the menu from the JSON file
   }, []);
 
   return (
@@ -29,15 +29,14 @@ const UserManual = () => {
               "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
           }}
         ></div>
-      </section>    
+      </section>
       <div className="cb-container my-4">
-       
-        <h2 className="max-w-5xl text-center mb-6 font-sans pt-16 pb-5  text-3xl font-bold leading-none tracking-tight text-indigo-600 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-5xl text-center mb-6 font-sans pt-16 pb-5  text-3xl font-bold leading-none tracking-tight text-purple-800 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-18 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-12 sm:block"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-18 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-12 sm:block animate-pulse"
             >
               <defs>
                 <pattern
@@ -59,7 +58,7 @@ const UserManual = () => {
             <span className="relative"></span>
           </span>{" "}
           Capobrain <span> User</span> Guide
-          </h2>
+        </h2>
         <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
           Discover how to unlock the full potential of{" "}
           <strong>CapoBrain’s School Management Software</strong> with our
@@ -98,18 +97,18 @@ const UserManual = () => {
         </p>
       </div>
       <div className="container mx-auto mb-3">
-  <div className="flex flex-col md:flex-row mt-3">
-    <div className="md:w-1/4 flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 px-2 py-4 gap-10 rounded-2xl">
-      <div className="pb-3 pt-2">
-        <Navigation  menu={menu}/>
-      </div>
-    </div>
+        <div className="w-full mx-auto mb-3 max-w-[1500px]">
+          <div className="flex flex-col md:flex-row mt-3">
+            <div className="lg:w-full mx-4 md:max-w-[500px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 px-2 py-4 gap-10 rounded-2xl">
+              <div className="pb-3 pt-2 w-full">
+                <Navigation menu={menu} />
+              </div>
+            </div>
 
-    <div className="md:w-3/4 mt-3 mb-5 text-justify">
-      {/* <Outlet /> */}
-    </div>
-  </div>
-</div>
+            <div className="md:max-w-[700px] lg:max-w-[1000px] pl-4 md:w-3/4 mt-3 mx-8 mb-5 text-justify"></div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

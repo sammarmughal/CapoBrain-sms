@@ -12,7 +12,7 @@ import React,{useState} from  "react";
   
 	return (
 	  <div className="mt-10 md:mt-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden">
-		<div className="relative w-full py-2 md:py-24 bg-[#7a12d4] md:w-1/2 flex flex-col items-center justify-center">
+		<div className="relative w-full py-2 md:py-24 bg-purple-800 md:w-1/2 flex flex-col items-center justify-center">
 		  <div className="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
 		  
 		  <div className="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
@@ -23,13 +23,13 @@ import React,{useState} from  "react";
   
 		  <div className="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
 			<button
-			  className="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7a12d4] font-bold w-12 h-10"
+			  className="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-purple-800 font-bold w-12 h-10"
 			  onClick={handlePrevious}
 			>
 			  &#8592;
 			</button>
 			<button
-			  className="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7a12d4] font-bold w-12 h-10"
+			  className="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-purple-800 font-bold w-12 h-10"
 			  onClick={handleNext}
 			>
 			  &#8594;
@@ -73,7 +73,7 @@ import React,{useState} from  "react";
 					onClick={() => setTestimonialActive(index + 1)}
 					className={`text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2 ${
 					  active
-						? 'h-16 w-16 opacity-100 bg-[#7a12d4] text-white'
+						? 'h-16 w-16 opacity-100 bg-purple-800 text-white'
 						: 'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600'
 					}`}
 				  >

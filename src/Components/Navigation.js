@@ -38,21 +38,17 @@ function Navigation() {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleVisibility);
-    return () => {
-      window.removeEventListener("resize", handleVisibility);
-    };
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Function to toggle the navbar open/close state
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
-  const closeNavbar = () => {
-    if (isNavbarOpen && isSmallScreen) {
-      setIsNavbarOpen(false);
-    }
-  };
+  const closeNavbar = () => setIsNavbarOpen(false);
+
 
   const [activeSection, setActiveSection] = useState(null);
 
@@ -945,11 +941,11 @@ links: [
     <div>
     {isSmallScreen && (
       <nav
-        className={`bg-gray-800 ${
+        className={`${
           isSmallScreen ? "" : "hidden md:block"
         }`}
       >
-        <div className="container mx-auto px-4">
+        <div className="container flex w-full justify-around items-center mx-auto px-4">
           <a className="text-white font-bold text-xl" href="#/">
             Software User Guide
           </a>
@@ -965,6 +961,7 @@ links: [
           >
             <span className="text-white">☰</span>
           </button>
+        </div>
           <div
             className={`${
               isNavbarOpen ? "block" : "hidden"
@@ -973,7 +970,7 @@ links: [
           >
             <div className="space-y-2 mt-4">
               <div>
-                <Link className="text-white" to="dashboard">
+                <Link className="text-white" to="/usermanual/dashboard">
                   <button
                     className="w-full text-left px-4 py-2 bg-transparent text-white"
                     type="button"
@@ -993,12 +990,11 @@ links: [
               </div>
             </div>
           </div>
-        </div>
       </nav>
     )}
     {!isSmallScreen && (
       <div>
-        <Link className="text-white" to="dashboard">
+        <Link className="text-white" to="/usermanual/dashboard">
           <button
             className="w-full text-left px-4 py-2 bg-transparent text-white"
             type="button"

@@ -47,12 +47,12 @@ const UserManualData = () => {
         ></div>
       </section>
       <div className="cb-container my-4">
-        <h2 className="max-w-5xl text-center mb-6 font-sans pt-16 pb-5  text-3xl font-bold leading-none tracking-tight text-indigo-600 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-5xl text-center mb-6 font-sans pt-16 pb-5  text-3xl font-bold leading-none tracking-tight text-purple-800 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-18 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-12 sm:block"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-18 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-12 sm:block animate-pulse"
             >
               <defs>
                 <pattern
@@ -112,17 +112,17 @@ const UserManualData = () => {
           , our partner platform for modern education solutions.
         </p>
       </div>
-      <div className="container mx-auto mb-3">
+      <div className="w-full mx-auto mb-3 max-w-[1500px]">
         <div className="flex flex-col md:flex-row mt-3">
-          <div className="md:w-1/4 flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 px-2 py-4 gap-10 rounded-2xl">
-            <div className="pb-3 pt-2">
+          <div className="lg:w-full mx-4 lg:mx-0   md:max-w-[500px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 px-2 py-4 gap-10 rounded-2xl">
+            <div className="pb-3 pt-2 w-full">
               <Navigation menu={menu} />
             </div>
           </div>
 
-          <div className="cb-container pl-4 md:w-3/4 mt-3 mb-5 text-justify">
+          <div className="md:max-w-[700px] lg:max-w-[1000px] pl-4 md:w-3/4 mt-3 mx-8 mb-5 text-justify">
           
-            <h2 className="text-2xl font-semibold mb-6 text-indigo-800">
+            <h2 className="text-2xl font-semibold mb-6 text-purple-800">
               {manualData.content.heading}
             </h2>
             <p className="mb-3">

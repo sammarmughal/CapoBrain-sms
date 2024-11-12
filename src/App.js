@@ -22,6 +22,7 @@ import RequestDemo from "./Pages/RequestDemo";
 import UserManual from "./Pages/Usermanual";
 import FeaturePage from "./Pages/FeaturePage";
 import UserManualData from "./Pages/UsermanualData";
+import Demo from "./Pages/Demo";
 function App() {
   return (
     <>
@@ -32,7 +33,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features />} />
           <Route path="/features/:slug" element={<FeaturePage />} />
-
           <Route path="/help" element={<Help />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQs />} />
@@ -42,6 +42,7 @@ function App() {
           <Route path="/requestdemo" element={<RequestDemo />} />
           <Route path="/usermanual" element={<UserManual />} />
           <Route path="/usermanual/:id" element={<UserManualData />} />
+          <Route path="/demo" element={<Demo/>} />
 
         </Routes>
         <Footer />
