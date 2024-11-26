@@ -23,12 +23,16 @@ import UserManual from "./Pages/Usermanual";
 import FeaturePage from "./Pages/FeaturePage";
 import UserManualData from "./Pages/UsermanualData";
 import Demo from "./Pages/Demo";
+import ScrollToTop from "./Components/scrollToTop";
+
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features />} />

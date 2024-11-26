@@ -1,6 +1,9 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
+html {
+  scroll-behavior: smooth;
+}
 .slick-slide {
   display: flex;
   justify-content: center;
