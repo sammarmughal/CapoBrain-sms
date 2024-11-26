@@ -176,7 +176,7 @@ const AboutSection = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-[1000] text-white" style={{ fontFamily: 'Grotesk-Medium, Verdana, sans-serif' }}>
+            <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-5xl">
             Transforming Education with the 
                       <br />
                       Premier School Management System                    </h1>
@@ -225,7 +225,7 @@ const AboutSection = () => {
             </div>
             <div className="lg:pl-[100px] flex items-center lg:col-span-2">
               <div className="data w-full">
-                <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center relative">
+                <h2 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center relative">
                   Welcome To Capobrain School Management Software{" "}
                 </h2>
                 <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
@@ -249,7 +249,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">
               <div className="data w-full">
-                <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center">
+                <h2 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center">
                   We are Creative Since 2020
                 </h2>
                 <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
@@ -270,12 +270,12 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <section className="container relative mx-auto px-6 py-8">
+      <section className="cb-container relative mx-auto py-8">
         <div className="absolute top-20 left-2 w-[250px] sm:w-[500px] h-[500px] bg-[#D1208A80] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob"></div>
         <div className="absolute top-20 right-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-2000"></div>
         <div className="hidden xl:block absolute bottom-10 left-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
         <div className="absolute bottom-10 right-52 w-[250px] sm:w-[500px] h-[500px] bg-[#CAEEF580] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
-        <h1 className="text-4xl font-bold text-center text-black mb-12 animate-fade-in">
+        <h1 className="sm:text-4xl text-3xl font-bold text-center text-black mb-12 animate-fade-in">
           Technic Mentors IT Consulting Services
         </h1>
 
@@ -283,7 +283,7 @@ const AboutSection = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-white  rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-105 animate-fade-in"
+              className="bg-white rounded-xl shadow-lg p-6 transform transition-all duration-300 hover:scale-105 animate-fade-in"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               <svg
@@ -305,7 +305,7 @@ const AboutSection = () => {
       </section>
       <section className="pt-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-manrope text-4xl text-center text-gray-900 font-bold mb-14">
+          <h2 className="font-manrope sm:text-4xl text-3xl text-center text-gray-900 font-bold mb-14">
             Our results in numbers
           </h2>
           <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">

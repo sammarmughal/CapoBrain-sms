@@ -3,7 +3,7 @@ import Logo from "../img/capobrain-logo.png"
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-violet-100 pb-10 pt-10">
+      <footer className="relative z-10 bg-violet-100 pb-10 pt-16">
     <section className="max-w-[1200px] mx-auto">
         <div className="container px-8 lg:px-4">
           <div className="flex flex-wrap">
@@ -17,8 +17,7 @@ const Footer = () => {
                   />
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
-                CapoBrain is an advanced AI-powered education management system that streamlines educational administration. Our customizable school management software solutions enhance communication among educators, staff, and parents, providing essential features like student information systems (SIS) and fee management. Revolutionize your institution with CapoBrain for a seamless, paper-free environment.
-                </p>
+                CapoBrain is an advanced AI-powered education management system designed to streamline school administration. Our customizable software enhances communication among educators, staff, and parents, with essential tools like SIS and fee management creating a seamless, efficient, and paper-free experience for institutions. </p>
               </div>
             </div>
 
@@ -198,7 +197,7 @@ const LinkGroup = ({ children, header }) => {
           <h4 className="mb-9 text-lg font-semibold text-dark">
             {header}
           </h4>
-          <ul className="space-y-3">{children}</ul>
+          <ul className="">{children}</ul>
         </div>
       </div>
     </>
@@ -210,7 +209,7 @@ const NavLink = ({ link, label }) => {
     <li>
       <a
         href={link}
-        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+        className="inline-block text-base leading-loose text-body-color hover:text-purple-800"
       >
         {label}
       </a>

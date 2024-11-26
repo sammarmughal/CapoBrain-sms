@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturesContent from "../Components/Features";
 import capobrain from "../img/Capobrainheader.png";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -8,10 +9,7 @@ const Features = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1
-              className="text-4xl lg:text-6xl font-[1000] text-white"
-              style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
-            >
+            <h1  className="heading-hero">
               Standout Features of Our Comprehensive
               <br />
               School Management System{" "}
@@ -82,9 +80,9 @@ const Features = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
             Maximize efficiency with CapoBrain, your school management software. Simplify operations and prioritize student success.</p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
-              <a href="/register" className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]" rel="noreferrer">
+              <Link to="/requestdemo" className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]" rel="noreferrer">
                 Get in touch with us →
-              </a>
+              </Link>
             </div>
           </div>
           <div className="absolute inset-0 -z-10" aria-hidden="true">

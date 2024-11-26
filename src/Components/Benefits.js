@@ -5,7 +5,7 @@ export const Benefits = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12">
-        <h2 className="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-violet-800 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -33,7 +33,7 @@ export const Benefits = () => {
           </span>{" "}
           Benefits of Using CapoBrain's School Management Software
         </h2>
-        <p className="text-base text-gray-600 md:text-lg">
+        <p className="text-base text-gray-500 md:text-lg">
           CapoBrain's school management software simplifies academic and
           administrative processes, enhancing productivity and ensuring seamless
           communication between teachers, students, and parents.

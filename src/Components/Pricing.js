@@ -11,7 +11,7 @@ const Pricing = () => {
     <section className="py-6 ">
       <div className="cb-container p-4 mx-auto sm:p-10">
         <div className="mb-12 space-y-4 text-center">
-          <h1 className="text-4xl font-semibold leading-tight">Pricing</h1>
+          <h3 className="mb-3 heading-body">Pricing</h3>
           <p className="px-4 sm:px-8 lg:px-24 text-neutral-600">
             CapoBrain offers flexible pricing plans tailored to fit the needs of
             schools, providing great value for every institution.
@@ -327,7 +327,7 @@ const Pricing = () => {
                 <p className="text-lg font-medium">{plan.name}</p>
                 <p className="text-5xl font-bold">
                   {plan.price}
-                  <span className="text-xl dark:text-gray-600">/mo</span>
+                  <span className="text-xl text-gray-600">/mo</span>
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center px-2 py-8">
@@ -339,7 +339,7 @@ const Pricing = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        className="w-6 h-6 dark:text-violet-600"
+                        className="w-6 h-6 text-violet-600"
                       >
                         <path
                           strokeLinecap="round"

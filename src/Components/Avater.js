@@ -11,9 +11,9 @@ const Avatars = () => {
       <div className="flex flex-wrap">
         <div className="w-full px-4">
           <div className="mx-auto mb-12 max-w-[1050px] text-center lg:mb-20">
-            <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-6xl">
+            <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-5xl">
             Join Our School Software Community           </h2>
-            <p className="text-2xl text-gray-500 font-medium">
+            <p className="sm:text-xl text-lg text-gray-500 font-medium">
             Discover why our School Management System (SMS) is trusted by users globally, empowering seamless management and educational needs with our best school management software.
             </p>
             <div className="my-6 pt-3">

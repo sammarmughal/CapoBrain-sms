@@ -155,22 +155,14 @@ const FAQs = () => {
   ];
   return (
     <>
-      <section className="relative bg-purple-800">
-        
+      <section className="relative bg-purple-800">        
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1
-              className="text-4xl lg:text-6xl font-[1000] text-white"
-              style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
+              className="heading-hero"
             >
-              Freqently Asked Questions{" "}
+           Top Questions About CapoBrain
             </h1>
-            <p className="max-w-2xl mx-auto text-gray-200">
-              Find answers to common questions about our School Management
-              System (SMS). Learn how our platform can simplify your school’s
-              administrative tasks, improve student data management, and enhance
-              communication between parents, teachers, and administrators.
-            </p>
           </div>
         </div>
         <div
@@ -181,18 +173,27 @@ const FAQs = () => {
           }}
         ></div>
       </section>
-      <section className="w-[100vw] h-auto flex relative justify-center items-center bg-Light_pink pb-10">
+     
+      <section className="w-[100vw] h-auto  relative justify-center items-center bg-Light_pink pb-10">
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_1800px_at_100%_1200px,#d5c5ff,transparent)]"></div>
         </div>
-        
-        <div className="max-w-[380px] md:max-w-[800px] w-full md:w-full z-10 rounded-lg flex flex-col p-3 text-Dark_purple bg-white shadow-lg">
-          <div className="flex items-center my-4">
+        <div className="cb-container pt-10 sm:pt-20 mb-5">
+        {" "}
+        <div className="flex justify-center w-full items-center my-4">
             <img src={avatar} alt="" className="w-[1.6em] mr-6 md:w-[2em]" />
             <h1 className="text-3xl text-Dark_purple font-bold md:text-4xl">
-              FAQs
+            Frequently Asked Questions
             </h1>
           </div>
+        <p className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
+        Find answers to common questions about our School Management
+              System (SMS). Learn how our platform can simplify your school’s
+              administrative tasks, improve student data management, and enhance
+              communication between parents, teachers, and administrators.        </p>
+      </div>
+      <div className="flex mx-auto w-full pt-5 justify-center">
+        <div className="max-w-[380px] md:max-w-[800px] w-full md:w-full z-10 rounded-lg flex flex-col p-3 text-Dark_purple bg-white shadow-lg">
           <div className="flex flex-col gap-4">
             {data.map((item) => (
               <div className="">
@@ -220,6 +221,7 @@ const FAQs = () => {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </section>
     </>

@@ -7,7 +7,7 @@
               "description": "Explore the Family Wise Account feature in CapoBrain's School Management System, providing parents with easy access to their child's school records, including ID, name, class, section, and balance."
             },
             "content": {
-              "heroHeader": "Dashboard",
+              "heroHeader": "Capobrain Dashboard",
               "heading": "Dashboard",
               "description": "After logging in successfully, a dashboard will appear representing all the importing highlights regarding the school. We can filter this information by choosing the school branch. The dashboard represents the overall stats of the student, staff and the school. We can also have a look at the user logged-in from the top right corner of the screen, we can also change the password and use it Log out. The CapoBrain Dashboard has all the useful and necessary information for a system user. Following information is listed on our online school management system on login:",
               "image": {

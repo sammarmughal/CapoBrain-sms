@@ -11,7 +11,7 @@ export default function Keyfeatures() {
             {/* Advanced Facial Recognition */}
             <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-center md:flex md:items-center">
               <div className="w-full md:w-1/2 space-y-4">
-                <h3 className="font-bold text-2xl">
+                <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
                   How Our Best School Management Software Transforms Educational
                   Culture
                 </h3>
@@ -37,7 +37,7 @@ export default function Keyfeatures() {
             {/* Multi-Device Synchronization */}
             <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-evenly md:flex md:items-center md:flex-row-reverse">
               <div className="w-full md:w-1/2 space-y-4">
-                <h3 className="font-bold text-2xl">
+                <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
                   All-in-One Solution for the Best School Management System
                 </h3>
                 <p>

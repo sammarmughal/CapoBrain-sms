@@ -82,18 +82,14 @@ const Blog = () => {
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1
-              className="text-4xl lg:text-6xl font-[1000] text-white"
-              style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
+              className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-5xl"
             >
               CapoBrain Blog: Expert Insights on
               <br />
               School Management Software{" "}
             </h1>
             <p className="max-w-2xl mx-auto text-gray-200">
-              Welcome to the CapoBrain blog! Discover articles, tips, and
-              insights on School Management Software, SIS, and Education ERP
-              Solutions. From expert advice on software implementation to
-              education tech trends in Pakistan, our blog covers it all.
+           
             </p>
           </div>
         </div>
@@ -108,9 +104,12 @@ const Blog = () => {
       
       <section className="py-6 sm:py-12">
       <div className="container p-6 mx-auto space-y-8">
-        <div className="space-y-2 text-center">
-          <h2 className="text-3xl font-bold">Explore Our Blog</h2>
-          <p className="font-serif text-sm">Discover insights and updates in education technology.</p>
+        <div className="space-y-2 text-center max-w-3xl mx-auto">
+          <h2 className="heading-body">Explore Our Blog</h2>
+          <p className="">   Welcome to the CapoBrain blog! Discover articles, tips, and
+              insights on School Management Software, SIS, and Education ERP
+              Solutions. From expert advice on software implementation to
+              education tech trends in Pakistan, our blog covers it all.</p>
         </div>
         {/* Category Buttons */}
         <ul className="flex flex-wrap gap-4 text-center justify-center">

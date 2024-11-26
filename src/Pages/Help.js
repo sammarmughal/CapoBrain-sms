@@ -3,6 +3,7 @@ import { MdOutlineSupportAgent, MdOutlineQueryStats } from "react-icons/md";
 import { FaTicket } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import CusrtomerSupport from "../img/What-is-Customer-Support.png";
+import hero_helcenter from  "../img/knowledgebase-banner.png";
 import FAQs from "../Components/Faq";
 const Help = () => {
   return (
@@ -27,9 +28,9 @@ const Help = () => {
         <div className="absolute inset-0 z-30 bg-purple-900 bg-opacity-60"></div>
 
         <img
-          className="absolute inset-0 w-full h-full object-cover z-20"
-          src="https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-          alt=""
+          className="absolute inset-0 w-full h-full object-cover z-20 bg-center"
+          src={hero_helcenter}
+          alt="Capobrain School Management System Help Center"
         />
       </div>
       <div className="h-full w-full bg-gray-100 py-12 lg:py-28 p-4 lg:p-8">
@@ -68,8 +69,8 @@ const Help = () => {
             data-aos-delay="300"
             className="rounded-xl bg-white p-6 text-center shadow-xl"
           >
-            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-700 shadow-inodgo-400/40">
-              <MdOutlineQueryStats className="h-10 w-10 text-white" />
+            <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-700 shadow-purple-500/40">
+              <MdOutlineQueryStats className="h-10 w-10 text-white"/>
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
               Continuous Improvements

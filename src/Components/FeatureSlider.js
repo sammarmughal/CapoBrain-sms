@@ -80,7 +80,7 @@ const FeatureSlider = () => {
               <p>Schools Choose CapoBrain</p>
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
-              <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
+              <h3 className="mb-3 heading-body">
               Delivering Excellence to Over 30+ Educational Institutions with Our Best School Management Software  </h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">

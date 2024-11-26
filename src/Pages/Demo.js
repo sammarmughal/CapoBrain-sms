@@ -119,8 +119,7 @@ export default function Demo() {
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1
-              className="text-4xl lg:text-6xl font-[1000] text-white"
-              style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
+              className="heading-hero"
             >
               Schedule Your Free College & School Management Software Demo Today
             </h1>

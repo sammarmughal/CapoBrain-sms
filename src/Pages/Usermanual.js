@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../Components/Navigation";
 import data from "../data/usermanualData.json";
+import phone from "../img/capobrain-phone.png";
+import tablet from "../img/capobrain-tab.png";
+import Desktop from "../img/capobrain-desktop.png";
 const UserManual = () => {
   const [menu, setMenu] = useState([]);
 
@@ -15,7 +18,7 @@ const UserManual = () => {
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1
-              className="text-4xl lg:text-6xl font-[1000] text-white"
+              className="heading-hero"
               style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
             >
               Explore Our Software User Manual
@@ -31,7 +34,7 @@ const UserManual = () => {
         ></div>
       </section>
       <div className="cb-container my-4">
-        <h2 className="max-w-5xl text-center mb-6 font-sans pt-16 pb-5  text-3xl font-bold leading-none tracking-tight text-purple-800 sm:text-4xl md:mx-auto">
+        <h2 className="max-w-5xl text-center mb-6  pt-16 pb-5  heading-body leading-none tracking-tight text-purple-800 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -96,19 +99,61 @@ const UserManual = () => {
           , our partner platform for modern education solutions.
         </p>
       </div>
-      <div className="container mx-auto mb-3">
-        <div className="w-full mx-auto mb-3 max-w-[1500px]">
-          <div className="flex flex-col md:flex-row mt-3">
-            <div className="lg:w-full mx-4 md:max-w-[500px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 px-2 py-4 gap-10 rounded-2xl">
-              <div className="pb-3 pt-2 w-full">
-                <Navigation menu={menu} />
-              </div>
-            </div>
+    
+      <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:my-12 xl:max-w-6xl">
 
-            <div className="md:max-w-[700px] lg:max-w-[1000px] pl-4 md:w-3/4 mt-3 mx-8 mb-5 text-justify"></div>
+    <div className="w-full h-64 lg:w-1/2 lg:h-auto">
+        {/* <img className="h-full w-full object-cover" src="https://picsum.photos/id/1018/2000" alt="Winding mountain road"/> */}
+        <img
+          src={Desktop}
+          width="1519"
+          height="557"
+          loading="eager"
+          alt="Meditation on iPhone" 
+          className="h-full w-full object-cover  hidden lg:flex"
+        />
+        <img
+          src={tablet}
+          width="319"
+          height="557"
+          loading="eager"
+          alt="Meditation on iPhone"
+          className="h-full w-full object-cover hidden sm:flex  lg:hidden"
+        />
+        <img
+          src={phone}
+          width="319"
+          height="557"
+          loading="eager"
+          alt="Meditation on iPhone"
+          className="h-full w-full object-cover flex sm:hidden"
+        />
+    </div>
+
+    <div
+        className="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-8 lg:w-3/5 lg:left-0 lg:mt-10 lg:ml-20 xl:ml-8">
+        <div className="flex flex-col p-12 md:px-8">
+            <h2 className="heading-body">
+            Streamlining Education Management
+    <br />
+    by optimizing every process.
+</h2>
+            <p className="mt-4">
+            CapoBrain School Management System provides a seamless platform for school administration. From attendance tracking to grade management, it ensures that educators and staff can efficiently handle daily tasks with ease and precision.
+
+            </p>
+            <div className="mt-8">
+            <Link
+              className=" btn-anim  text-white rounded-full py-4 px-8"
+              to="/usermanual/dashboard"
+            >
+              Go to Dashboard
+            </Link>
           </div>
         </div>
-      </div>
+    </div>
+
+</div>
     </>
   );
 };

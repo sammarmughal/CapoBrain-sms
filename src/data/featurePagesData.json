@@ -4,7 +4,19 @@
             "slug": "ai-driven-school-management",
             "meta": {
                 "title": "AI-Driven School Management | CapoBrain",
-                "description": "CapoBrain's AI-driven school management system enhances decision-making with intelligent insights and automates routine tasks, offering personalized experiences for effective school administration."
+                "description": "CapoBrain's AI-driven school management system enhances decision-making with intelligent insights and automates routine tasks, offering personalized experiences for effective school administration.",
+                "openGraph": {
+                    "title": "AI-Driven School Management",
+                    "description": "Automate school administration with CapoBrain’s AI-driven features. Gain intelligent insights, streamline tasks, and improve decision-making for a more effective school management system.",
+                    "url": "https://capobrain.com/features/ai-driven-school-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "AI-Driven School Management",
+                    "description": "CapoBrain’s AI-driven features provide intelligent insights and automation for routine tasks, transforming school administration and decision-making."
+                },
+                "canonical": "https://capobrain.com/features/ai-driven-school-management"
             },
             "content": {
                 "heroHeader": "AI-Driven School Management",
@@ -24,7 +36,19 @@
             "slug": "biometric-attendance",
             "meta": {
                 "title": "Biometric Attendance | CapoBrain School Management Software",
-                "description": "Track attendance accurately with CapoBrain's Biometric Attendance feature. Ensure secure, real-time monitoring for students and staff to enhance school accountability."
+                "description": "Track attendance accurately with CapoBrain's Biometric Attendance feature. Ensure secure, real-time monitoring for students and staff to enhance school accountability.",
+                "openGraph": {
+                    "title": "Biometric Attendance System",
+                    "description": "Ensure secure and accurate attendance tracking with CapoBrain's Biometric Attendance solution for schools, improving accountability for students and staff.",
+                    "url": "https://capobrain.com/features/biometric-attendance",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Biometric Attendance System for Schools",
+                    "description": "Efficiently monitor attendance with CapoBrain's Biometric Attendance feature."
+                },
+                "canonical": "https://capobrain.com/features/biometric-attendance"
             },
             "content": {
                 "heroHeader": "CapoBrain Biometric Attendance",
@@ -44,7 +68,19 @@
             "slug": "cloud-based-school-management-system",
             "meta": {
                 "title": "Cloud-Based School Management System | CapoBrain",
-                "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere. Manage your school with a secure, reliable, and mobile-friendly platform."
+                "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere. Manage your school with a secure, reliable, and mobile-friendly platform.",
+                "openGraph": {
+                    "title": "Cloud-Based School Management System",
+                    "description": "Access your school management system from anywhere with CapoBrain's secure cloud-based platform. Manage data and administration effortlessly with mobile and web compatibility.",
+                    "url": "https://capobrain.com/features/cloud-based-school-management-system",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Cloud-Based School Management System",
+                    "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere."
+                },
+                "canonical": "https://capobrain.com/features/cloud-based-school-management-system"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Cloud-Based School Management System",
@@ -64,7 +100,19 @@
             "slug": "computer-based-exam-management",
             "meta": {
                 "title": "Computer-Based Exam Management | CapoBrain",
-                "description": "CapoBrain’s computer-based exam management system streamlines school assessments with automated grading and instant results, ensuring efficiency and accuracy in school exams."
+                "description": "CapoBrain’s computer-based exam management system streamlines school assessments with automated grading and instant results, ensuring efficiency and accuracy in school exams.",
+                "openGraph": {
+                    "title": "Computer-Based Exam Management",
+                    "description": "Enhance the efficiency of school assessments with CapoBrain’s computer-based exam management. Automated grading and instant results ensure a seamless experience for teachers and students.",
+                    "url": "https://capobrain.com/features/computer-based-exam-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Computer-Based Exam Management",
+                    "description": "CapoBrain’s computer-based exam solutions provide automated grading and instant results, streamlining school assessments and reporting."
+                },
+                "canonical": "https://capobrain.com/features/computer-based-exam-management"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Computer-Based Exam Management Software",
@@ -84,7 +132,19 @@
             "slug": "comprehensive-reporting",
             "meta": {
                 "title": "Comprehensive Reporting | CapoBrain",
-                "description": "CapoBrain's Comprehensive Reporting feature provides in-depth analytics and customizable reports, offering valuable insights to improve school performance and decision-making"
+                "description": "CapoBrain's Comprehensive Reporting feature provides in-depth analytics and customizable reports, offering valuable insights to improve school performance and decision-making.",
+                "openGraph": {
+                    "title": "Comprehensive Reporting",
+                    "description": "Unlock valuable insights with CapoBrain's advanced reporting tools. Customize reports for financial, academic, and performance evaluation to enhance school management.",
+                    "url": "https://capobrain.com/features/comprehensive-reporting",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Comprehensive Reporting | CapoBrain",
+                    "description": "CapoBrain's customizable reporting feature offers data analytics for schools, improving decision-making and enhancing overall performance."
+                },
+                "canonical": "https://capobrain.com/features/comprehensive-reporting"
             },
             "content": {
                 "heroHeader": "Comprehensive School Reporting for Data-Driven Decisions",
@@ -104,7 +164,19 @@
             "slug": "cutting-edge-educational-technologies",
             "meta": {
                 "title": "Cutting-Edge Educational Technologies | CapoBrain",
-                "description": "CapoBrain leverages cutting-edge educational technologies to deliver innovative school management solutions. Experience seamless and efficient school operations with our advanced tools."
+                "description": "CapoBrain leverages cutting-edge educational technologies to deliver innovative school management solutions. Experience seamless and efficient school operations with our advanced tools.",
+                "openGraph": {
+                    "title": "Cutting-Edge Educational Technologies",
+                    "description": "CapoBrain uses the latest cutting-edge educational technologies to provide an efficient and seamless school management experience. Stay ahead with innovative solutions.",
+                    "url": "https://capobrain.com/features/cutting-edge-educational-technologies",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Cutting-Edge Educational Technologies",
+                    "description": "Experience unparalleled performance with CapoBrain’s cutting-edge educational technologies, providing seamless school management solutions."
+                },
+                "canonical": "https://capobrain.com/features/cutting-edge-educational-technologies"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Cutting-Edge Educational Technologies",
@@ -124,7 +196,19 @@
             "slug": "online-daily-diary-feature",
             "meta": {
                 "title": "Online Daily Diary Feature | CapoBrain",
-                "description": "Stay organized and informed with CapoBrain's online daily diary feature, allowing students and teachers to record tasks, deadlines, and progress updates effortlessly"
+                "description": "Stay organized and informed with CapoBrain's online daily diary feature, allowing students and teachers to record tasks, deadlines, and progress updates effortlessly.",
+                "openGraph": {
+                    "title": "Online Daily Diary Feature",
+                    "description": "CapoBrain's online daily diary feature enhances organization by allowing students and teachers to easily record tasks and deadlines.",
+                    "url": "https://capobrain.com/features/online-daily-diary-feature",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Online Daily Diary Feature",
+                    "description": "Stay organized with CapoBrain's online daily diary feature for students and teachers."
+                },
+                "canonical": "https://capobrain.com/features/online-daily-diary-feature"
             },
             "content": {
                 "heroHeader": "Comprehensive Online Daily Diary Feature",
@@ -144,7 +228,19 @@
             "slug": "data-security",
             "meta": {
                 "title": "Data Security in School Management | CapoBrain",
-                "description": "CapoBrain provides robust data security measures to safeguard sensitive information within the school management system, ensuring privacy and protection for all users."
+                "description": "CapoBrain provides robust data security measures to safeguard sensitive information within the school management system, ensuring privacy and protection for all users.",
+                "openGraph": {
+                    "title": "Data Security in School Management",
+                    "description": "Ensure comprehensive data security with CapoBrain's robust protection measures for school management systems.",
+                    "url": "https://capobrain.com/features/data-security",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Data Security in School Management",
+                    "description": "Safeguard sensitive information with CapoBrain's robust data security measures."
+                },
+                "canonical": "https://capobrain.com/features/data-security"
             },
             "content": {
                 "heroHeader": "Comprehensive Data Security for Your School Management",
@@ -164,7 +260,19 @@
             "slug": "expense--assets-management",
             "meta": {
                 "title": "Expense & Assets Management | CapoBrain",
-                "description": "CapoBrain offers efficient tools for tracking expenses and managing assets, providing insights and control over financial resources for optimized school operations."
+                "description": "CapoBrain offers efficient tools for tracking expenses and managing assets, providing insights and control over financial resources for optimized school operations.",
+                "openGraph": {
+                    "title": "Expense & Assets Management",
+                    "description": "Manage your school's finances effectively with CapoBrain's comprehensive expense and assets management tools.",
+                    "url": "https://capobrain.com/features/expense--assets-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Expense & Assets Management | CapoBrain",
+                    "description": "Track and manage expenses and assets efficiently with CapoBrain's comprehensive management tools."
+                },
+                "canonical": "https://capobrain.com/features/expense--assets-management"
             },
             "content": {
                 "heroHeader": "Comprehensive Expense & Asset Management",
@@ -184,7 +292,19 @@
             "slug": "salary--fee-management",
             "meta": {
                 "title": "Salary & Fee Management | CapoBrain School ERP",
-                "description": "Simplify financial operations with CapoBrain's integrated Salary & Fee Management system, offering seamless payroll processing and fee collection for institutions."
+                "description": "Simplify financial operations with CapoBrain's integrated Salary & Fee Management system, offering seamless payroll processing and fee collection for institutions.",
+                "openGraph": {
+                    "title": "Salary & Fee Management System",
+                    "description": "Efficiently manage salaries and fees with CapoBrain's system, simplifying payroll processing and student fee management to streamline financial operations.",
+                    "url": "https://capobrain.com/features/salary--fee-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Salary & Fee Management System for Schools",
+                    "description": "CapoBrain offers a robust Salary & Fee Management system to streamline payroll and financial transactions in educational institutions."
+                },
+                "canonical": "https://capobrain.com/features/salary--fee-management"
             },
             "content": {
                 "heroHeader": "Salary & Fee Management",
@@ -204,7 +324,19 @@
             "slug": "school-college-front-website",
             "meta": {
                 "title": "School/College Front Website | CapoBrain",
-                "description": "Create a stunning front website for your school or college with CapoBrain's customizable website feature. Present key information, showcase events, and establish a professional online presence for your institution."
+                "description": "Create a stunning front website for your school or college with CapoBrain's customizable website feature. Present key information, showcase events, and establish a professional online presence for your institution.",
+                "openGraph": {
+                    "title": "School/College Front Website",
+                    "description": "CapoBrain offers a customizable website solution for schools and colleges, allowing institutions to build a professional online presence to engage students, parents, and the community.",
+                    "url": "https://capobrain.com/features/school-college-front-website",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "School/College Front Website | CapoBrain",
+                    "description": "Build a professional front website for your school or college with CapoBrain's customizable features. Showcase important events, achievements, and news to your community."
+                },
+                "canonical": "https://capobrain.com/features/school-college-front-website"
             },
             "content": {
                 "heroHeader": " Customizable Front Website for Schools and Colleges",
@@ -225,7 +357,19 @@
             "slug": "inventory-management",
             "meta": {
                 "title": "Inventory Management | CapoBrain School ERP",
-                "description": "Streamline your school's resources with CapoBrain's Inventory Management feature, ensuring efficient monitoring and replenishment of supplies and equipment."
+                "description": "Streamline your school's resources with CapoBrain's Inventory Management feature, ensuring efficient monitoring and replenishment of supplies and equipment.",
+                "openGraph": {
+                    "title": "Inventory Management System",
+                    "description": "CapoBrain's Inventory Management feature helps schools efficiently track and manage resources, ensuring that supplies are always available.",
+                    "url": "https://capobrain.com/features/inventory-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Inventory Management System for Schools",
+                    "description": "Keep your school well-stocked with CapoBrain's Inventory Management feature, enabling seamless tracking and replenishment of supplies."
+                },
+                "canonical": "https://capobrain.com/features/inventory-management"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Inventory Management",
@@ -245,7 +389,19 @@
             "slug": "school-management-mobile-app",
             "meta": {
                 "title": "School Management Mobile App | CapoBrain",
-                "description": "CapoBrain’s School Management Mobile App allows students, teachers, and administrators to access essential features, updates, and information from anywhere with a mobile-friendly interface."
+                "description": "CapoBrain’s School Management Mobile App allows students, teachers, and administrators to access essential features, updates, and information from anywhere with a mobile-friendly interface.",
+                "openGraph": {
+                    "title": "School Management Mobile App",
+                    "description": "Stay connected with CapoBrain's mobile app. Access key school management features on the go, ensuring a seamless experience for students and educators alike.",
+                    "url": "https://capobrain.com/features/school-management-mobile-app",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "School Management Mobile App",
+                    "description": "Access essential school management features and updates with CapoBrain’s mobile app. Convenient for students, teachers, and administrators on the go."
+                },
+                "canonical": "https://capobrain.com/features/school-management-mobile-app"
             },
             "content": {
                 "heroHeader": "CapoBrain School Management Mobile App",
@@ -265,7 +421,19 @@
             "slug": "multi-campuses-management",
             "meta": {
                 "title": "Multi Campuses Management | CapoBrain",
-                "description": "Effortlessly manage multiple school campuses or branches with CapoBrain's Multi Campuses Management system. Centralized administration and coordination ensure seamless governance across all locations."
+                "description": "Effortlessly manage multiple school campuses or branches with CapoBrain's Multi Campuses Management system. Centralized administration and coordination ensure seamless governance across all locations.",
+                "openGraph": {
+                    "title": "Multi Campuses Management",
+                    "description": "CapoBrain offers Multi Campuses Management for schools, providing centralized control for all branches or campuses to streamline operations and enhance educational governance.",
+                    "url": "https://capobrain.com/features/multi-campuses-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Multi Campuses Management | CapoBrain",
+                    "description": "Centralized management for schools with multiple branches or campuses. CapoBrain's Multi Campuses Management system allows seamless governance and efficient control."
+                },
+                "canonical": "https://capobrain.com/features/multi-campuses-management"
             },
             "content": {
                 "heroHeader": "Centralized Multi-Campus Management for Seamless School Operations",
@@ -285,7 +453,19 @@
             "slug": "online-paper-generation",
             "meta": {
                 "title": "Online Paper Generation | CapoBrain",
-                "description": "Easily generate exams and assignments with CapoBrain's online paper generation feature, allowing teachers to create, customize, and distribute digital assessments efficiently."
+                "description": "Easily generate exams and assignments with CapoBrain's online paper generation feature, allowing teachers to create, customize, and distribute digital assessments efficiently.",
+                "openGraph": {
+                    "title": "Online Paper Generation",
+                    "description": "CapoBrain offers powerful tools for generating online exams and assignments, enhancing academic efficiency for teachers and students.",
+                    "url": "https://capobrain.com/features/online-paper-generation",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Online Paper Generation | CapoBrain",
+                    "description": "Generate exams and assignments effortlessly with CapoBrain's online paper generation feature."
+                },
+                "canonical": "https://capobrain.com/features/online-paper-generation"
             },
             "content": {
                 "heroHeader": "Effortless Online Paper Generation",
@@ -305,7 +485,19 @@
             "slug": "reminders-for-fee-collection",
             "meta": {
                 "title": "Reminders for Fee Collection | CapoBrain",
-                "description": "CapoBrain’s fee collection reminder feature ensures timely notifications for students and parents, helping to manage financial obligations and deadlines efficiently."
+                "description": "CapoBrain’s fee collection reminder feature ensures timely notifications for students and parents, helping to manage financial obligations and deadlines efficiently.",
+                "openGraph": {
+                    "title": "Reminders for Fee Collection",
+                    "description": "Never miss a payment deadline with CapoBrain's fee collection reminder feature, ensuring timely notifications for students and parents.",
+                    "url": "https://capobrain.com/features/reminders-for-fee-collection",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Reminders for Fee Collection | CapoBrain",
+                    "description": "Stay on top of financial obligations with timely notifications from CapoBrain’s fee collection reminder feature."
+                },
+                "canonical": "https://capobrain.com/features/reminders-for-fee-collection"
             },
             "content": {
                 "heroHeader": "Comprehensive Fee Collection Management",
@@ -325,7 +517,19 @@
             "slug": "exams--results-management",
             "meta": {
                 "title": "Exams & Results Management | CapoBrain",
-                "description": "CapoBrain's Exams & Results Management feature streamlines the exam process and allows for efficient results tracking and reporting, ensuring smooth administration and academic success."
+                "description": "CapoBrain's Exams & Results Management feature streamlines the exam process and allows for efficient results tracking and reporting, ensuring smooth administration and academic success.",
+                "openGraph": {
+                    "title": "Exams & Results Management",
+                    "description": "Streamline exams and results management with CapoBrain's advanced module for smooth administration and academic performance tracking.",
+                    "url": "https://capobrain.com/features/exams--results-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Exams & Results Management | CapoBrain",
+                    "description": "Manage exams and results efficiently with CapoBrain's exams and results management system for academic success."
+                },
+                "canonical": "https://capobrain.com/features/exams--results-management"
             },
             "content": {
                 "heroHeader": "Comprehensive Exams & Results Management",
@@ -345,7 +549,19 @@
             "slug": "students--parent-portals",
             "meta": {
                 "title": "Students & Parent Portals | CapoBrain",
-                "description": "CapoBrain offers dedicated portals for students and parents, providing easy access to academic records, schedules, and essential communication tools to enhance engagement."
+                "description": "CapoBrain offers dedicated portals for students and parents, providing easy access to academic records, schedules, and essential communication tools to enhance engagement.",
+                "openGraph": {
+                    "title": "Students & Parent Portals",
+                    "description": "Empower students and parents with CapoBrain's dedicated portals for enhanced engagement in academic activities.",
+                    "url": "https://capobrain.com/features/students--parent-portals",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Students & Parent Portals",
+                    "description": "CapoBrain provides dedicated portals for students and parents, enhancing engagement through easy access to academic information."
+                },
+                "canonical": "https://capobrain.com/features/students--parent-portals"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Students & Parent Portals",
@@ -365,7 +581,19 @@
             "slug": "student--staff-ledgers",
             "meta": {
                 "title": "Student & Staff Ledgers | CapoBrain",
-                "description": "CapoBrain’s ledger management system ensures accurate financial record keeping for students and staff, promoting transparency and control over school finances."
+                "description": "CapoBrain’s ledger management system ensures accurate financial record keeping for students and staff, promoting transparency and control over school finances.",
+                "openGraph": {
+                    "title": "Student & Staff Ledgers",
+                    "description": "CapoBrain's ledger management feature helps schools maintain comprehensive financial records for students and staff, ensuring financial transparency and accuracy.",
+                    "url": "https://capobrain.com/features/student--staff-ledgers",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Student & Staff Ledgers | CapoBrain",
+                    "description": "Accurately manage financial records for both students and staff with CapoBrain’s comprehensive ledger management system."
+                },
+                "canonical": "https://capobrain.com/features/student--staff-ledgers"
             },
             "content": {
                 "heroHeader": "Comprehensive Financial Record Keeping for Students and Staff",
@@ -385,7 +613,19 @@
             "slug": "whatsapp-messaging",
             "meta": {
                 "title": "WhatsApp Messaging | CapoBrain School Management",
-                "description": "Enhance school communication with CapoBrain's WhatsApp Messaging feature. Send instant updates to students, parents, and staff for real-time engagement."
+                "description": "Enhance school communication with CapoBrain's WhatsApp Messaging feature. Send instant updates to students, parents, and staff for real-time engagement.",
+                "openGraph": {
+                    "title": "WhatsApp Messaging for Schools",
+                    "description": "Effortlessly communicate with students, parents, and staff through CapoBrain's WhatsApp Messaging integration for enhanced school communication.",
+                    "url": "https://capobrain.com/features/whatsapp-messaging",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "WhatsApp Messaging for School Communication",
+                    "description": "Instant messaging to students, parents, and staff through CapoBrain's WhatsApp integration."
+                },
+                "canonical": "https://capobrain.com/features/whatsapp-messaging"
             },
             "content": {
                 "heroHeader": "CapoBrain WhatsApp Messaging",
@@ -400,26 +640,6 @@
                 ],
                 "whyChoose": "CapoBrain’s WhatsApp Messaging feature integrates seamlessly with your school’s communication needs. Whether you're sending updates about upcoming events, attendance alerts, or personalized messages, this feature ensures that everyone stays informed and connected."
             }
-        },
-        {
-            "slug": "ai-driven-school-management",
-            "meta": {
-                "title": "AI-Driven School Management | CapoBrain",
-                "description": "CapoBrain's AI-driven school management system enhances decision-making with intelligent insights and automates routine tasks, offering personalized experiences for effective school administration."
-            },
-            "content": {
-                "heroHeader": "AI-Driven School Management",
-                "heading": "AI-Driven School Management Software",
-                "description": "CapoBrain’s AI-driven school management system brings the power of artificial intelligence to educational administration. With intelligent insights and task automation, schools can streamline processes, enhance decision-making, and deliver personalized experiences to students and staff.",
-                "keyBenefits": [
-                    "Automated routine administrative tasks",
-                    "Data-driven decision-making with intelligent insights",
-                    "Personalized experiences for students and staff",
-                    "Improved operational efficiency",
-                    "Seamless integration with other school management tools"
-                ],
-                "whyChoose": "AI-driven management systems can predict patterns, optimize operations, and reduce administrative workload. This helps schools stay competitive while improving outcomes for students and teachers."
-            }
         }
-    ]
+     ]
 }
