@@ -112,7 +112,7 @@
               "description": "Manage all postal receive details with CapoBrain’s Postal Receive module. Easily track sender details, reference numbers, and postal addresses."
             },
             "content": {
-                "heading": "Visitors Meeting",
+              "heading": "Postal Receive",
               "description": "This module allows you to enter all postal receive details, including the title, sender's name, reference number, address, and date. All fields are mandatory, indicated by a red star next to each required field. You can add postal receives and view or update the details as needed.",
               "details": [
               ],

@@ -108,7 +108,7 @@ const Help = () => {
                 <li>Copy and paste any error messages that pop up.</li>
               </ul>
               <p className="mt-4">
-                Need further assistance? <Link to="#" className="text-blue-500 hover:underline">Generate a ticket</Link> at our help center,
+                Need further assistance? <Link to="/login" className="text-blue-500 hover:underline">Generate a ticket</Link> at our help center,
                 and our support team will guide you through resolving your
                 issue.
               </p>
