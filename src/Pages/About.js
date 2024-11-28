@@ -9,6 +9,8 @@ import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
 import About from "../img/about-us-sms.jpg";
 import Testimonials from "../Components/Testimonials";
+import { Helmet } from "react-helmet";
+
 const AboutSection = () => {
   const [state, setState] = useState(false);
 
@@ -30,17 +32,17 @@ const AboutSection = () => {
     {
       text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
       imgSrc: "#",
-      alt: "Emily's testimonial image",
+      alt: "Aleenea's testimonial Best School Management Software",
     },
     {
       text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
       imgSrc: "#",
-      alt: "Ethan's testimonial image",
+      alt: "Online School Payment Gateway testimonial image",
     },
     {
       text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
       imgSrc: "#",
-      alt: "Olivia's testimonial image",
+      alt: "Library Management Software for Schools testimonial image",
     },
   ];
   const servicesData = [
@@ -173,6 +175,47 @@ const AboutSection = () => {
   );
   return (
     <>
+    <Helmet>
+  {/* Basic Meta Tags */}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta 
+    name="description" 
+    content="Learn more about Capobrain, a leading provider of school management software. Our School ERP solutions are designed to streamline administrative tasks, improve communication, and enhance student management in schools across Pakistan. Affordable, customizable, and mobile-friendly features for all institutions." 
+  />
+  <meta 
+    name="keywords" 
+    content="Capobrain, About Capobrain, School Management Software, School ERP Solutions, School Software Providers, Affordable School Software, Customizable School ERP, Mobile-Friendly School ERP, School Management System, School Software for Schools in Pakistan"
+  />
+  <meta name="robots" content="index, follow" />
+  <title>About Us - Capobrain | Leading School Management Software in Pakistan</title>
+
+  {/* Open Graph Meta Tags */}
+  <meta 
+    property="og:title" 
+    content="About Us - Capobrain | Leading School Management Software in Pakistan" 
+  />
+  <meta 
+    property="og:description" 
+    content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software." 
+  />
+  <meta property="og:image" content="URL_TO_IMAGE" />
+  <meta property="og:url" content="YOUR_ABOUT_PAGE_URL" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card Meta Tags */}
+  <meta 
+    name="twitter:title" 
+    content="About Us - Capobrain | Leading School Management Software in Pakistan" 
+  />
+  <meta 
+    name="twitter:description" 
+    content="Discover Capobrain, a leading provider of school management software in Pakistan. Our School ERP solutions are customizable and mobile-friendly, designed to simplify school operations and improve student management." 
+  />
+  <meta name="twitter:image" content="URL_TO_IMAGE" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -197,13 +240,13 @@ const AboutSection = () => {
       <section className="py-14 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
-            <div className="img-box flex items-center">
+            <div className="img-box flex justify-center items-center">
               <img
                 src={Desktop}
                 width="1519"
                 height="557"
                 loading="eager"
-                alt="Meditation on iPhone"
+                alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover hidden lg:flex"
               />
               <img
@@ -211,7 +254,7 @@ const AboutSection = () => {
                 width="319"
                 height="557"
                 loading="eager"
-                alt="Meditation on iPhone"
+                alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover hidden sm:flex lg:hidden"
               />
               <img
@@ -219,7 +262,7 @@ const AboutSection = () => {
                 width="319"
                 height="557"
                 loading="eager"
-                alt="Meditation on iPhone"
+                alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover flex sm:hidden"
               />
             </div>

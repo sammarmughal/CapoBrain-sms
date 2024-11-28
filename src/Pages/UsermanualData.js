@@ -19,8 +19,7 @@ const UserManualData = () => {
 
   if (!manualData) {
     return (
-        <>
-      
+        <>      
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">

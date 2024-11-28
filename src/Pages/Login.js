@@ -1,8 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const Login = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Access your Capobrain School Management System account. Login to manage school administration, student information, fees, attendance, grades, and more with our School ERP software."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Login, School Management System Login, School ERP Login, User Login, Admin Login, Capobrain School ERP, School Software Login, School Management Login"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>User Login - Capobrain | School Management System Login</title>
+
+        <meta
+          property="og:title"
+          content="User Login - Capobrain | School Management System Login"
+        />
+        <meta
+          property="og:description"
+          content="Login to your Capobrain account and access the full features of the School Management System. Manage school operations, student data, and more with ease."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_LOGIN_PAGE_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="User Login - Capobrain | School Management System Login"
+        />
+        <meta
+          name="twitter:description"
+          content="Login to your Capobrain School Management System account to manage student information, attendance, fees, and more. Access the best school ERP software in Pakistan."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -29,7 +68,6 @@ const Login = () => {
               </div>
               <div className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                  
                   <div class="relative gap-8 bg-inherit">
                     <input
                       type="text"
@@ -38,10 +76,7 @@ const Login = () => {
                       className="input-bar peer mb-2"
                       placeholder="Type inside me"
                     />
-                    <label
-                      for="username"
-                      className="input-label"
-                    >
+                    <label for="username" className="input-label">
                       Enter Email
                     </label>
                   </div>
@@ -52,11 +87,8 @@ const Login = () => {
                       id="exampleInput91"
                       placeholder="Enter Password"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput91"
-                    >
-                     Enter Password
+                    <label className="input-label" for="exampleInput91">
+                      Enter Password
                     </label>
                   </div>
 

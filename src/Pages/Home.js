@@ -8,6 +8,7 @@ import PostSlider from "../Components/PostSlider";
 import FeatureSlider from "../Components/FeatureSlider";
 import Pricing from "../Components/Pricing";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const iframeRef = useRef(null);
@@ -24,6 +25,45 @@ export default function Home() {
 
   return (
     <>
+    <Helmet>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Our All-in-One software solutions include student information, fee management, attendance, timetable scheduling, and more. Customizable, affordable, and mobile-friendly school software for institutions of all sizes. Try Capobrain today for seamless school management."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain, School Management System, School ERP Software, Student Information System, School Fee Management, School Attendance Software, School Gradebook, Parent-Teacher Communication, Timetable Scheduling, School Exam Management, Cloud-Based School ERP, Best School Software in Pakistan, Custom School Software, Education Software Development, Mobile-Friendly School ERP"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Capobrain - Best School Management System Software in Pakistan | All-in-One School ERP Solutions</title>
+
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Capobrain - Best School Management System Software in Pakistan | All-in-One School ERP Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Our customizable, mobile-friendly software covers student information, fee management, attendance, and more for schools of all sizes."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_WEBSITE_URL" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta
+          name="twitter:title"
+          content="Capobrain - Best School Management System Software in Pakistan | All-in-One School ERP Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Customizable, mobile-friendly, and affordable school software for fee management, attendance, timetable scheduling, and more."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <section className="">
         <div className="relative">
           <div className="">

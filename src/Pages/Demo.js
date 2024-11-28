@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet";
 
 export default function Demo() {
   const [credentials, setCredentials] = useState({
@@ -114,13 +115,48 @@ export default function Demo() {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
   return (
-    <div className="">
+    <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Explore Capobrain’s live demo of our School Management System (SMS). See how our School ERP software works with real-world scenarios, including student management, fee collection, attendance tracking, and more. Try before you buy!"
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Demo, School Management System Demo, School ERP Demo, Live Demo of School ERP, Try School Management Software, School ERP System Demo, Capobrain School Demo"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Demo - Capobrain | Live School Management System Demo</title>
+
+        <meta
+          property="og:title"
+          content="Demo - Capobrain | Live School Management System Demo"
+        />
+        <meta
+          property="og:description"
+          content="Check out the live demo of Capobrain’s School Management System. See how our School ERP software simplifies school operations, including student data management, fee processing, attendance tracking, and more."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_DEMO_PAGE_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="Demo - Capobrain | Live School Management System Demo"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore the live demo of Capobrain’s School Management System. Understand how our School ERP software can improve school administration, fee management, attendance, and student data tracking."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1
-              className="heading-hero"
-            >
+            <h1 className="heading-hero">
               Schedule Your Free College & School Management Software Demo Today
             </h1>
           </div>
@@ -137,7 +173,6 @@ export default function Demo() {
       <div className="cb-container">
         <div className="container mx-auto px-4 py-12">
           <div className="flex justify-between gap-10">
-            {/* Left side (Data) */}
             <div className="w-full md:w-1/2">
               <h2 className="text-2xl font-semibold mb-4">
                 Experience a Live School Management System Demo
@@ -159,7 +194,6 @@ export default function Demo() {
               </p>
               <h4 className="mt-6 font-semibold text-2xl">Demo Credentials</h4>
               <div className="flex flex-row gap-4 mt-4">
-                {/* Left side credentials */}
                 <div className="w-full md:w-1/2">
                   <h5 className="text-indigo-700 text-lg font-semibold">
                     School Admin Login
@@ -193,7 +227,6 @@ export default function Demo() {
               </div>
             </div>
 
-            {/* Right side (Form) */}
             <div className="w-full md:w-1/2">
               <h2 className="text-2xl font-semibold mb-4">
                 Contact Us for a Free Software Demo
@@ -211,14 +244,10 @@ export default function Demo() {
                       value={credentials.name}
                       onChange={onchange}
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Name
                     </label>
                   </div>
-
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
@@ -228,14 +257,10 @@ export default function Demo() {
                       onChange={onchange}
                       placeholder="Email"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Email
                     </label>
                   </div>
-
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="number"
@@ -245,14 +270,10 @@ export default function Demo() {
                       // onChange={onchange}
                       placeholder="Whatsapp Number"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Whatsapp Number
                     </label>
                   </div>
-
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
@@ -262,10 +283,7 @@ export default function Demo() {
                       onChange={onchange}
                       placeholder="School Name"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       School Name
                     </label>
                   </div>
@@ -278,14 +296,10 @@ export default function Demo() {
                       onChange={onchange}
                       placeholder="Message"
                     ></textarea>
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Message
                     </label>{" "}
                   </div>
-
                   <div className="mt-4 text-left">
                     <button
                       className="btn-anim text-white px-6 py-2 rounded"
@@ -300,6 +314,6 @@ export default function Demo() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

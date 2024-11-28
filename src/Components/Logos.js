@@ -84,7 +84,7 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={laravel}
-            alt="Laravel Logo"
+            alt="Laravel Logo School Management System Laravel Development"
             height="60"
             width="160"
             className=""
@@ -125,7 +125,7 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={js}
-            alt="Vanila Javscript"
+            alt="Vanila Javscript Custom School Software Development" 
             height="60"
             width="80"
             className="rounded-xl ml-2"

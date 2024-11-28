@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./component/sidebar";
 import Admin_Nav from "./component/admin-nav";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Blogs = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -10,6 +11,44 @@ const Blogs = () => {
   };
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Capobrain Admin Panel - Blog Page. Manage, edit, and publish blogs related to school management, updates, and news. Easily manage content within the admin panel of Capobrain School Management System."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Admin Panel Blog, Blog Management Dashboard, Admin Panel Blog Page, School Management System Blog, Manage Blogs for School Software, Blog Management for Schools"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Blog Management - Capobrain Admin Panel</title>
+
+        <meta
+          property="og:title"
+          content="Blog Management - Capobrain Admin Panel"
+        />
+        <meta
+          property="og:description"
+          content="Manage and edit blogs related to Capobrain School Management System. From school updates to informative articles, manage all content in the admin panel with ease."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_ADMIN_PANEL_BLOG_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="Blog Management - Capobrain Admin Panel"
+        />
+        <meta
+          name="twitter:description"
+          content="Access the blog management section of Capobrain's Admin Panel. Easily manage, edit, and publish school-related blogs and updates from the admin dashboard."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <div className="w-full flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
         <Admin_Nav />
         <Sidebar />

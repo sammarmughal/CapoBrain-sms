@@ -1,16 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 const SignUp = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Create your Capobrain account to access our powerful School Management System. Sign up today to streamline school administration, manage students, fees, attendance, and more."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Signup, School Management System Signup, School ERP Signup, User Signup, School Software Signup, School Management System Registration, Create Capobrain Account"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          User Signup - Capobrain | Create Your School Management Account
+        </title>
+
+        <meta
+          property="og:title"
+          content="User Signup - Capobrain | Create Your School Management Account"
+        />
+        <meta
+          property="og:description"
+          content="Sign up for Capobrain and get access to the best School Management System. Manage school operations, student data, and more with our comprehensive School ERP software."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_SIGNUP_PAGE_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="User Signup - Capobrain | Create Your School Management Account"
+        />
+        <meta
+          name="twitter:description"
+          content="Create your Capobrain account to streamline school administration. Our School Management System helps you manage students, fees, attendance, and more."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1
-              className="heading-hero"
-            >
-              Sign Up{" "}
-            </h1>
+            <h1 className="heading-hero">Sign Up </h1>
           </div>
         </div>
         <div
@@ -38,10 +76,7 @@ const SignUp = () => {
                       id="exampleInput90"
                       placeholder="Enter your Name"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Name
                     </label>
                   </div>
@@ -52,10 +87,7 @@ const SignUp = () => {
                       id="exampleInput91"
                       placeholder="Email Address"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput91"
-                    >
+                    <label className="input-label" for="exampleInput91">
                       Email address
                     </label>
                   </div>
@@ -66,10 +98,7 @@ const SignUp = () => {
                       id="exampleInput91"
                       placeholder="Password"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput91"
-                    >
+                    <label className="input-label" for="exampleInput91">
                       Password
                     </label>
                   </div>
@@ -80,10 +109,7 @@ const SignUp = () => {
                       id="exampleInput91"
                       placeholder="Whatsapp Number"
                     />
-                    <label
-                      className="input-label"
-                      for="exampleInput91"
-                    >
+                    <label className="input-label" for="exampleInput91">
                       Whatsapp Number
                     </label>
                   </div>

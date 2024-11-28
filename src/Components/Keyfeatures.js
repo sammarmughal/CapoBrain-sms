@@ -29,7 +29,7 @@ export default function Keyfeatures() {
                   className="w-full h-full cover rounded-lg"
                   src={schoolimg}
                   height={400}
-                  alt="office content 1"
+                  alt="office Affordable School Management Software"
                 />{" "}
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Keyfeatures() {
                   className="w-full h-full cover rounded-lg"
                   src={schoolimg2}
                   height={450}
-                  alt="office content 2"
+                  alt="office content Best School Management Software"
                 />{" "}
               </div>
             </div>

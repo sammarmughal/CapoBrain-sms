@@ -31,33 +31,33 @@ const Avatars = () => {
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={Allied}
-                    alt="Allied Schools"
+                    alt="Allied Schools School Management System"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={AIS}
-                    alt="Abdullah-international-school"
+                    alt="Abdullah-international-school School Management System"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={TES}
-                    alt="The Eduicators School"
+                    alt="The Eduicators School School Management System"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={BFS}
-                    alt="Bright fUTURE SCHOOL"
+                    alt="Bright fUTURE SCHOOL School Management System"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={TWS}
-                    alt="TAMEER-E-WATTAN-SCHOOL"
+                    alt="TAMEER-E-WATTAN-SCHOOL School Management System"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={Qurtaba}
-                    alt="Qurtaba School"
-                  />
+                    alt="Qurtaba School School Management System"
+                  /> 
                 </div>
                 <div className="block gap-1 text-left"><p className="font-semibold">20+ Schools and Growing</p> <p className="text-neutral-600 text-xs font-medium">Since 2020</p></div>
               </div>

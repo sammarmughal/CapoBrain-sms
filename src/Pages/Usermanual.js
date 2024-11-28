@@ -1,19 +1,58 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navigation from "../Components/Navigation";
 import data from "../data/usermanualData.json";
-import phone from "../img/capobrain-phone.png";
-import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
+import { Helmet } from "react-helmet";
+
 const UserManual = () => {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    setMenu(data.sidemenu); // Load the menu from the JSON file
+    setMenu(data.sidemenu);
   }, []);
 
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Explore the comprehensive user manual for Capobrain School Management System. Learn how to use our School ERP software, from fee management to student data, attendance tracking, and more."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain User Manual, School Management System Manual, School ERP User Guide, School Software Manual, Capobrain School Software Guide, How to Use School ERP, School Management User Manual"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          User Manual - Capobrain | Learn How to Use School Management System
+        </title>
+
+        <meta
+          property="og:title"
+          content="User Manual - Capobrain | Learn How to Use School Management System"
+        />
+        <meta
+          property="og:description"
+          content="Access the detailed user manual for Capobrain’s School Management System. Get step-by-step instructions on how to manage student data, fees, attendance, and more with our School ERP software."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_USER_MANUAL_PAGE_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="User Manual - Capobrain | Learn How to Use School Management System"
+        />
+        <meta
+          name="twitter:description"
+          content="Read the user manual for Capobrain’s School Management System. Learn how to use all features of our School ERP software to manage school administration, attendance, fees, and more."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -99,61 +138,38 @@ const UserManual = () => {
           , our partner platform for modern education solutions.
         </p>
       </div>
-    
-      <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:my-12 xl:max-w-6xl">
-
-    <div className="w-full h-64 lg:w-1/2 lg:h-auto">
-        {/* <img className="h-full w-full object-cover" src="https://picsum.photos/id/1018/2000" alt="Winding mountain road"/> */}
-        <img
-          src={Desktop}
-          width="1519"
-          height="557"
-          loading="eager"
-          alt="Meditation on iPhone" 
-          className="h-full w-full object-cover  hidden lg:flex"
-        />
-        <img
-          src={tablet}
-          width="319"
-          height="557"
-          loading="eager"
-          alt="Meditation on iPhone"
-          className="h-full w-full object-cover hidden sm:flex  lg:hidden"
-        />
-        <img
-          src={phone}
-          width="319"
-          height="557"
-          loading="eager"
-          alt="Meditation on iPhone"
-          className="h-full w-full object-cover flex sm:hidden"
-        />
-    </div>
-
-    <div
-        className="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-8 lg:w-3/5 lg:left-0 lg:mt-10 lg:ml-20 xl:ml-8">
-        <div className="flex flex-col p-12 md:px-8">
+      <div className="cb-container mx-auto py-10 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-20 md:items-center">
+          <div>
             <h2 className="heading-body">
-            Streamlining Education Management
-    <br />
-    by optimizing every process.
-</h2>
+              Streamlining Education Management
+              <br />
+              by optimizing every process.
+            </h2>
             <p className="mt-4">
-            CapoBrain School Management System provides a seamless platform for school administration. From attendance tracking to grade management, it ensures that educators and staff can efficiently handle daily tasks with ease and precision.
-
+              CapoBrain School Management System provides a seamless platform
+              for school administration. From attendance tracking to grade
+              management, it ensures that educators and staff can efficiently
+              handle daily tasks with ease and precision.
             </p>
             <div className="mt-8">
-            <Link
-              className=" btn-anim  text-white rounded-full py-4 px-8"
-              to="/usermanual/dashboard"
-            >
-              Go to Dashboard
-            </Link>
+              <Link
+                className=" btn-anim  text-white rounded-full py-4 px-8"
+                to="/usermanual/dashboard"
+              >
+                Go to Dashboard
+              </Link>
+            </div>
+          </div>
+          <div className="relative mt-4 md:mt-0 flex items-center">
+            <img
+              className="h-full w-full object-cover "
+              src={Desktop}
+              alt="Hero Image"
+            />
           </div>
         </div>
-    </div>
-
-</div>
+      </div>
     </>
   );
 };

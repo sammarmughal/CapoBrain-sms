@@ -3,11 +3,51 @@ import { MdOutlineSupportAgent, MdOutlineQueryStats } from "react-icons/md";
 import { FaTicket } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import CusrtomerSupport from "../img/What-is-Customer-Support.png";
-import hero_helcenter from  "../img/knowledgebase-banner.png";
+import hero_helcenter from "../img/knowledgebase-banner.png";
 import FAQs from "../Components/Faq";
+import { Helmet } from "react-helmet";
+
 const Help = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Visit Capobrain's Help Center for support and resources on using our School Management System. Find answers to common questions, troubleshooting guides, and more. Get the help you need to make the most of our School ERP software for efficient school management."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain, Help Center, School Management System Help, School ERP Support, School Software FAQ, Troubleshooting School Management Software, School ERP Guide, Capobrain Support, School Management Resources"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          Help Center - Capobrain | School Management System Support
+        </title>
+        <meta
+          property="og:title"
+          content="Help Center - Capobrain | School Management System Support"
+        />
+        <meta
+          property="og:description"
+          content="Capobrain's Help Center provides comprehensive support for our School Management System. Find FAQs, troubleshooting tips, and user guides to help you navigate and use our School ERP software effectively."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_HELP_CENTER_PAGE_URL" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="twitter:title"
+          content="Help Center - Capobrain | School Management System Support"
+        />
+        <meta
+          name="twitter:description"
+          content="Get help and support for Capobrain's School Management System at our Help Center. Access FAQs, troubleshooting guides, and tips to use our School ERP software for efficient school management."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <div className="relative">
         <div className="relative z-40 mx-auto max-w-5xl px-6 py-20 text-center md:px-12 md:py-16">
           <h1 className="text-3xl leading-[60px] mt-20 text-white font-semibold md:text-4xl lg:text-5xl">
@@ -70,7 +110,7 @@ const Help = () => {
             className="rounded-xl bg-white p-6 text-center shadow-xl"
           >
             <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-700 shadow-purple-500/40">
-              <MdOutlineQueryStats className="h-10 w-10 text-white"/>
+              <MdOutlineQueryStats className="h-10 w-10 text-white" />
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
               Continuous Improvements
@@ -108,12 +148,14 @@ const Help = () => {
                 <li>Copy and paste any error messages that pop up.</li>
               </ul>
               <p className="mt-4">
-                Need further assistance? <Link to="/login" className="text-blue-500 hover:underline">Generate a ticket</Link> at our help center,
-                and our support team will guide you through resolving your
-                issue.
+                Need further assistance?{" "}
+                <Link to="/userlogin" className="text-blue-500 hover:underline">
+                  Generate a ticket
+                </Link>{" "}
+                at our help center, and our support team will guide you through
+                resolving your issue.
               </p>
             </div>
-           
           </div>
           <div className="relative ms-4">
             <img
@@ -244,14 +286,12 @@ const Help = () => {
         </div>
       </div>
       <div className="my-10">
-      <FAQs/>
-      <div className="flex justify-center items-center w-full">
-      <button className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group">
-      <Link to="/faq">
-        View More Faqs
-        </Link>
-      </button>
-      </div>
+        <FAQs />
+        <div className="flex justify-center items-center w-full">
+          <button className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group">
+            <Link to="/faq">View More Faqs</Link>
+          </button>
+        </div>
       </div>
     </>
   );

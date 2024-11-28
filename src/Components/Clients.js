@@ -57,7 +57,7 @@ const Clients = () => {
             <img
               className="img-fluid client-img"
               src={Client0}
-              alt="Allied School"
+              alt="Allied School School Management System"
               width="220"
               height="150"
             />

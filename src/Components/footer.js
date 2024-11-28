@@ -12,7 +12,7 @@ const Footer = () => {
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                   <img
                     src={Logo}
-                    alt="logo"
+                    alt="Capobrain logo Affordable School Management Software"
                     className="max-w-full"
                   />
                 </a>
@@ -177,7 +177,7 @@ const Footer = () => {
           Capobrain © 2020
             {new Date().getFullYear() > 2020 && ` - ${new Date().getFullYear()}`} All Rights Reserved.
           </div>
-          <a href="https://technicmentors.com/" className="px-4 w-full text-center sm:w-auto sm:text-left">
+          <a href="https://technicmentors.com/" target="_blank" className="px-4 w-full text-center sm:w-auto sm:text-left">
             Made with ❤️ by Technic Mentors.
           </a>
         </div>

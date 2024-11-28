@@ -1,15 +1,50 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Get in touch with Capobrain School Management System for any inquiries, support, or assistance. Our team is here to help you with School ERP software solutions, implementation, and more."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Contact, School Management System Contact, School ERP Support, Contact School Software Provider, School ERP Help, Contact Capobrain School Software, School Software Support"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          Contact Us - Capobrain | Get Support for School Management Software
+        </title>
+        <meta
+          property="og:title"
+          content="Contact Us - Capobrain | Get Support for School Management Software"
+        />
+        <meta
+          property="og:description"
+          content="Need assistance? Contact Capobrain today for support with our School Management System. Our team will help you with any queries regarding School ERP software, implementation, and more."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_CONTACT_PAGE_URL" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="twitter:title"
+          content="Contact Us - Capobrain | Get Support for School Management Software"
+        />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Capobrain for support with our School Management System. We're here to assist with implementation, troubleshooting, and other School ERP needs."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1
-              className="heading-hero"
-            >
-              Contact For Any Query
-            </h1>
+            <h1 className="heading-hero">Contact For Any Query</h1>
             <p className="max-w-2xl mx-auto text-gray-200">
               Contact us today to discuss your school management challenges. Our
               team offers tailored software solutions to help you streamline
@@ -47,51 +82,46 @@ const Contact = () => {
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                      className="peer input-bar mb-2"
                       id="exampleInput90"
+                      placeholder="Name"
                     />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      for="exampleInput90"
-                    >
+                    <label className="input-label" for="exampleInput90">
                       Name
                     </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="email"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                      className="peer input-bar mb-2"
                       id="exampleInput91"
+                      placeholder="Email Address"
                     />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      for="exampleInput91"
-                    >
+                    <label className="input-label" for="exampleInput91">
                       Email address
                     </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="email"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                      className="peer input-bar mb-2"
                       id="exampleInput91"
+                      placeholder="Whatsapp Number"
                     />
-                    <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      for="exampleInput91"
-                    >
+                    <label className="input-label" for="exampleInput91">
                       Whatsapp Number
                     </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <textarea
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                      className="peer input-bar mb-2"
                       id="exampleFormControlTextarea1"
                       rows="3"
+                      placeholder="Message"
                     ></textarea>
                     <label
                       for="exampleFormControlTextarea1"
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                      className="input-label"
                     >
                       Message
                     </label>

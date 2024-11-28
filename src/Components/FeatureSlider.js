@@ -97,7 +97,7 @@ const FeatureSlider = () => {
           width="1519"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone"
+          alt="Meditation on iPhone capobrain School Management System Dashboard"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden lg:flex"
         />
         <img
@@ -105,7 +105,7 @@ const FeatureSlider = () => {
           width="319"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone"
+          alt="Meditation on iPhone Capobrain School Management System"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden sm:flex lg:hidden"
         />
         <img
@@ -113,7 +113,7 @@ const FeatureSlider = () => {
           width="319"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone"
+          alt="Meditation on iPhone Capobrain School Management System"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
         />
         <div className="verticel-carousel pt-10">
@@ -122,7 +122,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={AlliedSchool}
-                alt="Allied School"
+                alt="Allied School Management System"
                 width="242"
                 height="auto"
               />
@@ -132,7 +132,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={EducatorsSchool}
-                alt="The Educators School"
+                alt="The Educators School ERP Software Solutions"
                 width="242"
                 height="auto"
               />
@@ -142,7 +142,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client2}
-                alt="Allied School"
+                alt="Allied School ERP Software Solutions"
                 width="242"
                 height="auto"
               />
@@ -152,7 +152,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School"
+                alt="Allied Best School Management Software"
                 width="242"
                 height="auto"
               />
@@ -161,7 +161,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied School"
+                alt="Allied Best School Management Software"
                 width="242"
                 height="auto"
               />
@@ -189,7 +189,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client7}
-                alt="Allied School"
+                alt="Allied School Gradebook Software"
                 width="242"
                 height="auto"
               />
@@ -199,7 +199,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client8}
-                alt="Allied School"
+                alt="Allied School Gradebook Software"
                 width="242"
                 height="auto"
               />
@@ -208,7 +208,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School"
+                alt="Allied School Gradebook Software"
                 width="242"
                 height="auto"
               />
@@ -217,7 +217,8 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={EducatorsSchool}
-                alt="The Educators School"
+                alt="The Educators School Management System (SMS)
+"
                 width="242"
                 height="auto"
               />
@@ -227,7 +228,8 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client2}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)
+"
                 width="242"
                 height="auto"
               />
@@ -240,7 +242,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client9}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -249,7 +251,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -258,7 +260,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -267,7 +269,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -276,7 +278,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client5}
-                alt="Allied School"
+                alt="Allied SchoolManagement System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -285,7 +287,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client6}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -294,7 +296,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={AlliedSchool}
-                alt="Allied School"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -303,7 +305,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={EducatorsSchool}
-                alt="The Educators School"
+                alt="The Educators School Management System (SMS)"
                 width="242"
                 height="auto"
               />
@@ -312,7 +314,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client2}
-                alt="Allied School"
+                alt="Allied Student Information System (SIS)"
                 width="242"
                 height="auto"
               />
@@ -321,7 +323,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School"
+                alt="Allied Student Information System (SIS)"
                 width="242"
                 height="auto"
               />
@@ -330,7 +332,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied School"
+                alt="Allied Student Information System (SIS)"
                 width="242"
                 height="auto"
               />
@@ -339,7 +341,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client5}
-                alt="Allied School"
+                alt="Allied Student Information System (SIS)"
                 width="242"
                 height="auto"
               />

@@ -54,7 +54,7 @@ const FAQs = () => {
       <div className="cb-container mt-10 sm:mt-20 mb-5">
         {" "}
         <div className="flex justify-center w-full items-center my-4">
-            <img src={avatar} alt="" className="w-[1.6em] mr-6 md:w-[2em]" />
+            <img src={avatar} alt="FAQ School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
             <h1 className="text-3xl text-Dark_purple font-bold md:text-4xl">
             Frequently Asked Questions
             </h1>
@@ -63,7 +63,7 @@ const FAQs = () => {
         Find answers to common questions about CapoBrain's features, and support for school management.
         </p>
       </div>
-      <section className="w-[100vw] h-auto flex relative justify-center items-center bg-Light_pink py-10">
+      <section className="h-auto flex relative justify-center items-center bg-Light_pink py-10">
         <div className="max-w-[380px] md:max-w-[800px] w-full md:w-full z-10 rounded-lg flex flex-col p-3 text-Dark_purple bg-white shadow-lg">
           
           <div className="flex flex-col gap-4">
@@ -75,7 +75,7 @@ const FAQs = () => {
                   </h1>
                   <img
                     src={active === item.id ? close : open}
-                    alt="open or close"
+                    alt="open or close School Management System"
                     className="cursor-pointer w-[2.3em] md:w-[2.8em]"
                     onClick={() =>
                       active === item.id ? setActive(0) : setActive(item.id)

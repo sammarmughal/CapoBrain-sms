@@ -2,14 +2,55 @@ import React from "react";
 import FeaturesContent from "../Components/Features";
 import capobrain from "../img/Capobrainheader.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Features = () => {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Explore the powerful features of Capobrain's School Management System. Our School ERP software offers a range of tools to streamline administrative tasks, improve communication, manage student data, and more. Affordable, customizable, and mobile-friendly solutions for schools of all sizes."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain, School Management Software, School ERP Features, School Software Features, Student Information System, School Fee Management, School Attendance Software, Timetable Scheduling, Parent-Teacher Communication, School Exam Management, Mobile-Friendly School ERP, Customizable School Software"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          Features - Capobrain | School Management Software with Advanced Tools
+        </title>
+
+        <meta
+          property="og:title"
+          content="Features - Capobrain | School Management Software with Advanced Tools"
+        />
+        <meta
+          property="og:description"
+          content="Discover the advanced features of Capobrain's School Management System. Our ERP software offers tools like fee management, student attendance, timetable scheduling, and more to help schools in Pakistan manage their operations efficiently."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_FEATURES_PAGE_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="Features - Capobrain | School Management Software with Advanced Tools"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore Capobrain’s School Management System features, including student information, fee management, attendance tracking, and more. Our customizable, mobile-friendly School ERP software helps schools streamline operations."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1  className="heading-hero">
+            <h1 className="heading-hero">
               Standout Features of Our Comprehensive
               <br />
               School Management System{" "}
@@ -30,7 +71,6 @@ const Features = () => {
       </section>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-         
           <h2 className="max-w-lg mb-3 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <svg
@@ -78,9 +118,15 @@ const Features = () => {
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Maximize efficiency with CapoBrain, your school management software. Simplify operations and prioritize student success.</p>
+              Maximize efficiency with CapoBrain, your school management
+              software. Simplify operations and prioritize student success.
+            </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
-              <Link to="/requestdemo" className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]" rel="noreferrer">
+              <Link
+                to="/requestdemo"
+                className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
+                rel="noreferrer"
+              >
                 Get in touch with us →
               </Link>
             </div>

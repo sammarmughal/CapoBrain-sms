@@ -28,7 +28,7 @@ function FeaturePage() {
     );
   }
   return (
-    <div className="container mx-auto">
+    <div>
       <Helmet>
         <title>{feature.meta.title}</title>
         <meta name="description" content={feature.meta.description} />
@@ -57,7 +57,7 @@ function FeaturePage() {
           </div>
         </div>
       <div className="cb-container">
-        <div className="w-full mb-8">
+        <div className="w-full pb-8">
               <ul className="flex items-center">
                 <li className="flex items-center">
                   <Link
@@ -98,7 +98,7 @@ function FeaturePage() {
                 <li className="flex items-center">
                   <Link
                     to="/features"
-                    className="text-base font-medium text-white hover:text-primary"
+                    className="text-base cursor-pointer font-medium text-white hover:text-primary"
                   >
                     Features
                   </Link>
@@ -130,10 +130,9 @@ function FeaturePage() {
               "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
           }}
         ></div>
-           <div className="py-10 bg-white dark:bg-dark">
-    </div>
+         
       </section>
-      <div className="cb-container">
+      <div className="cb-container mt-6">
         <section className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
             {feature.content.heading}
@@ -167,8 +166,8 @@ function FeaturePage() {
       </div>
       <div className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
-          <div className="w-full justify-between relative z-20 lg:inline-flex lg:items-center lg:max-w-7xl">
-            <div className="max-w-xl">
+          <div className="w-full mx-10 lg:justify-between relative z-20 lg:inline-flex lg:items-center lg:max-w-7xl">
+            <div className="max-w-xl mb-4">
               <h3 className="text-white font-extrabold text-4xl tracking-tight">
                 {" "}
                 Learn more about our

@@ -1,23 +1,62 @@
 import Sidebar from "./component/sidebar";
 import Admin_Nav from "./component/admin-nav";
 import { FaTag } from "react-icons/fa6";
-
+import { Helmet } from "react-helmet";
 
 const AddCategory = () => {
-
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Capobrain Admin Panel - Add Category Page. Easily create new blog categories for your Capobrain School Management System's blog. Organize and manage blog content effectively."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain Admin Panel Add Category, Create Blog Category, Add New Blog Categories, Admin Panel for School Blogs, Manage Categories for Blogs, Blog Category Creation"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Add Blog Category - Capobrain Admin Panel</title>
+
+        <meta
+          property="og:title"
+          content="Add Blog Category - Capobrain Admin Panel"
+        />
+        <meta
+          property="og:description"
+          content="Add new blog categories to Capobrain’s School Management System. Organize content efficiently for easy navigation and categorization."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_ADMIN_PANEL_ADD_CATEGORY_URL" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:title"
+          content="Add Blog Category - Capobrain Admin Panel"
+        />
+        <meta
+          name="twitter:description"
+          content="Create and organize blog categories in Capobrain’s Admin Panel to manage and display your content better."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
         <Admin_Nav />
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="flex items-center justify-center mb-12">
-            <form className="w-full mt-8" >
+            <form className="w-full mt-8">
               <div className="w-full grid md:w-3/5">
-                  <h1 className="sm:text-3xl text-xl text-slate-700 text-center heading-body">Add Category</h1>
+                <h1 className="sm:text-3xl text-xl text-slate-700 text-center heading-body">
+                  Add Category
+                </h1>
                 <div className="flex justify-center py-4">
                   <div className="flex bg-purple-200 rounded-full md:p-4 p-2 border-2 border-purple-300">
-                   <FaTag className="w-8 h-8 text-purple-800"/>
+                    <FaTag className="w-8 h-8 text-purple-800" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 mt-5 mx-7">
@@ -30,7 +69,7 @@ const AddCategory = () => {
                     placeholder="Enter Category Name"
                   />
                 </div>
-               
+
                 <div className="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">
                   <button
                     type="submit"
