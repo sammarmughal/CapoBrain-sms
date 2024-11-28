@@ -5,6 +5,7 @@ import BFS from "../img/AVATARS/Bright fUTURE sCHOOL.png";
 import TWS from "../img/AVATARS/Tameer-e-wattan-schools.png";
 import TES from "../img/AVATARS/The Eduicators School.png";
 import Qurtaba from "../img/AVATARS/qURTABA sCHOOL.png"
+import { Link } from "react-router-dom";
 const Avatars = () => {
   return (
     <div className="w-full px-4 pt-10 lg:pt-20 pb-8" id="faq">
@@ -17,12 +18,12 @@ const Avatars = () => {
             Discover why our School Management System (SMS) is trusted by users globally, empowering seamless management and educational needs with our best school management software.
             </p>
             <div className="my-6 pt-3">
-              <a
-                href="#contact"
+              <Link
+                to="/requestdemo"
                 className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group"
               >
                 <span>Become a Member</span>
-              </a>
+              </Link>
             </div>
             <div className="flex space-x-2 items-center justify-center animate-out zoom-in duration-200 delay-300">
               <div className="flex space-x-2 items-center flex-col md:flex-row">

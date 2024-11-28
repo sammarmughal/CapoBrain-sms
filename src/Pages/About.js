@@ -194,7 +194,7 @@ const AboutSection = () => {
           }}
         ></div>
       </section>
-      <section className="py-14 lg:py-24 relative">
+      <section className="py-14 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
             <div className="img-box flex items-center">
@@ -244,7 +244,7 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <section className="py-14 lg:py-24 relative">
+      <section className="py-14  relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">

@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <>
       <footer className="relative z-10 bg-violet-100 pb-10 pt-16">
-    <section className="max-w-[1200px] mx-auto">
-        <div className="container px-8 lg:px-4">
+    <section className="ft-container">
+        <div className="">
           <div className="flex flex-wrap">
-            <div className="w-full lg:px-4 sm:w-2/3 lg:w-4/12">
+            <div className="w-full lg:pr-4 sm:w-2/3 lg:w-4/12">
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                   <img
@@ -42,11 +42,11 @@ const Footer = () => {
 
             <div className="w-full sm:w-1/2 lg:w-4/12">
               <div className="mb-10 w-full">
-              <h3 className="mb-9 text-lg font-semibold text-dark">Contact Us</h3>
+              <h3 className="lg:mb-9 mb-4 lg:text-lg text-xl font-semibold text-dark">Contact Us</h3>
                   <div className="mt-4 d-flex flex-column contact-link">
                     <adiv className="pb-2" style={{ fontSize: "16px" }}>
                       <i className="fas fa-map-marker-alt  me-2"></i> Mumtaz
-                      Market, Main GT Road, Gujranwala
+                      Market, Main GT Road, Gujranwala Pakistan 
                     </adiv>
                     <div className="py-2" style={{ fontSize: "16px" }}>
                       <i className="fa fa-phone me-2"></i> +923 111 122 144
@@ -56,7 +56,7 @@ const Footer = () => {
                       info@capobrain.com
                     </div>
                   </div>
-                  <h3 className="mb-3 text-lg font-semibold text-dark">Follow Us</h3>
+                  <h3 className="mb-3 lg:text-lg text-xl font-semibold text-dark">Follow Us</h3>
                   <div className="flex footerSocialLinks gap-2">
                     <a
                       href="https://www.facebook.com/CapoBrainOfficial"
@@ -171,7 +171,7 @@ const Footer = () => {
       </section>
       </footer>
       <div className="bg-purple-800 py-4  text-gray-100">
-      <div className="cb-container mx-auto px-4">
+      <div className="ft-container mx-auto px-4">
         <div className="-mx-4 flex flex-wrap justify-between">
           <div className="px-4 w-full text-center sm:w-auto sm:text-left">
           Capobrain © 2020
@@ -194,7 +194,7 @@ const LinkGroup = ({ children, header }) => {
     <>
       <div className="w-full sm:w-1/2 lg:w-2/12">
         <div className="mb-10 w-full">
-          <h4 className="mb-9 text-lg font-semibold text-dark">
+          <h4 className="lg:mb-9 mb-4 lg:text-lg text-xl font-semibold text-dark">
             {header}
           </h4>
           <ul className="">{children}</ul>

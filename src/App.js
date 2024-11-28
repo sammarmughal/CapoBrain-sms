@@ -2,8 +2,7 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
+  Route, useLocation 
 } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -24,33 +23,66 @@ import FeaturePage from "./Pages/FeaturePage";
 import UserManualData from "./Pages/UsermanualData";
 import Demo from "./Pages/Demo";
 import ScrollToTop from "./Components/scrollToTop";
+import AdminPortal from "./Pages/admin-portal";
+import AddBlog from "./Pages/admin-portal/add-blog";
+import Blogs from "./Pages/admin-portal/blog";
+import Category from "./Pages/admin-portal/category";
+import AddCategory from "./Pages/admin-portal/add-category";
+import DemoUsers from "./Pages/admin-portal/manage_users";
+import ChangePassword from "./Pages/admin-portal/settings";
+import Tickets from "./Pages/admin-portal/tickets";
 
 function App() {
+
   return (
     <>
       <Router>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
+      <AppWithRoutes />
+    </Router>     
+    </>
+  );
+}
+function AppWithRoutes() {
+  const location = useLocation(); 
+  const isAdminPanel =
+  location.pathname === '/adminpanel' ||
+  location.pathname === '/adminpanel/addblog' ||
+  location.pathname === '/adminpanel/blogs' ||
+  location.pathname === '/adminpanel/categories' ||
+  location.pathname === '/adminpanel/addcategory' ||
+  location.pathname === '/adminpanel/demousers' ||
+  location.pathname === '/adminpanel/changepassword' ||
+  location.pathname === '/adminpanel/tickets';
+  return (
+    <>
+      {!isAdminPanel && <Navbar />}      
+      <ScrollToTop />      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/features/:slug" element={<FeaturePage />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/faq" element={<FAQs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/userlogin" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/requestdemo" element={<RequestDemo />} />
+        <Route path="/usermanual" element={<UserManual />} />
+        <Route path="/usermanual/:id" element={<UserManualData />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/adminpanel" element={<AdminPortal />} />
+        <Route path="/adminpanel/addblog" element={<AddBlog />} />
+        <Route path="/adminpanel/blogs" element={<Blogs />} />
+        <Route path="/adminpanel/categories" element={<Category />} />
+        <Route path="/adminpanel/addcategory" element={<AddCategory />} />
+        <Route path="/adminpanel/demousers" element={<DemoUsers />} />
+        <Route path="/adminpanel/changepassword" element={<ChangePassword />} />
+        <Route path="/adminpanel/tickets" element={<Tickets />} />
 
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/features/:slug" element={<FeaturePage />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/faq" element={<FAQs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/userlogin" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/requestdemo" element={<RequestDemo />} />
-          <Route path="/usermanual" element={<UserManual />} />
-          <Route path="/usermanual/:id" element={<UserManualData />} />
-          <Route path="/demo" element={<Demo/>} />
-
-        </Routes>
-        <Footer />
-      </Router>
+      </Routes>
+      {!isAdminPanel && <Footer />}
     </>
   );
 }

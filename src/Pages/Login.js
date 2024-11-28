@@ -6,10 +6,7 @@ const Login = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1
-              className="heading-hero">
-              Sign In{" "}
-            </h1>
+            <h1 className="heading-hero">Sign In </h1>
           </div>
         </div>
         <div
@@ -32,30 +29,34 @@ const Login = () => {
               </div>
               <div className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                  <div className="relative mb-6" data-te-input-wrapper-init>
+                  
+                  <div class="relative gap-8 bg-inherit">
                     <input
-                      type="email"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
-                      id="exampleInput91"
+                      type="text"
+                      id="username"
+                      name="username"
+                      className="input-bar peer mb-2"
+                      placeholder="Type inside me"
                     />
                     <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-                      for="exampleInput91"
+                      for="username"
+                      className="input-label"
                     >
-                      Email address
+                      Enter Email
                     </label>
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="password"
-                      className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none "
+                      className="input-bar peer"
                       id="exampleInput91"
+                      placeholder="Enter Password"
                     />
                     <label
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                      className="input-label"
                       for="exampleInput91"
                     >
-                      Password
+                     Enter Password
                     </label>
                   </div>
 

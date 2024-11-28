@@ -100,6 +100,32 @@ html {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  .ft-container {
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .ft-container {
+      padding-left: 2.25rem;
+      padding-right: 2.25rem;
+  }
+}
+@media (min-width: 376px) {
+  .ft-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+}
+.ft-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
 .mv-navi__burger .line.line-1 {
   top: 0;
 }
@@ -162,4 +188,42 @@ html {
 
 .animate-pulse {
   animation: pulse 2s ease-in-out infinite;
+}
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
 }
