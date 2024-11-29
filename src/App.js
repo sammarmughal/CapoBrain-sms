@@ -44,15 +44,8 @@ function App() {
 }
 function AppWithRoutes() {
   const location = useLocation(); 
-  const isAdminPanel =
-  location.pathname === '/adminpanel' ||
-  location.pathname === '/adminpanel/addblog' ||
-  location.pathname === '/adminpanel/blogs' ||
-  location.pathname === '/adminpanel/categories' ||
-  location.pathname === '/adminpanel/addcategory' ||
-  location.pathname === '/adminpanel/demousers' ||
-  location.pathname === '/adminpanel/changepassword' ||
-  location.pathname === '/adminpanel/tickets';
+  const isAdminPanel = location.pathname.startsWith("/adminpanel");
+
   return (
     <>
       {!isAdminPanel && <Navbar />}      

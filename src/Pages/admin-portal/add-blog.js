@@ -1,9 +1,126 @@
+import React, { useState } from "react";
 import Sidebar from "./component/sidebar";
 import Admin_Nav from "./component/admin-nav";
 import { SiBloglovin } from "react-icons/si";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
 
 const AddBlog = () => {
+  const [image_url, setImage_url] = useState(null);
+  const [formData, setFormData] = useState({
+    blogName: "",
+    category: "",
+    blogSlug: "",
+    content: "",
+    photo: null,
+  });
+
+  const [errors, setErrors] = useState({
+    blogName: "",
+    category: "",
+    blogSlug: "",
+    content: "",
+    photo: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handlePhotoChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImage_url(URL.createObjectURL(file)); // Create a URL for the selected file (image preview)
+      setFormData({
+        ...formData,
+        photo: file, // Store the file in form data
+      });
+    }
+  };
+  const handleCancel = () => {
+    setImage_url(null); // Clear the image preview
+    setFormData({
+      ...formData,
+      photo: null, // Clear the file in form data
+    });
+  };
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setFormData({
+      ...formData,
+      photo: file,
+    });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {
+      blogName: "",
+      category: "",
+      blogSlug: "",
+      content: "",
+      photo: "",
+    };
+
+    if (!formData.blogName.trim()) {
+      newErrors.blogName = "Blog name is required.";
+      isValid = false;
+    }
+
+    if (!formData.category) {
+      newErrors.category = "Category is required.";
+      isValid = false;
+    }
+
+    if (!formData.blogSlug.trim()) {
+      newErrors.blogSlug = "Blog slug is required.";
+      isValid = false;
+    }
+
+    if (!formData.content.trim()) {
+      newErrors.content = "Blog content is required.";
+      isValid = false;
+    }
+
+    if (!formData.photo) {
+      newErrors.photo = "You must upload a photo.";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      Swal.fire({
+        title: "Success!",
+        text: "Blog has been uploaded successfully!",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+
+      setFormData({
+        blogName: "",
+        category: "",
+        blogSlug: "",
+        content: "",
+        photo: null,
+      });
+      setImage_url(null); // Clear the image preview after successful submission
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fix the errors in the form.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
   return (
     <>
       <Helmet>
@@ -49,7 +166,7 @@ const AddBlog = () => {
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="flex items-center justify-center mb-12">
-            <form className="w-full mt-8">
+            <form className="w-full mt-8" onSubmit={handleSubmit}>
               <div className="w-full grid p b-10">
                 <h1 className="sm:text-3xl text-xl text-slate-700 text-center heading-body">
                   Add Blog
@@ -67,19 +184,37 @@ const AddBlog = () => {
                     className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     type="text"
                     placeholder="Enter Blog Name"
+                    name="blogName"
+                    value={formData.blogName}
+                    onChange={handleChange}
                   />
+                  {errors.blogName && (
+                    <div className="text-sm text-red-500">
+                      {errors.blogName}
+                    </div>
+                  )}
                 </div>
                 <div className="grid grid-cols-1 mt-5 mx-7">
                   <label className="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">
                     Category
                   </label>
-                  <select className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                  <select
+                    className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    name="category"
+                    value={formData.category}
+                    onChange={handleChange}
+                  >
                     <option>Select a Category</option>
                     <option>Technology</option>
                     <option>Educational Software</option>
                     <option>Education Management</option>
                     <option>Manual Treasures</option>
                   </select>
+                  {errors.category && (
+                    <div className="text-sm text-red-500">
+                      {errors.category}
+                    </div>
+                  )}
                 </div>
 
                 <div className="grid grid-cols-1 mt-5 mx-7">
@@ -99,8 +234,14 @@ const AddBlog = () => {
                   </label>
                   <textarea
                     className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    name="content"
+                    value={formData.content}
+                    onChange={handleChange}
                     placeholder="Type Content"
                   />
+                  {errors.content && (
+                    <div className="text-sm text-red-500">{errors.content}</div>
+                  )}
                 </div>
                 <div className="grid grid-cols-1 mt-5 mx-7">
                   <label className="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold mb-1">
@@ -109,7 +250,13 @@ const AddBlog = () => {
                   <div className="flex items-center justify-center w-full">
                     <label className="flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-purple-300 group">
                       <div className="flex flex-col items-center justify-center pt-7">
-                        <>
+                        {image_url ? (
+                          <img
+                            src={image_url}
+                            alt="Preview"
+                            className="w-36 h-36 object-cover rounded-md"
+                          />
+                        ) : (
                           <svg
                             className="w-10 h-10 text-purple-400 group-hover:text-purple-600"
                             fill="none"
@@ -124,21 +271,32 @@ const AddBlog = () => {
                               d="M7 16V7m4 9V7m4 9V7m4 9V7M5 12h14"
                             ></path>
                           </svg>
-                          <p className="text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider">
-                            Select a photo
-                          </p>
-                        </>
+                        )}
+                        <p className="text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider">
+                          Select a photo
+                        </p>
                       </div>
-                      <input type="file" className="hidden" />
+                      <input
+                        type="file"
+                        className="hidden"
+                        onChange={handlePhotoChange}
+                      />
                     </label>
                   </div>
-                  {/* <button
+                  {errors.photo && (
+                    <div className="text-sm text-red-500">{errors.photo}</div>
+                  )}
+                  {image_url && (
+                    <button
                       type="button"
+                      onClick={handleCancel}
                       className="mt-2 text-red-500 text-xs"
                     >
                       Cancel
-                    </button> */}
+                    </button>
+                  )}
                 </div>
+
                 <div className="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">
                   <button
                     type="submit"

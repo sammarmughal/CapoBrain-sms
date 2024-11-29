@@ -1,22 +1,25 @@
 import React from "react";
 import Slider from 'react-slick';
-import cloudComuting from "../img/Cloud-Based-School-Management-System.png";
-import edge from "../img/Cutting-Edge-Educational-Technologies.png";
-import computerBased from "../img/Computer-Based-Exam-Management.png";
-import AiDriven from "../img/AI-Driven-Schoo- Management.png";
-import DataSecurity from  "../img/Comprehensive-Data-Security.png";
-import StudentParentsPortals from "../img/Students-&-Parent-Portals.png";
-import studentstaff from "../img/Student-&-Staff-Ledgers.png";
-import WhatsAppMessaging from "../img/WhatsApp-Messaging.png";
-import DailyDiray from "../img/Online-Daily-Diary-Feature.png";
-import MobileApp from "../img/School-Management-Mobile-App.png";
-import BiometricAttendance from  "../img/Biometric-Attendance.png";
-import SalaryFee from "../img/Salary-&-Fee-Management.png";
-import InventoryManagement from "../img/Inventory-Management.png";
-import RemainderFeeCollection from "../img/Reminders-For-Fee-Collection.png";
-import SchoolCollegeWeb from "../img/School-&-College-Front-Website.png";
-import OnlinePaperGeneration from "../img/Online-Paper-Generation.png";
-import ExamResultManagement from "../img/Exams-&-Results-Management.png";
+import cloudComuting from "../img/Cloud-Based-School-Management-System.jpg";
+import edge from "../img/Cutting-Edge-Educational-Technologies.jpg";
+import computerBased from "../img/Computer-Based-Exam-Management.jpg";
+import AiDriven from "../img/AI-Driven-Schoo- Management.jpg";
+import DataSecurity from  "../img/Comprehensive-Data-Security.jpg";
+import StudentParentsPortals from "../img/Students-&-Parent-Portals.jpg";
+import studentstaff from "../img/Student-&-Staff-Ledgers.jpg";
+import WhatsAppMessaging from "../img/WhatsApp-Messaging.jpg";
+import DailyDiray from "../img/Online-Daily-Diary-Feature.jpg";
+import MobileApp from "../img/School-Management-Mobile-App.jpg";
+import BiometricAttendance from  "../img/Biometric-Attendance.jpg";
+import SalaryFee from "../img/Salary-&-Fee-Management.jpg";
+import InventoryManagement from "../img/Inventory-Management.jpg";
+import RemainderFeeCollection from "../img/Reminders-For-Fee-Collection.jpg";
+import SchoolCollegeWeb from "../img/School-&-College-Front-Website.jpg";
+import OnlinePaperGeneration from "../img/Online-Paper-Generation.jpg";
+import ExamResultManagement from "../img/Exams-&-Results-Management.jpg";
+import ExpenseAndAssets from "../img/expense-and-assets.jpg";
+import Reporting from "../img/comprehensive-reporting.jpg";
+import MultiComputers from "../img/multi-computers.jpg";
 
 const PostSlider = () => {
     const slider1 = {
@@ -69,6 +72,33 @@ const PostSlider = () => {
             settings: {
               slidesToShow: 1.5,
               slidesToScroll: 1.2,
+            }
+          }
+        ]
+      };
+      const slider3 = {
+        dots: false,
+        infinite: true,
+        speed: 13000,
+        slidesToShow: 2.8,  
+        slidesToScroll: .9,  
+        autoplay: true,        
+        autoplaySpeed: 0, 
+        cssEase: "linear",
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1.1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1.5,
+              slidesToScroll: 1.1,
             }
           }
         ]
@@ -152,7 +182,6 @@ const PostSlider = () => {
               height="230"
             />
           </div>
-
           <div className="px-4">
             <img
               className="img-fluid rounded-2xl carousel-image"
@@ -165,7 +194,7 @@ const PostSlider = () => {
         
         </Slider>
       </div>
-      <div className="verticel-carousel mt-10">
+      <div className="verticel-carousel mt-4 md:mt-10">
         <Slider {...slider2}>
           <div className="px-4">
             <img
@@ -226,6 +255,76 @@ const PostSlider = () => {
             />
           </div>
         
+        </Slider>
+      </div>
+      <div className="verticel-carousel mt-4 md:mt-10">
+        <Slider {...slider3}>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={RemainderFeeCollection}
+              alt="Remainder Fee Collection School Mangement System"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={Reporting}
+              alt="Reportion School Mangement"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={ExpenseAndAssets}
+              alt="Expense and Assets School Mangement Software"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={OnlinePaperGeneration}
+              alt="Online Paper Generation School Mangement Software"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={ExamResultManagement}
+              alt="Exam & Result School Mangement Software"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={MultiComputers}
+              alt="MultiComputers"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={SchoolCollegeWeb}
+              alt="School & College Webs"
+              width="512"
+              height="230"
+            />
+          </div>        
         </Slider>
       </div>
     </div>

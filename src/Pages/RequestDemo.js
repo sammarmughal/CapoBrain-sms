@@ -1,8 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CapobrainDemo from "../img/capobrain-demo.avif";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 const RequestDemo = () => {
+  const [credentials, setCredentials] = useState({
+    name: "",
+    email: "",
+    schoolname: "",
+    number: "",
+  });
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    schoolname: "",
+    number: "",
+  });
+  const navigate = useNavigate();
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: "", email: "", schoolname: "", number: "" };
+    if (!credentials.name.trim()) {
+      newErrors.name = "Name is required.";
+      isValid = false;
+    }
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!credentials.email || !emailRegex.test(credentials.email)) {
+      newErrors.email = "Please enter a valid email address.";
+      isValid = false;
+    }
+    if (!credentials.number || credentials.number.length < 10) {
+      newErrors.number = "Please enter a valid contact number.";
+      isValid = false;
+    }
+    if (!credentials.schoolname.trim()) {
+      newErrors.schoolname = "Please enter your school name.";
+      isValid = false;
+    }
+    setErrors(newErrors);
+    return isValid;
+  };
+  const handlesubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      Swal.fire({
+        title: "Success!",
+        text: "You have signed up successfully!",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        setCredentials({
+          name: "",
+          email: "",
+          schoolname: "",
+          number: "",
+        });
+        navigate("/demo");
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fix the errors in the form.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+  const onchange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
   return (
     <>
       <Helmet>
@@ -42,7 +111,6 @@ const RequestDemo = () => {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -73,54 +141,77 @@ const RequestDemo = () => {
                 credentials for the demo.
               </p>
             </div>
-            <form>
+            <form onSubmit={handlesubmit}>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
                   type="text"
                   className="peer input-bar mb-2"
-                  id="exampleInput90"
-                  placeholder="Enter Name"
+                  id="name"
+                  name="name"
+                  value={credentials.name}
+                  onChange={onchange}
+                  placeholder="Enter your Name"
                 />
-                <label className="input-label" for="exampleInput90">
+                <label className="input-label" htmlFor="name">
                   Name
                 </label>
+                {errors.name && (
+                  <div className="text-sm text-red-500">{errors.name}</div>
+                )}
               </div>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
                   type="email"
                   className="peer input-bar mb-2"
-                  id="exampleInput91"
+                  id="email"
+                  name="email"
+                  value={credentials.email}
+                  onChange={onchange}
                   placeholder="Email Address"
                 />
-                <label className="input-label" for="exampleInput91">
+                <label className="input-label" htmlFor="email">
                   Email address
                 </label>
+                {errors.email && (
+                  <div className="text-sm text-red-500">{errors.email}</div>
+                )}
               </div>
-
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
                   type="number"
                   className="peer input-bar mb-2"
-                  id="exampleInput92"
-                  placeholder="Contact Number"
+                  id="number"
+                  name="number"
+                  value={credentials.number}
+                  onChange={onchange}
+                  placeholder="Whatsapp Number"
                 />
-                <label className="input-label" for="exampleInput92">
+                <label className="input-label" htmlFor="number">
                   Contact Number
                 </label>
+                {errors.number && (
+                  <div className="text-sm text-red-500">{errors.number}</div>
+                )}
               </div>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
                   type="text"
                   className="peer input-bar mb-2"
-                  id="exampleInput93"
+                  id="schoolName"
+                  name="schoolName"
+                  value={credentials.schoolName}
+                  onChange={onchange}
                   placeholder="School Name"
                 />
-                <label className="input-label" for="exampleInput93">
+                <label className="input-label" htmlFor="schoolName">
                   School Name
                 </label>
+                {errors.schoolname && (
+                  <div className="text-sm text-red-500">{errors.schoolname}</div>
+                )}
               </div>
               <div className="relative py-2">
-                <button className="text-white rounded-md px-6 py-1 btn-anim">
+                <button type="submit" className="text-white rounded-md px-6 py-1 btn-anim">
                   Send Request{" "}
                 </button>
               </div>

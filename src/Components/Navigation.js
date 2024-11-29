@@ -46,7 +46,6 @@ function Navigation() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Function to toggle the navbar open/close state
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
@@ -92,7 +91,7 @@ function Navigation() {
           animate={activeSection === sectionId ? "open" : "closed"}
           id={sectionId}
         >
-          <ul className="pl-10 mt-2  space-y-2">
+          <ul className="pl-10 my-1 space-y-1">
             {links.map((link, index) => (
               <li key={link.to} className="list-disc items-center">
                 <Link

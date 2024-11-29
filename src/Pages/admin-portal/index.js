@@ -62,7 +62,7 @@ const AdminPortal = () => {
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-4 gap-10">
             <div className="col-span-2 bg-indigo-100 border border-indigo-200 rounded-xl p-6 animate-fade-in">
-              <h2 className="text-3xl md:text-5xl text-purple-900">
+              <h2 className="text-3xl md:text-4iopasdfghjklmnbvcxzxl text-purple-900">
                 Welcome <strong>CapoBrain Admin Dashboard</strong>
               </h2>
               <span className="inline-block mt-8 px-8 py-2 rounded-full text-xl font-bold text-white bg-purple-800">

@@ -1,6 +1,82 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Helmet } from "react-helmet";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    whatsapp: "",
+    message: "",
+  });
+  const formRef = useRef(null);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(formData.email)
+    ) {
+      newErrors.email = "Invalid email address";
+    }
+    if (!formData.whatsapp.trim()) {
+      newErrors.whatsapp = "WhatsApp number is required";
+    } else if (!/^\+?[0-9]{10,15}$/.test(formData.whatsapp)) {
+      newErrors.whatsapp = "Invalid phone number";
+    }
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_pj93zyr",
+          "template_i20j2uo", 
+          formRef.current, 
+          "2IXZCnlGYrCJooOAK" 
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfully:", result.text);
+            Swal.fire({
+              title: "Success!",
+              text: "Your message has been sent successfully.",
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          },
+          (error) => {
+            console.error("Error sending email:", error.text);
+            Swal.fire({
+              title: "Error!",
+              text: "Failed to send your message. Please try again later.",
+              icon: "error",
+              confirmButtonText: "OK",
+            });
+          }
+        );
+    } else {
+      Swal.fire({
+        title: "Warning!",
+        text: "Please fill out all the required fields before submitting.",
+        icon: "warning",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -40,7 +116,6 @@ const Contact = () => {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -78,73 +153,81 @@ const Contact = () => {
           <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-                <form>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="text"
+                      name="name"
                       className="peer input-bar mb-2"
-                      id="exampleInput90"
                       placeholder="Name"
+                      value={formData.name}
+                      onChange={handleChange}
                     />
-                    <label className="input-label" for="exampleInput90">
+                    <label className="input-label" htmlFor="name">
                       Name
                     </label>
+                    {errors.name && (
+                      <div className="text-sm text-red-500">{errors.name}</div>
+                    )}
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="email"
+                      name="email"
                       className="peer input-bar mb-2"
-                      id="exampleInput91"
                       placeholder="Email Address"
+                      value={formData.email}
+                      onChange={handleChange}
                     />
-                    <label className="input-label" for="exampleInput91">
+                    <label className="input-label" htmlFor="email">
                       Email address
                     </label>
+                    {errors.email && (
+                      <div className="text-sm text-red-500">{errors.email}</div>
+                    )}
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <input
                       type="email"
                       className="peer input-bar mb-2"
-                      id="exampleInput91"
-                      placeholder="Whatsapp Number"
+                      name="whatsapp"
+                      placeholder="WhatsApp Number"
+                      value={formData.whatsapp}
+                      onChange={handleChange}
                     />
-                    <label className="input-label" for="exampleInput91">
+                    <label className="input-label" htmlFor="whatsapp">
                       Whatsapp Number
                     </label>
+                    {errors.whatsapp && (
+                      <div className="text-sm text-red-500">
+                        {errors.whatsapp}
+                      </div>
+                    )}
                   </div>
                   <div className="relative mb-6" data-te-input-wrapper-init>
                     <textarea
-                      className="peer input-bar mb-2"
-                      id="exampleFormControlTextarea1"
+                      className="peer input-bar py-3"
                       rows="3"
+                      name="message"
                       placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
                     ></textarea>
-                    <label
-                      for="exampleFormControlTextarea1"
-                      className="input-label"
-                    >
+                    <label htmlFor="message" className="input-label">
                       Message
                     </label>
+                    {errors.message && (
+                      <div className="text-sm text-red-500">
+                        {errors.message}
+                      </div>
+                    )}
                   </div>
-                  {/* <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
-                    <input
-                      className="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent "
-                      type="checkbox"
-                      value=""
-                      id="exampleCheck96"
-                      checked
-                    />
-                    <label
-                      className="inline-block pl-[0.15rem] hover:cursor-pointer"
-                      for="exampleCheck96"
-                    >
-                      Send me a copy of this message
-                    </label>
-                  </div> */}
+
                   <div className="flex justify-center items-center">
                     <button
                       type="button"
-                      className="mb-6 max-w-[200px] w-full rounded-full btn-anim text-white px-8 pt-2.5 pb-2 text-lg font-medium uppercase leading-normal   lg:mb-0"
+                      onClick={handleSubmit}
+                      className="mb-6 max-w-[200px] w-full rounded-full btn-anim text-white px-8 pt-2.5 pb-2 text-lg font-medium uppercase leading-normal lg:mb-0"
                     >
                       Send
                     </button>
@@ -179,6 +262,7 @@ const Contact = () => {
                           <a
                             href="mailto:info@capobrain.com"
                             style={{ textDecoration: "none" }}
+                            target="_blank"
                           >
                             info@capobrain.com
                           </a>
@@ -194,13 +278,13 @@ const Contact = () => {
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="2"
+                            strokeWidth="2"
                             stroke="currentColor"
                             className="w-7 h-7"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
                             />
                           </svg>
@@ -239,6 +323,7 @@ const Contact = () => {
                         <a
                           href="https://technicmentors.com/"
                           className="text-neutral-500"
+                          target="_blank"
                         >
                           https://technicmentors.com
                         </a>
@@ -253,13 +338,13 @@ const Contact = () => {
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="1.5"
+                            strokewidth="1.5"
                             stroke="currentColor"
                             className="w-6 h-6"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                             />
                           </svg>

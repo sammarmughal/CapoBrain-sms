@@ -119,7 +119,7 @@ function Navbar() {
                       <Link
                         to="/help"
                         onClick={toggleDropdown}
-                        className="block px-4 py-2  hover:text-[#ba62fd]"
+                        className="block px-4 py-2  hover:text-purple-600"
                       >
                         Knowledgebase
                       </Link>
@@ -128,7 +128,7 @@ function Navbar() {
                       <Link
                         to="/blog"
                         onClick={toggleDropdown}
-                        className="block px-4 py-2 hover:text-[#ba62fd]"
+                        className="block px-4 py-2 hover:text-purple-600"
                       >
                         Blog
                       </Link>
@@ -137,7 +137,7 @@ function Navbar() {
                       <Link
                         to="/faq"
                         onClick={toggleDropdown}
-                        className="block px-4 py-2 hover:text-[#ba62fd]"
+                        className="block px-4 py-2 hover:text-purple-600"
                       >
                         FAQs
                       </Link>
@@ -146,7 +146,7 @@ function Navbar() {
                       <Link
                         to="/userlogin"
                         onClick={toggleDropdown}
-                        className="block px-4 py-2 hover:text-[#ba62fd]"
+                        className="block px-4 py-2 hover:text-purple-600"
                       >
                         Generate Ticket
                       </Link>
@@ -155,7 +155,7 @@ function Navbar() {
                       <Link
                         to="/contact"
                         onClick={toggleDropdown}
-                        className="block px-4 py-2 hover:text-[#ba62fd]"
+                        className="block px-4 py-2 hover:text-purple-600"
                       >
                         Contact
                       </Link>

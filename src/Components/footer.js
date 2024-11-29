@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../img/capobrain-logo.png"
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -9,13 +11,13 @@ const Footer = () => {
           <div className="flex flex-wrap">
             <div className="w-full lg:pr-4 sm:w-2/3 lg:w-4/12">
               <div className="mb-10 w-full">
-                <a href="/#" className="mb-6 inline-block max-w-[160px]">
+                <Link to="/" className="mb-6 inline-block max-w-[160px]">
                   <img
                     src={Logo}
                     alt="Capobrain logo Affordable School Management Software"
                     className="max-w-full"
                   />
-                </a>
+                </Link>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
                 CapoBrain is an advanced AI-powered education management system designed to streamline school administration. Our customizable software enhances communication among educators, staff, and parents, with essential tools like SIS and fee management creating a seamless, efficient, and paper-free experience for institutions. </p>
               </div>

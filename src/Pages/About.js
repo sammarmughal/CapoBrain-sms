@@ -124,7 +124,7 @@ const AboutSection = () => {
         />
       ),
     },
-  ];  
+  ];
   const Brand = () => (
     <div className="flex items-center justify-between py-5 md:block">
       <a href="javascript:void(0)">
@@ -175,54 +175,54 @@ const AboutSection = () => {
   );
   return (
     <>
-    <Helmet>
-  {/* Basic Meta Tags */}
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta 
-    name="description" 
-    content="Learn more about Capobrain, a leading provider of school management software. Our School ERP solutions are designed to streamline administrative tasks, improve communication, and enhance student management in schools across Pakistan. Affordable, customizable, and mobile-friendly features for all institutions." 
-  />
-  <meta 
-    name="keywords" 
-    content="Capobrain, About Capobrain, School Management Software, School ERP Solutions, School Software Providers, Affordable School Software, Customizable School ERP, Mobile-Friendly School ERP, School Management System, School Software for Schools in Pakistan"
-  />
-  <meta name="robots" content="index, follow" />
-  <title>About Us - Capobrain | Leading School Management Software in Pakistan</title>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Learn more about Capobrain, a leading provider of school management software. Our School ERP solutions are designed to streamline administrative tasks, improve communication, and enhance student management in schools across Pakistan. Affordable, customizable, and mobile-friendly features for all institutions."
+        />
+        <meta
+          name="keywords"
+          content="Capobrain, About Capobrain, School Management Software, School ERP Solutions, School Software Providers, Affordable School Software, Customizable School ERP, Mobile-Friendly School ERP, School Management System, School Software for Schools in Pakistan"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>
+          About Us - Capobrain | Leading School Management Software in Pakistan
+        </title>
 
-  {/* Open Graph Meta Tags */}
-  <meta 
-    property="og:title" 
-    content="About Us - Capobrain | Leading School Management Software in Pakistan" 
-  />
-  <meta 
-    property="og:description" 
-    content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software." 
-  />
-  <meta property="og:image" content="URL_TO_IMAGE" />
-  <meta property="og:url" content="YOUR_ABOUT_PAGE_URL" />
-  <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="About Us - Capobrain | Leading School Management Software in Pakistan"
+        />
+        <meta
+          property="og:description"
+          content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software."
+        />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content="YOUR_ABOUT_PAGE_URL" />
+        <meta property="og:type" content="website" />
 
-  {/* Twitter Card Meta Tags */}
-  <meta 
-    name="twitter:title" 
-    content="About Us - Capobrain | Leading School Management Software in Pakistan" 
-  />
-  <meta 
-    name="twitter:description" 
-    content="Discover Capobrain, a leading provider of school management software in Pakistan. Our School ERP solutions are customizable and mobile-friendly, designed to simplify school operations and improve student management." 
-  />
-  <meta name="twitter:image" content="URL_TO_IMAGE" />
-  <meta name="twitter:card" content="summary_large_image" />
-</Helmet>
+        <meta
+          name="twitter:title"
+          content="About Us - Capobrain | Leading School Management Software in Pakistan"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover Capobrain, a leading provider of school management software in Pakistan. Our School ERP solutions are customizable and mobile-friendly, designed to simplify school operations and improve student management."
+        />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
 
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-5xl">
-            Transforming Education with the 
-                      <br />
-                      Premier School Management System                    </h1>
+              Transforming Education with the
+              <br />
+              Premier School Management System{" "}
+            </h1>
             <p className="max-w-2xl mx-auto text-gray-200">
               Invest intelligently and discover a better way to manage your
               entire wealth easily with our School Management System (SMS).
@@ -331,14 +331,14 @@ const AboutSection = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-[#7a12d4]  mb-4"
+                className="h-12 w-12 text-purple-800  mb-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 {service.icon}
               </svg>
-              <h2 className="text-xl font-semibold text-[#7a12d4]  mb-2">
+              <h2 className="text-xl font-semibold text-purple-800  mb-2">
                 {service.title}
               </h2>
               <p className="text-gray-600">{service.description}</p>
@@ -354,45 +354,48 @@ const AboutSection = () => {
           <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl transform transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg shadow-gray-100">
               <div className="flex gap-5">
-                <div className="font-manrope text-2xl font-bold text-indigo-600">
+                <div className="font-manrope text-2xl font-bold text-purple-800">
                   50+
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                  Schools Using Our Software
+                    Schools Using Our Software
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                  Trusted by over 500 schools to streamline operations, manage student data, and enhance educational outcomes.
+                    Trusted by over 500 schools to streamline operations, manage
+                    student data, and enhance educational outcomes.
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white transform transition-all duration-300 hover:scale-105 animate-fade-in p-6 rounded-2xl shadow-lg shadow-gray-100">
               <div className="flex gap-5">
-                <div className="font-manrope text-2xl font-bold text-indigo-600">
+                <div className="font-manrope text-2xl font-bold text-purple-800">
                   120+
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                  Students Managed
+                    Students Managed
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                  Our platform manages data for over 120,000 students, ensuring seamless academic and administrative workflows.
+                    Our platform manages data for over 120,000 students,
+                    ensuring seamless academic and administrative workflows.
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white transform transition-all duration-300 hover:scale-105 animate-fade-in p-6 rounded-2xl shadow-lg shadow-gray-100">
               <div className="flex gap-5">
-                <div className="font-manrope text-2xl font-bold text-indigo-600">
-                99%
+                <div className="font-manrope text-2xl font-bold text-purple-800">
+                  99%
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
-                  Customer Satisfaction Rate
+                    Customer Satisfaction Rate
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                  Achieving a 99% satisfaction rate by delivering reliable, user-friendly, and efficient software solutions.
+                    Achieving a 99% satisfaction rate by delivering reliable,
+                    user-friendly, and efficient software solutions.
                   </p>
                 </div>
               </div>

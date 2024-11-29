@@ -1,9 +1,62 @@
+import React, {useState} from "react";
 import Sidebar from "./component/sidebar";
 import Admin_Nav from "./component/admin-nav";
 import { FaTag } from "react-icons/fa6";
 import { Helmet } from "react-helmet";
+import Swal from 'sweetalert2';
+
 
 const AddCategory = () => {
+  const [formData, setFormData] = useState({
+    categoryName: "",
+  });
+
+  const [errors, setErrors] = useState({
+    categoryName: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { categoryName: "" };
+
+    if (!formData.categoryName.trim()) {
+      newErrors.categoryName = "Category name is required.";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      Swal.fire({
+        title: "Success!",
+        text: "Category has been added successfully!",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        setFormData({
+          categoryName: "",
+        });
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fix the errors in the form.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
   return (
     <>
       <Helmet>
@@ -49,7 +102,7 @@ const AddCategory = () => {
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="flex items-center justify-center mb-12">
-            <form className="w-full mt-8">
+            <form className="w-full mt-8" onSubmit={handleSubmit}>
               <div className="w-full grid md:w-3/5">
                 <h1 className="sm:text-3xl text-xl text-slate-700 text-center heading-body">
                   Add Category
@@ -66,8 +119,14 @@ const AddCategory = () => {
                   <input
                     className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     type="text"
+                    name="categoryName"
+                    value={formData.categoryName}
+                    onChange={handleChange}
                     placeholder="Enter Category Name"
                   />
+                   {errors.categoryName && (
+            <div className="text-sm text-red-500 mt-1">{errors.categoryName}</div>
+          )}
                 </div>
 
                 <div className="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">

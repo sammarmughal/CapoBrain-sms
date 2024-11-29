@@ -1,7 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [credentials, setCredentials] = useState({
+    email: "",
+    password: "",
+  });
+  const togglePasswordVisibility = () => {
+    setPasswordVisible((prev) => !prev);
+  };
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
+  const onchange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+  const navigate = useNavigate();
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { email: "", password: "" };
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!credentials.email || !emailRegex.test(credentials.email)) {
+      newErrors.email = "Please enter a valid email address.";
+      isValid = false;
+    }
+
+    if (!credentials.password || credentials.password.length < 6) {
+      newErrors.password = "Password must be at least 6 characters long.";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      Swal.fire({
+        title: "Success!",
+        text: "Login successful",
+        icon: "success",
+        confirmButtonText: "OK",       
+
+      }).then(() => {
+        navigate("/adminpanel");
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fix the errors in the form.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -41,7 +103,6 @@ const Login = () => {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -67,46 +128,70 @@ const Login = () => {
                 </h1>
               </div>
               <div className="divide-y divide-gray-200">
-                <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                  <div class="relative gap-8 bg-inherit">
-                    <input
-                      type="text"
-                      id="username"
-                      name="username"
-                      className="input-bar peer mb-2"
-                      placeholder="Type inside me"
-                    />
-                    <label for="username" className="input-label">
-                      Enter Email
-                    </label>
-                  </div>
-                  <div className="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                      type="password"
-                      className="input-bar peer"
-                      id="exampleInput91"
-                      placeholder="Enter Password"
-                    />
-                    <label className="input-label" for="exampleInput91">
-                      Enter Password
-                    </label>
-                  </div>
+                <form onSubmit={handleSubmit}>
+                  <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                    <div class="relative mb-6">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="input-bar peer"
+                        value={credentials.email}
+                        onChange={onchange}
+                        placeholder="Type inside me"
+                      />
+                      <label for="email" className="input-label">
+                        Enter Email
+                      </label>
+                      {errors.email && (
+                        <span className="text-sm text-red-500">
+                          {errors.email}
+                        </span>
+                      )}
+                    </div>
+                    <div className="relative mb-6" data-te-input-wrapper-init>
+                      <input
+                        type={passwordVisible ? "text" : "password"}
+                        className="input-bar peer"
+                        id="passowrd"
+                        name="password"
+                        placeholder="Enter Password"
+                        value={credentials.password}
+                        onChange={onchange}
+                      />
+                      <label className="input-label" htmlFor="passsword">
+                        Enter Password
+                      </label>{" "}
+                      <button
+                        type="button"
+                        onClick={togglePasswordVisibility}
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                      >
+                        {passwordVisible ? <FaEye /> : <FaEyeSlash />}
+                      </button>
+                    </div>
+                      {errors.password && (
+                        <span className="text-sm text-red-500">
+                          {errors.password}
+                        </span>
+                      )}
 
-                  <div className="relative py-2">
-                    <button className="text-white rounded-md px-6 py-1 btn-anim">
-                      Login
-                    </button>
+                    <div className="relative py-2">
+                      <button className="text-white rounded-md px-6 py-1 btn-anim">
+                        Login
+                      </button>
+                    </div>
+                    <p className="text-sm text-center text-gray-500 ">
+                      Not a member yet?{" "}
+                      <Link
+                        to="/signup"
+                        className="font-medium text-indigo-600 hover:underline"
+                      >
+                        Sign up
+                      </Link>
+                    </p>
                   </div>
-                  <p className="text-sm text-center text-gray-500 ">
-                    Not a member yet?{" "}
-                    <Link
-                      to="/signup"
-                      className="font-medium text-indigo-600 hover:underline"
-                    >
-                      Sign up
-                    </Link>
-                  </p>
-                </div>
+                </form>
               </div>
             </div>
           </div>
