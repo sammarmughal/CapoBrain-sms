@@ -204,9 +204,9 @@ const SignUp = () => {
                       </button>
                     </div>
                       {errors.password && (
-                        <div className="text-sm text-red-500">
+                        <span className="text-sm text-red-500">
                           {errors.password}
-                        </div>
+                        </span>
                       )}
                     <div className="relative mb-6" data-te-input-wrapper-init>
                       <input

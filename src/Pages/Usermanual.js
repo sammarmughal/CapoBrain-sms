@@ -139,8 +139,8 @@ const UserManual = () => {
         </p>
       </div>
       <div className="cb-container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8 xl:gap-20 md:items-center">
-          <div>
+        <div className="flex flex-col lg:flex-row gap-4 md:gap-8 xl:gap-20 md:items-center">
+          <div className="lg:w-4/6 mb-6 lg:mb-12 min-h-fit">
             <h2 className="heading-body">
               Streamlining Education Management
               <br />
@@ -161,7 +161,7 @@ const UserManual = () => {
               </Link>
             </div>
           </div>
-          <div className="relative mt-4 md:mt-0 flex items-center">
+          <div className="relative w-1/2 mt-4 lg:mt-0 flex items-center justify-center">
             <img
               className="h-full w-full object-cover "
               src={Desktop}

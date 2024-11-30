@@ -32,10 +32,15 @@ const AddBlog = () => {
   const handlePhotoChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      setImage_url(URL.createObjectURL(file)); // Create a URL for the selected file (image preview)
+      // Validate file type
+      if (!file.type.startsWith("image/")) {
+        alert("Please select a valid image file.");
+        return;
+      }
+      setImage_url(URL.createObjectURL(file)); // Create a URL for the image preview
       setFormData({
         ...formData,
-        photo: file, // Store the file in form data
+        photo: file, // Store the file
       });
     }
   };
@@ -45,7 +50,10 @@ const AddBlog = () => {
       ...formData,
       photo: null, // Clear the file in form data
     });
-  };
+    const fileInput = document.getElementById("fileInput");
+    if (fileInput) {
+      fileInput.value = "";
+    }  };
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setFormData({
@@ -248,15 +256,9 @@ const AddBlog = () => {
                     Upload Photo
                   </label>
                   <div className="flex items-center justify-center w-full">
-                    <label className="flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-purple-300 group">
-                      <div className="flex flex-col items-center justify-center pt-7">
-                        {image_url ? (
-                          <img
-                            src={image_url}
-                            alt="Preview"
-                            className="w-36 h-36 object-cover rounded-md"
-                          />
-                        ) : (
+                    {!image_url ? (
+                      <label className="flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-purple-300 group">
+                        <div className="flex flex-col items-center justify-center pt-7">
                           <svg
                             className="w-10 h-10 text-purple-400 group-hover:text-purple-600"
                             fill="none"
@@ -271,30 +273,34 @@ const AddBlog = () => {
                               d="M7 16V7m4 9V7m4 9V7m4 9V7M5 12h14"
                             ></path>
                           </svg>
-                        )}
-                        <p className="text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider">
-                          Select a photo
-                        </p>
+                          <p className="text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider">
+                            Select a photo
+                          </p>
+                        </div>
+                        <input
+                          id="fileInput"
+                          type="file"
+                          className="hidden"
+                          onChange={handlePhotoChange}
+                        />
+                      </label>
+                    ) : (
+                      <div className="relative flex">
+                        <img
+                          src={image_url}
+                          alt="Uploaded"
+                          className="w-36 h-36 object-cover rounded-md"
+                        />
+                        <button
+                          type="button"
+                          onClick={handleCancel}
+                          className="absolute top-1 right-1 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center"
+                        >
+                          ✕
+                        </button>
                       </div>
-                      <input
-                        type="file"
-                        className="hidden"
-                        onChange={handlePhotoChange}
-                      />
-                    </label>
+                    )}
                   </div>
-                  {errors.photo && (
-                    <div className="text-sm text-red-500">{errors.photo}</div>
-                  )}
-                  {image_url && (
-                    <button
-                      type="button"
-                      onClick={handleCancel}
-                      className="mt-2 text-red-500 text-xs"
-                    >
-                      Cancel
-                    </button>
-                  )}
                 </div>
 
                 <div className="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">

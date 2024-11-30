@@ -20,12 +20,13 @@ import ExamResultManagement from "../img/Exams-&-Results-Management.jpg";
 import ExpenseAndAssets from "../img/expense-and-assets.jpg";
 import Reporting from "../img/comprehensive-reporting.jpg";
 import MultiComputers from "../img/multi-computers.jpg";
+import SchoolPng from "../img/School-Management-System.png"
 
 const PostSlider = () => {
     const slider1 = {
         dots: false,
         infinite: true,
-        speed: 13000,
+        speed: 15000,
         slidesToShow: 2.8,  
         slidesToScroll: 1,  
         autoplay: true,        
@@ -52,7 +53,7 @@ const PostSlider = () => {
       const slider2 = {
         dots: false,
         infinite: true,
-        speed: 13000,
+        speed: 15000,
         slidesToShow: 2.8,  
         slidesToScroll: .8,  
         autoplay: true,
@@ -79,7 +80,7 @@ const PostSlider = () => {
       const slider3 = {
         dots: false,
         infinite: true,
-        speed: 13000,
+        speed: 15000,
         slidesToShow: 2.8,  
         slidesToScroll: .9,  
         autoplay: true,        
@@ -106,9 +107,9 @@ const PostSlider = () => {
   return (
     <div className="w-full pt-10 pb-8" id="faq">
       <div className="flex px-4 flex-wrap">
-        <div className="cb-container min-h-fit">
+        <div className="cb-container flex min-h-fit">
           <div className="w-full lg:w-4/6 mb-6 lg:mb-12 min-h-fit">
-            <div className="pb-markdown min-h-fit font-grotesk-medium font-verdana-fallback text-sm font-sami-bold tracking-wide leading-5 uppercase text-[#1b9ce6]">
+            <div className="pb-markdown min-h-fit font-grotesk-medium font-verdana-fallback text-sm font-sami-bold tracking-wide leading-5 uppercase text-purple-800">
               <p>Growth Across All Dimensions</p>
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
@@ -120,6 +121,13 @@ const PostSlider = () => {
               Transform your educational experience with our comprehensive school management software solutions, designed to enhance communication, streamline processes, and empower administrators, teachers, and students across diverse institutions.
               </p>
             </div>
+          </div>
+          <div className="w-2/6 hidden lg:flex items-center justify-center">
+          <img
+            className="w-full p-3 h-auto object-cover"
+            src={SchoolPng}
+            alt="School Software Modeules"
+          />
           </div>
         </div>
       </div>

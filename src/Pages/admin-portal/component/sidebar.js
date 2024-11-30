@@ -90,21 +90,7 @@ const Sidebar = () => {
                 10
               </span>
             </Link>
-          </li>
-          <li>
-            <Link
-              to="/adminpanel/addcategory"
-              className="admin-sidemenu"
-            >
-              <span className="inline-flex justify-center items-center ml-4">
-                
-                <TiDocumentAdd className="w-6 h-6"></TiDocumentAdd>
-              </span>
-              <span className="ml-2 text-sm tracking-wide truncate">
-                Add Category
-              </span>
-            </Link>
-          </li>
+          </li>          
           <li>
             <Link
               to="/adminpanel/demousers"

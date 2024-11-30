@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Img from "../img/main-section-bg.png";
+import Img from "../img/main-section-bg.jpg";
 import Keyfeatures from "../Components/Keyfeatures";
 import { Benefits } from "../Components/Benefits";
 import Logos from "../Components/Logos";
@@ -25,8 +25,8 @@ export default function Home() {
 
   return (
     <>
-    <Helmet>
-    <meta charset="UTF-8" />
+      <Helmet>
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
@@ -37,7 +37,10 @@ export default function Home() {
           content="Capobrain, School Management System, School ERP Software, Student Information System, School Fee Management, School Attendance Software, School Gradebook, Parent-Teacher Communication, Timetable Scheduling, School Exam Management, Cloud-Based School ERP, Best School Software in Pakistan, Custom School Software, Education Software Development, Mobile-Friendly School ERP"
         />
         <meta name="robots" content="index, follow" />
-        <title>Capobrain - Best School Management System Software in Pakistan | All-in-One School ERP Solutions</title>
+        <title>
+          Capobrain - Best School Management System Software in Pakistan |
+          All-in-One School ERP Solutions
+        </title>
 
         {/* Open Graph Meta Tags */}
         <meta
@@ -78,7 +81,7 @@ export default function Home() {
                 <div className="w-full lg:w-5/6 lg:mx-auto text-center relative text-white pt-28 cb-container min-h-fit">
                   <div className="pb-4 min-h-fit mb-3">
                     <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-6xl">
-                       Online Best School
+                      Online Best School
                       <br />
                       Management Software
                     </h1>
@@ -91,7 +94,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-center mt-6 mb-10 lg:mb-12 lg:w-1/2 m-auto min-h-fit">
                     <Link
                       to="/requestdemo"
-                      className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
+                      className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                       data-test="webinars-button"
                     >
                       Become a member
@@ -144,14 +147,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Logos/>
-      <Avatars/>
-      <PostSlider/>
-     <FeatureSlider/>
+      <Logos />
+      <Avatars />
+      <PostSlider />
+      <FeatureSlider />
       {/* <Welcome/> */}
-      <Keyfeatures/>
-      <Pricing/>
-      <Benefits/>
+      <Keyfeatures />
+      <Pricing />
+      <Benefits />
     </>
   );
 }

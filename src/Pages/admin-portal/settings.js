@@ -4,6 +4,7 @@ import Admin_Nav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Change_password from "../../img/change-password.png";
 
 const ChangePasswords = () => {
   const [passwordVisible, setPasswordVisible] = useState({
@@ -147,10 +148,10 @@ const ChangePasswords = () => {
         <Admin_Nav />
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
-          <div className="block md:flex mt-10">
-            <div className="w-full md:w-3/5 p-4 sm:p-6 lg:ml-4 lg:p-8 ">
+          <div className="mt-10  flex">
+            <div className="w-full md:w-3/5 p-4 sm:p-6 lg:ml-4  lg:p-8 ">
               <form onSubmit={handleSubmit}>
-                <div className="mb-6">
+                <div className="mb-8">
                   <h1 className="text-xl font-bold text-slate-600 mb-5 my-4">
                     Admin Profile
                   </h1>
@@ -278,7 +279,7 @@ const ChangePasswords = () => {
                       </button>
                     </div>
                   </div>
-                  
+
                   <div>
                     <button className="btn-anim mt-2 text-white rounded-full px-5 py-2">
                       Submit
@@ -286,6 +287,15 @@ const ChangePasswords = () => {
                   </div>
                 </div>
               </form>
+            </div>
+            <div className="md:flex hidden relative w-full md:w-2/5 p-4 sm:p-6 lg:ml-4  lg:p-8 ">
+              <div className="w-full absolute flex items-center justify-end right-10">
+                <img
+                  className="h-auto"
+                  src={Change_password}
+                  alt="Change Password"
+                />
+              </div>
             </div>
           </div>
         </div>

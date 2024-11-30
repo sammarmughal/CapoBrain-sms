@@ -87,7 +87,7 @@ const DemoUsers = () => {
                   Ali
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  20010511
+                  capobrain@gmail.com
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
                   Partner
@@ -101,7 +101,7 @@ const DemoUsers = () => {
                   Ali
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  20010511
+                capobrain@gmail.com
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
                   Partner

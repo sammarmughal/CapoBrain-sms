@@ -27,7 +27,6 @@ import AdminPortal from "./Pages/admin-portal";
 import AddBlog from "./Pages/admin-portal/add-blog";
 import Blogs from "./Pages/admin-portal/blog";
 import Category from "./Pages/admin-portal/category";
-import AddCategory from "./Pages/admin-portal/add-category";
 import DemoUsers from "./Pages/admin-portal/manage_users";
 import ChangePassword from "./Pages/admin-portal/settings";
 import Tickets from "./Pages/admin-portal/tickets";
@@ -69,7 +68,6 @@ function AppWithRoutes() {
         <Route path="/adminpanel/addblog" element={<AddBlog />} />
         <Route path="/adminpanel/blogs" element={<Blogs />} />
         <Route path="/adminpanel/categories" element={<Category />} />
-        <Route path="/adminpanel/addcategory" element={<AddCategory />} />
         <Route path="/adminpanel/demousers" element={<DemoUsers />} />
         <Route path="/adminpanel/changepassword" element={<ChangePassword />} />
         <Route path="/adminpanel/tickets" element={<Tickets />} />

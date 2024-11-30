@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineSupportAgent, MdOutlineQueryStats } from "react-icons/md";
 import { FaTicket } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import CusrtomerSupport from "../img/What-is-Customer-Support.png";
+import CusrtomerSupport from "../img/help-center.png";
 import hero_helcenter from "../img/knowledgebase-banner.png";
 import FAQs from "../Components/Faq";
 import { Helmet } from "react-helmet";

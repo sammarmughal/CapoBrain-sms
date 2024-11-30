@@ -5,6 +5,7 @@ import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
 import AlliedSchool from "../img/1.png";
 import EducatorsSchool from "../img/2.png";
+import OnlineEducation from  "../img/online-education.png";
 import Client2 from "../img/3.png";
 import Client3 from "../img/4.png";
 import Client4 from "../img/5.png";
@@ -74,9 +75,9 @@ const FeatureSlider = () => {
   return (
     <div className="w-full pt-10 lg:pt-20 pb-8" id="faq">
       <div className="flex px-2 flex-wrap">
-        <div className="cb-container min-h-fit">
+        <div className="cb-container flex gap-10 min-h-fit">
           <div className="w-full lg:w-4/6 mb-6 lg:mb-12 min-h-fit">
-            <div className="pb-markdown min-h-fit font-grotesk-medium font-verdana-fallback text-sm font-sami-bold tracking-wide leading-5 uppercase text-[#1b9ce6]">
+            <div className="pb-markdown min-h-fit font-grotesk-medium font-verdana-fallback text-sm font-sami-bold tracking-wide leading-5 uppercase text-purple-800">
               <p>Schools Choose CapoBrain</p>
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
@@ -88,6 +89,15 @@ const FeatureSlider = () => {
               Our best school management software is trusted by over 30 schools, enhancing their management efficiency. Join us in transforming educational experiences and driving success with our comprehensive solutions.
               </p>
             </div>
+          </div>
+          <div className="w-2/6 hidden lg:flex items-center justify-center">
+          <img
+            className="w-full p-3 h-auto object-cover"
+            src={OnlineEducation}
+            height={100}
+            alt="Online Education"
+          />
+
           </div>
         </div>
       </div>

@@ -1,10 +1,68 @@
 import React, { useState } from "react";
 import Sidebar from "./component/sidebar";
 import Admin_Nav from "./component/admin-nav";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Swal from "sweetalert2";
 
 const Categories = () => {
+  const [formData, setFormData] = useState({
+    categoryName: "",
+  });
+  const [errors, setErrors] = useState({
+    categoryName: "",
+  });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { categoryName: "" };
+
+    if (!formData.categoryName.trim()) {
+      newErrors.categoryName = "Category name is required.";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      Swal.fire({
+        title: "Success!",
+        text: "Category has been added successfully!",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        setFormData({
+          categoryName: "",
+        });
+        setIsModalOpen(false); 
+        setErrors({ categoryName: "" });
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fix the errors in the form.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  };
+  const handleCloseModal = () => {
+    setIsModalOpen(false); 
+    setFormData({ categoryName: "" }); 
+    setErrors({ categoryName: "" }); 
+  };
   return (
     <>
       <Helmet>
@@ -50,14 +108,13 @@ const Categories = () => {
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="w-full md:flex px-10 mb-4 justify-end items-center">
-            <Link to="/adminpanel/addcategory" className="w-flex justify-end">
               <button
                 type="button"
+                onClick={() => setIsModalOpen(true)}
                 className="btn-anim  mt-10 ml-6 justify-end font-semibold text-white rounded-full py-2 px-8"
               >
                 Add Category
               </button>
-            </Link>
           </div>
           <div className=" bg-slate-150">
             <div className="flex justify-between mx-8">
@@ -219,6 +276,58 @@ const Categories = () => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/3">
+            <div className="flex justify-between items-center px-6 py-4 border-b">
+              <h2 className="text-xl font-semibold">Add Category</h2>
+              <button
+                className="text-gray-500 hover:text-gray-800"
+                onClick={handleCloseModal} 
+              >
+                ✕
+              </button>
+            </div>
+            <form className="px-6 py-4" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Category Name
+                  </label>
+                  <input
+                    className="w-full py-2 px-3 rounded-lg border-2 border-gray-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    type="text"
+                    name="categoryName"
+                    value={formData.categoryName}
+                    onChange={handleChange}
+                    placeholder="Enter Category Name"
+                  />
+                  {errors.categoryName && (
+                    <div className="text-sm text-red-500 mt-1">
+                      {errors.categoryName}
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="flex items-center justify-end mt-6">
+                <button
+                  type="button"
+                  className="bg-gray-300 text-gray-800 rounded-full px-4 py-2 mr-2"
+                  onClick={handleCloseModal} 
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="btn-anim w-auto rounded-full shadow-xl font-medium text-white px-4 py-2"
+                >
+                  Upload Category
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </>
   );
 };

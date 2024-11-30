@@ -35,10 +35,14 @@ const RequestDemo = () => {
       newErrors.number = "Please enter a valid contact number.";
       isValid = false;
     }
-    if (!credentials.schoolname.trim()) {
-      newErrors.schoolname = "Please enter your school name.";
-      isValid = false;
-    }
+    const schoolNameRegex = /^[A-Za-z\s]+$/; 
+  if (!credentials.schoolname.trim()) {
+    newErrors.schoolname = "School name is required.";
+    isValid = false;
+  } else if (!schoolNameRegex.test(credentials.schoolname.trim())) {
+    newErrors.schoolname = "School name must only contain alphabets.";
+    isValid = false;
+  }
     setErrors(newErrors);
     return isValid;
   };
@@ -197,13 +201,13 @@ const RequestDemo = () => {
                 <input
                   type="text"
                   className="peer input-bar mb-2"
-                  id="schoolName"
-                  name="schoolName"
-                  value={credentials.schoolName}
+                  id="schoolname"
+                  name="schoolname"
+                  value={credentials.schoolname}
                   onChange={onchange}
                   placeholder="School Name"
                 />
-                <label className="input-label" htmlFor="schoolName">
+                <label className="input-label" htmlFor="schoolname">
                   School Name
                 </label>
                 {errors.schoolname && (
