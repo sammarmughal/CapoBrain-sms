@@ -65,6 +65,28 @@ export default function Home() {
         />
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": url,
+            "name": "Capobrain",
+            "description": description ,
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://capobrain-sms.vercel.app/search?q={search_term_string}",
+                "actionPlatform": [
+                  "https://schema.org/DesktopWebPlatform",
+                  "https://schema.org/IOSPlatform",
+                  "https://schema.org/AndroidPlatform"
+                ]
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        `}</script>
       </Helmet>
       <section>
         <div className="relative">
