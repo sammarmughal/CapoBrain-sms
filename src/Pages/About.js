@@ -1,9 +1,4 @@
-import React, { useState, useEffect } from "react";
-import bgp from "../img/background-pattern-desktop.svg";
-import about_bg from "../img/about-background-school-management-system.jpg";
-import open from "../img/icon-plus.svg";
-import close from "../img/icon-minus.svg";
-import avatar from "../img/icon-star.svg";
+import React from "react";
 import phone from "../img/capobrain-phone.png";
 import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
@@ -12,39 +7,6 @@ import Testimonials from "../Components/Testimonials";
 import { Helmet } from "react-helmet";
 
 const AboutSection = () => {
-  const [state, setState] = useState(false);
-
-  const navigation = [
-    { title: "Features", path: "javascript:void(0)" },
-    { title: "Integrations", path: "javascript:void(0)" },
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Pricing", path: "javascript:void(0)" },
-  ];
-
-  useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!target.closest(".menu-btn")) setState(false);
-    };
-  }, []);
-
-  const testimonials = [
-    {
-      text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
-      imgSrc: "#",
-      alt: "Aleenea's testimonial Best School Management Software",
-    },
-    {
-      text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
-      imgSrc: "#",
-      alt: "Online School Payment Gateway testimonial image",
-    },
-    {
-      text: "I have been using pagedone for several months now, and I must say that it has made my life a lot easier. The platform's intuitive interface and ease of use have allowed me to manage my finances more effectively and make informed investment decisions. I particularly like the product's auto-tracking feature, which has saved me a lot of time and effort.",
-      imgSrc: "#",
-      alt: "Library Management Software for Schools testimonial image",
-    },
-  ];
   const servicesData = [
     {
       title: "Web Development & Design",
@@ -125,54 +87,7 @@ const AboutSection = () => {
       ),
     },
   ];
-  const Brand = () => (
-    <div className="flex items-center justify-between py-5 md:block">
-      <a href="javascript:void(0)">
-        <img
-          src="https://www.floatui.com/logo-dark.svg"
-          width={120}
-          height={50}
-          alt="Float UI logo"
-        />
-      </a>
-      <div className="md:hidden">
-        <button
-          className="menu-btn text-gray-400 hover:text-gray-300"
-          onClick={() => setState(!state)}
-        >
-          {state ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          )}
-        </button>
-      </div>
-    </div>
-  );
+
   return (
     <>
       <Helmet>
@@ -286,8 +201,8 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="py-14  relative">
+      </section>      
+      <section className="py-14 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">
@@ -403,7 +318,7 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <Testimonials />
+      <Testimonials/>
     </>
   );
 };

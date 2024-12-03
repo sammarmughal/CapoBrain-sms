@@ -84,11 +84,10 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={laravel}
-            alt="Laravel Logo School Management System Laravel Development"
+            alt="School Management System Laravel Development"
             height="60"
             width="160"
             className=""
-            title="Laravel Logo - School ERP Solutions"
           />
         </div>
         <div className="text-gray-400 ">
@@ -119,7 +118,6 @@ const Logos = () => {
             height="100"
             width="120"
             className=""
-            title="Saas Logo - School Software Solutions"
           />
         </div>
         <div className="text-gray-400 ">
@@ -129,7 +127,6 @@ const Logos = () => {
             height="60"
             width="80"
             className="rounded-xl ml-2"
-            title="Javascript Logo - School Software Solutions"
           />
         </div>
       </div>

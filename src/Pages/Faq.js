@@ -9,7 +9,7 @@ const FAQs = () => {
     {
       heading: "What is CapoBrain?",
       paragraph:
-        "CapoBrain is a comprehensive College &amp; School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
+        "CapoBrain is a comprehensive College & School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
       id: 1,
     },
     {
@@ -19,9 +19,9 @@ const FAQs = () => {
       id: 2,
     },
     {
-      heading: "Is CapoBrain suitable for both schools and colleges?",
+      heading: "Is CapoBrain suitable for both Schools and Colleges?",
       paragraph:
-        "Yes, CapoBrain is designed to cater to the needs of both schools and colleges, offering tailored modules to fit each educational setting.",
+        "Yes, CapoBrain is designed to cater to the needs of both Schools and Colleges, offering tailored modules to fit each Educational setting.",
       id: 3,
     },
     {
@@ -33,13 +33,13 @@ const FAQs = () => {
     {
       heading: "Can I log phone calls using CapoBrain?",
       paragraph:
-        "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your school management processes.",
+        "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your School Management processes.",
       id: 5,
     },
     {
       heading: "How can I add teaching and non-teaching staff to CapoBrain?",
       paragraph:
-        "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain software.",
+        "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain School Management Software.",
       id: 6,
     },
     {
@@ -52,7 +52,7 @@ const FAQs = () => {
       heading:
         "How can I manage student admissions with CapoBrain's Student Information System (SIS)?",
       paragraph:
-        "CapoBrain's Student Admission module allows you to efficiently manage student admissions, maintain admission records, and track application statuses, providing a seamless experience for both schools and colleges.",
+        "CapoBrain's Student Admission module allows you to efficiently manage student admissions, maintain admission records, and track application statuses, providing a seamless experience for both Schools and Colleges.",
       id: 8,
     },
     {
@@ -65,7 +65,7 @@ const FAQs = () => {
       heading:
         "How does the Leave Request feature work for staff and students in CapoBrain?",
       paragraph:
-        "The Leave Request feature enables staff and students to request leaves, which can be reviewed and approved by administrators, making it easy to manage absences within the school management system.",
+        "The Leave Request feature enables staff and students to request leaves, which can be reviewed and approved by administrators, making it easy to manage absences within the School Management System.",
       id: 10,
     },
     {
@@ -149,7 +149,7 @@ const FAQs = () => {
     {
       heading: "What is the pricing model for CapoBrain?",
       paragraph:
-        "Please contact our sales team or visit our pricing page for detailed information on CapoBrain's pricing plans and licensing options for our school management platform.",
+        "Please contact our sales team or visit our pricing page for detailed information on CapoBrain's pricing plans and licensing options for our School Management Platform.",
       id: 23,
     },
   ];
@@ -194,7 +194,6 @@ const FAQs = () => {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <section className="relative bg-purple-800">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -209,7 +208,6 @@ const FAQs = () => {
           }}
         ></div>
       </section>
-
       <section className="h-auto  relative justify-center items-center bg-Light_pink pb-10">
         <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
           <div className="absolute inset-0 bg-[radial-gradient(circle_1800px_at_100%_1200px,#d5c5ff,transparent)]"></div>

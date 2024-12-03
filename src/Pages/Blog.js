@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("Education Software");
-
   const blogCategories = [
     {
       name: "Education Software",

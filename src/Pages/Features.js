@@ -69,7 +69,7 @@ const Features = () => {
           }}
         ></div>
       </section>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-3 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
@@ -106,8 +106,8 @@ const Features = () => {
           </p>
         </div>
         <FeaturesContent />
-      </div>
-      <div className="relative isolate overflow-hidden bg-purple-900">
+      </section>
+      <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
           <div className="max-w-full z-50 flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -176,7 +176,7 @@ const Features = () => {
             />
           </svg>
         </div>
-      </div>
+      </section>
     </>
   );
 };

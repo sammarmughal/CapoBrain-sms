@@ -129,7 +129,7 @@ const RequestDemo = () => {
           }}
         ></div>
       </section>
-      <div
+      <section
         className="bg-cover bg-center relative bg-fixed"
         style={{ backgroundImage: `url(${CapobrainDemo})` }}
       >
@@ -222,7 +222,7 @@ const RequestDemo = () => {
             </form>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

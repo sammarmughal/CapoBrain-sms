@@ -165,7 +165,7 @@ const UserManual = () => {
             <img
               className="h-full w-full object-cover "
               src={Desktop}
-              alt="Hero Image"
+              alt="Capobrain School Software Providers"
             />
           </div>
         </div>

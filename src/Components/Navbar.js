@@ -38,9 +38,9 @@ function Navbar() {
               height="100"
               className="h-12 w-full object-fit"
               style={{ maxWidth: "18rem" }}
-              alt="school-management-software"
+              alt="school-management-system"
             />
-            <span className="hidden">School Management Software</span>
+            <span className="hidden">School Management System</span>
           </Link>
           <div
             onClick={handleToggle}
@@ -74,30 +74,30 @@ function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-6  nav-mob">
               <li>
-                <Link to="/" className="nav-list"
-                            onClick={handleToggle}
-                            >
+                <Link to="/" className="nav-list" onClick={handleToggle}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="nav-list"
-                            onClick={handleToggle}
-                            >
+                <Link to="/about" className="nav-list" onClick={handleToggle}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/features" className="nav-list"
-                            onClick={handleToggle}
-                            >
+                <Link
+                  to="/features"
+                  className="nav-list"
+                  onClick={handleToggle}
+                >
                   Features
                 </Link>
               </li>
               <li>
-                <Link to="/usermanual" className="nav-list"
-                            onClick={handleToggle}
-                            >
+                <Link
+                  to="/usermanual"
+                  className="nav-list"
+                  onClick={handleToggle}
+                >
                   User Manual
                 </Link>
               </li>
@@ -164,13 +164,20 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-                <Link to="/userlogin" onClick={toggleDropdown} className="flex items-center">
-                
+                <Link
+                  to="/userlogin"
+                  onClick={toggleDropdown}
+                  className="flex items-center"
+                >
                   <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
                 </Link>
               </div>
               <div className="lg:hidden gap-2 block">
-                <Link to="/requestdemo" onClick={toggleDropdown} className="flex items-center gap-1">
+                <Link
+                  to="/requestdemo"
+                  onClick={toggleDropdown}
+                  className="flex items-center gap-1"
+                >
                   Request a Demo
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

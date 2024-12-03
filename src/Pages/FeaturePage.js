@@ -28,7 +28,7 @@ function FeaturePage() {
     );
   }
   return (
-    <div>
+    <>
       <Helmet>
         <title>{feature.meta.title}</title>
         <meta name="description" content={feature.meta.description} />
@@ -132,17 +132,17 @@ function FeaturePage() {
         ></div>
          
       </section>
-      <div className="cb-container mt-6">
-        <section className="mb-8">
+      <section className="cb-container mt-6">
+        <div className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
             {feature.content.heading}
           </h2>
           <p className="text-lg text-gray-600 mt-4">
             {feature.content.description}
           </p>
-        </section>
+        </div>
 
-        <section className="mb-8">
+        <div className="mb-8">
           <h3 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
             Key Benefits
           </h3>
@@ -153,18 +153,17 @@ function FeaturePage() {
               </li>
             ))}
           </ul>
-        </section>
-
-        <section className="pb-20">
+        </div>
+        <div className="pb-20">
           <h3 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
             Why Choose This Feature?
           </h3>
           <p className="text-lg text-gray-600 mt-4">
             {feature.content.whyChoose}
           </p>
-        </section>
-      </div>
-      <div className="relative isolate overflow-hidden bg-purple-900">
+        </div>
+      </section>
+      <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
           <div className="w-full mx-10 lg:justify-between relative z-20 lg:inline-flex lg:items-center lg:max-w-7xl">
             <div className="max-w-xl mb-4">
@@ -232,8 +231,8 @@ function FeaturePage() {
             />
           </svg>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

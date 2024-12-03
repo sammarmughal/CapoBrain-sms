@@ -9,7 +9,6 @@ import FeatureSlider from "../Components/FeatureSlider";
 import Pricing from "../Components/Pricing";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
 export default function Home() {
   const iframeRef = useRef(null);
   const [originalSrc] = useState(
@@ -67,9 +66,8 @@ export default function Home() {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <section className="">
+      <section>
         <div className="relative">
-          <div className="">
             <div className="block z-10 overlay"></div>
             <div
               className="w-full h-full bg-cover bg-top bg-no-repeat"
@@ -143,15 +141,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>          
         </div>
       </section>
       <Logos />
       <Avatars />
       <PostSlider />
       <FeatureSlider />
-      {/* <Welcome/> */}
       <Keyfeatures />
       <Pricing />
       <Benefits />

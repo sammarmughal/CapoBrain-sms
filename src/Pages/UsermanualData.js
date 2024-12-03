@@ -34,7 +34,7 @@ const UserManualData = () => {
             }}
           ></div>
         </section>
-        <div className="mx-auto">
+        <section className="mx-auto">
           <div className="w-full mx-auto max-w-[1800px]">
             <div className="flex flex-col md:flex-row">
               <div className="lg:w-full  md:max-w-[350px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 py-4 gap-10 lg:rounded-b-2xl">
@@ -50,11 +50,11 @@ const UserManualData = () => {
                   Sorry, but the content you are looking for is currently
                   unavailable. Please check back later or contact support for
                   assistance.
-                </p>{" "}
-              </div>{" "}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     );
   }

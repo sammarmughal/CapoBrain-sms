@@ -209,8 +209,8 @@ export const Benefits = () => {
                   Automated Attendance Tracking
                 </h4>
                 <p className="mb-3 text-gray-500">
-                  Simplifies attendance management through our school management
-                  system (SMS) by automatically recording student attendance,
+                  Simplifies attendance management through our School Management
+                  System (SMS) by automatically recording student attendance,
                   reducing manual entry errors, and saving time for teachers.{" "}
                 </p>
               </div>

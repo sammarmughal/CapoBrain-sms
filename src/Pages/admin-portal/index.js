@@ -72,7 +72,7 @@ const AdminPortal = () => {
               <img
                 className="w-20 h-auto"
                 src={Welcome}
-                alt=""              />
+                alt=""/>
                 </div>
             </div>
 

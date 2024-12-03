@@ -88,7 +88,6 @@ const Help = () => {
               support team.
             </p>
           </div>
-
           <div
             data-aos-delay="150"
             className="rounded-xl bg-white p-6 text-center shadow-xl"
@@ -161,7 +160,7 @@ const Help = () => {
             <img
               className="w-full rounded-md"
               src={CusrtomerSupport}
-              alt="Hero Image"
+              alt="School Software Customer Support"
             />
             <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
             <div className="absolute bottom-0 start-0">

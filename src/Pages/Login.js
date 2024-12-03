@@ -40,7 +40,6 @@ const Login = () => {
     setErrors(newErrors);
     return isValid;
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -117,7 +116,7 @@ const Login = () => {
           }}
         ></div>
       </section>
-      <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+      <section className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-300 opacity-50 blur-xs to-indigo-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 sm:min-w-[520px] w-full">
@@ -196,7 +195,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

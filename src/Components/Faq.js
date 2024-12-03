@@ -9,7 +9,7 @@ const FAQs = () => {
     {
       heading: "What is CapoBrain?",
       paragraph:
-        "CapoBrain is a comprehensive College &amp; School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
+        "CapoBrain is a comprehensive College & School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both Schools and Colleges.",
       id: 1,
     },
     {

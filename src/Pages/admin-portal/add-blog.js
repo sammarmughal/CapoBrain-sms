@@ -32,23 +32,22 @@ const AddBlog = () => {
   const handlePhotoChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      // Validate file type
       if (!file.type.startsWith("image/")) {
         alert("Please select a valid image file.");
         return;
       }
-      setImage_url(URL.createObjectURL(file)); // Create a URL for the image preview
+      setImage_url(URL.createObjectURL(file)); 
       setFormData({
         ...formData,
-        photo: file, // Store the file
+        photo: file, 
       });
     }
   };
   const handleCancel = () => {
-    setImage_url(null); // Clear the image preview
+    setImage_url(null);
     setFormData({
       ...formData,
-      photo: null, // Clear the file in form data
+      photo: null, 
     });
     const fileInput = document.getElementById("fileInput");
     if (fileInput) {
@@ -119,7 +118,7 @@ const AddBlog = () => {
         content: "",
         photo: null,
       });
-      setImage_url(null); // Clear the image preview after successful submission
+      setImage_url(null); 
     } else {
       Swal.fire({
         title: "Error!",

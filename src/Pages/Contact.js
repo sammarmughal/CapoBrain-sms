@@ -30,7 +30,6 @@ const Contact = () => {
     }
     if (!formData.message.trim()) newErrors.message = "Message is required";
     setErrors(newErrors);
-
     return Object.keys(newErrors).length === 0;
   };
   const handleChange = (e) => {
@@ -76,7 +75,7 @@ const Contact = () => {
       });
     }
   };
-
+  
   return (
     <>
       <Helmet>

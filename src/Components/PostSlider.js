@@ -137,7 +137,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={cloudComuting}
-              alt="Cloud Computing School Mangement System"
+              alt="Cloud Computing School Management System"
               width="512"
               height="230"
             />
@@ -147,7 +147,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={edge}
-              alt="Cutting-edge School Mangement Software"
+              alt="Cutting-edge School Management Software"
               width="512"
               height="230"
             />
@@ -157,7 +157,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={computerBased}
-              alt="Computer Based School Mangement Software"
+              alt="Computer Based School Management Software"
               width="512"
               height="230"
             />
@@ -167,7 +167,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={AiDriven}
-              alt="AI Driven School Mangement Software"
+              alt="AI Driven School Management Software"
               width="512"
               height="230"
             />
@@ -176,7 +176,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={DataSecurity}
-              alt="Data Security School Mangement Software"
+              alt="Data Security School Management Software"
               width="512"
               height="230"
             />
@@ -194,7 +194,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={StudentParentsPortals}
-              alt="Students & Parents Portals"
+              alt="Students & Parents Portals School Software"
               width="512"
               height="230"
             />
@@ -208,7 +208,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={DailyDiray}
-              alt="Online Daily Diary School Mangement Software"
+              alt="Online Daily Diary School Management Software"
               width="512"
               height="230"
             />
@@ -228,7 +228,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={WhatsAppMessaging}
-              alt="School WhatsApp Messaging"
+              alt="School Software WhatsApp Messaging"
               width="512"
               height="230"
             />
@@ -238,7 +238,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={BiometricAttendance}
-              alt="School Biometric Attendance"
+              alt="School Biometric Attendance Software"
               width="512"
               height="230"
             />
@@ -247,7 +247,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={SalaryFee}
-              alt="Salary & Fee Management"
+              alt="Salary & Fee Management System"
               width="512"
               height="230"
             />
@@ -257,7 +257,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={InventoryManagement}
-              alt="School Inventory Management"
+              alt="School Inventory Management System"
               width="512"
               height="230"
             />
@@ -271,7 +271,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={RemainderFeeCollection}
-              alt="Remainder Fee Collection School Mangement System"
+              alt="Remainder Fee Collection School Management System"
               width="512"
               height="230"
             />
@@ -281,7 +281,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={Reporting}
-              alt="Reportion School Mangement"
+              alt="Reportion School Management"
               width="512"
               height="230"
             />
@@ -291,7 +291,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={ExpenseAndAssets}
-              alt="Expense and Assets School Mangement Software"
+              alt="Expense and Assets School Management Software"
               width="512"
               height="230"
             />
@@ -301,7 +301,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={OnlinePaperGeneration}
-              alt="Online Paper Generation School Mangement Software"
+              alt="Online Paper Generation School Management Software"
               width="512"
               height="230"
             />
@@ -310,7 +310,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={ExamResultManagement}
-              alt="Exam & Result School Mangement Software"
+              alt="Exam & Result School Management Software"
               width="512"
               height="230"
             />
@@ -319,7 +319,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={MultiComputers}
-              alt="MultiComputers"
+              alt="MultiComputers Student Information System"
               width="512"
               height="230"
             />
@@ -328,7 +328,7 @@ const PostSlider = () => {
             <img
               className="img-fluid rounded-2xl carousel-image"
               src={SchoolCollegeWeb}
-              alt="School & College Webs"
+              alt="School & College Webs Portal"
               width="512"
               height="230"
             />

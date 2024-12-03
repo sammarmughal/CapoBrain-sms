@@ -82,7 +82,7 @@ const FeatureSlider = () => {
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
               <h3 className="mb-3 heading-body">
-              Delivering Excellence to Over 30+ Educational Institutions with Our Best School Management Software  </h3>
+              Delivering Excellence to Over 30+ Educational Institutions with Our Best School Management Software</h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">
               <p>
@@ -107,7 +107,7 @@ const FeatureSlider = () => {
           width="1519"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone capobrain School Management System Dashboard"
+          alt="Capobrain School Management System Dashboard"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden lg:flex"
         />
         <img
@@ -115,7 +115,7 @@ const FeatureSlider = () => {
           width="319"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone Capobrain School Management System"
+          alt="Customizable School ERP Software"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden sm:flex lg:hidden"
         />
         <img
@@ -123,7 +123,7 @@ const FeatureSlider = () => {
           width="319"
           height="557"
           loading="eager"
-          alt="Meditation on iPhone Capobrain School Management System"
+          alt="Mobile-Friendly School ERP"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
         />
         <div className="verticel-carousel pt-10">
@@ -171,7 +171,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied Best School Management Software"
+                alt="Best School ERP Software for Institutions"
                 width="242"
                 height="auto"
               />
@@ -180,7 +180,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client5}
-                alt="Allied School"
+                alt="Allied School ERP for Fee Collection"
                 width="242"
                 height="auto"
               />
@@ -190,7 +190,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client6}
-                alt="Allied School"
+                alt="Allied School ERP System for Administration"
                 width="242"
                 height="auto"
               />
@@ -209,7 +209,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client8}
-                alt="Allied School Gradebook Software"
+                alt="Cloud-Based School ERP Software"
                 width="242"
                 height="auto"
               />
@@ -252,7 +252,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client9}
-                alt="Allied School Management System (SMS)"
+                alt="Education Software Development"
                 width="242"
                 height="auto"
               />
@@ -261,7 +261,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School Management System (SMS)"
+                alt="School Report Card Software"
                 width="242"
                 height="auto"
               />
@@ -270,7 +270,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied School Management System (SMS)"
+                alt="Student Attendance Software"
                 width="242"
                 height="auto"
               />
@@ -279,7 +279,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied School Management System (SMS)"
+                alt="Timetable Scheduling Software"
                 width="242"
                 height="auto"
               />
@@ -288,7 +288,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client5}
-                alt="Allied SchoolManagement System (SMS)"
+                alt="School Software Solutions in Pakistan"
                 width="242"
                 height="auto"
               />
@@ -297,7 +297,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client6}
-                alt="Allied School Management System (SMS)"
+                alt="Allied School Exam Management Software"
                 width="242"
                 height="auto"
               />
@@ -306,7 +306,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={AlliedSchool}
-                alt="Allied School Management System (SMS)"
+                alt="Student Information System (SIS)"
                 width="242"
                 height="auto"
               />
@@ -333,7 +333,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client3}
-                alt="Allied Student Information System (SIS)"
+                alt="Best School Management Software"
                 width="242"
                 height="auto"
               />
@@ -342,7 +342,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client4}
-                alt="Allied Student Information System (SIS)"
+                alt="All-in-One School Management Software"
                 width="242"
                 height="auto"
               />
@@ -351,7 +351,7 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client5}
-                alt="Allied Student Information System (SIS)"
+                alt="School ERP Software Solutions"
                 width="242"
                 height="auto"
               />

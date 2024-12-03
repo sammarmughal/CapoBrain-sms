@@ -48,11 +48,11 @@ import React,{useState} from  "react";
 			<div className="h-full relative z-10">
 			  {testimonialActive === 1 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-				"CapoBrain's user-friendly interface has streamlined our student management, class scheduling, and attendance tracking, making these tasks effortless."				</p>
+				"CapoBrain's user-friendly interface has streamlined our student management, class scheduling, and attendance tracking, making these tasks effortless."</p>
 			  )}
 			  {testimonialActive === 2 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-				"CapoBrain has transformed our administrative processes, enhancing efficiency and allowing us to concentrate on student success."				</p>
+				"CapoBrain has transformed our administrative processes, enhancing efficiency and allowing us to concentrate on student success."</p>
 			  )}
 			  {testimonialActive === 3 && (
 				<p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">

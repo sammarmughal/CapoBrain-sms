@@ -59,7 +59,6 @@ export default function Demo() {
           }}
         ></div>
       </section>
-
       <div className="cb-container">
         <div className="container mx-auto px-4 py-12">
           <div className="md:flex justify-between gap-10">
@@ -116,12 +115,11 @@ export default function Demo() {
                 </div>
               </div>
             </div>
-
             <div className="w-full md:mt-0 mt-5 md:w-1/2 flex justify-center items-center">
             <img
               className="w-full object-cover h-auto"
               src={demoImg}
-              alt="Demo Image"
+              alt="School ERP Software Demo"
             />           
             </div>
           </div>
