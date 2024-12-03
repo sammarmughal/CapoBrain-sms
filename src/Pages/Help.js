@@ -149,7 +149,7 @@ const Help = () => {
               </ul>
               <p className="mt-4">
                 Need further assistance?{" "}
-                <Link to="/userlogin" className="text-blue-500 hover:underline">
+                <Link to="/userlogin" className="text-purple-500 hover:underline">
                   Generate a ticket
                 </Link>{" "}
                 at our help center, and our support team will guide you through

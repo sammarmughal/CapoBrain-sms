@@ -51,7 +51,7 @@ const Footer = () => {
                       Market, Main GT Road, Gujranwala Pakistan 
                     </adiv>
                     <div className="py-2" style={{ fontSize: "16px" }}>
-                      <i className="fa fa-phone me-2"></i> +923 111 122 144
+                      <i className="fa fa-phone me-2"></i> +92 311 112 2144
                     </div>
                     <div className="py-2 mb-2" style={{ fontSize: "16px" }}>
                       <i className="fas fa-envelope  me-2"></i>{" "}

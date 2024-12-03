@@ -30,7 +30,7 @@ import Category from "./Pages/admin-portal/category";
 import DemoUsers from "./Pages/admin-portal/manage_users";
 import ChangePassword from "./Pages/admin-portal/settings";
 import Tickets from "./Pages/admin-portal/tickets";
-
+import NotFound from "./Pages/NotFound.js";
 function App() {
 
   return (
@@ -71,6 +71,8 @@ function AppWithRoutes() {
         <Route path="/adminpanel/demousers" element={<DemoUsers />} />
         <Route path="/adminpanel/changepassword" element={<ChangePassword />} />
         <Route path="/adminpanel/tickets" element={<Tickets />} />
+        <Route path="*" element={<NotFound />} />
+
 
       </Routes>
       {!isAdminPanel && <Footer />}

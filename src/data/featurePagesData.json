@@ -640,6 +640,39 @@
                 ],
                 "whyChoose": "CapoBrain’s WhatsApp Messaging feature integrates seamlessly with your school’s communication needs. Whether you're sending updates about upcoming events, attendance alerts, or personalized messages, this feature ensures that everyone stays informed and connected."
             }
+        },
+        {
+            "slug": "transportation-management",
+            "meta": {
+                "title": "Transportation Management | CapoBrain School Management",
+                "description": "Simplify school transportation with CapoBrain's Transportation Management module. Efficiently track vehicles, routes, and schedules for safe and reliable transportation.",
+                "openGraph": {
+                    "title": "Transportation Management for Schools",
+                    "description": "Ensure safe and efficient school transportation with CapoBrain's Transportation Management feature. Track vehicles, manage routes, and optimize schedules seamlessly.",
+                    "url": "https://capobrain.com/features/transportation-management",
+                    "type": "website"
+                },
+                "twitter": {
+                    "card": "summary_large_image",
+                    "title": "Efficient Transportation Management for Schools",
+                    "description": "Streamline your school's transportation system with CapoBrain's Transportation Management module. Track vehicles, routes, and schedules effortlessly."
+                },
+                "canonical": "https://capobrain.com/features/transportation-management"
+            },
+            "content": {
+                "heroHeader": "CapoBrain Transportation Management",
+                "heading": "Efficient and Reliable School Transportation Management",
+                "description": "CapoBrain’s Transportation Management module simplifies school transport operations. Track vehicles in real-time, manage routes effectively, and ensure the safety of students and staff with our user-friendly interface.",
+                "keyBenefits": [
+                    "Real-time tracking of school vehicles",
+                    "Efficient route planning and optimization",
+                    "Driver and vehicle management tools",
+                    "Attendance integration for pick-up and drop-off",
+                    "Improved safety with comprehensive reporting"
+                ],
+                "whyChoose": "CapoBrain’s Transportation Management module ensures smooth and secure transportation operations for your school. By optimizing routes, tracking vehicles in real-time, and managing schedules efficiently, this feature enhances safety and reliability, fostering trust and convenience for parents, students, and staff."
+            }
         }
+        
      ]
 }
