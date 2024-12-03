@@ -118,7 +118,10 @@ function Navbar() {
                     <li>
                       <Link
                         to="/help"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          handleToggle();
+                          toggleDropdown();
+                        }}
                         className="block px-4 py-2  hover:text-purple-600"
                       >
                         Knowledgebase
@@ -127,7 +130,10 @@ function Navbar() {
                     <li>
                       <Link
                         to="/blog"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          handleToggle();
+                          toggleDropdown();
+                        }}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         Blog
@@ -136,7 +142,10 @@ function Navbar() {
                     <li>
                       <Link
                         to="/faq"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          handleToggle();
+                          toggleDropdown();
+                        }}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         FAQs
@@ -145,7 +154,10 @@ function Navbar() {
                     <li>
                       <Link
                         to="/userlogin"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          handleToggle();
+                          toggleDropdown();
+                        }}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         Generate Ticket
@@ -154,7 +166,10 @@ function Navbar() {
                     <li>
                       <Link
                         to="/contact"
-                        onClick={toggleDropdown}
+                        onClick={() => {
+                          handleToggle();
+                          toggleDropdown();
+                        }}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         Contact
