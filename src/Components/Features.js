@@ -6,6 +6,7 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-4 max-w-[1200px] justify-center mx-auto">
           <FeaturesCard
+           slug="cloud-based-school-management-system"
             title="Cloud-Based School Management System"
             details="Access Capobrain, your trusted school management
                               software, from anywhere with our secure and
@@ -15,6 +16,7 @@ const Features = () => {
             icon={<i className="fa-solid fa-cloud fa-3x"></i>}
           />
           <FeaturesCard
+           slug="cutting-edge-educational-technologies"
             title="Cutting-Edge Educational Technologies"
             details="Experience unparalleled performance with
                               Capobrain, utilizing the latest cutting-edge
@@ -24,6 +26,7 @@ const Features = () => {
             icon={<i className="fa-solid fa-memory fa-3x"></i>}
           />
           <FeaturesCard
+           slug="computer-based-exam-management"
             title="Computer-Based Exam Management"
             details="Streamline your assessment process with
                               Capobrain's computer-based exam solutions. Our
@@ -33,6 +36,7 @@ const Features = () => {
             icon={<i className="fa-solid fa-computer fa-3x"></i>}
           />
           <FeaturesCard
+           slug = "ai-driven-school-management"
             title="AI-Driven School Management"
             details="Enhance decision-making and automate routine tasks
                                 with Capobrain's AI-driven features. Gain
@@ -41,6 +45,7 @@ const Features = () => {
             icon={<i className="fas fa-robot fa-3x"></i>}
           />
           <FeaturesCard
+           slug="data-security"
             title="Data Security"
             details="Safeguard sensitive information with Capobrain's
                               robust protection measures. Ensure comprehensive
@@ -49,6 +54,7 @@ const Features = () => {
             icon={<i className="fa-solid fa-file-shield fa-3x"></i>}
           />
           <FeaturesCard
+           slug="students-and-parent-portals"
             title="Students & Parent Portals"
             details="Empower students and parents with Capobrain's
                               dedicated portals, providing easy access to
@@ -57,76 +63,91 @@ const Features = () => {
             icon={<i className="fas fa-users fa-3x"></i>}
           />
           <FeaturesCard
+           slug="online-daily-diary-feature"
             title="Online Daily Diary Feature"
             details="Stay organized and informed with Capobrain's online daily diary feature, allowing students and teachers to record tasks, deadlines, and progress updates effortlessly."
             icon={<i className="far fa-calendar-alt fa-3x"></i>}
           />
           <FeaturesCard
+           slug="school-management-mobile-app"
             title="School Management Mobile App"
             details="Stay connected on the go with Capobrain's mobile app support. Enable access to key features and updates anytime, anywhere, ensuring convenience for students and educators."
             icon={<i className="fa-solid fa-mobile-screen-button fa-3x"></i>}
           />
           <FeaturesCard
+           slug="whatsapp-messaging"
             title="WhatsApp Messaging"
             details="Effortlessly communicate with students, parents, and staff through CapoBrain's integrated WhatsApp messaging feature, facilitating instant updates and announcements for enhanced school communication."
             icon={<i className="fa-brands fa-whatsapp fa-3x"></i>}
           />
           <FeaturesCard
+           slug="biometric-attendance"
             title="Biometric Attendance"
             details="Ensure accurate attendance tracking with CapoBrain's biometric attendance feature, providing a secure and efficient method for monitoring student and staff presence, enhancing accountability in your school."
             icon={<i className="fa-solid fa-clipboard-user fa-3x"></i>}
           />
           <FeaturesCard
+           slug="salary-and-fee-management"
             title="Salary & Fee Management"
             details="Efficiently manage salaries and fees with CapoBrain's integrated salary and fee management system, simplifying payroll processing and financial transactions for staff and students, streamlining financial operations in your institution."
             icon={<i className="fas fa-money-check-alt fa-3x"></i>}
           />
           <FeaturesCard
+           slug="inventory-management"
             title="Inventory Management"
             details="Keep track of resources seamlessly with CapoBrain's inventory management feature, enabling efficient monitoring and replenishment of school supplies and equipment, ensuring your institution is always well-stocked."
             icon={<i className="fas fa-box-open fa-3x"></i>}
           />
           <FeaturesCard
+           slug="student-and-staff-ledgers"
             title="Student & Staff Ledgers"
             details="Maintain comprehensive financial records for students and staff with CapoBrain's ledger management feature, ensuring transparency and accuracy in accounting processes for effective financial oversight."
             icon={<i className="fas fa-file-invoice-dollar fa-3x"></i>}
           />
           <FeaturesCard
+           slug="reminders-for-fee-collection"
             title="Reminders For Fee Collection"
             details="Never miss a payment deadline with Capobrain's fee collection reminder feature, ensuring timely notifications for students and parents to stay on top of financial obligations."
             icon={<i className="far fa-bell fa-3x"></i>}
           />
           <FeaturesCard
+           slug="expense-and-assets-management"
             title="Expense & Assets Management"
             details="Efficiently track expenses and manage assets with CapoBrain's comprehensive management tools, providing insights and control over financial resources for optimized school operations and budgeting."
             icon={<i className="fas fa-chart-pie fa-3x"></i>}
           />
           <FeaturesCard
+           slug="online-paper-generation"
             title="Online Paper Generation"
             details="Generate exams and assignments effortlessly with CapoBrain's online paper generation feature, enabling teachers to create, customize, and distribute digital assessments with ease for enhanced academic efficiency."
             icon={<i className="far fa-file-alt fa-3x"></i>}
           />
           <FeaturesCard
+           slug="exams-and-results-management"
             title="Exams & Results Management"
             details="Streamline the examination process and manage results effectively with CapoBrain's comprehensive exams and results management module, ensuring smooth administration and timely reporting for academic success."
             icon={<i className="fas fa-clipboard-list fa-3x"></i>}
           />
           <FeaturesCard
+           slug="comprehensive-reporting"
             title="Comprehensive Reporting"
             details="Gain valuable insights with CapoBrain's comprehensive reporting features, offering analytics and customizable reports for informed decision-making and enhanced school performance evaluation."
             icon={<i className="fas fa-chart-bar fa-3x"></i>}
           />
           <FeaturesCard
+           slug="multi-campuses-management"
             title="Multi Campuses Management"
             details="Effortlessly manage multiple branches or campuses with CapoBrain's integrated system, enabling centralized administration and coordination across diverse locations for seamless educational governance."
             icon={<i className="fas fa-sitemap fa-3x"></i>}
           />
           <FeaturesCard
+           slug="school-college-front-website"
             title="School/ College Front Website"
             details="Showcase your school or college with CapoBrain's customizable front website feature, highlighting important information, events, and achievements for a professional online presence that engages your community."
             icon={<i className="fas fa-globe fa-3x"></i>}
           />
           <FeaturesCard
+           slug="transportation-management"
             title="Transportation Management"
             details="Simplify and streamline school transportation with CapoBrain's management module. Track vehicles, routes, and schedules efficiently, ensuring safe and reliable student transportation."
             icon={<i className="fa-solid fa-bus fa-3x"></i>}
@@ -139,13 +160,13 @@ const Features = () => {
 
 export default Features;
 
-const FeaturesCard = ({ icon, title, details }) => {
-  const createSlug = (title) =>
-    title
-      .toLowerCase()
-      .replace(/ /g, "-")
-      .replace(/[^\w-]+/g, "");
-  const slug = createSlug(title);
+const FeaturesCard = ({ icon, title, slug, details }) => {
+  // const createSlug = (title) =>
+  //   title
+  //     .toLowerCase()
+  //     .replace(/ /g, "-")
+  //     .replace(/[^\w-]+/g, "");
+  // const slug = createSlug(title);
 
   return (
     <>

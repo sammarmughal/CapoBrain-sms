@@ -257,7 +257,7 @@
             }
         },
         {
-            "slug": "expense--assets-management",
+            "slug": "expense-and-assets-management",
             "meta": {
                 "title": "Expense & Assets Management | CapoBrain",
                 "description": "CapoBrain offers efficient tools for tracking expenses and managing assets, providing insights and control over financial resources for optimized school operations.",
@@ -289,7 +289,7 @@
             }
         },
         {
-            "slug": "salary--fee-management",
+            "slug": "salary-and-fee-management",
             "meta": {
                 "title": "Salary & Fee Management | CapoBrain School ERP",
                 "description": "Simplify financial operations with CapoBrain's integrated Salary & Fee Management system, offering seamless payroll processing and fee collection for institutions.",
@@ -546,7 +546,7 @@
             }
         },
         {
-            "slug": "students--parent-portals",
+            "slug": "students-and-parent-portals",
             "meta": {
                 "title": "Students & Parent Portals | CapoBrain",
                 "description": "CapoBrain offers dedicated portals for students and parents, providing easy access to academic records, schedules, and essential communication tools to enhance engagement.",
@@ -578,7 +578,7 @@
             }
         },
         {
-            "slug": "student--staff-ledgers",
+            "slug": "student-and-staff-ledgers",
             "meta": {
                 "title": "Student & Staff Ledgers | CapoBrain",
                 "description": "CapoBrain’s ledger management system ensures accurate financial record keeping for students and staff, promoting transparency and control over school finances.",

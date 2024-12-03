@@ -53,7 +53,7 @@ const Features = () => {
             <h1 className="heading-hero">
               Standout Features of Our Comprehensive
               <br />
-              School Management System{" "}
+              School Management System
             </h1>
             <p className="max-w-2xl mx-auto text-gray-200">
               Invest intelligently and discover a better way to manage your
@@ -96,13 +96,12 @@ const Features = () => {
                 />
               </svg>
               <span className="relative">The</span>
-            </span>{" "}
-            Key Features of Capobrain's School Management System{" "}
+            </span>
+            Key Features of Capobrain's School Management System
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Over 20+ Modules you{" "}
-            <i className="fa fa-heart heart heartcolor text-red-600"></i> to use
-            CapoBrain
+            Over 20+ Modules you&nbsp;
+             <i className="fa fa-heart heart heartcolor text-red-600"></i> to use CapoBrain
           </p>
         </div>
         <FeaturesContent />
@@ -113,13 +112,12 @@ const Features = () => {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Learn more about our <br />
               <span className="text--500">
-                {" "}
+                
                 Advanced School Management Software
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Maximize efficiency with CapoBrain, your school management
-              software. Simplify operations and prioritize student success.
+              Maximize efficiency with CapoBrain, your school management software. Simplify operations and prioritize student success.
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link

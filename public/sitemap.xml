@@ -37,7 +37,7 @@
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/students--parent-portals</loc>
+    <loc>https://capobrain-sms.vercel.app/features/students-and-parent-portals</loc>
     <priority>0.7</priority>
   </url>
    <url>
@@ -59,7 +59,7 @@
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/salary--fee-management</loc>
+    <loc>https://capobrain-sms.vercel.app/features/salary-and-fee-management</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -68,7 +68,7 @@
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/student--staff-ledgers</loc>
+    <loc>https://capobrain-sms.vercel.app/features/student-and-staff-ledgers</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -77,7 +77,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/expense--assets-management</loc>
+    <loc>https://capobrain-sms.vercel.app/expense-and-assets-management</loc>
     <priority>0.7</priority>
   </url>
    <url>
@@ -86,7 +86,7 @@
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/exams--results-management</loc>
+    <loc>https://capobrain-sms.vercel.app/features/exams-and-results-management</loc>
     <priority>0.7</priority>
   </url>
    <url>
