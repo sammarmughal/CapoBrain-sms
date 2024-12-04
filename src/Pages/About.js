@@ -87,7 +87,6 @@ const AboutSection = () => {
       ),
     },
   ];
-
   return (
     <>
       <Helmet>

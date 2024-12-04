@@ -1,9 +1,9 @@
 import React from "react";
-import Avatar from "../../../img/admin-avatar.png"
+import Avatar from "../../../img/user-avatar.png"
 import Logo from "../../../img/capobrain-logo-white.png"
 import { Link } from "react-router-dom";
 
-function Admin_Nav() {
+function UserNav() {
  
   return (
     <>
@@ -19,11 +19,11 @@ function Admin_Nav() {
         </div>
         <div className="flex justify-between items-center h-14 bg-purple-800 header-right">
           <img
-            className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden"
+            className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-full overflow-hidden"
             src={Avatar}
             alt="Best School Management Software Avatar"
           />
-          <span className="hidden md:block">ADMIN</span>
+          <span className="hidden md:block">USER</span>
         
           <ul className="flex items-center">
             <li>
@@ -59,4 +59,4 @@ function Admin_Nav() {
     </>
   );
 }
-export default Admin_Nav;
+export default UserNav;

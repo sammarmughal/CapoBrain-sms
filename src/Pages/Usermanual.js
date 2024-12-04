@@ -12,24 +12,24 @@ const UserManual = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Explore the comprehensive user manual for Capobrain School Management System. Learn how to use our School ERP software, from fee management to student data, attendance tracking, and more."
+          content="Explore the comprehensive user manual for Capobrain Cloud-Based School ERP Software. Learn how to use our School ERP software, from fee management to student data, attendance tracking, and more."
         />
         <meta
           name="keywords"
-          content="Capobrain User Manual, School Management System Manual, School ERP User Guide, School Software Manual, Capobrain School Software Guide, How to Use School ERP, School Management User Manual"
+          content="Capobrain User Manual, Cloud-Based School ERP Software Manual, School ERP User Guide, School Software Manual, Capobrain School Software Guide, How to Use School ERP, School Management User Manual"
         />
         <meta name="robots" content="index, follow" />
         <title>
-          User Manual - Capobrain | Learn How to Use School Management System
+          User Manual - Capobrain | Learn How to Use Cloud-Based School ERP Software
         </title>
 
         <meta
           property="og:title"
-          content="User Manual - Capobrain | Learn How to Use School Management System"
+          content="User Manual - Capobrain | Learn How to Use Cloud-Based School ERP Software"
         />
         <meta
           property="og:description"
-          content="Access the detailed user manual for Capobrain’s School Management System. Get step-by-step instructions on how to manage student data, fees, attendance, and more with our School ERP software."
+          content="Access the detailed user manual for Capobrain’s Cloud-Based School ERP Software. Get step-by-step instructions on how to manage student data, fees, attendance, and more with our School ERP software."
         />
         <meta property="og:image" content="URL_TO_IMAGE" />
         <meta property="og:url" content="YOUR_USER_MANUAL_PAGE_URL" />
@@ -37,11 +37,11 @@ const UserManual = () => {
 
         <meta
           name="twitter:title"
-          content="User Manual - Capobrain | Learn How to Use School Management System"
+          content="User Manual - Capobrain | Learn How to Use Cloud-Based School ERP Software"
         />
         <meta
           name="twitter:description"
-          content="Read the user manual for Capobrain’s School Management System. Learn how to use all features of our School ERP software to manage school administration, attendance, fees, and more."
+          content="Read the user manual for Capobrain’s Cloud-Based School ERP Software. Learn how to use all features of our School ERP software to manage school administration, attendance, fees, and more."
         />
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -155,7 +155,7 @@ const UserManual = () => {
               </Link>
             </div>
           </div>
-          <div className="relative w-1/2 mt-4 lg:mt-0 flex items-center justify-center">
+          <div className="relative w-1/2 mt-4 lg:mt-0 flex items-center justify-center mx-auto">
             <img
               className="h-full w-full object-cover "
               src={Desktop}

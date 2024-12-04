@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./component/sidebar";
-import Admin_Nav from "./component/admin-nav";
+import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 import Welcome from "../../img/welcome.png"
 const AdminPortal = () => {
@@ -57,7 +57,7 @@ const AdminPortal = () => {
       </Helmet>
 
       <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black ">
-        <Admin_Nav />
+        <AdminNav />
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-4 gap-10">

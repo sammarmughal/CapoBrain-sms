@@ -31,6 +31,10 @@ import DemoUsers from "./Pages/admin-portal/manage_users";
 import ChangePassword from "./Pages/admin-portal/settings";
 import Tickets from "./Pages/admin-portal/tickets";
 import NotFound from "./Pages/NotFound.js";
+import UserProfile from "./Pages/user-profile"
+import GeneratedTickets from "./Pages/user-profile/generatedTickets.js";
+import CloseStatusTickets from "./Pages/user-profile/CloseStatusTickets.js";
+import OpenStatusTickets from "./Pages/user-profile/openStatusTickets.js";
 function App() {
 
   return (
@@ -44,10 +48,10 @@ function App() {
 function AppWithRoutes() {
   const location = useLocation(); 
   const isAdminPanel = location.pathname.startsWith("/adminpanel");
-
+  const isUserProfile = location.pathname.startsWith("/userprofile"); 
   return (
     <>
-      {!isAdminPanel && <Navbar />}      
+      {!isAdminPanel && !isUserProfile &&  <Navbar />}      
       <ScrollToTop />      
       <Routes>
         <Route path="/" element={<Home />} />
@@ -71,11 +75,14 @@ function AppWithRoutes() {
         <Route path="/adminpanel/demousers" element={<DemoUsers />} />
         <Route path="/adminpanel/changepassword" element={<ChangePassword />} />
         <Route path="/adminpanel/tickets" element={<Tickets />} />
+        <Route path="/userprofile" element={<UserProfile />} />
+        <Route path="/userprofile/generated-tickets" element={<GeneratedTickets />} />
+        <Route path="/userprofile/openstatus-tickets" element={<OpenStatusTickets />} />
+        <Route path="/userprofile/closestatus-tickets" element={<CloseStatusTickets />} />
+
         <Route path="*" element={<NotFound />} />
-
-
       </Routes>
-      {!isAdminPanel && <Footer />}
+      {!isAdminPanel && !isUserProfile && <Footer />}
     </>
   );
 }

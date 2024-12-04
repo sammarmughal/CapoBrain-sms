@@ -103,12 +103,12 @@ export default function Home() {
                     <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-6xl">
                       Online Best School
                       <br />
-                      Management Software
+                      Management System
                     </h1>
                   </div>
                   <div className="pb-4 min-h-fit text-cool-grey-300">
                     <p className="p-text">
-                      Easy to use complete all-in-one School Management System
+                      Easy to use complete all-in-one School Management Software
                     </p>
                   </div>
                   <div className="flex flex-col md:flex-row gap-3 md:gap-5 justify-center mt-6 mb-10 lg:mb-12 lg:w-1/2 m-auto min-h-fit">

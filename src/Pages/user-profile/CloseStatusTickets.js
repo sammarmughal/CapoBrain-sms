@@ -1,8 +1,8 @@
 import Sidebar from "./component/sidebar";
-import AdminNav from "./component/admin-nav";
+import UserNav from "./component/user-nav";
 import { Helmet } from "react-helmet";
 
-const Tickets = () => {
+const CloseStatusTickets = () => {
   return (
     <>
       <Helmet>
@@ -44,11 +44,11 @@ const Tickets = () => {
       </Helmet>
 
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
-        <AdminNav />
+        <UserNav />
         <Sidebar />
         <div className="container mx-auto my-10 h-full ml-14 mt-20 mb-10 md:ml-64 ">
           <h1 className="text-xl font-bold text-slate-600 mb-5 ml-8 my-4">
-            Tickets
+          CloseStatus Tickets
           </h1>
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
@@ -96,4 +96,4 @@ const Tickets = () => {
   );
 };
 
-export default Tickets;
+export default CloseStatusTickets;

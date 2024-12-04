@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./component/sidebar";
-import Admin_Nav from "./component/admin-nav";
+import AdminNav from "./component/admin-nav";
 import { SiBloglovin } from "react-icons/si";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
@@ -81,11 +81,6 @@ const AddBlog = () => {
       isValid = false;
     }
 
-    if (!formData.blogSlug.trim()) {
-      newErrors.blogSlug = "Blog slug is required.";
-      isValid = false;
-    }
-
     if (!formData.content.trim()) {
       newErrors.content = "Blog content is required.";
       isValid = false;
@@ -128,6 +123,7 @@ const AddBlog = () => {
       });
     }
   };
+
   return (
     <>
       <Helmet>
@@ -169,7 +165,7 @@ const AddBlog = () => {
       </Helmet>
 
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
-        <Admin_Nav />
+        <AdminNav />
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="flex items-center justify-center mb-12">
@@ -300,6 +296,9 @@ const AddBlog = () => {
                       </div>
                     )}
                   </div>
+                  {errors.photo && (
+                    <div className="text-sm text-red-500">{errors.photo}</div>
+                  )}
                 </div>
 
                 <div className="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">

@@ -1,8 +1,11 @@
+import React from "react";
 import Sidebar from "./component/sidebar";
-import AdminNav from "./component/admin-nav";
+import AdminNav from "./component/user-nav";
 import { Helmet } from "react-helmet";
+import UserNav from "./component/user-nav";
 
-const Tickets = () => {
+const GeneratedTickets = () => {
+
   return (
     <>
       <Helmet>
@@ -10,41 +13,41 @@ const Tickets = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Capobrain Admin Panel - Tickets Page. Manage and resolve support tickets from staff, students, and parents. Ensure quick issue resolution with Capobrain's user-friendly ticket management system."
+          content="Capobrain Admin Panel - Blog Page. Manage, edit, and publish Generated Tickets related to school management, updates, and news. Easily manage content within the admin panel of Capobrain School Management System."
         />
         <meta
           name="keywords"
-          content="Capobrain Admin Panel Tickets, Support Ticket Management, Admin Panel for School Support, Resolve Tickets, School Management System Ticketing, Ticketing System for Schools"
+          content="Capobrain Admin Panel Blog, Blog Management Dashboard, Admin Panel Blog Page, School Management System Blog, Manage Generated Tickets for School Software, Blog Management for Schools"
         />
         <meta name="robots" content="index, follow" />
-        <title>Support Tickets - Capobrain Admin Panel</title>
+        <title>Blog Management - Capobrain Admin Panel</title>
 
         <meta
           property="og:title"
-          content="Support Tickets - Capobrain Admin Panel"
+          content="Blog Management - Capobrain Admin Panel"
         />
         <meta
           property="og:description"
-          content="Manage support tickets from users (staff, students, and parents) within Capobrain Admin Panel. Quickly assign, resolve, and track tickets to enhance school management."
+          content="Manage and edit Generated Tickets related to Capobrain School Management System. From school updates to informative articles, manage all content in the admin panel with ease."
         />
         <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_TICKETS_URL" />
+        <meta property="og:url" content="YOUR_ADMIN_PANEL_BLOG_URL" />
         <meta property="og:type" content="website" />
 
         <meta
           name="twitter:title"
-          content="Support Tickets - Capobrain Admin Panel"
+          content="Blog Management - Capobrain Admin Panel"
         />
         <meta
           name="twitter:description"
-          content="Efficiently manage and resolve support tickets through Capobrain’s Admin Panel. Ensure swift responses to issues raised by staff, students, and parents."
+          content="Access the blog management section of Capobrain's Admin Panel. Easily manage, edit, and publish school-related Generated Tickets and updates from the admin dashboard."
         />
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
-        <AdminNav />
+      <div className="w-full flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
+        <UserNav />
         <Sidebar />
         <div className="container mx-auto my-10 h-full ml-14 mt-20 mb-10 md:ml-64 ">
           <h1 className="text-xl font-bold text-slate-600 mb-5 ml-8 my-4">
@@ -95,5 +98,4 @@ const Tickets = () => {
     </>
   );
 };
-
-export default Tickets;
+export default GeneratedTickets;

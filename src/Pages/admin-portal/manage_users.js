@@ -1,5 +1,5 @@
 import Sidebar from "./component/sidebar";
-import Admin_Nav from "./component/admin-nav";
+import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 
 const DemoUsers = () => {
@@ -45,7 +45,7 @@ const DemoUsers = () => {
       </Helmet>
 
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
-        <Admin_Nav />
+        <AdminNav />
         <Sidebar />
 
         <div className="container mx-auto my-10 h-full ml-14 mt-20 mb-10 md:ml-64 ">

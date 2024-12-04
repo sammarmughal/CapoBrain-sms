@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -48,23 +48,54 @@ const SignUp = () => {
     setErrors(newErrors);
     return isValid;
   };
-  const handlesubmit = (e) => {
+  const navigate = useNavigate();
+  const handlesubmit = async (e) => {
     e.preventDefault();
-
     if (validateForm()) {
-      Swal.fire({
-        title: "Success!",
-        text: "You have signed up successfully!",
-        icon: "success",
-        confirmButtonText: "OK",
-      }).then(() => {
-        setCredentials({
-          name: "",
-          email: "",
-          password: "",
-          number: "",
+      try {
+        const res = await fetch(
+          "https://capobrain-backend.vercel.app/api/auth/signUpUser",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(credentials),
+          }
+        );
+  
+        if (res.ok) {
+          Swal.fire({
+            title: "Success!",
+            text: "You have signed up successfully!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then(() => {
+            setCredentials({
+              name: "",
+              email: "",
+              password: "",
+              number: "",
+            });
+            navigate("/userlogin");
+          });
+        } else {
+          const errorData = await res.json();
+          Swal.fire({
+            title: "Error!",
+            text: errorData.message || "Failed to sign up. Please try again.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      } catch (error) {
+        Swal.fire({
+          title: "Error!",
+          text: "An unexpected error occurred. Please try again later.",
+          icon: "error",
+          confirmButtonText: "OK",
         });
-      });
+      }
     } else {
       Swal.fire({
         title: "Error!",
@@ -74,6 +105,7 @@ const SignUp = () => {
       });
     }
   };
+  
   const onchange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };

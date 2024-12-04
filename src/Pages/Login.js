@@ -18,7 +18,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  const onchange = (e) => {
+  const onchange = async (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
   const navigate = useNavigate();
@@ -32,27 +32,65 @@ const Login = () => {
       isValid = false;
     }
 
-    if (!credentials.password || credentials.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters long.";
+    if (!credentials.password || credentials.password.length < 4) {
+      newErrors.password = "Password must be at least 4 characters long.";
       isValid = false;
     }
 
     setErrors(newErrors);
     return isValid;
   };
-  const handleSubmit = (e) => {
+  const handlesubmit = async (e) => {
     e.preventDefault();
-
+  
     if (validateForm()) {
-      Swal.fire({
-        title: "Success!",
-        text: "Login successful",
-        icon: "success",
-        confirmButtonText: "OK",       
-
-      }).then(() => {
-        navigate("/adminpanel");
-      });
+      const { email, password } = credentials;
+  
+      try {
+        const res = await fetch("https://capobrain-backend.vercel.app/api/auth/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        });
+  
+        const json = await res.json();
+        const errorElement = document.getElementById("number"); // Assuming "number" is where you want to show errors.
+        if (!res.ok) {
+          if (errorElement) {
+            errorElement.innerText = json.error || "Something went wrong.";
+          }
+          Swal.fire({
+            title: "Error!",
+            text: json.error || "Failed to login. Please try again.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+          return;
+        }  
+        sessionStorage.setItem("User", JSON.stringify(json));
+        if (json.email === "capobrain@gmail.com") {
+          navigate("/adminpanel");
+        } else {
+          navigate("/userprofile");
+        }
+  
+        Swal.fire({
+          title: "Success!",
+          text: "Login successful",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      } catch (error) {
+        console.error("Error logging in:", error);
+        Swal.fire({
+          title: "Error!",
+          text: "An unexpected error occurred. Please try again.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
     } else {
       Swal.fire({
         title: "Error!",
@@ -62,7 +100,6 @@ const Login = () => {
       });
     }
   };
-
   return (
     <>
       <Helmet>
@@ -127,9 +164,9 @@ const Login = () => {
                 </h1>
               </div>
               <div className="divide-y divide-gray-200">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handlesubmit}>
                   <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                    <div class="relative mb-6">
+                    <div className="relative mb-6">
                       <input
                         type="email"
                         id="email"
@@ -139,7 +176,7 @@ const Login = () => {
                         onChange={onchange}
                         placeholder="Type inside me"
                       />
-                      <label for="email" className="input-label">
+                      <label htmlFor="email" className="input-label">
                         Enter Email
                       </label>
                       {errors.email && (

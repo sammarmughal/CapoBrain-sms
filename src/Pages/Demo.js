@@ -48,7 +48,7 @@ export default function Demo() {
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1 className="heading-hero">
-              Schedule Your Free College & School Management Software Demo Today
+              Schedule Your Free School ERP Demo Today
             </h1>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Demo() {
           <div className="md:flex justify-between gap-10">
             <div className="w-full md:w-1/2">
               <h2 className="text-2xl font-semibold mb-4">
-                Experience a Live School Management System Demo
+                Experience a Free School ERP  Demo
               </h2>
               <p>
                 Discover how our top-rated school management software can

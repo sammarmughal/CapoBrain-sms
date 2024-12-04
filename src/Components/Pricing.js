@@ -45,17 +45,17 @@ const Pricing = () => {
             {
               name: "Personal",
               price: isMonthly ? "0PKR" : "0PKR",
-              features: ["Feature One", "Feature Two", "Feature Three"],
+              features: ["Feature One", "Feature Two", "Feature Three" ,"Feature Four", "Feature Five"],
             },
             {
               name: "Professional",
               price: isMonthly ? "8PKR" : "80PKR",
-              features: ["Feature One", "Feature Two", "Feature Three"],
+              features: ["Feature One", "Feature Two", "Feature Three" ,"Feature Four", "Feature Five"],
             },
             {
               name: "Enterprise",
               price: isMonthly ? "16PKR" : "160PKR",
-              features: ["Feature One", "Feature Two", "Feature Three"],
+              features: ["Feature One", "Feature Two", "Feature Three" ,"Feature Four", "Feature Five"],
             },
           ].map((plan, index) => (
             <motion.div
@@ -333,7 +333,7 @@ const Pricing = () => {
               <div className="flex flex-col items-center justify-center px-2 py-8">
                 <ul className="self-stretch flex-1 space-y-2">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex justify-center space-x-2">
+                    <li key={idx} className="flex justify-start mx-10 space-x-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

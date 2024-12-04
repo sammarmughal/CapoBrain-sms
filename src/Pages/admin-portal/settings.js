@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./component/sidebar";
-import Admin_Nav from "./component/admin-nav";
+import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -145,7 +145,7 @@ const ChangePasswords = () => {
       </Helmet>
 
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white  text-black ">
-        <Admin_Nav />
+        <AdminNav />
         <Sidebar />
         <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
           <div className="mt-10  flex">
@@ -212,6 +212,9 @@ const ChangePasswords = () => {
                         )}
                       </button>
                     </div>
+                    {errors.oldPassword && (
+                      <div className="text-sm text-red-500">{errors.oldPassword}</div>
+                    )}
                   </div>
                   <div className="pb-4">
                     <label
@@ -242,6 +245,9 @@ const ChangePasswords = () => {
                         )}
                       </button>
                     </div>
+                    {errors.newPassword && (
+                      <div className="text-sm text-red-500">{errors.newPassword}</div>
+                    )}
                   </div>
                   <div className="pb-4">
                     <label
@@ -278,6 +284,9 @@ const ChangePasswords = () => {
                         )}
                       </button>
                     </div>
+                    {errors.confirmNewPassword && (
+                      <div className="text-sm text-red-500">{errors.confirmNewPassword}</div>
+                    )}
                   </div>
 
                   <div>

@@ -59,7 +59,7 @@ const Logos = () => {
             width="100"
             height="100"
             viewBox="0 0 30 30"
-            title="Javascript Logo - School Management Software"
+            title="Javascript Logo - School Management System"
           >
             <path
               fill="#dcd5f2"
