@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import demoImg from "../img/demo-img.png"; 
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 export default function Demo() {
 
@@ -72,14 +73,14 @@ export default function Demo() {
               </p>
               <p className="mt-2">
                 Demo Link:{" "}
-                <a
-                  href="https://demo.capobrain.com/"
+                <Link
+                  to="https://demo.capobrain.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-700 underline"
                 >
                   https://demo.capobrain.com/
-                </a>
+                </Link>
               </p>
               <h4 className="mt-6 font-semibold text-2xl">Demo Credentials</h4>
               <div className="flex flex-row gap-4 mt-4">

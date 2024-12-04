@@ -204,7 +204,7 @@
         "description": "Manage staff withdrawals efficiently with CapoBrain's Staff Withdrawal Management module. Search for staff by ID, record reasons for withdrawal, and view a list of withdrawn staff."
       },
       "content": {
-        "heading": "taff-withdrawal",
+        "heading": "Staff-withdrawal",
         "description": "If you want to withdraw any staff from school, you can easily do so by searching for the staff member by their ID. Enter the reason for withdrawal, and the staff member will be removed from the staff list. You will also have access to a list of all withdrawn staff along with their reasons, enhancing your staff management capabilities.",
         "details": [],
         "image": {

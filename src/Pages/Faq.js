@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import open from "../img/icon-plus.svg";
 import close from "../img/icon-minus.svg";
 import avatar from "../img/icon-star.svg";
@@ -153,6 +153,173 @@ const FAQs = () => {
       id: 23,
     },
   ];
+ const schemaMarkup={
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain is a comprehensive College & School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges."
+    }
+  },{
+    "@type": "Question",
+    "name": "Which programming languages are used to develop CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain is developed using modern programming languages to ensure efficiency, scalability, and reliability, making it a top choice for educational institutions."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is CapoBrain suitable for both Schools and Colleges?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain is designed to cater to the needs of both Schools and Colleges, offering tailored modules to fit each Educational setting."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does the Postal Dispatch feature work?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Postal Dispatch feature allows you to manage outgoing mail, track deliveries, and maintain a record of dispatched items, enhancing your administrative efficiency."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I log phone calls using CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your School Management processes."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I add teaching and non-teaching staff to CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain School Management Software."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the Staff ToDo's feature used for?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Staff ToDo's feature helps staff members manage their tasks, set priorities, and track progress on various assignments, making it an essential tool in our school ERP software."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I manage student admissions with CapoBrain's Student Information System (SIS)?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain's Student Admission module allows you to efficiently manage student admissions, maintain admission records, and track application statuses, providing a seamless experience for both Schools and Colleges."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I review and manage student feedback in CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain provides a dedicated module for reviewing student feedback, helping you understand student satisfaction and areas for improvement, crucial for enhancing your school's overall performance."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does the Leave Request feature work for staff and students in CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Leave Request feature enables staff and students to request leaves, which can be reviewed and approved by administrators, making it easy to manage absences within the School Management System."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I manage fee payments and scholarships in CapoBrain's School Fee Management System?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain offers comprehensive fee management capabilities, including fee collection, scholarship management, and fine adjustments, ensuring accurate financial tracking for your institution."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I manage staff and student accounts using CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain's Accounts module allows you to manage staff and student accounts, process salary payments, and maintain financial records efficiently, promoting organized financial management in educational institutions."
+    }
+  },{
+    "@type": "Question",
+    "name": "How does the Inventory List feature help in managing school supplies?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Inventory List feature enables you to track school supplies, manage inventory levels, and generate purchase orders as needed, ensuring your school operates efficiently without supply shortages."
+    }
+  },{
+    "@type": "Question",
+    "name": "What types of reports can I generate with CapoBrain's reporting features?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain offers a wide range of reports, including student attendance, staff accounts, fee reports, inventory reports, and more, to help you make informed decisions for your educational institution."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I manage user roles and permissions in CapoBrain's User Management module?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain's User Management module allows you to create user profiles, define roles, and assign specific permissions to ensure secure and controlled access to the system, enhancing data security."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I review and manage student feedback in CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain provides a dedicated module for reviewing student feedback, helping you understand student satisfaction and areas for improvement, crucial for enhancing your school's overall performance."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I customize class schedules, subjects, and school timings in CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CapoBrain's Configurations module allows you to customize class schedules, assign subjects, and define school timings to suit your institution's needs, making it an adaptable solution."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is CapoBrain and how can it benefit schools and colleges?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain is a comprehensive school/college management system designed to streamline administrative tasks, enhance communication between stakeholders, and improve overall efficiency. It offers features such as student enrollment, attendance tracking, exam management, fee collection, and parent-teacher communication, catering to diverse educational needs."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I learn more about CapoBrain and its features?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can visit the website capobrain.com for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is there customer support available for CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, we provide dedicated customer support to assist you with any queries, technical issues, or assistance you may need with CapoBrain's school management software."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can I get updates and new features for CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We regularly update CapoBrain with new features and improvements. You will be notified of updates, and our support team will assist you with the upgrade process to ensure you have the latest school ERP software."
+    }
+  },{
+    "@type": "Question",
+    "name": "Are there any hidden charges or additional fees for using CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CapoBrain's pricing is transparent, with no hidden charges. All fees and costs associated with using the software will be clearly communicated to you, ensuring an affordable school management solution."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the pricing model for CapoBrain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Please contact our sales team or visit our pricing page for detailed information on CapoBrain's pricing plans and licensing options for our School Management Platform."
+    }
+  }]
+}
+
   return (
     <>
       <Helmet>
@@ -193,6 +360,9 @@ const FAQs = () => {
         />
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
       </Helmet>
       <section className="relative bg-purple-800">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">

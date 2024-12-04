@@ -180,7 +180,7 @@ const Footer = () => {
             {new Date().getFullYear() > 2020 && ` - ${new Date().getFullYear()}`} All Rights Reserved.
           </div>
           <a href="https://technicmentors.com/" target="_blank" className="px-4 w-full text-center sm:w-auto sm:text-left">
-            Made with ❤️ by Technic Mentors.
+            Developed with ❤️ by Technic Mentors.
           </a>
         </div>
       </div>
@@ -209,12 +209,12 @@ const LinkGroup = ({ children, header }) => {
 const NavLink = ({ link, label }) => {
   return (
     <li>
-      <a
-        href={link}
+      <Link
+        to={link}
         className="inline-block text-base leading-loose text-body-color hover:text-purple-800"
       >
         {label}
-      </a>
+      </Link>
     </li>
   );
 };

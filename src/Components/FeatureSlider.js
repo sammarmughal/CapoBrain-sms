@@ -19,7 +19,7 @@ const FeatureSlider = () => {
   const slider1 = {
     dots: false,
     infinite: true,
-    speed: 15000,
+    speed: 10000,
     slidesToShow: 9,
     slidesToScroll: 1,
     autoplay: true,
@@ -47,7 +47,7 @@ const FeatureSlider = () => {
   const slider2 = {
     dots: false,
     infinite: true,
-    speed: 15000,
+    speed: 10000,
     slidesToShow: 9,
     slidesToScroll: 0.8,
     autoplay: true,
@@ -102,7 +102,7 @@ const FeatureSlider = () => {
         </div>
       </div>
       <div className="relative w-full h-full">
-        <img
+        {/* <img
           src={Desktop}
           width="1519"
           height="557"
@@ -125,7 +125,7 @@ const FeatureSlider = () => {
           loading="eager"
           alt="Mobile-Friendly School ERP"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
-        />
+        /> */}
         <div className="verticel-carousel pt-10">
           <Slider {...slider1}>
             <div className="px-2">
@@ -185,7 +185,6 @@ const FeatureSlider = () => {
                 height="auto"
               />
             </div>
-
             <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
@@ -204,7 +203,6 @@ const FeatureSlider = () => {
                 height="auto"
               />
             </div>
-
             <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
@@ -227,19 +225,16 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={EducatorsSchool}
-                alt="The Educators School Management System (SMS)
-"
+                alt="The Educators School Management System (SMS)"
                 width="242"
                 height="auto"
               />
             </div>
-
             <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
                 src={Client2}
-                alt="Allied School Management System (SMS)
-"
+                alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />

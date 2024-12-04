@@ -15,12 +15,12 @@ const Welcome = () => {
         <p className="py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5">
         Capobrain is the ultimate School Management System (SMS) crafted to streamline operations and boost efficiency in educational institutions. Designed for schools and universities, Capobrain integrates key functions like admissions, attendance, staff management, and curriculum planning, making it an ideal school ERP software solution for modern educational administration. Recognized as one of the best school software solutions in Pakistan, Capobrain is an affordable option for both small schools and large universities. </p>
         <div className="mt-4">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="px-5 py-3 text-lg tracking-wider text-white bg-violet-500 rounded-lg md:px-8 hover:bg-violet-600 group"
           >
             <span>Explore More</span>
-          </a>
+          </Link>
         </div>
       </div>
 

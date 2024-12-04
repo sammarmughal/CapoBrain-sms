@@ -2,265 +2,265 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Public Pages -->
   <url>
-    <loc>https://capobrain-sms.vercel.app/</loc>
+    <loc>https://capobrain.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/about</loc>
+    <loc>https://capobrain.com/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/features</loc>
+    <loc>https://capobrain.com/features</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/features/cloud-based-school-management-system</loc>
+    <loc>https://capobrain.com/features/cloud-based-school-management-system</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/cutting-edge-educational-technologies</loc>
+    <loc>https://capobrain.com/features/cutting-edge-educational-technologies</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/computer-based-exam-management</loc>
+    <loc>https://capobrain.com/features/computer-based-exam-management</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/ai-driven-school-management</loc>
+    <loc>https://capobrain.com/features/ai-driven-school-management</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/data-security</loc>
+    <loc>https://capobrain.com/features/data-security</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/students-and-parent-portals</loc>
+    <loc>https://capobrain.com/features/students-and-parent-portals</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/online-daily-diary-feature</loc>
+    <loc>https://capobrain.com/features/online-daily-diary-feature</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/school-management-mobile-app</loc>
+    <loc>https://capobrain.com/features/school-management-mobile-app</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/whatsapp-messaging</loc>
+    <loc>https://capobrain.com/features/whatsapp-messaging</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/biometric-attendance</loc>
+    <loc>https://capobrain.com/features/biometric-attendance</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/salary-and-fee-management</loc>
+    <loc>https://capobrain.com/features/salary-and-fee-management</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/inventory-management</loc>
+    <loc>https://capobrain.com/features/inventory-management</loc>
     <priority>0.7</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/student-and-staff-ledgers</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain-sms.vercel.app/features/reminders-for-fee-collection</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain-sms.vercel.app/expense-and-assets-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain-sms.vercel.app/features/online-paper-generation</loc>
+    <loc>https://capobrain.com/features/student-and-staff-ledgers</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/exams-and-results-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain-sms.vercel.app/features/comprehensive-reporting</loc>
+    <loc>https://capobrain.com/features/reminders-for-fee-collection</loc>
     <priority>0.7</priority>
   </url>
   <url>
-   <url>
-    <loc>https://capobrain-sms.vercel.app/features/multi-campuses-management</loc>
+    <loc>https://capobrain.com/expense-and-assets-management</loc>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://capobrain-sms.vercel.app/features/school-college-front-website</loc>
+   <url>
+    <loc>https://capobrain.com/features/online-paper-generation</loc>
     <priority>0.7</priority>
   </url>
   <url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/features/transportation-management</loc>
+    <loc>https://capobrain.com/features/exams-and-results-management</loc>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://capobrain.com/features/comprehensive-reporting</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/help</loc>
+   <url>
+    <loc>https://capobrain.com/features/multi-campuses-management</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/blog</loc>
+    <loc>https://capobrain.com/features/school-college-front-website</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+   <url>
+    <loc>https://capobrain.com/features/transportation-management</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capobrain.com/help</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capobrain.com/blog</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/faq</loc>
+    <loc>https://capobrain.com/faq</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/contact</loc>
+    <loc>https://capobrain.com/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/userlogin</loc>
+    <loc>https://capobrain.com/userlogin</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/signup</loc>
+    <loc>https://capobrain.com/signup</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/requestdemo</loc>
+    <loc>https://capobrain.com/requestdemo</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual</loc>
+    <loc>https://capobrain.com/usermanual</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/dashboard</loc>
+    <loc>https://capobrain.com/usermanual/dashboard</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/visitors-meeting</loc>
+    <loc>https://capobrain.com/usermanual/visitors-meeting</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/phone-call-log</loc>
+    <loc>https://capobrain.com/usermanual/phone-call-log</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/postal-dispatch</loc>
+    <loc>https://capobrain.com/usermanual/postal-dispatch</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/postal-receive</loc>
+    <loc>https://capobrain.com/usermanual/postal-receive</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/online-complains-list</loc>
+    <loc>https://capobrain.com/usermanual/online-complains-list</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/configure-front-office</loc>
+    <loc>https://capobrain.com/usermanual/configure-front-office</loc>
     <priority>0.6</priority>
   </url>
     <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/teaching-staff</loc>
+    <loc>https://capobrain.com/usermanual/teaching-staff</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/non-teaching-staff</loc>
+    <loc>https://capobrain.com/usermanual/non-teaching-staff</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/staff-todos</loc>
+    <loc>https://capobrain.com/usermanual/staff-todos</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/staff-withdraw</loc>
+    <loc>https://capobrain.com/usermanual/staff-withdraw</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/staff-review</loc>
+    <loc>https://capobrain.com/usermanual/staff-review</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/feedback-list</loc>
+    <loc>https://capobrain.com/usermanual/feedback-list</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/new-admission</loc>
+    <loc>https://capobrain.com/usermanual/new-admission</loc>
     <priority>0.6</priority>
   </url>
     <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/students-list</loc>
+    <loc>https://capobrain.com/usermanual/students-list</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/online-admissions</loc>
+    <loc>https://capobrain.com/usermanual/online-admissions</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/family-record</loc>
+    <loc>https://capobrain.com/usermanual/family-record</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/promote-students</loc>
+    <loc>https://capobrain.com/usermanual/promote-students</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/withdraw-students</loc>
+    <loc>https://capobrain.com/usermanual/withdraw-students</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/passout-students</loc>
+    <loc>https://capobrain.com/usermanual/passout-students</loc>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/students-review</loc>
+    <loc>https://capobrain.com/usermanual/students-review</loc>
     <priority>0.6</priority>
   </url>
     <url>
-    <loc>https://capobrain-sms.vercel.app/usermanual/feedback-record</loc>
+    <loc>https://capobrain.com/usermanual/feedback-record</loc>
     <priority>0.6</priority>
   </url>  
   <url>
-    <loc>https://capobrain-sms.vercel.app/demo</loc>
+    <loc>https://capobrain.com/demo</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel</loc>
+    <loc>https://capobrain.com/adminpanel</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/addblog</loc>
+    <loc>https://capobrain.com/adminpanel/addblog</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/blogs</loc>
+    <loc>https://capobrain.com/adminpanel/blogs</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/categories</loc>
+    <loc>https://capobrain.com/adminpanel/categories</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/demousers</loc>
+    <loc>https://capobrain.com/adminpanel/demousers</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/changepassword</loc>
+    <loc>https://capobrain.com/adminpanel/changepassword</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/adminpanel/tickets</loc>
+    <loc>https://capobrain.com/adminpanel/tickets</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://capobrain-sms.vercel.app/404</loc>
+    <loc>https://capobrain.com/404</loc>
     <priority>0.1</priority>
   </url>
 </urlset>

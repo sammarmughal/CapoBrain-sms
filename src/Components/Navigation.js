@@ -1081,9 +1081,9 @@ function Navigation() {
       {isSmallScreen && (
         <nav className={`${isSmallScreen ? "" : "hidden md:block"}`}>
           <div className="container flex w-full justify-around items-center mx-auto px-4">
-            <a className="text-white font-bold text-xl" href="#/">
+            <p className="text-white font-bold text-xl">
               Software User Guide
-            </a>
+            </p>
             <button
               className={`${
                 isNavbarOpen ? "rotate-180" : ""

@@ -181,7 +181,7 @@ function Navbar() {
               <div className="lg:hidden gap-2 block">
                 <Link
                   to="/userlogin"
-                  onClick={toggleDropdown}
+                  onClick={handleToggle}
                   className="flex items-center"
                 >
                   <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
@@ -190,7 +190,7 @@ function Navbar() {
               <div className="lg:hidden gap-2 block">
                 <Link
                   to="/requestdemo"
-                  onClick={toggleDropdown}
+                  onClick={handleToggle}
                   className="flex items-center gap-1"
                 >
                   Request a Demo

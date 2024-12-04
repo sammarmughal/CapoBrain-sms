@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import data from "../data/usermanualData.json";
 import Desktop from "../img/capobrain-desktop.png";
 import { Helmet } from "react-helmet";
 
 const UserManual = () => {
-  const [menu, setMenu] = useState([]);
-
-  useEffect(() => {
-    setMenu(data.sidemenu);
-  }, []);
-
+  
   return (
     <>
       <Helmet>
@@ -128,13 +122,13 @@ const UserManual = () => {
         </p>
         <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
           For further resources on online learning and skill development, visit{" "}
-          <a
-            href="https://mentorsacademia.com/"
+          <Link
+            to="https://mentorsacademia.com/"
             style={{ textDecoration: "none" }}
             target="blank"
           >
             Mentors Academia
-          </a>
+          </Link>
           , our partner platform for modern education solutions.
         </p>
       </div>

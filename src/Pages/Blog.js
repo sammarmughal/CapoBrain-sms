@@ -4,6 +4,7 @@ import Blog2 from "../img/blog/blog2.png";
 import Blog3 from "../img/blog/blog3.png";
 import Blog4 from "../img/blog/blog4.png";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState("Education Software");
@@ -171,20 +172,20 @@ const Blog = () => {
               .find((category) => category.name === activeCategory)
               ?.blogs.map((blog, index) => (
                 <article key={index} className="flex flex-col">
-                  <a href="#" aria-label={blog.title}>
+                  <Link to="#" aria-label={blog.title}>
                     <img
                       alt={blog.title}
                       className="object-cover w-full h-52"
                       src={blog.image}
                     />
-                  </a>
+                  </Link>
                   <div className="flex flex-col flex-1 p-6">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="text-xs tracking-wider uppercase hover:underline"
                     >
                       {activeCategory}
-                    </a>
+                    </Link>
                     <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
                       {blog.title}
                     </h3>

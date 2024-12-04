@@ -187,7 +187,7 @@ function generateXml(urls) {
 }
 
 function generateSitemap() {
-  const fullUrls = routes.map((route) => `https://capobrain-sms.vercel.app/${route}`);
+  const fullUrls = routes.map((route) => `https://capobrain.com/${route}`);
   const xmlContent = generateXml(fullUrls);
 
   // Write the XML content to a file

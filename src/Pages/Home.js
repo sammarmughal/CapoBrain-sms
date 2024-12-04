@@ -33,12 +33,12 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Capobrain, School Management System, School ERP Software, Student Information System, School Fee Management, School Attendance Software, School Gradebook, Parent-Teacher Communication, Timetable Scheduling, School Exam Management, Cloud-Based School ERP, Best School Software in Pakistan, Custom School Software, Education Software Development, Mobile-Friendly School ERP"
+          content="Capobrain, School Management System (SMS), School ERP Software Solutions, Best School Software in Pakistan, All-in-One School Management Software"
         />
         <meta name="robots" content="index, follow" />
         <title>
           Capobrain - Best School Management System Software in Pakistan |
-          All-in-One School ERP Solutions
+          All-in-One School ERP Software Solutions
         </title>
 
         {/* Open Graph Meta Tags */}
@@ -76,7 +76,7 @@ export default function Home() {
               "@type": "SearchAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://capobrain-sms.vercel.app/search?q={search_term_string}",
+                "urlTemplate": "https://capobrain.com/search?q={search_term_string}",
                 "actionPlatform": [
                   "https://schema.org/DesktopWebPlatform",
                   "https://schema.org/IOSPlatform",
