@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Sidebar from "./component/sidebar";
 import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
@@ -8,15 +8,15 @@ import Change_password from "../../img/change-password.png";
 
 const ChangePasswords = () => {
   const [passwordVisible, setPasswordVisible] = useState({
-    oldPassword: false,
-    newPassword: false,
-    confirmNewPassword: false,
+    oldpassword: false,
+    newpassword: false,
+    confirmpas: false,
   });
   const [formData, setFormData] = useState({
     email: "",
-    oldPassword: "",
-    newPassword: "",
-    confirmNewPassword: "",
+    oldpassword: "",
+    newpassword: "",
+    confirmpas: "",
   });
   const togglePasswordVisibility = (field) => {
     setPasswordVisible((prevState) => ({
@@ -26,9 +26,9 @@ const ChangePasswords = () => {
   };
   const [errors, setErrors] = useState({
     email: "",
-    oldPassword: "",
-    newPassword: "",
-    confirmNewPassword: "",
+    oldpassword: "",
+    newpassword: "",
+    confirmpas: "",
   });
 
   const handleChange = (e) => {
@@ -42,9 +42,9 @@ const ChangePasswords = () => {
     let isValid = true;
     const newErrors = {
       email: "",
-      oldPassword: "",
-      newPassword: "",
-      confirmNewPassword: "",
+      oldpassword: "",
+      newpassword: "",
+      confirmpas: "",
     };
     if (!formData.email) {
       newErrors.email = "Email is required.";
@@ -53,20 +53,20 @@ const ChangePasswords = () => {
       newErrors.email = "Please enter a valid email address.";
       isValid = false;
     }
-    if (!formData.oldPassword) {
-      newErrors.oldPassword = "Old password is required.";
+    if (!formData.oldpassword) {
+      newErrors.oldpassword = "Old password is required.";
       isValid = false;
     }
-    if (!formData.newPassword) {
-      newErrors.newPassword = "New password is required.";
+    if (!formData.newpassword) {
+      newErrors.newpassword = "New password is required.";
       isValid = false;
-    } else if (formData.newPassword.length < 8) {
-      newErrors.newPassword =
-        "New password must be at least 8 characters long.";
+    } else if (formData.newpassword.length < 4) {
+      newErrors.newpassword =
+        "New password must be at least 4 characters long.";
       isValid = false;
     }
-    if (formData.newPassword !== formData.confirmNewPassword) {
-      newErrors.confirmNewPassword =
+    if (formData.newpassword !== formData.confirmpas) {
+      newErrors.confirmpas =
         "New password and confirmation do not match.";
       isValid = false;
     }
@@ -74,23 +74,61 @@ const ChangePasswords = () => {
     setErrors(newErrors);
     return isValid;
   };
+  const modalRef = useRef();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async  (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      Swal.fire({
-        title: "Success!",
-        text: "Your password has been updated successfully.",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
-      setFormData({
-        email: "",
-        oldPassword: "",
-        newPassword: "",
-        confirmNewPassword: "",
-      });
+      try {
+        const res = await fetch(
+          "https://capobrain-backend.vercel.app/api/auth/changepassword",
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              oldPassword: formData.oldpassword,
+              newPassword: formData.newpassword,
+              email: formData.email,
+            }),
+          }
+        );
+
+        const data = await res.json();
+
+        if (res.ok) {
+          Swal.fire({
+            title: "Success!",
+            text: "Your password has been updated successfully.",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+
+          setFormData({
+            email: "",
+            oldpassword: "",
+            newpassword: "",
+            confirmpas: "",
+          });
+        } else {
+          Swal.fire({
+            title: "Error!",
+            text: data.message || "Failed to change the password.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      } catch (error) {
+        console.error("Error during password change:", error);
+        Swal.fire({
+          title: "Error!",
+          text: "An error occurred while changing the password.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
     } else {
       Swal.fire({
         title: "Error!",
@@ -100,6 +138,7 @@ const ChangePasswords = () => {
       });
     }
   };
+
 
   return (
     <>
@@ -185,19 +224,19 @@ const ChangePasswords = () => {
                   </div>
                   <div className="pb-4">
                     <label
-                      htmlFor="oldPassword"
+                      htmlFor="oldpassword"
                       className="font-semibold text-gray-700 block pb-1"
                     >
                       Old Password
                     </label>
                     <div className="relative">
                       <input
-                        id="oldPassword"
-                        name="oldPassword"
+                        id="oldpassword"
+                        name="oldpassword"
                         className="input-field w-full"
-                        type={passwordVisible.oldPassword ? "text" : "password"}
+                        type={passwordVisible.oldpassword ? "text" : "password"}
                         placeholder="Enter your Old Password"
-                        value={formData.oldPassword}
+                        value={formData.oldpassword}
                         onChange={handleChange}
                       />
                       <button
@@ -205,32 +244,32 @@ const ChangePasswords = () => {
                         onClick={() => togglePasswordVisibility("oldPassword")}
                         className="absolute right-3 top-1/2 transform -translate-y-1/2"
                       >
-                        {passwordVisible.oldPassword ? (
+                        {passwordVisible.oldpassword ? (
                           <FaEye />
                         ) : (
                           <FaEyeSlash />
                         )}
                       </button>
                     </div>
-                    {errors.oldPassword && (
-                      <div className="text-sm text-red-500">{errors.oldPassword}</div>
+                    {errors.oldpassword && (
+                      <div className="text-sm text-red-500">{errors.oldpassword}</div>
                     )}
                   </div>
                   <div className="pb-4">
                     <label
-                      htmlFor="newPassword"
+                      htmlFor="newpassword"
                       className="font-semibold text-gray-700 block pb-1"
                     >
                       New Password
                     </label>
                     <div className="relative">
                       <input
-                        id="newPassword"
-                        name="newPassword"
+                        id="newpassword"
+                        name="newpassword"
                         className="input-field w-full"
-                        type={passwordVisible.newPassword ? "text" : "password"}
+                        type={passwordVisible.newpassword ? "text" : "password"}
                         placeholder="Enter your New Password"
-                        value={formData.newPassword}
+                        value={formData.newpassword}
                         onChange={handleChange}
                       />
                       <button
@@ -238,36 +277,36 @@ const ChangePasswords = () => {
                         onClick={() => togglePasswordVisibility("newPassword")}
                         className="absolute right-3 top-1/2 transform -translate-y-1/2"
                       >
-                        {passwordVisible.newPassword ? (
+                        {passwordVisible.newpassword ? (
                           <FaEye />
                         ) : (
                           <FaEyeSlash />
                         )}
                       </button>
                     </div>
-                    {errors.newPassword && (
-                      <div className="text-sm text-red-500">{errors.newPassword}</div>
+                    {errors.newpassword && (
+                      <div className="text-sm text-red-500">{errors.newpassword}</div>
                     )}
                   </div>
                   <div className="pb-4">
                     <label
-                      htmlFor="confirmNewPassword"
+                      htmlFor="confirmpas"
                       className="font-semibold text-gray-700 block pb-1"
                     >
                       Confirm New Password
                     </label>
                     <div className="relative">
                       <input
-                        id="confirmNewPassword"
-                        name="confirmNewPassword"
+                        id="confirmpas"
+                        name="confirmpas"
                         className="input-field w-full"
                         type={
-                          passwordVisible.confirmNewPassword
+                          passwordVisible.confirmpas
                             ? "text"
                             : "password"
                         }
                         placeholder="Re-type your New Password"
-                        value={formData.confirmNewPassword}
+                        value={formData.confirmpas}
                         onChange={handleChange}
                       />
                       <button
@@ -277,15 +316,15 @@ const ChangePasswords = () => {
                         }
                         className="absolute right-3 top-1/2 transform -translate-y-1/2"
                       >
-                        {passwordVisible.confirmNewPassword ? (
+                        {passwordVisible.confirmpas ? (
                           <FaEye />
                         ) : (
                           <FaEyeSlash />
                         )}
                       </button>
                     </div>
-                    {errors.confirmNewPassword && (
-                      <div className="text-sm text-red-500">{errors.confirmNewPassword}</div>
+                    {errors.confirmpas && (
+                      <div className="text-sm text-red-500">{errors.confirmpas}</div>
                     )}
                   </div>
 

@@ -1,21 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import navLogo from "../img/capobrain-logo-white.png";
 import navLogoMob from "../img/capobrain-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdLogin } from "react-icons/md";
+import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState({});
+  const [dropdownUser, setDropdownUser] = useState(false);
+
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
+  const toggleUserDropdown = () => {
+    setDropdownUser((prev) => !prev);
+  };
+  const closeDropdown = () => setDropdownUser(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const user = JSON.parse(sessionStorage.getItem("User"));
+    if (user) {
+      setIsLoggedIn(true);
+      if (user.email === "capobrain@gmail.com") {
+        setIsAdmin(true);
+      } else {
+        setIsAdmin(false);
+      }
+    }
+  }, []);
+  const handleLogout = () => {
+    sessionStorage.removeItem("User");
+    setIsLoggedIn(false);
+    navigate("/userlogin");
+  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".dropdown")) {
+        closeDropdown();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+  const handleGenerateTicketClick = () => {
+    if (isLoggedIn) {
+      if (isAdmin) {
+        navigate("/adminpanel/tickets");
+      } else {
+        navigate("/userprofile/generated-tickets");
+      }
+    } else {
+      navigate("/userlogin");
+    }
+  };
   return (
     <>
       <header className="absolute w-full lg:bg-transparent bg-white z-50">
@@ -152,7 +199,7 @@ function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <Link
+                      {/* <Link
                         to="/userlogin"
                         onClick={() => {
                           handleToggle();
@@ -161,7 +208,13 @@ function Navbar() {
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         Generate Ticket
-                      </Link>
+                      </Link> */}
+                      <button
+                        onClick={handleGenerateTicketClick}
+                        className="block px-4 py-2 hover:text-purple-600"
+                      >
+                        Generate Ticket
+                      </button>
                     </li>
                     <li>
                       <Link
@@ -179,13 +232,41 @@ function Navbar() {
                 </div>
               </li>
               <div className="lg:hidden gap-2 block">
-                <Link
-                  to="/userlogin"
-                  onClick={handleToggle}
-                  className="flex items-center"
-                >
-                  <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
-                </Link>
+                {isLoggedIn ? (
+                  <div className="relative dropdown">
+                    <FaUserCircle
+                      onClick={toggleUserDropdown}
+                      className="w-8 h-8 text-purple-800 hover:text-violet-400 cursor-pointer"
+                    />
+                    {dropdownUser && (
+                      <div className=" mt-2 w-full z-10">
+                        <Link
+                          to={isAdmin ? "/adminpanel" : "/userprofile"}
+                          className="block px-4 py-2 text-gray-600 hover:bg-purple-100 hover:text-purple-600 transition"
+                        >
+                          Profile
+                        </Link>
+                        <button
+                          onClick={() => {
+                            handleLogout();
+                            closeDropdown();
+                          }}
+                          className="block w-full text-left px-4 py-2 text-gray-600 hover:bg-purple-100 hover:text-purple-600 transition"
+                        >
+                          Logout
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link
+                    to="/userlogin"
+                    onClick={handleToggle}
+                    className="flex items-center"
+                  >
+                    <MdLogin className="w-6 h-6 text-purple-800 hover:text-violet-400" />
+                  </Link>
+                )}
               </div>
               <div className="lg:hidden gap-2 block">
                 <Link
@@ -213,12 +294,42 @@ function Navbar() {
             </ul>
           </div>
           <div className="lg:flex hidden justify-around items-center">
-            <Link
-              to="/userlogin"
-              className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
-            >
-              <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
-            </Link>
+            {isLoggedIn ? (
+              <div className="relative group mr-4 dropdown">
+                <FaUserCircle
+                  className="w-8 h-8 text-gray-200 hover:text-white cursor-pointer"
+                  onClick={toggleUserDropdown}
+                />
+                {dropdownUser && (
+                  <div className="absolute bg-[#0f131a] shadow-md rounded-lg mt-2 right-0 w-40">
+                    <Link
+                      to={isAdmin ? "/adminpanel" : "/userprofile"}
+                      className="block px-4 py-2 text-gray-200 hover:text-purple-600"
+                      onClick={toggleUserDropdown}
+                    >
+                      Profile
+                    </Link>
+                    <button
+                      onClick={() => {
+                        handleLogout();
+                        toggleUserDropdown();
+                      }}
+                      className="block w-full text-left px-4 py-2 text-gray-200 hover:text-purple-600"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                to="/userlogin"
+                className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
+              >
+                <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
+              </Link>
+            )}
+
             <Link to="/requestdemo" className="btn h-[2.2rem]">
               Request a Demo{" "}
               <svg

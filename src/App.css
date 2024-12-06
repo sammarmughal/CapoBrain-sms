@@ -227,3 +227,27 @@ html {
 .animate-slide-up {
   animation: slideUp 0.5s ease-out forwards;
 }
+.blog-cont p img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:auto ;
+  margin-right: auto;
+}
+.blog-cont h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;  
+}
+.blog-cont h4, .blog-cont h3{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;  
+  color: #6b21A8;
+}
+.blog-cont p a{
+  color: rgb(17, 17, 236);
+}
+.blog-cont p{
+  margin-bottom: 0.5rem;
+}

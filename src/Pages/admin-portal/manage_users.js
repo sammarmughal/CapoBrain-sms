@@ -1,8 +1,26 @@
+import React, { useEffect, useState } from "react";
 import Sidebar from "./component/sidebar";
 import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 
 const DemoUsers = () => {
+  const [users, setUsers] = useState([])
+
+  const demoUsers = async () => {
+      const res = await fetch("https://capobrain-backend.vercel.app/api/auth/getDemoUsers", {
+          method: "GET",
+          headers: {
+              "Content-Type": "application/json"
+          }
+      })
+      const data = await res.json()
+      setUsers(data)
+  }
+
+  useEffect(() => {
+      demoUsers()
+  }, [])
+
   return (
     <>
       <Helmet>
@@ -82,34 +100,23 @@ const DemoUsers = () => {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
+            {users && users.map((User) => {
+              return (
               <tr className="bg-white">
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-800">
-                  Ali
+                {User.name}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  capobrain@gmail.com
+                {User.email}                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
+                {User.schoolName}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  Partner
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  9038293798
+                {User.number}
                 </td>
               </tr>
-              <tr className="bg-white">
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-800">
-                  Ali
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                capobrain@gmail.com
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  Partner
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
-                  9038293798
-                </td>
-              </tr>
+            );
+          })}            
             </tbody>
           </table>
         </div>

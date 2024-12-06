@@ -1,83 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Blog1 from "../img/blog/blog1.png";
 import Blog2 from "../img/blog/blog2.png";
 import Blog3 from "../img/blog/blog3.png";
 import Blog4 from "../img/blog/blog4.png";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import MyContext from "../ContextApi/MyContext";
 
 const Blog = () => {
-  const [activeCategory, setActiveCategory] = useState("Education Software");
-  const blogCategories = [
-    {
-      name: "Education Software",
-      blogs: [
-        {
-          title: "School Management Software Benefits",
-          date: "June 1, 2020",
-          views: "2.1K views",
-          image: Blog1,
-        },
-        {
-          title: "How to Choose the Best School Management System",
-          date: "June 5, 2020",
-          views: "1.5K views",
-          image: Blog2,
-        },
-      ],
-    },
-    {
-      name: "Education Management",
-      blogs: [
-        {
-          title: "Top Features of a Student Information System",
-          date: "July 2, 2020",
-          views: "3K views",
-          image: Blog3,
-        },
-        {
-          title: "Why SIS is Essential for Schools",
-          date: "July 10, 2020",
-          views: "2.8K views",
-          image: Blog4,
-        },
-      ],
-    },
-    {
-      name: "EdTech Solution Suite",
-      blogs: [
-        {
-          title: "Top Features of a Student Information System",
-          date: "July 2, 2020",
-          views: "3K views",
-          image: Blog3,
-        },
-        {
-          title: "Why SIS is Essential for Schools",
-          date: "July 10, 2020",
-          views: "2.8K views",
-          image: Blog4,
-        },
-      ],
-    },
-    {
-      name: "Technology",
-      blogs: [
-        {
-          title: "Top Features of a Student Information System",
-          date: "July 2, 2020",
-          views: "3K views",
-          image: Blog3,
-        },
-        {
-          title: "Why SIS is Essential for Schools",
-          date: "July 10, 2020",
-          views: "2.8K views",
-          image: Blog4,
-        },
-      ],
-    },
-  ];
+  const { filterPosts, posts, uniqueCategory, setCategory } =
+    useContext(MyContext);
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const handleCategoryClick = (category) => {
+      setSelectedCategory(category);
+    };    
+    const filteredPosts = selectedCategory
+    ? posts.filter((post) => post.category === selectedCategory)
+    : posts; 
+   
   return (
     <>
       <Helmet>
@@ -117,7 +57,6 @@ const Blog = () => {
         <meta name="twitter:image" content="URL_TO_IMAGE" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -137,7 +76,6 @@ const Blog = () => {
           }}
         ></div>
       </section>
-
       <section className="py-6 sm:py-12">
         <div className="container p-6 mx-auto space-y-8">
           <div className="space-y-2 text-center max-w-3xl mx-auto">
@@ -152,50 +90,56 @@ const Blog = () => {
           </div>
           {/* Category Buttons */}
           <ul className="flex flex-wrap gap-4 text-center justify-center">
-            {blogCategories.map((category) => (
-              <li
-                key={category.name}
-                className={`cursor-pointer px-4 py-2 rounded-full ${
-                  activeCategory === category.name
-                    ? "btn-anim text-white"
-                    : "bg-gray-200 text-gray-800"
-                }`}
-                onClick={() => setActiveCategory(category.name)}
-              >
-                {category.name}
-              </li>
-            ))}
-          </ul>
-          {/* Blog Cards for Active Category */}
-          <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-            {blogCategories
-              .find((category) => category.name === activeCategory)
-              ?.blogs.map((blog, index) => (
-                <article key={index} className="flex flex-col">
-                  <Link to="#" aria-label={blog.title}>
-                    <img
-                      alt={blog.title}
-                      className="object-cover w-full h-52"
-                      src={blog.image}
-                    />
-                  </Link>
-                  <div className="flex flex-col flex-1 p-6">
-                    <Link
-                      to="#"
-                      className="text-xs tracking-wider uppercase hover:underline"
+            {posts &&
+              [...uniqueCategory].map((category) => {
+                const isActive = category === selectedCategory;
+
+                return (
+                  <li
+                    key={category} 
+                    className={`cursor-pointer px-4 py-2 rounded-full ${
+                      isActive
+                        ? "btn-anim text-white" 
+                        : "bg-gray-200 text-gray-800" 
+                    }`}
+                    onClick={() => handleCategoryClick(category)}
                     >
-                      {activeCategory}
-                    </Link>
-                    <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
-                      {blog.title}
-                    </h3>
-                    <div className="flex justify-between pt-3 space-x-2 text-xs">
-                      <span>{blog.date}</span>
-                      <span>{blog.views}</span>
-                    </div>
-                  </div>
+                    {category}
+                  </li>
+                );
+              })}            
+          </ul>
+          <div className="grid grid-cols-1 mx-auto gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">           
+            {filteredPosts.map((post) => {
+              return (
+                <article className="flex flex-col">
+                  <Link style={{ textDecoration: "none" }} to={`/blog/${post.slug}`}>
+                    <img
+                      alt="Blog Image"
+                      className="object-cover w-full h-52"
+                      src={Blog2}
+                    />
+                    <div className="flex flex-col flex-1 px-2 py-4">
+                      <Link
+                        to={`/blog/${post.slug}`}
+                        className="text-xs tracking-wider uppercase hover:underline"
+                      >
+                        {post.category}
+                      </Link>
+                      <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
+                        {post.title.length > 50
+                              ? post.title.slice(0, 50) + "..."
+                              : post.title}
+                      </h3>
+                      <div className="flex justify-between pt-3 space-x-2 text-xs">
+                        <span>{post.date}</span>
+                        <span>2.8K views</span>
+                      </div>
+                    </div>                   
+                  </Link>
                 </article>
-              ))}
+              );
+            })}
           </div>
         </div>
       </section>

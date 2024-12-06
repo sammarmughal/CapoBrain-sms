@@ -14,6 +14,57 @@ const AdminPortal = () => {
       clearInterval(intervalId); 
     };
   }, []);
+  const [stats, setStats] = useState({
+    totalBlogs: 0,
+    totalCategories: 0,
+    demoUsers: 0,
+    tickets: 0,
+  });
+  useEffect(() => {
+    fetchStats();
+  }, []);
+  const fetchStats = async () => {
+    try {
+      // Fetch blogs
+      const blogsResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts"); 
+      const blogsData = await blogsResponse.json();
+      console.log("Blogs Data:", blogsData);
+      const totalBlogs = blogsData.length; 
+      // Fetch categories
+      const categoriesResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/addcategory"); 
+      const categoriesData = await categoriesResponse.json();
+      console.log("Categories:",categoriesData);
+      const totalCategories = categoriesData.length; 
+
+      // Fetch demo users
+      const demoUsersResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getDemoUsers");
+      const demoUsersData = await demoUsersResponse.json();
+      console.log("Users Data:", demoUsersData);
+      const totalDemoUsers = demoUsersData.length; 
+
+      // Fetch tickets
+      const ticketsResponse = await fetch("https://api.example.com/tickets");
+      const ticketsData = await ticketsResponse.json();
+      const totalTickets = ticketsData.length; 
+
+      setStats({
+        totalBlogs,
+        totalCategories,
+        totalDemoUsers,
+        totalTickets,
+      });
+      console.log("Stats Updated:", {
+        totalBlogs,
+        totalCategories,
+        totalDemoUsers,
+        totalTickets,
+      });
+    } catch (error) {
+      console.error("Error fetching stats:", error);
+    }
+  };
+
+
   return (
     <>
       <Helmet>
@@ -80,23 +131,23 @@ const AdminPortal = () => {
               <h2 className="text-xl font-semibold text-gray-700">
                 Total Blogs
               </h2>
-              <p className="text-2xl">20</p>
+              <p className="text-2xl">{stats.totalBlogs}</p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-4 animate-fade-in">
               <h2 className="text-xl font-semibold text-gray-700">
                 Categories
               </h2>
-              <p className="text-2xl">6</p>
+              <p className="text-2xl">{stats.totalCategories}</p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-4 animate-fade-in">
               <h2 className="text-xl font-semibold text-gray-700">
                 Demo Users
               </h2>
-              <p className="text-2xl">36</p>
+              <p className="text-2xl">{stats.demoUsers}</p>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-4 animate-fade-in">
               <h2 className="text-xl font-semibold text-gray-700">Tickets</h2>
-              <p className="text-2xl">9</p>
+              <p className="text-2xl">{stats.tickets}</p>
             </div>
           </div>
         </div>

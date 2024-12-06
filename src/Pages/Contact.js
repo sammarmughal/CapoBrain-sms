@@ -39,7 +39,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); 
     if (validateForm()) {
-      emailjs
+      emailjs      
         .sendForm(
           "service_pj93zyr",
           "template_i20j2uo", 
@@ -49,12 +49,19 @@ const Contact = () => {
         .then(
           (result) => {
             console.log("Email sent successfully:", result.text);
+            setFormData({
+              name: "",
+              email: "",
+              whatsapp: "",
+              message: "",
+            });
             Swal.fire({
               title: "Success!",
               text: "Your message has been sent successfully.",
               icon: "success",
               confirmButtonText: "OK",
             });
+
           },
           (error) => {
             console.error("Error sending email:", error.text);

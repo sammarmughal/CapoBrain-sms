@@ -2,9 +2,23 @@ import React from "react";
 import Avatar from "../../../img/admin-avatar.png"
 import Logo from "../../../img/capobrain-logo-white.png"
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 function Admin_Nav() {
- 
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    sessionStorage.removeItem("User");
+    sessionStorage.removeItem("token");
+    Swal.fire({
+      title: "Logged Out",
+      text: "You have been logged out successfully.",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then(() => {
+      navigate("/userlogin");
+    });
+  };
   return (
     <>
     <nav className="fixed text-white flex items-center w-full  justify-between bg-purple-800 z-10  h-14">
@@ -30,8 +44,8 @@ function Admin_Nav() {
               <div className="block w-px h-6 mx-3 bg-gray-400"></div>
             </li>
             <li>
-              <Link
-              to="/"
+              <button
+               onClick={handleLogout}
                 className="flex items-center mr-4 hover:text-purple-100"
               >
                 <span className="inline-flex mr-1">
@@ -51,7 +65,7 @@ function Admin_Nav() {
                   </svg>
                 </span>
                 Logout
-              </Link>
+              </button>
             </li>
           </ul>
         </div>

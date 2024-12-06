@@ -26,10 +26,10 @@ const Footer = () => {
             <LinkGroup header="Resources">
               <NavLink link="/requestdemo" label="Demo & Tutorials" />
               <NavLink link="/usermanual" label="User Manual" />
+              <NavLink link="/about" label="About Us" />
+              <NavLink link="/help" label="Knowledge Base" />
               <NavLink link="/blog" label="Blog" />
               <NavLink link="/faq" label="FAQs" />
-              <NavLink link="/help" label="Knowledge Base" />
-              <NavLink link="/about" label="About Us" />
 
             </LinkGroup>
             <LinkGroup header="Product">

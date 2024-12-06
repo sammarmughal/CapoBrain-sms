@@ -1,27 +1,28 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef } from "react";
 import CapobrainDemo from "../img/capobrain-demo.avif";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+
 
 const RequestDemo = () => {
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
-    schoolname: "",
+    schoolName: "",
     number: "",
   });
   const [errors, setErrors] = useState({
     name: "",
     email: "",
-    schoolname: "",
+    schoolName: "",
     number: "",
   });
   const navigate = useNavigate();
   const validateForm = () => {
     let isValid = true;
-    const newErrors = { name: "", email: "", schoolname: "", number: "" };
+    const newErrors = { name: "", email: "", schoolName: "", number: "" };
     if (!credentials.name.trim()) {
       newErrors.name = "Name is required.";
       isValid = false;
@@ -36,34 +37,71 @@ const RequestDemo = () => {
       isValid = false;
     }
     const schoolNameRegex = /^[A-Za-z\s]+$/; 
-  if (!credentials.schoolname.trim()) {
-    newErrors.schoolname = "School name is required.";
+  if (!credentials.schoolName.trim()) {
+    newErrors.schoolName = "School name is required.";
     isValid = false;
-  } else if (!schoolNameRegex.test(credentials.schoolname.trim())) {
-    newErrors.schoolname = "School name must only contain alphabets.";
+  } else if (!schoolNameRegex.test(credentials.schoolName.trim())) {
+    newErrors.schoolName = "School name must only contain alphabets.";
     isValid = false;
   }
-    setErrors(newErrors);
-    return isValid;
-  };
-  const handlesubmit = (e) => {
+  setErrors(newErrors);
+  return isValid;
+};
+const formRef = useRef();
+  const handlesubmit = async (e) => {
     e.preventDefault();
+    const { name, email, schoolName, number } = credentials;
 
     if (validateForm()) {
-      Swal.fire({
-        title: "Success!",
-        text: "You have signed up successfully!",
-        icon: "success",
-        confirmButtonText: "OK",
-      }).then(() => {
-        setCredentials({
-          name: "",
-          email: "",
-          schoolname: "",
-          number: "",
+      try {
+        const res = await fetch("https://capobrain-backend.vercel.app/api/auth/signUpUser", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, schoolName, number }),
         });
-        navigate("/demo");
-      });
+  
+        const data = await res.json();
+        console.log(data);
+  
+        if (res.ok) {
+          sessionStorage.setItem("signUser", JSON.stringify(data.user));  
+          await emailjs.sendForm(
+            "service_922xtbv",
+            "template_ce4uvoh",
+            formRef.current,
+            "IbhvChmY_-f7TeB2E"
+          );  
+          setCredentials({
+            name: "",
+            email: "",
+            schoolName: "",
+            number: "",
+          });
+          Swal.fire({
+            title: "Success!",
+            text: "Request has send successfully!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then(() => navigate("/demo"));
+        } else {
+          Swal.fire({
+            title: "Error!",
+            text: data.message || "An error occurred while signing up.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      } catch (error) {
+        console.error("Error during signup:", error);
+        Swal.fire({
+          title: "Error!",
+          text: "An unexpected error occurred. Please try again later.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
     } else {
       Swal.fire({
         title: "Error!",
@@ -145,7 +183,7 @@ const RequestDemo = () => {
                 credentials for the demo.
               </p>
             </div>
-            <form onSubmit={handlesubmit}>
+            <form onSubmit={handlesubmit} ref={formRef}>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
                   type="text"
@@ -201,17 +239,17 @@ const RequestDemo = () => {
                 <input
                   type="text"
                   className="peer input-bar mb-2"
-                  id="schoolname"
-                  name="schoolname"
-                  value={credentials.schoolname}
+                  id="schoolName"
+                  name="schoolName"
+                  value={credentials.schoolName}
                   onChange={onchange}
                   placeholder="School Name"
                 />
-                <label className="input-label" htmlFor="schoolname">
+                <label className="input-label" htmlFor="schoolName">
                   School Name
                 </label>
-                {errors.schoolname && (
-                  <div className="text-sm text-red-500">{errors.schoolname}</div>
+                {errors.schoolName && (
+                  <div className="text-sm text-red-500">{errors.schoolName}</div>
                 )}
               </div>
               <div className="relative py-2">

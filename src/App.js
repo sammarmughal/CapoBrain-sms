@@ -35,12 +35,17 @@ import UserProfile from "./Pages/user-profile"
 import GeneratedTickets from "./Pages/user-profile/generatedTickets.js";
 import CloseStatusTickets from "./Pages/user-profile/CloseStatusTickets.js";
 import OpenStatusTickets from "./Pages/user-profile/openStatusTickets.js";
+import MyProvider from "./ContextApi/MyProvider";
+import BlogData from "./Pages/BlogData.js";
+
 function App() {
 
   return (
     <>
       <Router>
+      <MyProvider>
       <AppWithRoutes />
+      </MyProvider>
     </Router>     
     </>
   );
@@ -60,6 +65,7 @@ function AppWithRoutes() {
         <Route path="/features/:slug" element={<FeaturePage />} />
         <Route path="/help" element={<Help />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:postSlug" element={<BlogData/>} />
         <Route path="/faq" element={<FAQs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/userlogin" element={<Login />} />

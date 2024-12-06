@@ -1,20 +1,33 @@
 import React from "react";
-import Avatar from "../../../img/user-avatar.png"
-import Logo from "../../../img/capobrain-logo-white.png"
+import Avatar from "../../../img/user-avatar.png";
+import Logo from "../../../img/capobrain-logo-white.png";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 function UserNav() {
- 
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    sessionStorage.removeItem("User");
+    sessionStorage.removeItem("token");
+    Swal.fire({
+      title: "Logged Out",
+      text: "You have been logged out successfully.",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then(() => {
+      navigate("/userlogin");
+    });
+  };
   return (
     <>
-    <nav className="fixed text-white flex items-center w-full  justify-between bg-purple-800 z-10  h-14">
+      <nav className="fixed text-white flex items-center w-full  justify-between bg-purple-800 z-10  h-14">
         <div className="flex items-center justify-start md:justify-center pl-3 w-40 md:w-48 h-14 border-none">
-       <Link to="/">
-        <img
-            className="p-0 sm:p-4 pl-10"
-            src={Logo}
-            alt="Capobrain Best School Management Software"
-          />
+          <Link to="/">
+            <img
+              className="p-0 sm:p-4 pl-10"
+              src={Logo}
+              alt="Capobrain Best School Management Software"
+            />
           </Link>
         </div>
         <div className="flex justify-between items-center h-14 bg-purple-800 header-right">
@@ -24,15 +37,15 @@ function UserNav() {
             alt="Best School Management Software Avatar"
           />
           <span className="hidden md:block">USER</span>
-        
+
           <ul className="flex items-center">
             <li>
               <div className="block w-px h-6 mx-3 bg-gray-400"></div>
             </li>
             <li>
-              <Link
-              to="/"
+              <button               
                 className="flex items-center mr-4 hover:text-purple-100"
+                onClick={handleLogout}
               >
                 <span className="inline-flex mr-1">
                   <svg
@@ -51,7 +64,7 @@ function UserNav() {
                   </svg>
                 </span>
                 Logout
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
