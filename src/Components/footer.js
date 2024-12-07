@@ -32,7 +32,7 @@ const Footer = () => {
               <NavLink link="/faq" label="FAQs" />
 
             </LinkGroup>
-            <LinkGroup header="Product">
+            <LinkGroup header="Features">
               <NavLink link="/features" label="Features Overview" />
               <NavLink link="/features/data-security" label="Data Security" />
               <NavLink link="/features/school-management-mobile-app" label="Mobile App" />

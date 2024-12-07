@@ -95,9 +95,9 @@ const Features = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative">The</span>
+              <span className="relative mr-1.5">The &#32;</span>
             </span>
-            Key Features of Capobrain's School Management System
+            &#32;Key Features of Capobrain's School Management System
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Over 20+ Modules you&nbsp;
