@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Link   } from "react-router-dom";
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
@@ -397,9 +397,11 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+                <Link to="/signup">
                 <button className="px-8 py-3 mt-6 text-lg font-semibold rounded items-end sm:mt-12 btn-anim text-white">
                   Sign up
                 </button>
+                </Link>
               </div>
              
             </motion.div>
