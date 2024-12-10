@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Img from "../img/main-section-bg.jpg";
 import Keyfeatures from "../Components/Keyfeatures";
-import { Benefits } from "../Components/Benefits";
+import { Benefit } from "../Components/Benefit";
 import Logos from "../Components/Logos";
 import Avatars from "../Components/Avater";
 import PostSlider from "../Components/PostSlider";
@@ -172,7 +172,7 @@ export default function Home() {
       <FeatureSlider />
       <Keyfeatures />
       <Pricing />
-      <Benefits />
+      <Benefit />
     </>
   );
 }
