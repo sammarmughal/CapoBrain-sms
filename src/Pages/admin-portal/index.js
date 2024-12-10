@@ -20,16 +20,17 @@ const AdminPortal = () => {
     demoUsers: 0,
     tickets: 0,
   });
-  useEffect(() => {
-    fetchStats();
-  }, []);
+// useEffect(async ()=>
+// {
+//   const blogsResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts"); 
+//   const blogsData =await blogsResponse.json();
+//   const totalBlogsLength = blogsData?.map(post => post).length; 
+//   console.log("Blogs Data:", totalBlogsLength);
+// },[])
   const fetchStats = async () => {
     try {
       // Fetch blogs
-      const blogsResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts"); 
-      const blogsData = await blogsResponse.json();
-      console.log("Blogs Data:", blogsData);
-      const totalBlogs = blogsData.length; 
+      
       // Fetch categories
       const categoriesResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/addcategory"); 
       const categoriesData = await categoriesResponse.json();
@@ -48,13 +49,12 @@ const AdminPortal = () => {
       const totalTickets = ticketsData.length; 
 
       setStats({
-        totalBlogs,
         totalCategories,
         totalDemoUsers,
         totalTickets,
       });
       console.log("Stats Updated:", {
-        totalBlogs,
+      
         totalCategories,
         totalDemoUsers,
         totalTickets,
@@ -63,6 +63,10 @@ const AdminPortal = () => {
       console.error("Error fetching stats:", error);
     }
   };
+  useEffect(() => {
+    fetchStats();
+  }, []);
+  
 
 
   return (

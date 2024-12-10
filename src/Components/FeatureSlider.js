@@ -3,17 +3,29 @@ import Slider from "react-slick";
 import phone from "../img/capobrain-phone.png";
 import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
-import AlliedSchool from "../img/1.png";
-import EducatorsSchool from "../img/2.png";
+import AlliedSchool from "../img/schools/1.png";
+import EducatorsSchool from "../img/schools/2.png";
 import OnlineEducation from  "../img/online-education.png";
-import Client2 from "../img/3.png";
-import Client3 from "../img/4.png";
-import Client4 from "../img/5.png";
-import Client5 from "../img/9.png";
-import Client6 from "../img/6.png";
-import Client7 from "../img/7.png";
-import Client8 from "../img/8.png";
-import Client9 from "../img/10.png";
+import Client2 from "../img/schools/3.png";
+import Client3 from "../img/schools/4.png";
+import Client4 from "../img/schools/5.png";
+import Client5 from "../img/schools/9.png";
+import Client6 from "../img/schools/6.png";
+import Client7 from "../img/schools/7.png";
+import Client8 from "../img/schools/8.png";
+import Client9 from "../img/schools/10.png";
+import Client11 from "../img/schools/school11.png";
+import Client12 from "../img/schools/school12.png";
+import Client13 from "../img/schools/school13.png";
+import Client14 from "../img/schools/school14.png";
+import Client15 from "../img/schools/school15.png";
+import Client16 from "../img/schools/school16.png";
+import Client17 from "../img/schools/school17.png";
+import Client18 from "../img/schools/school18.png";
+import Client19 from "../img/schools/school19.png";
+import Client20 from "../img/schools/school20.png";
+
+
 
 const FeatureSlider = () => {
   const slider1 = {
@@ -82,7 +94,7 @@ const FeatureSlider = () => {
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
               <h3 className="mb-3 heading-body">
-              Delivering Excellence to Over 30+ Educational Institutions with Our Best School Management Software</h3>
+              Delivering Excellence to Over 100+ Educational Institutions with Our Best School Management Software</h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">
               <p>
@@ -215,7 +227,7 @@ const FeatureSlider = () => {
             <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
-                src={Client3}
+                src={Client9}
                 alt="Allied School Gradebook Software"
                 width="242"
                 height="auto"
@@ -224,24 +236,24 @@ const FeatureSlider = () => {
              <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
-                src={EducatorsSchool}
+                src={Client4}
                 alt="The Educators School Management System (SMS)"
                 width="242"
                 height="auto"
               />
             </div>
-            <div className="px-2">
+            {/* <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
-                src={Client2}
+                src={Client}
                 alt="Allied School Management System (SMS)"
                 width="242"
                 height="auto"
               />
-            </div>
+            </div> */}
           </Slider>
         </div>
-        <div className="verticel-carousel mt-4 pb-8">
+        {/* <div className="verticel-carousel mt-4 pb-8">
           <Slider {...slider2}>
             <div className="px-2">
               <img
@@ -352,7 +364,7 @@ const FeatureSlider = () => {
               />
             </div>      
           </Slider>
-        </div>
+        </div> */}
       </div>
     </div>
   );

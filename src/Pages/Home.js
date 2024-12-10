@@ -166,7 +166,7 @@ export default function Home() {
             </div>          
         </div>
       </section>
-      <Logos />
+      {/* <Logos /> */}
       <Avatars />
       <PostSlider />
       <FeatureSlider />

@@ -114,7 +114,7 @@ const PostSlider = () => {
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
               <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
-              30+ Best School Management Software Modules to Enhance Your Institution's Efficiency </h3>
+              Best School Management Software with 30+ Modules to Enhance Your Institution's Efficiency </h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">
               <p>

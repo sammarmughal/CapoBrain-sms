@@ -68,7 +68,8 @@ const Login = () => {
             confirmButtonText: "OK",
           });
           return;
-        }  
+        } else{
+
         sessionStorage.setItem("User", JSON.stringify(json));
         if (json.email === "capobrain@gmail.com") {
           navigate("/adminpanel");
@@ -81,7 +82,7 @@ const Login = () => {
           text: "Login successful",
           icon: "success",
           confirmButtonText: "OK",
-        });
+        });}
       } catch (error) {
         console.error("Error logging in:", error);
         Swal.fire({
