@@ -51,11 +51,9 @@ const Help = () => {
       <div className="relative">
         <div className="relative z-40 mx-auto max-w-5xl px-6 py-20 text-center md:px-12 md:py-16">
           <h1 className="text-3xl leading-[60px] mt-20 text-white font-semibold md:text-4xl lg:text-5xl">
-            <div className="sm:mt-2">
-              <span className="underline decoration-purple-700 underline-offset-4">
+              <span className="underline sm:mt-2 decoration-purple-700 underline-offset-4">
                 Capobrain Help Center
               </span>
-            </div>
           </h1>
           <p className="my-4 text-lg font-medium leading-2 text-gray-100 md:text-xl">
             Welcome to the CapoBrain Help Center. We're here to provide the
@@ -66,7 +64,6 @@ const Help = () => {
           </p>
         </div>
         <div className="absolute inset-0 z-30 bg-purple-900 bg-opacity-60"></div>
-
         <img
           className="absolute inset-0 w-full h-full object-cover z-20 bg-center"
           src={hero_helcenter}
@@ -79,9 +76,9 @@ const Help = () => {
             <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-700 shadow-lg shadow-purple-500/40">
               <FaTicket className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
+            <h3 className="text-darken mb-3 text-xl font-medium lg:px-14">
               Streamlined Ticketing
-            </h1>
+            </h3>
             <p className="px-4 text-gray-500">
               Easily log and track issues through our school management helpdesk
               software for swift resolution and seamless communication with our
@@ -95,9 +92,9 @@ const Help = () => {
             <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-purple-700 shadow-lg shadow-purple-500/40">
               <MdOutlineSupportAgent className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
+            <h3 className="text-darken mb-3 text-xl font-medium lg:px-14">
               Tailored Support
-            </h1>
+            </h3>
             <p className="px-4 text-gray-500">
               Receive customized assistance to address the unique challenges of
               your institution with our dedicated school management system
@@ -111,9 +108,9 @@ const Help = () => {
             <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-purple-700 shadow-purple-500/40">
               <MdOutlineQueryStats className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
+            <h3 className="text-darken mb-3 text-xl font-medium lg:px-14">
               Continuous Improvements
-            </h1>
+            </h3>
             <p className="px-4 text-gray-500">
               Share your feedback and suggestions to help us continuously
               improve CapoBrain's educational management software.
@@ -135,9 +132,9 @@ const Help = () => {
               education software solutions.
             </p>
             <div className="mt-2">
-              <h2 className="text-2xl font-semibold mb-4">
+              <h3 className="text-2xl font-semibold mb-4">
                 How to Report an Issue:
-              </h2>
+              </h3>
               <ul className="list-disc list-inside space-y-2">
                 <li>Briefly explain what went wrong.</li>
                 <li>

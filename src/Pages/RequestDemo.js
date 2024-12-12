@@ -156,7 +156,7 @@ const formRef = useRef();
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="heading-hero">Request the Demo </h1>
+            <h1 className="heading-hero">Request the Free CapoBrain Demo </h1>
           </div>
         </div>
         <div
@@ -175,13 +175,13 @@ const formRef = useRef();
         <div className="h-screen flex justify-center items-center relative ">
           <div className="bg-white mx-4 p-8 rounded shadow-md w-full md:w-1/2 lg:w-1/3">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-purple-700 text-center">
+              <h2 className="text-3xl font-bold text-purple-700 text-center">
                 Hang On A Minute!
-              </h1>
-              <p className="text-center py-3 text-neutral-500">
+              </h2>
+              <h3 className="text-center py-3 text-neutral-500">
                 You're almost there, just fill in this information to get the
-                credentials for the demo.
-              </p>
+                credentials for the demo. 
+              </h3>
             </div>
             <form onSubmit={handlesubmit} ref={formRef}>
               <div className="relative mb-6" data-te-input-wrapper-init>

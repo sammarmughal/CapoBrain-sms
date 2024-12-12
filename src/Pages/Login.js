@@ -41,11 +41,9 @@ const Login = () => {
     return isValid;
   };
   const handlesubmit = async (e) => {
-    e.preventDefault();
-  
+    e.preventDefault();  
     if (validateForm()) {
       const { email, password } = credentials;
-  
       try {
         const res = await fetch("https://capobrain-backend.vercel.app/api/auth/login", {
           method: "POST",
@@ -54,9 +52,8 @@ const Login = () => {
           },
           body: JSON.stringify({ email, password }),
         });
-  
         const json = await res.json();
-        const errorElement = document.getElementById("number"); // Assuming "number" is where you want to show errors.
+        const errorElement = document.getElementById("number"); 
         if (!res.ok) {
           if (errorElement) {
             errorElement.innerText = json.error || "Something went wrong.";
@@ -69,14 +66,12 @@ const Login = () => {
           });
           return;
         } else{
-
         sessionStorage.setItem("User", JSON.stringify(json));
         if (json.email === "capobrain@gmail.com") {
           navigate("/adminpanel");
         } else {
           navigate("/userprofile");
-        }
-  
+        }  
         Swal.fire({
           title: "Success!",
           text: "Login successful",
@@ -143,7 +138,7 @@ const Login = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="heading-hero">Sign In </h1>
+            <h1 className="heading-hero">User Sign In - Capobrain </h1>
           </div>
         </div>
         <div
@@ -160,9 +155,9 @@ const Login = () => {
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 sm:min-w-[520px] w-full">
             <div className="max-w-md mx-auto">
               <div>
-                <h1 className="text-2xl font-semibold">
+                <h2 className="text-2xl font-semibold">
                   Sign in Form of CapoBrain
-                </h1>
+                </h2>
               </div>
               <div className="divide-y divide-gray-200">
                 <form onSubmit={handlesubmit}>
@@ -218,7 +213,7 @@ const Login = () => {
                         Login
                       </button>
                     </div>
-                    <p className="text-sm text-center text-gray-500 ">
+                    <h3 className="text-sm text-center text-gray-500 ">
                       Not a member yet?{" "}
                       <Link
                         to="/signup"
@@ -226,7 +221,7 @@ const Login = () => {
                       >
                         Sign up
                       </Link>
-                    </p>
+                    </h3>
                   </div>
                 </form>
               </div>

@@ -120,7 +120,7 @@ export default function Home() {
                       Become a member
                     </Link>
                     <Link
-                      to="/features"
+                      to="/usermanual/dashboard"
                       className="base-button min-h-fit mx-0 lg:mx-0 flex-grow-0 btn-a"
                       data-test="webinars-button"
                     >

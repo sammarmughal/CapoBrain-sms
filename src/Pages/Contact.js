@@ -37,14 +37,14 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
     if (validateForm()) {
-      emailjs      
+      emailjs
         .sendForm(
           "service_pj93zyr",
-          "template_i20j2uo", 
-          formRef.current, 
-          "2IXZCnlGYrCJooOAK" 
+          "template_i20j2uo",
+          formRef.current,
+          "2IXZCnlGYrCJooOAK"
         )
         .then(
           (result) => {
@@ -61,7 +61,6 @@ const Contact = () => {
               icon: "success",
               confirmButtonText: "OK",
             });
-
           },
           (error) => {
             console.error("Error sending email:", error.text);
@@ -82,7 +81,7 @@ const Contact = () => {
       });
     }
   };
-  
+
   return (
     <>
       <Helmet>
@@ -127,9 +126,9 @@ const Contact = () => {
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1 className="heading-hero">Contact For Any Query</h1>
             <p className="max-w-2xl mx-auto text-gray-200">
-              Contact us today to discuss your school management challenges. Our
-              team offers tailored software solutions to help you streamline
-              your administration.
+              Contact us today to get a solution for your school management
+              challenges. Our team offers tailored software solutions to help
+              you streamline your administration.
             </p>
           </div>
         </div>

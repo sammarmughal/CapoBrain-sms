@@ -98,19 +98,18 @@ const UserManual = () => {
         <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
           Discover how to unlock the full potential of{" "}
           <strong>CapoBrain’s School Management Software</strong> with our
-          detailed <strong>software user manual</strong>. This guide provides
+          detailed software user manual. This guide provides
           step-by-step instructions on using CapoBrain’s comprehensive features,
-          making it the ultimate{" "}
-          <strong>online education management system</strong>.
+          making it the ultimate{" "} online education management system.
         </p>
         <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
-          The <strong>CapoBrain User Guide</strong> covers everything from
+          The CapoBrain User Guide covers everything from
           course creation, grade tracking, and{" "}
-          <strong>attendance management</strong> to real-time collaboration
+          attendance management to real-time collaboration
           between students, teachers, and administrators. Learn how to
           efficiently manage resources, access detailed analytics, and implement
           secure access controls through our{" "}
-          <strong>school management platform</strong>.
+          <strong>Cloud-Based School Management Platform</strong>.
         </p>
         <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
           Whether you're an educator, student, or school administrator, this

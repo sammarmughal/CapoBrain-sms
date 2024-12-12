@@ -109,20 +109,20 @@ const Features = () => {
       <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
           <div className="max-w-full z-50 flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h3 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Learn more about our <br />
               <span className="text--500">
                 
                 Advanced School Management Software
               </span>
-            </h1>
+            </h3>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Maximize efficiency with CapoBrain, your school management software. Simplify operations and prioritize student success.
+              Maximize efficiency with CapoBrain, your standout school management software. Simplify operations and prioritize student success.
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link
                 to="/requestdemo"
-                className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
+                className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#161418]"
                 rel="noreferrer"
               >
                 Get in touch with us →
@@ -140,7 +140,7 @@ const Features = () => {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={capobrain}
-              alt=""
+              alt="Capobrain School Managment Software"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>

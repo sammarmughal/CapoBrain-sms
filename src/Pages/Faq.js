@@ -9,7 +9,7 @@ const FAQs = () => {
     {
       heading: "What is CapoBrain?",
       paragraph:
-        "CapoBrain is a comprehensive College & School Management System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
+        "CapoBrain is a comprehensive College & School Management ERP System designed to streamline administrative tasks, enhance reporting, and provide future predictions using Artificial Intelligence features. It is an all-in-one solution for both schools and colleges.",
       id: 1,
     },
     {
@@ -39,7 +39,7 @@ const FAQs = () => {
     {
       heading: "How can I add teaching and non-teaching staff to CapoBrain?",
       paragraph:
-        "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain School Management Software.",
+        "You can easily add teaching and non-teaching staff profiles using the Staff module and assign relevant roles and responsibilities within the CapoBrain School Management ERP Software.",
       id: 6,
     },
     {
@@ -385,16 +385,14 @@ const FAQs = () => {
         <div className="cb-container pt-10 sm:pt-20 mb-5">
           {" "}
           <div className="flex justify-center w-full items-center my-4">
-            <img src={avatar} alt="" className="w-[1.6em] mr-6 md:w-[2em]" />
-            <h1 className="text-3xl text-Dark_purple font-bold md:text-4xl">
-              Frequently Asked Questions
-            </h1>
+            <img src={avatar} alt="Frequently Asked Questions of School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
+            <h2 className="text-3xl text-Dark_purple font-bold md:text-4xl">
+            Frequently Asked Questions
+            </h2>
           </div>
           <p className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
-            Find answers to common questions about our School Management System
-            (SMS). Learn how our platform can simplify your school’s
-            administrative tasks, improve student data management, and enhance
-            communication between parents, teachers, and administrators.{" "}
+          Find answers to top common questions about our School Management System (SMS). Learn how our platform can simplify your school’s administrative tasks, improve student data management, and enhance communication between parents, teachers, and administrators.
+
           </p>
         </div>
         <div className="flex mx-auto w-full pt-5 justify-center">
@@ -403,9 +401,9 @@ const FAQs = () => {
               {data.map((item) => (
                 <div className="">
                   <div className="flex justify-between p-2 hover:text-purple-600 items-center">
-                    <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
+                    <h3 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
                       {item.heading}
-                    </h1>
+                    </h3>
                     <img
                       src={active === item.id ? close : open}
                       alt="open or close"

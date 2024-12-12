@@ -178,7 +178,7 @@ const FeaturesCard = ({ icon, title, slug, details }) => {
             {icon}
           </span>
           <div className="space-y-6 pt-5 text-2xl leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-            <h1 className="font-bold"> {title}</h1>
+            <h3 className="font-bold"> {title}</h3>
           </div>
           <div className="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
             <p>{details}</p>

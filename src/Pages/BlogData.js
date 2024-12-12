@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {Link, useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
+import { Helmet } from "react-helmet";
+
 
 export default function Blogcat() {
   const { postSlug } = useParams();
@@ -18,9 +20,56 @@ export default function Blogcat() {
     };
     postData();
   }, [postSlug]);
-  const sanitizedContent = { __html: DOMPurify.sanitize(posts.content) };
+  const injectAltAttributes = (htmlContent) => {
+    if (!htmlContent) return "";
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlContent, "text/html");
+
+    // Find all images and add alt attributes
+    doc.querySelectorAll("img").forEach((img, index) => {
+      if (!img.alt || img.alt.trim() === "") {
+        img.alt = posts.title || `Blog Image ${index + 1}`;
+      }
+    });
+
+    return doc.body.innerHTML;
+  };
+
+  const sanitizedContent = {
+    __html: DOMPurify.sanitize(injectAltAttributes(posts.content)),
+  };
+  // const sanitizedContent = { __html: DOMPurify.sanitize(posts.content) };
+  const metaDescription = posts.content
+  ? posts.content.replace(/<[^>]*>/g, '').slice(0, 150) + '...'
+  : '';
+
+
   return (
     <>
+     <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={metaDescription} />
+        <meta
+          name="keywords"
+          content="school management software, education technology, Capobrain, education transformation"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>{posts.title}</title>
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={posts.title} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:url" content={`https://capobrain.com/${postSlug}`} />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:title" content={posts.title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">

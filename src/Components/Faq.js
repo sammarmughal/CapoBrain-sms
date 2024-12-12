@@ -55,9 +55,9 @@ const FAQs = () => {
         {" "}
         <div className="flex justify-center w-full items-center my-4">
             <img src={avatar} alt="FAQ School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
-            <h1 className="text-3xl text-Dark_purple font-bold md:text-4xl">
+            <h3 className="text-3xl text-Dark_purple font-bold md:text-4xl">
             Frequently Asked Questions
-            </h1>
+            </h3>
           </div>
         <p className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
         Find answers to common questions about CapoBrain's features, and support for school management.
@@ -70,9 +70,9 @@ const FAQs = () => {
             {data.map((item) => (
               <div className="">
                 <div className="flex justify-between p-2 hover:text-purple-700 items-center">
-                  <h1 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
+                  <h3 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
                     {item.heading}
-                  </h1>
+                  </h3>
                   <img
                     src={active === item.id ? close : open}
                     alt="open or close School Management System"

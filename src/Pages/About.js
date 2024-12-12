@@ -186,15 +186,8 @@ const AboutSection = () => {
                   Welcome To Capobrain School Management Software{" "}
                 </h2>
                 <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
-                  Introducing Capobrain, a leading school management system
-                  (SMS) designed to streamline operations and enhance efficiency
-                  for educational institutions. Whether you are managing a
-                  bustling school or a sprawling university, our school
-                  management system integrates all aspects of campus life. From
-                  student admissions and attendance tracking to staff management
-                  and curriculum planning, Capobrain simplifies complex
-                  administrative tasks, making it the ideal solution for modern
-                  educational environments.
+                Introducing Capobrain, a leading school management system (SMS) designed to streamline operations and enhance efficiency for educational institutions. Whether you are managing a bustling school or a sprawling university, our school management system integrates all aspects of campus life, transforming the way institutions handle administrative tasks. From student admissions and attendance tracking to staff management and curriculum planning, Capobrain simplifies complex administrative tasks, making it the ideal solution for modern educational environments.
+
                 </p>
               </div>
             </div>
@@ -206,11 +199,11 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">
               <div className="data w-full">
-                <h2 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center">
+                <h3 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center">
                   We are Creative Since 2020
-                </h2>
+                </h3>
                 <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
-                  Our School Management Platform goes beyond aesthetics,
+                  Our Premier School Management Platform goes beyond aesthetics,
                   prioritizing accessibility and usability. Every element, from
                   the tiniest detail to the grandest layout, enhances
                   functionality and user satisfaction.
@@ -232,9 +225,9 @@ const AboutSection = () => {
         <div className="absolute top-20 right-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-2000"></div>
         <div className="hidden xl:block absolute bottom-10 left-32 w-[250px] sm:w-[500px] h-[500px] bg-[#FFB20080] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
         <div className="absolute bottom-10 right-52 w-[250px] sm:w-[500px] h-[500px] bg-[#CAEEF580] rounded-full mix-blend-multiply filter blur-[150px] opacity-70 animate-blob animation-delay-4000"></div>
-        <h1 className="sm:text-4xl text-3xl font-bold text-center text-black mb-12 animate-fade-in">
+        <h3 className="sm:text-4xl text-3xl font-bold text-center text-black mb-12 animate-fade-in">
           Technic Mentors IT Consulting Services
-        </h1>
+        </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
@@ -262,9 +255,9 @@ const AboutSection = () => {
       </section>
       <section className="pt-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-manrope sm:text-4xl text-3xl text-center text-gray-900 font-bold mb-14">
+          <h3 className="font-manrope sm:text-4xl text-3xl text-center text-gray-900 font-bold mb-14">
             Our results in numbers
-          </h2>
+          </h3>
           <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white p-6 rounded-2xl transform transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg shadow-gray-100">
               <div className="flex gap-5">

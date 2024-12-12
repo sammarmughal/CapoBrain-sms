@@ -154,7 +154,7 @@ const SignUp = () => {
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="heading-hero">Sign Up </h1>
+            <h1 className="heading-hero">User Signup - Create Your Capobrain Account</h1>
           </div>
         </div>
         <div
@@ -171,7 +171,7 @@ const SignUp = () => {
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 sm:min-w-[520px] w-full">
             <div className="max-w-md mx-auto">
               <div>
-                <h1 className="text-2xl font-semibold">Welcome to CapoBrain</h1>
+                <h2 className="text-2xl font-semibold">Welcome to CapoBrain</h2>
               </div>
               <div className="divide-y divide-gray-200">
                 <form onSubmit={handlesubmit}>
@@ -267,7 +267,7 @@ const SignUp = () => {
                         Sign up
                       </button>
                     </div>
-                    <p className="text-sm text-center text-gray-500 ">
+                    <h3 className="text-sm text-center text-gray-500 ">
                       Already Have an Account?{" "}
                       <Link
                         to="/userlogin"
@@ -275,7 +275,7 @@ const SignUp = () => {
                       >
                         Sign in
                       </Link>
-                    </p>
+                    </h3>
                   </div>
                 </form>
               </div>
