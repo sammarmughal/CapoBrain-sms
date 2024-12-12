@@ -4,6 +4,7 @@ import MyContext from "./MyContext";
 const MyProvider = ({ children }) => {
     const [posts, setPosts] = useState([]);
     const [category, setCategory] = useState(null);
+    const [signUser, setSignUser] = useState("")
     const [allMessages, setAllMessages] = useState([])
     const [filterPosts, setFilterPosts] = useState([])
     const [uniqueCategory, setUniqueCategory] = useState(new Set());
@@ -45,10 +46,12 @@ const MyProvider = ({ children }) => {
             const filterPost = posts.filter((post) => post.category === category);
             setFilterPosts(filterPost)
         }
+        const signInUser = JSON.parse(sessionStorage.getItem("User"))
+        signInUser ? setSignUser(signInUser) : setSignUser("")
     }, [category, posts]);
 
     return (
-        <MyContext.Provider value={{ filterPosts, posts, uniqueCategory, setCategory, allMessages, ticketMessages }}>
+        <MyContext.Provider value={{ filterPosts, posts, uniqueCategory, setCategory, allMessages, ticketMessages, signUser, setSignUser }}>
             {children}
         </MyContext.Provider>
     )

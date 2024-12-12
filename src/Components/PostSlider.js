@@ -20,14 +20,33 @@ import ExamResultManagement from "../img/Exams-&-Results-Management.jpg";
 import ExpenseAndAssets from "../img/expense-and-assets.jpg";
 import Reporting from "../img/comprehensive-reporting.jpg";
 import MultiComputers from "../img/multi-computers.jpg";
-import SchoolPng from "../img/School-Management-System.png"
+import SchoolPng from "../img/School-Management-System.png";
+import AdmissionTestAutomation from "../img/slider/admission-test-automation.jpg";
+import AdvanceDynamic from "../img/slider/advanced-dynamic.jpg";
+import CertificateIdCard from "../img/slider/certificate-id-card.jpg";
+import ComprehensiveResources from "../img/slider/comprehensive-resources.jpg";
+import IntegrationThirdParty from "../img/slider/integration-with-third-party.jpg";
+import InteractiveLearningGuidelines from "../img/slider/interactive-learning-guidelines.jpg";
+import LearningManagementSystem from "../img/slider/learning-management-system.jpg";
+import ParentTeacher from "../img/slider/parent-teacher.jpg";
+import RealTimeNotification from "../img/slider/real-time-notifications.jpg";
+import Reception from "../img/slider/reception.jpg";
+import RoleBasedAccessControl from "../img/slider/role-base-access-control.jpg";
+import SeamlessIntegration from "../img/slider/seamless-integration.jpg";
+import SportsExtraCurricular from "../img/slider/sports-extra-curricular.jpg";
+import StudentProgressTracking from "../img/slider/student-progress-tracking.jpg";
+import SummerTaskResources from "../img/slider/summer-tasks-resources.jpg";
+import Teachers from "../img/slider/teachers.jpg";
+import TimetableSheduling from "../img/slider/timetable-scheduling.jpg";
+import TransportManagementSystem from "../img/slider/transport-management-system.jpg";
+
 
 const PostSlider = () => {
     const slider1 = {
         dots: false,
         infinite: true,
         speed: 15000,
-        slidesToShow: 2.8,  
+        slidesToShow: 3.2,  
         slidesToScroll: 1,  
         autoplay: true,        
         autoplaySpeed: 0, 
@@ -44,7 +63,7 @@ const PostSlider = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.5,
+              slidesToShow: 1.8,
               slidesToScroll: 1,
             }
           }
@@ -54,7 +73,7 @@ const PostSlider = () => {
         dots: false,
         infinite: true,
         speed: 15000,
-        slidesToShow: 2.8,  
+        slidesToShow: 3.2,  
         slidesToScroll: .8,  
         autoplay: true,
         autoplaySpeed: 0, 
@@ -71,7 +90,7 @@ const PostSlider = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.5,
+              slidesToShow: 1.8,
               slidesToScroll: 1.2,
             }
           }
@@ -81,7 +100,7 @@ const PostSlider = () => {
         dots: false,
         infinite: true,
         speed: 15000,
-        slidesToShow: 2.8,  
+        slidesToShow: 3.2,  
         slidesToScroll: .9,  
         autoplay: true,        
         autoplaySpeed: 0, 
@@ -98,12 +117,13 @@ const PostSlider = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.5,
+              slidesToShow: 1.8,
               slidesToScroll: 1.1,
             }
           }
         ]
       };
+   
   return (
     <div className="w-full pt-10 pb-8" id="faq">
       <div className="flex px-4 flex-wrap">
@@ -199,6 +219,60 @@ const PostSlider = () => {
               height="230"
             />
           </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={AdmissionTestAutomation}
+              alt="Admission Test Automation & Management"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={AdvanceDynamic}
+              alt="Advanced Dynamic Website Features"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={CertificateIdCard}
+              alt="Certificates & ID Card Generation Tool"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={ComprehensiveResources}
+              alt="Comprehensive Library Management with Digital Integration"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={IntegrationThirdParty}
+              alt="Integration with Third-Party Educational Tools & APIs"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={InteractiveLearningGuidelines}
+              alt="Interactive Learning Guidelines for Teachers and Students"
+              width="512"
+              height="230"
+            />
+          </div>         
         
         </Slider>
       </div>
@@ -258,6 +332,63 @@ const PostSlider = () => {
               className="img-fluid rounded-2xl carousel-image"
               src={InventoryManagement}
               alt="School Inventory Management System"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={LearningManagementSystem}
+              alt="Learning Management System (LMS) for E-Learning & Blended Education"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={ParentTeacher}
+              alt="Parent-Teacher Communication Portal"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={RealTimeNotification}
+              alt="Real-Time Notifications and Instant Information Sharing"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={Reception}
+              alt="Reception Management"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={RoleBasedAccessControl}
+              alt="Role-Based Access Control for Secure User Management"
+              width="512"
+              height="230"
+            />
+          </div>
+
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={SeamlessIntegration}
+              alt="Seamless Integration with Modern Educational Tools"
               width="512"
               height="230"
             />
@@ -332,7 +463,61 @@ const PostSlider = () => {
               width="512"
               height="230"
             />
-          </div>        
+          </div>  
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={SportsExtraCurricular}
+              alt="Sports & Extracurricular Activities Management"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={StudentProgressTracking}
+              alt="Student Progress Tracking & Performance Analytics"
+              width="512"
+              height="230"
+            />
+          </div>       
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={SummerTaskResources}
+              alt="Summer Tasks & Resource Management"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={Teachers}
+              alt="Teachers’ Portal"
+              width="512"
+              height="230"
+            />
+          </div>       
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={TimetableSheduling}
+              alt="Timetable & Scheduling Management System"
+              width="512"
+              height="230"
+            />
+          </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={TransportManagementSystem}
+              alt="Transport Management System with Route Optimization"
+              width="512"
+              height="230"
+            />
+          </div>             
         </Slider>
       </div>
     </div>

@@ -8,10 +8,10 @@ const AdminPortal = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
-    }, 1000); 
+    }, 1000);
 
     return () => {
-      clearInterval(intervalId); 
+      clearInterval(intervalId);
     };
   }, []);
   const [stats, setStats] = useState({
@@ -20,54 +20,39 @@ const AdminPortal = () => {
     demoUsers: 0,
     tickets: 0,
   });
-// useEffect(async ()=>
-// {
-//   const blogsResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts"); 
-//   const blogsData =await blogsResponse.json();
-//   const totalBlogsLength = blogsData?.map(post => post).length; 
-//   console.log("Blogs Data:", totalBlogsLength);
-// },[])
+
   const fetchStats = async () => {
     try {
-      // Fetch blogs
-      
-      // Fetch categories
-      const categoriesResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/addcategory"); 
-      const categoriesData = await categoriesResponse.json();
-      console.log("Categories:",categoriesData);
-      const totalCategories = categoriesData.length; 
+      const blogsResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts");
+      const blogsData = await blogsResponse.json();
+      const totalBlogsLength = blogsData?.length;
 
-      // Fetch demo users
+      const categoriesResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getcategory");
+      const categoriesData = await categoriesResponse.json();
+      const totalCatLength = categoriesData?.length;
+
       const demoUsersResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/getDemoUsers");
       const demoUsersData = await demoUsersResponse.json();
-      console.log("Users Data:", demoUsersData);
-      const totalDemoUsers = demoUsersData.length; 
+      const totalUsersLength = demoUsersData?.length;
 
-      // Fetch tickets
-      const ticketsResponse = await fetch("https://api.example.com/tickets");
-      const ticketsData = await ticketsResponse.json();
-      const totalTickets = ticketsData.length; 
+      const messageResponse = await fetch("https://capobrain-backend.vercel.app/api/auth/messages");
+      const messageData = await messageResponse.json();
+      const totalMessageLength = messageData?.length;
 
       setStats({
-        totalCategories,
-        totalDemoUsers,
-        totalTickets,
-      });
-      console.log("Stats Updated:", {
-      
-        totalCategories,
-        totalDemoUsers,
-        totalTickets,
-      });
+        totalBlogs: totalBlogsLength,
+        demoUsers: totalUsersLength,
+        totalCategories: totalCatLength,
+        tickets: totalMessageLength
+      })
     } catch (error) {
-      console.error("Error fetching stats:", error);
+      console.error("Error fetching blogs:", error);
     }
   };
+
   useEffect(() => {
     fetchStats();
   }, []);
-  
-
 
   return (
     <>
@@ -124,11 +109,11 @@ const AdminPortal = () => {
                 {time}
               </span>
               <div className="absolute right-10 top-4 lg:flex hidden">
-              <img
-                className="w-20 h-auto"
-                src={Welcome}
-                alt=""/>
-                </div>
+                <img
+                  className="w-20 h-auto"
+                  src={Welcome}
+                  alt="" />
+              </div>
             </div>
 
             <div className="bg-white shadow-lg rounded-lg p-4 animate-fade-in">

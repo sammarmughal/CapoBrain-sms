@@ -23,7 +23,7 @@ import FeaturePage from "./Pages/FeaturePage";
 import UserManualData from "./Pages/UsermanualData";
 import Demo from "./Pages/Demo";
 import ScrollToTop from "./Components/scrollToTop";
-import AdminPortal from "./Pages/admin-portal";
+import AdminPanel from "./Pages/admin-portal/adminpanel.js";
 import AddBlog from "./Pages/admin-portal/add-blog";
 import Blogs from "./Pages/admin-portal/blog";
 import Category from "./Pages/admin-portal/category";
@@ -74,7 +74,7 @@ function AppWithRoutes() {
         <Route path="/usermanual" element={<UserManual />} />
         <Route path="/usermanual/:id" element={<UserManualData />} />
         <Route path="/demo" element={<Demo />} />
-        <Route path="/adminpanel" element={<AdminPortal />} />
+        <Route path="/adminpanel" element={<AdminPanel />} />
         <Route path="/adminpanel/addblog" element={<AddBlog />} />
         <Route path="/adminpanel/blogs" element={<Blogs />} />
         <Route path="/adminpanel/categories" element={<Category />} />
@@ -85,7 +85,6 @@ function AppWithRoutes() {
         <Route path="/userprofile/generated-tickets" element={<GeneratedTickets />} />
         <Route path="/userprofile/openstatus-tickets" element={<OpenStatusTickets />} />
         <Route path="/userprofile/closestatus-tickets" element={<CloseStatusTickets />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!isAdminPanel && !isUserProfile && <Footer />}
