@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 
 // List your React app routes here
 const routes = [
@@ -179,33 +178,20 @@ const routes = [
 ];
 
 function generateXml(urls) {
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    ${urls
-      .map(
-        (url) => `
-    <url>
-      <loc>${url}</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>`
-      )
-      .join("\n")}
-  </urlset>`;
+  const xml = `
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${urls.map((url) => `<url><loc>${url}</loc></url>`).join("\n")}
+    </urlset>
+  `;
   return xml;
 }
+
 function generateSitemap() {
-  const fullUrls = routes.map((route) => `https://capobrain-sms.vercel.app${route}`);
+  const fullUrls = routes.map((route) => `https://capobrain-sms.vercel.app/${route}`);
   const xmlContent = generateXml(fullUrls);
 
-  // Ensure the public directory exists
-  const sitemapDir = path.resolve(__dirname, "public");
-  if (!fs.existsSync(sitemapDir)) {
-    fs.mkdirSync(sitemapDir);
-  }
-
-  const sitemapPath = path.resolve(sitemapDir, "sitemap.xml");
+  // Write the XML content to a file
+  const sitemapPath = "./public/sitemap.xml"; // Adjust the path as needed
   fs.writeFileSync(sitemapPath, xmlContent);
 
   console.log(`Sitemap generated at ${sitemapPath}`);
