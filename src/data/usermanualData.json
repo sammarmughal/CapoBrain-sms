@@ -8,7 +8,7 @@
         "openGraph": {
           "title": "CapoBrain School Management System - Dashboard",
           "description": "Access the CapoBrain Dashboard for a detailed view of school operations, student and staff accounts, inventory stats, and much more to manage your school efficiently.",
-          "url": "https://capobrain-sms.vercel.app/dashboard",
+          "url": "https://capobrain-sms.vercel.app/usermanual/dashboard",
           "type": "website"
         },
         "twitter": {
@@ -17,7 +17,7 @@
           "description": "View essential school stats, student and staff accounts, and financial updates with CapoBrain's intuitive Dashboard.",
           "image": "/img/dash.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/dashboard"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/dashboard"
       },
       "content": {
         "heroHeader": "CapoBrain Dashboard - School Management Overview",
@@ -45,7 +45,7 @@
         "openGraph": {
           "title": "Visitors Meeting | CapoBrain School Management System",
           "description": "Streamline scheduling and managing meetings with staff and students in the Visitors Meeting module of CapoBrain. Add necessary information and configure meeting purposes to ensure smooth interactions.",
-          "url": "https://capobrain-sms.vercel.app/visitors-meeting",
+          "url": "https://capobrain-sms.vercel.app/usermanual/visitors-meeting",
           "type": "website"
         },
         "twitter": {
@@ -54,7 +54,7 @@
           "description": "Simplify your school’s visitor management system with CapoBrain, featuring scheduling and configuration of meetings with staff and students.",
           "image": "/img/Add-Visitors-Meeting.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/visitors-meeting"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/visitors-meeting"
       },
       "content": {
         "heroHeader": "Seamless Visitor and Meeting Management with CapoBrain",
@@ -81,7 +81,7 @@
         "openGraph": {
           "title": "Phone Call Log | CapoBrain School Management System",
           "description": "CapoBrain’s Phone Call Log module enables seamless tracking of school-related calls. Log call details like caller information, call duration, and status to maintain a comprehensive communication record.",
-          "url": "https://capobrain-sms.vercel.app/features/phone-call-log",
+          "url": "https://capobrain-sms.vercel.app/usermanual/features/phone-call-log",
           "type": "website"
         },
         "twitter": {
@@ -89,7 +89,7 @@
           "title": "Phone Call Log | CapoBrain School Management System",
           "description": "Manage and log school-related calls with CapoBrain’s Phone Call Log module. Track essential call information, ensuring accurate and detailed records for effective communication."
         },
-        "canonical": "https://capobrain-sms.vercel.app/features/phone-call-log"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/features/phone-call-log"
       },
       "content": {
         "heading": "Phone Call Log",
@@ -115,7 +115,7 @@
         "openGraph": {
           "title": "Postal Dispatch Management | CapoBrain School Management System",
           "description": "CapoBrain’s Postal Dispatch Management module enables schools to manage and track postal dispatches effectively. Add dispatch details like title, reference number, address, and date for complete postal records.",
-          "url": "https://capobrain-sms.vercel.app/postal-dispatch",
+          "url": "https://capobrain-sms.vercel.app/usermanual/postal-dispatch",
           "type": "website"
         },
         "twitter": {
@@ -124,7 +124,7 @@
           "description": "Efficiently manage and track postal dispatches with CapoBrain. Add details like title, reference, address, and date to ensure accurate records for seamless postal management.",
           "image": "/img/Add-Postal-Dispatch.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/postal-dispatch"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/postal-dispatch"
       },
       "content": {
         "heroHeader": "Efficient Postal Dispatch Management with CapoBrain",
@@ -151,7 +151,7 @@
         "openGraph": {
           "title": "Online Complaints Management | CapoBrain School Management System",
           "description": "CapoBrain’s Online Complaints Management module helps schools efficiently handle and resolve complaints submitted through their website. Organize, track, and address complaints with ease to improve communication.",
-          "url": "https://capobrain-sms.vercel.app/online-complaints-management",
+          "url": "https://capobrain-sms.vercel.app/usermanual/online-complaints-management",
           "type": "website"
         },
         "twitter": {
@@ -160,7 +160,7 @@
           "description": "Streamline complaint management with CapoBrain. Manage online complaints, track their status, and resolve them promptly to improve communication between school and users.",
           "image": "/img/Complains-Detail.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/online-complaints-management"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/online-complaints-management"
       },
       "content": {
         "heroHeader": "Streamlined Online Complaints Management with CapoBrain",
@@ -187,7 +187,7 @@
         "openGraph": {
           "title": "Postal Receive Management | CapoBrain School Management System",
           "description": "CapoBrain’s Postal Receive Management module enables efficient management of postal received items, with the ability to track sender details, reference numbers, and addresses for organized records.",
-          "url": "https://capobrain-sms.vercel.app/postal-receive",
+          "url": "https://capobrain-sms.vercel.app/usermanual/postal-receive",
           "type": "website"
         },
         "twitter": {
@@ -196,7 +196,7 @@
           "description": "Track and manage all postal received items in CapoBrain. Easily record sender details, reference numbers, and postal addresses for accurate school records.",
           "image": "/img/Add-Postal-Receive.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/postal-receive"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/postal-receive"
       },
       "content": {
         "heroHeader": "Efficient Postal Receive Management with CapoBrain",
@@ -223,7 +223,7 @@
         "openGraph": {
           "title": "Online Complaints Management | CapoBrain School Management System",
           "description": "CapoBrain’s Online Complaints Management module allows schools to effectively manage user complaints submitted via the school website. Track, resolve, and maintain accurate records of all complaints for seamless communication.",
-          "url": "https://capobrain-sms.vercel.app/online-complaints-list",
+          "url": "https://capobrain-sms.vercel.app/usermanual/online-complaints-list",
           "type": "website"
         },
         "twitter": {
@@ -232,7 +232,7 @@
           "description": "Simplify online complaint management with CapoBrain. Track, resolve, and maintain a complete record of user complaints submitted through your school website.",
           "image": "/img/Complains-Detail.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/online-complaints-list"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/online-complaints-list"
       },
       "content": {
         "heroHeader": "Efficient Online Complaints Management with CapoBrain",
@@ -259,7 +259,7 @@
         "openGraph": {
           "title": "Configure Front Office | CapoBrain School Management System",
           "description": "CapoBrain’s Configure Front Office module allows schools to manage and configure their reception area by adding meeting purposes and descriptions. Enhance visitor management and streamline the front office process.",
-          "url": "https://capobrain-sms.vercel.app/configure-front-office",
+          "url": "https://capobrain-sms.vercel.app/usermanual/configure-front-office",
           "type": "website"
         },
         "twitter": {
@@ -268,7 +268,7 @@
           "description": "Configure and manage your school’s front office settings with ease using CapoBrain’s module. Add and update meeting purposes to ensure efficient visitor management.",
           "image": "/img/Configure-Front-Office.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/configure-front-office"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/configure-front-office"
       },
       "content": {
         "heroHeader": "Streamline Visitor Management with CapoBrain",
@@ -295,7 +295,7 @@
         "openGraph": {
           "title": "Teaching Staff | CapoBrain School Management System",
           "description": "CapoBrain’s Teaching Staff module simplifies staff management by adding personal details, qualifications, and experience. Generate unique Teacher IDs to streamline access to the portal and ensure effective management.",
-          "url": "https://capobrain-sms.vercel.app/teaching-staff",
+          "url": "https://capobrain-sms.vercel.app/usermanual/teaching-staff",
           "type": "website"
         },
         "twitter": {
@@ -304,7 +304,7 @@
           "description": "Efficiently manage teaching staff details, qualifications, and more with CapoBrain’s Teaching Staff module. Generate Teacher IDs and improve staff management.",
           "image": "/img/Add-Teacher.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/teaching-staff"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/teaching-staff"
       },
       "content": {
         "heroHeader": "Efficient Teaching Staff Management with CapoBrain",
@@ -331,7 +331,7 @@
         "openGraph": {
           "title": "Non-Teaching Staff | CapoBrain School Management System",
           "description": "CapoBrain’s Non-Teaching Staff module helps you efficiently manage the personal information and job titles of your school's non-teaching staff. Update and manage staff details as needed for improved staff administration.",
-          "url": "https://capobrain-sms.vercel.app/non-teaching-staff",
+          "url": "https://capobrain-sms.vercel.app/usermanual/non-teaching-staff",
           "type": "website"
         },
         "twitter": {
@@ -340,7 +340,7 @@
           "description": "Manage non-teaching staff information efficiently with CapoBrain’s Non-Teaching Staff module. Add and update staff details and job titles for effective management.",
           "image": "/img/Add-Non-Teachning-Staff.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/non-teaching-staff"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/non-teaching-staff"
       },
       "content": {
         "heroHeader": "Streamline Non-Teaching Staff Management with CapoBrain",
@@ -367,7 +367,7 @@
         "openGraph": {
           "title": "Staff Todos | CapoBrain School Management System",
           "description": "Assign and manage tasks efficiently with CapoBrain's Staff Todos module. Track tasks with detailed descriptions and set start and finish dates for seamless task management.",
-          "url": "https://capobrain-sms.vercel.app/staff-todos",
+          "url": "https://capobrain-sms.vercel.app/usermanual/staff-todos",
           "type": "website"
         },
         "twitter": {
@@ -376,7 +376,7 @@
           "description": "Manage staff tasks easily with CapoBrain’s Staff Todos module. Assign tasks, set start and finish dates, and track their progress efficiently.",
           "image": "/img/Add-Todo.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/staff-todos"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/staff-todos"
       },
       "content": {
         "heroHeader": "Streamlined Task Management for Staff with CapoBrain",
@@ -402,7 +402,7 @@
         "openGraph": {
           "title": "Staff Withdrawal Management | CapoBrain School Management System",
           "description": "CapoBrain's Staff Withdrawal Management module helps schools track and manage staff withdrawals. Record the reason for withdrawal and access a list of withdrawn staff for better staff administration.",
-          "url": "https://capobrain-sms.vercel.app/staff-withdraw",
+          "url": "https://capobrain-sms.vercel.app/usermanual/staff-withdraw",
           "type": "website"
         },
         "twitter": {
@@ -411,7 +411,7 @@
           "description": "Manage staff withdrawals efficiently with CapoBrain’s Staff Withdrawal Management module. Record withdrawal reasons and track withdrawn staff.",
           "image": "/img/feedback.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/staff-withdraw"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/staff-withdraw"
       },
       "content": {
         "heroHeader": "Efficient Staff Withdrawal Management with CapoBrain",
@@ -437,7 +437,7 @@
         "openGraph": {
           "title": "Staff Review Management | CapoBrain School Management System",
           "description": "Post and manage staff reviews with ease using CapoBrain's School Management System. Search staff by ID, provide ratings, and track performance feedback.",
-          "url": "https://capobrain-sms.vercel.app/staff-review",
+          "url": "https://capobrain-sms.vercel.app/usermanual/staff-review",
           "type": "website"
         },
         "twitter": {
@@ -446,7 +446,7 @@
           "description": "Manage staff reviews with CapoBrain’s School Management System. Post ratings and feedback, track performance, and foster a productive school environment.",
           "image": "/img/Add-Staff-Review.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/staff-review"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/staff-review"
       },
       "content": {
         "heroHeader": "Enhance Staff Performance with Review Management",
@@ -472,7 +472,7 @@
         "openGraph": {
           "title": "Feedback List Management | CapoBrain School Management System",
           "description": "Post and manage staff feedback with CapoBrain’s Feedback List Management module. Add feedback, track comments, and improve staff communication.",
-          "url": "https://capobrain-sms.vercel.app/feedback-list",
+          "url": "https://capobrain-sms.vercel.app/usermanual/feedback-list",
           "type": "website"
         },
         "twitter": {
@@ -481,7 +481,7 @@
           "description": "Enhance staff communication by managing feedback in CapoBrain’s Feedback List Management module. Post and track feedback for improved engagement.",
           "image": "/img/Fedback.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/feedback-list"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/feedback-list"
       },
       "content": {
         "heroHeader": "Streamline Staff Feedback with CapoBrain",
@@ -507,7 +507,7 @@
         "openGraph": {
           "title": "New Admission | CapoBrain School Management System",
           "description": "Streamline student enrollment with CapoBrain’s New Admission module. Add personal details, set fee structure, and provide students with unique IDs for portal access.",
-          "url": "https://capobrain-sms.vercel.app/new-admission",
+          "url": "https://capobrain-sms.vercel.app/usermanual/new-admission",
           "type": "website"
         },
         "twitter": {
@@ -516,7 +516,7 @@
           "description": "Simplify new student enrollment with CapoBrain’s New Admission module. Add student details, set up fee structure, and receive a unique student ID.",
           "image": "/img/New-Admission.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/new-admission"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/new-admission"
       },
       "content": {
         "heroHeader": "Simplify Student Enrollment with CapoBrain",
@@ -543,7 +543,7 @@
         "openGraph": {
           "title": "Comprehensive Student List | CapoBrain School Management System",
           "description": "Easily access the full student list, view documents, and manage student entries with CapoBrain’s comprehensive student management features.",
-          "url": "https://capobrain-sms.vercel.app/students-list",
+          "url": "https://capobrain-sms.vercel.app/usermanual/students-list",
           "type": "website"
         },
         "twitter": {
@@ -552,7 +552,7 @@
           "description": "Manage student entries, view documents, and easily access login details through CapoBrain’s comprehensive student list module.",
           "image": "/img/Student-List.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/students-list"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/students-list"
       },
       "content": {
         "heroHeader": "Effortlessly Manage Student Information with CapoBrain",
@@ -578,7 +578,7 @@
         "openGraph": {
           "title": "Feedback Record | CapoBrain School Management System",
           "description": "Manage student feedback efficiently with CapoBrain’s Feedback Record module. Post reviews and track comments to improve communication and performance assessment.",
-          "url": "https://capobrain-sms.vercel.app/feedback-record",
+          "url": "https://capobrain-sms.vercel.app/usermanual/feedback-record",
           "type": "website"
         },
         "twitter": {
@@ -587,7 +587,7 @@
           "description": "Easily manage and track student feedback in CapoBrain's School Management System. Post reviews and view comments for performance tracking.",
           "image": "/img/Add-Students-Feedback.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/feedback-record"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/feedback-record"
       },
       "content": {
         "heroHeader": "Track and Manage Student Feedback with Ease",
@@ -613,7 +613,7 @@
         "openGraph": {
           "title": "Family Record | CapoBrain School Management System",
           "description": "Access and manage family records of students with CapoBrain’s Family Record module. Quickly view and manage students from the same family for better organization.",
-          "url": "https://capobrain-sms.vercel.app/family-record",
+          "url": "https://capobrain-sms.vercel.app/usermanual/family-record",
           "type": "website"
         },
         "twitter": {
@@ -622,7 +622,7 @@
           "description": "CapoBrain’s Family Record module allows you to manage student family details and see which students belong to the same family for efficient administration.",
           "image": "/img/Family-Detail.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/family-record"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/family-record"
       },
       "content": {
         "heroHeader": "Manage Family Records for Easier Student Administration",
@@ -648,7 +648,7 @@
         "openGraph": {
           "title": "Online Admissions | CapoBrain School Management System",
           "description": "Streamline your student admissions process with CapoBrain’s Online Admissions module. View and manage applications directly from your website for a seamless experience.",
-          "url": "https://capobrain-sms.vercel.app/online-admissions",
+          "url": "https://capobrain-sms.vercel.app/usermanual/online-admissions",
           "type": "website"
         },
         "twitter": {
@@ -657,7 +657,7 @@
           "description": "Easily manage student applications with CapoBrain’s Online Admissions module. Applications submitted via your school website are automatically integrated into the system.",
           "image": "/img/Online-Admission.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/online-admissions"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/online-admissions"
       },
       "content": {
         "heroHeader": "Streamline Your Admissions Process with Online Applications",
@@ -683,7 +683,7 @@
         "openGraph": {
           "title": "Passout Students | CapoBrain School Management System",
           "description": "Efficiently manage passout students by withdrawing them and maintaining accurate records in CapoBrain’s School Management System.",
-          "url": "https://capobrain-sms.vercel.app/passout-students",
+          "url": "https://capobrain-sms.vercel.app/usermanual/passout-students",
           "type": "website"
         },
         "twitter": {
@@ -692,7 +692,7 @@
           "description": "Easily manage passout students in CapoBrain’s School Management System. Withdraw students and keep accurate records of their academic status.",
           "image": "/img/Add-passout-Student.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/passout-students"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/passout-students"
       },
       "content": {
         "heroHeader": "Manage and Maintain Records for Passout Students",
@@ -718,7 +718,7 @@
         "openGraph": {
           "title": "Promote Students | CapoBrain School Management System",
           "description": "Easily promote students to the next class in CapoBrain’s School Management System. Choose between single student promotion or full class promotion options.",
-          "url": "https://capobrain-sms.vercel.app/promote-students",
+          "url": "https://capobrain-sms.vercel.app/usermanual/promote-students",
           "type": "website"
         },
         "twitter": {
@@ -727,7 +727,7 @@
           "description": "Use CapoBrain’s School Management System to promote students to the next class. Options include single student or full class promotions for efficient management.",
           "image": "/img/Promote-Student.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/promote-students"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/promote-students"
       },
       "content": {
         "heroHeader": "Efficiently Promote Students to the Next Class",
@@ -752,7 +752,7 @@
         "openGraph": {
           "title": "Student Reviews | CapoBrain School Management System",
           "description": "Add detailed student reviews in CapoBrain's School Management System. Search students by ID, provide ratings, and maintain an organized review list.",
-          "url": "https://capobrain-sms.vercel.app/student-review",
+          "url": "https://capobrain-sms.vercel.app/usermanual/student-review",
           "type": "website"
         },
         "twitter": {
@@ -761,7 +761,7 @@
           "description": "Easily track and manage student evaluations with CapoBrain's review module. Search by ID, rate performance, and maintain a detailed review list.",
           "image": "/img/Add-Student-Review.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/student-review"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/student-review"
       },
       "content": {
         "heroHeader": "Track and Manage Student Evaluations with Ease",
@@ -787,7 +787,7 @@
         "openGraph": {
           "title": "Student Review | CapoBrain School Management System",
           "description": "Effortlessly manage student reviews with CapoBrain’s School Management System. Search by ID, rate performance, and track evaluations for effective feedback management.",
-          "url": "https://capobrain-sms.vercel.app/students-review",
+          "url": "https://capobrain-sms.vercel.app/usermanual/students-review",
           "type": "website"
         },
         "twitter": {
@@ -796,7 +796,7 @@
           "description": "With CapoBrain’s School Management System, search for students, rate their performance, and track reviews efficiently to ensure continuous improvement.",
           "image": "/img/Add-Student-Review.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/students-review"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/students-review"
       },
       "content": {
         "heroHeader": "Student Reviews Made Easy",
@@ -821,7 +821,7 @@
         "openGraph": {
           "title": "Withdraw Students | CapoBrain School Management System",
           "description": "Manage student withdrawals efficiently with CapoBrain. Search by ID, enter reasons, and maintain well-organized records for streamlined school operations.",
-          "url": "https://capobrain-sms.vercel.app/withdraw-students",
+          "url": "https://capobrain-sms.vercel.app/usermanual/withdraw-students",
           "type": "website"
         },
         "twitter": {
@@ -830,7 +830,7 @@
           "description": "CapoBrain’s School Management System makes it easy to manage withdrawals. Record reasons, update lists, and maintain accurate data effortlessly.",
           "image": "/img/Add-Withdraw-Student.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/withdraw-students"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/withdraw-students"
       },
       "content": {
         "heroHeader": "Effortless Student Withdrawals",
@@ -855,7 +855,7 @@
         "openGraph": {
           "title": "Family Wise Account | CapoBrain School Management System",
           "description": "Keep track of family-wide student records with CapoBrain. View details like ID, name, class, section, and balance for improved transparency and communication.",
-          "url": "https://capobrain-sms.vercel.app/family-wise-account",
+          "url": "https://capobrain-sms.vercel.app/usermanual/family-wise-account",
           "type": "website"
         },
         "twitter": {
@@ -864,7 +864,7 @@
           "description": "CapoBrain’s School Management System empowers families with all-in-one access to student details, enhancing transparency and communication.",
           "image": "/img/Family-Account-Detail.avif"
         },
-        "canonical": "https://capobrain-sms.vercel.app/family-wise-account"
+        "canonical": "https://capobrain-sms.vercel.app/usermanual/family-wise-account"
       },
       "content": {
         "heroHeader": "All-In-One Family Accounts",
