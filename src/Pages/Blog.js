@@ -80,13 +80,13 @@ const Blog = () => {
         <div className="container p-6 mx-auto space-y-8">
           <div className="space-y-2 text-center max-w-3xl mx-auto">
             <h2 className="heading-body">Explore Our Blog</h2>
-            <p className="">
+            <h3 className="text-neutral-500">
               {" "}
               Welcome to the CapoBrain blog! Discover articles, tips, and
               insights on School Management Software, SIS, and Education ERP
               Solutions. From expert advice on software implementation to
               education tech trends in Pakistan, our blog covers it all.
-            </p>
+            </h3>
           </div>
           {/* Category Buttons */}
           <ul className="flex flex-wrap gap-4 text-center justify-center">
@@ -119,18 +119,13 @@ const Blog = () => {
                       className="object-cover w-full h-52"
                       src={Blog2}
                     />
-                    <div className="flex flex-col flex-1 px-2 py-4">
-                      <Link
-                        to={`/blog/${post.slug}`}
-                        className="text-xs tracking-wider uppercase hover:underline"
-                      >
+                    <div className="flex flex-col flex-1 px-2 py-4">                      
                         {post.category}
-                      </Link>
-                      <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
+                      <p className="flex-1 py-2 text-lg font-semibold leading-snug">
                         {post.title.length > 50
                               ? post.title.slice(0, 50) + "..."
                               : post.title}
-                      </h3>
+                      </p>
                       <div className="flex justify-between pt-3 space-x-2 text-xs">
                         <span>{post.date}</span>
                         <span>2.8K views</span>

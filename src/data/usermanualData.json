@@ -4,7 +4,7 @@
       "id": "dashboard",
       "meta": {
         "title": "Dashboard | CapoBrain School Management System",
-        "description": "Explore the Family Wise Account feature in CapoBrain's School Management System, providing parents with easy access to their child's school records, including ID, name, class, section, and balance."
+        "description": "Navigate the Dashboard of CapoBrain's School Management System for a comprehensive view of school operations, including real-time updates on student records, class schedules, and financial summaries."
       },
       "content": {
         "heroHeader": "Capobrain Dashboard",

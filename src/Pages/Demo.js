@@ -74,12 +74,12 @@ export default function Demo() {
               <p className="mt-2">
                 Demo Link:{" "}
                 <Link
-                  to="https://demo.capobrain.com/"
+                  to="https://demo.capobrain-sms.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-700 underline"
                 >
-                  https://demo.capobrain.com/
+                  https://demo.capobrain-sms.vercel.app/
                 </Link>
               </p>
               <h4 className="mt-6 font-semibold text-2xl">Demo Credentials</h4>

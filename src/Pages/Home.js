@@ -51,7 +51,7 @@ export default function Home() {
           content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Our customizable, mobile-friendly software covers student information, fee management, attendance, and more for schools of all sizes."
         />
         <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="https://capobrain.com/" />
+        <meta property="og:url" content="https://capobrain-sms.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
@@ -76,7 +76,7 @@ export default function Home() {
               "@type": "SearchAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://capobrain.com/search?q={search_term_string}",
+                "urlTemplate": "https://capobrain-sms.vercel.app/search?q={search_term_string}",
                 "actionPlatform": [
                   "https://schema.org/DesktopWebPlatform",
                   "https://schema.org/IOSPlatform",

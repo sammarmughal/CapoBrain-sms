@@ -61,7 +61,7 @@ export default function Blogcat() {
         <meta property="og:title" content={posts.title} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content={`https://capobrain.com/${postSlug}`} />
+        <meta property="og:url" content={`https://capobrain-sms.vercel.app/${postSlug}`} />
         <meta property="og:type" content="article" />
 
         {/* Twitter Card Meta Tags */}

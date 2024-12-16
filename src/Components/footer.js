@@ -55,7 +55,7 @@ const Footer = () => {
                     </div>
                     <div className="py-2 mb-2" style={{ fontSize: "16px" }}>
                       <i className="fas fa-envelope  me-2"></i>{" "}
-                      info@capobrain.com
+                      info@capobrain-sms.vercel.app
                     </div>
                   </div>
                   <h3 className="mb-3 lg:text-lg text-xl font-semibold text-dark">Follow Us</h3>

@@ -124,7 +124,7 @@ const FAQs = () => {
     {
       heading: "How can I learn more about CapoBrain and its features?",
       paragraph:
-        "You can visit the website capobrain.com for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions.",
+        "You can visit the website capobrain-sms.vercel.app for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions.",
       id: 19,
     },
     {
@@ -287,7 +287,7 @@ const FAQs = () => {
     "name": "How can I learn more about CapoBrain and its features?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "You can visit the website capobrain.com for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions."
+      "text": "You can visit the website capobrain-sms.vercel.app for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions."
     }
   },{
     "@type": "Question",
@@ -390,10 +390,9 @@ const FAQs = () => {
             Frequently Asked Questions
             </h2>
           </div>
-          <p className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
+          <h3 className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
           Find answers to top common questions about our School Management System (SMS). Learn how our platform can simplify your school’s administrative tasks, improve student data management, and enhance communication between parents, teachers, and administrators.
-
-          </p>
+          </h3>
         </div>
         <div className="flex mx-auto w-full pt-5 justify-center">
           <div className="max-w-[380px] md:max-w-[800px] w-full md:w-full z-10 rounded-lg flex flex-col p-3 text-Dark_purple bg-white shadow-lg">
@@ -401,9 +400,9 @@ const FAQs = () => {
               {data.map((item) => (
                 <div className="">
                   <div className="flex justify-between p-2 hover:text-purple-600 items-center">
-                    <h3 className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2  cursor-pointer">
+                    <div className="text-lg font-bold w-[75%] md:w-[90%] leading-6 tracking-wide mb-2 cursor-pointer">
                       {item.heading}
-                    </h3>
+                    </div>
                     <img
                       src={active === item.id ? close : open}
                       alt="open or close"
