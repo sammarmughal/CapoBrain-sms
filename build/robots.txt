@@ -1,8 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /junk/
 Disallow: /cdn-cgi/
-Sitemap: https://capobrain.com/sitemap.xml
+Sitemap: https://capobrain-sms.vercel.app/sitemap.xml
