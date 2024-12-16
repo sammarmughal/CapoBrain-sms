@@ -124,7 +124,7 @@ const FAQs = () => {
     {
       heading: "How can I learn more about CapoBrain and its features?",
       paragraph:
-        "You can visit the website capobrain-sms.vercel.app for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions.",
+        "You can visit the website capobrain.com for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions.",
       id: 19,
     },
     {
@@ -287,7 +287,7 @@ const FAQs = () => {
     "name": "How can I learn more about CapoBrain and its features?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "You can visit the website capobrain-sms.vercel.app for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions."
+      "text": "You can visit the website capobrain.com for detailed information about CapoBrain's features, benefits, and pricing. Additionally, you can contact our team for a personalized demo and consultation on our school management software solutions."
     }
   },{
     "@type": "Question",

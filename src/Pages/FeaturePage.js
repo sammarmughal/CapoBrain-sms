@@ -199,7 +199,7 @@ function FeaturePage() {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={capobrain}
-              alt=""
+              alt="Capobrain School Management Modules"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
