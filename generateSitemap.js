@@ -46,7 +46,7 @@ const routes = [
   "/usermanual/visitors-meeting",
   "/usermanual/phone-call-log",
   "/usermanual/postal-dispatch",
-  "/usermanual/postal-recieve",
+  "/usermanual/postal-receive",
   "/usermanual/online-complains-list",
   "/usermanual/configure-front-office",
   "/usermanual/teaching-staff",

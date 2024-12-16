@@ -140,7 +140,7 @@ function Navigation() {
         },
         {
           to: "postal-receive",
-          label: "Postal Recieve",
+          label: "Postal Receive",
         },
         {
           to: "online-complains-list",
@@ -322,7 +322,7 @@ function Navigation() {
     //   ),
     //   links: [
     //     {
-    //       to: "recieve-fee",
+    //       to: "receive-fee",
     //       label: "Receive Fee",
     //     },
     //     {
@@ -990,11 +990,11 @@ function Navigation() {
     //       label: "Student Accounts",
     //     },
     //     {
-    //       to: "student-recieveables",
+    //       to: "student-receiveables",
     //       label: "Student Receiveables",
     //     },
     //     {
-    //       to: "staff-recieveables",
+    //       to: "staff-receiveables",
     //       label: "Staff Receiveables",
     //     },
     //     {

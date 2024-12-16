@@ -391,7 +391,7 @@ const FAQs = () => {
             </h2>
           </div>
           <h3 className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
-          Find answers to top common questions about our School Management System (SMS). Learn how our platform can simplify your school’s administrative tasks, improve student data management, and enhance communication between parents, teachers, and administrators.
+          Find answers to top common questions about our School ERP Software. Learn how our platform can simplify your school’s administrative tasks, improve student data management, and enhance communication between parents, teachers, and administrators.
           </h3>
         </div>
         <div className="flex mx-auto w-full pt-5 justify-center">

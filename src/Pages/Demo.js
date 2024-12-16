@@ -68,8 +68,8 @@ export default function Demo() {
                 Experience a Free School ERP  Demo
               </h2>
               <p>
-                Discover how our top-rated school management software can
-                streamline your administration tasks:
+              Discover how our top-rated school management software can streamline your administration tasks. Schedule your free live demo today to experience the features in action and see how it can transform your school management process.
+
               </p>
               <p className="mt-2">
                 Demo Link:{" "}

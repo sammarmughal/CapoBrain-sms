@@ -127,7 +127,7 @@ const Contact = () => {
             <h1 className="heading-hero">Contact For Any Query</h1>
             <p className="max-w-2xl mx-auto text-gray-200">
               Contact us today to get a solution for your school management
-              challenges. Our team offers tailored software solutions to help
+              query. Our team offers tailored software solutions to help
               you streamline your administration.
             </p>
           </div>

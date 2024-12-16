@@ -56,8 +56,7 @@ const Features = () => {
               School Management System
             </h1>
             <p className="max-w-2xl mx-auto text-gray-200">
-              Invest intelligently and discover a better way to manage your
-              entire wealth easily with our School Management System (SMS).
+            Discover the powerful tools and seamless integration that make CapoBrain SMS the ultimate solution for efficient school management.
             </p>
           </div>
         </div>
@@ -140,7 +139,7 @@ const Features = () => {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={capobrain}
-              alt="Capobrain School Managment Software"
+              alt="Capobrain School Management Software"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>

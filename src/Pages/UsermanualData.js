@@ -60,15 +60,31 @@ const UserManualData = () => {
   }
 
   return (
-    <>
+    <> 
       <Helmet>
         <title>{manualData.meta.title}</title>
         <meta name="description" content={manualData.meta.description} />
+        <meta property="og:title" content={manualData.meta.openGraph.title} />
+        <meta
+          property="og:description"
+          content={manualData.meta.openGraph.description}
+        />
+        <meta property="og:url" content={manualData.meta.openGraph.url} />
+        <meta property="og:type" content={manualData.meta.openGraph.type} />
+
+        <meta name="twitter:card" content={manualData.meta.twitter.card} />
+        <meta name="twitter:title" content={manualData.meta.twitter.title} />
+        <meta
+          name="twitter:description"
+          content={manualData.meta.twitter.description}
+        />
+
+        <link rel="canonical" href={manualData.meta.canonical} />
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="heading-hero">Explore Our Software User Manual</h1>
+            <h1 className="heading-hero">{manualData.content.heroHeader}</h1>
           </div>
         </div>
         <div
