@@ -114,7 +114,7 @@ const AboutSection = () => {
           content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software."
         />
         <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ABOUT_PAGE_URL" />
+        <meta property="og:url" content="https://capobrain.com/about" />
         <meta property="og:type" content="website" />
 
         <meta

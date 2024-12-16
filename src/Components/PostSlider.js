@@ -1,26 +1,26 @@
 import React from "react";
 import Slider from 'react-slick';
-import cloudComuting from "../img/Cloud-Based-School-Management-System.jpg";
-import edge from "../img/Cutting-Edge-Educational-Technologies.jpg";
-import computerBased from "../img/Computer-Based-Exam-Management.jpg";
-import AiDriven from "../img/AI-Driven-Schoo- Management.jpg";
-import DataSecurity from  "../img/Comprehensive-Data-Security.jpg";
-import StudentParentsPortals from "../img/Students-&-Parent-Portals.jpg";
-import studentstaff from "../img/Student-&-Staff-Ledgers.jpg";
-import WhatsAppMessaging from "../img/WhatsApp-Messaging.jpg";
-import DailyDiray from "../img/Online-Daily-Diary-Feature.jpg";
-import MobileApp from "../img/School-Management-Mobile-App.jpg";
-import BiometricAttendance from  "../img/Biometric-Attendance.jpg";
-import SalaryFee from "../img/Salary-&-Fee-Management.jpg";
-import InventoryManagement from "../img/Inventory-Management.jpg";
-import RemainderFeeCollection from "../img/Reminders-For-Fee-Collection.jpg";
-import SchoolCollegeWeb from "../img/School-&-College-Front-Website.jpg";
-import OnlinePaperGeneration from "../img/Online-Paper-Generation.jpg";
-import ExamResultManagement from "../img/Exams-&-Results-Management.jpg";
-import ExpenseAndAssets from "../img/expense-and-assets.jpg";
-import Reporting from "../img/comprehensive-reporting.jpg";
-import MultiComputers from "../img/multi-computers.jpg";
 import SchoolPng from "../img/School-Management-System.png";
+import SchoolCollegeWeb from "../img/slider/School-&-College-Front-Website.jpg";
+import cloudComputing from "../img/slider/Cloud-Based-School-Management-System.jpg";
+import ExamResultManagement from "../img/slider/Computer-Based-Exam-Management.jpg"
+import edge from "../img/slider/Cutting-Edge-Educational-Technologies.jpg";
+import computerBased from "../img/slider/Computer-Based-Exam-Management.jpg";
+import AiDriven from "../img/slider/AI-Driven-Schoo- Management.jpg";
+import DataSecurity from  "../img/slider/Comprehensive-Data-Security.jpg";
+import StudentParentsPortals from "../img/slider/Students-&-Parent-Portals.jpg";
+import studentstaff from "../img/slider/Student-&-Staff-Ledgers.jpg";
+import WhatsAppMessaging from "../img/slider/WhatsApp-Messaging.jpg";
+import DailyDiray from "../img/slider/Online-Daily-Diary-Feature.jpg";
+import MobileApp from "../img/slider/School-Management-Mobile-App.jpg";
+import BiometricAttendance from  "../img/slider/Biometric-Attendance.jpg";
+import SalaryFee from "../img/slider/Salary-&-Fee-Management.jpg";
+import InventoryManagement from "../img/slider/Inventory-Management.jpg";
+import RemainderFeeCollection from "../img/slider/Reminders-For-Fee-Collection.jpg";
+import OnlinePaperGeneration from "../img/slider/Online-Paper-Generation.jpg";
+import ExpenseAndAssets from "../img/slider/expense-and-assets.jpg";
+import Reporting from "../img/slider/comprehensive-reporting.jpg";
+import MultiCampus from "../img/slider/multi-campus.jpg";
 import AdmissionTestAutomation from "../img/slider/admission-test-automation.jpg";
 import AdvanceDynamic from "../img/slider/advanced-dynamic.jpg";
 import CertificateIdCard from "../img/slider/certificate-id-card.jpg";
@@ -35,11 +35,13 @@ import RoleBasedAccessControl from "../img/slider/role-base-access-control.jpg";
 import SeamlessIntegration from "../img/slider/seamless-integration.jpg";
 import SportsExtraCurricular from "../img/slider/sports-extra-curricular.jpg";
 import StudentProgressTracking from "../img/slider/student-progress-tracking.jpg";
-import SummerTaskResources from "../img/slider/summer-tasks-resources.jpg";
+import SummerTaskResources from "../img/slider/summer-task-and-resources.jpg";
 import Teachers from "../img/slider/teachers.jpg";
 import TimetableSheduling from "../img/slider/timetable-scheduling.jpg";
 import TransportManagementSystem from "../img/slider/transport-management-system.jpg";
-
+import salaryLoan from "../img/slider/salary-loan.jpg";
+import BasicReporting from "../img/slider/basic-reporting.jpg";
+import StreamlineExamGrading from "../img/slider/streamline-exam-grading.jpg";
 
 const PostSlider = () => {
     const slider1 = {
@@ -101,7 +103,7 @@ const PostSlider = () => {
         infinite: true,
         speed: 15000,
         slidesToShow: 3.2,  
-        slidesToScroll: .9,  
+        slidesToScroll: 1.1,  
         autoplay: true,        
         autoplaySpeed: 0, 
         cssEase: "linear",
@@ -156,7 +158,7 @@ const PostSlider = () => {
           <div className="px-4">
             <img
               className="img-fluid rounded-2xl carousel-image"
-              src={cloudComuting}
+              src={cloudComputing}
               alt="Cloud Computing School Management System"
               width="512"
               height="230"
@@ -272,7 +274,16 @@ const PostSlider = () => {
               width="512"
               height="230"
             />
-          </div>         
+          </div>  
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={salaryLoan}
+              alt="Salary, Advance and Loan Managemnet For Staff"
+              width="512"
+              height="230"
+            />
+          </div>       
         
         </Slider>
       </div>
@@ -393,6 +404,15 @@ const PostSlider = () => {
               height="230"
             />
           </div>
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={BasicReporting}
+              alt="Basic Reporting System"
+              width="512"
+              height="230"
+            />
+          </div>
         
         </Slider>
       </div>
@@ -427,7 +447,6 @@ const PostSlider = () => {
               height="230"
             />
           </div>
-
           <div className="px-4">
             <img
               className="img-fluid rounded-2xl carousel-image"
@@ -449,8 +468,8 @@ const PostSlider = () => {
           <div className="px-4">
             <img
               className="img-fluid rounded-2xl carousel-image"
-              src={MultiComputers}
-              alt="MultiComputers Student Information System"
+              src={MultiCampus}
+              alt="MultiCampus Student Information System"
               width="512"
               height="230"
             />
@@ -514,6 +533,15 @@ const PostSlider = () => {
               className="img-fluid rounded-2xl carousel-image"
               src={TransportManagementSystem}
               alt="Transport Management System with Route Optimization"
+              width="512"
+              height="230"
+            />
+          </div>    
+          <div className="px-4">
+            <img
+              className="img-fluid rounded-2xl carousel-image"
+              src={StreamlineExamGrading}
+              alt="Streamline Exam, Grading & Result Management"
               width="512"
               height="230"
             />

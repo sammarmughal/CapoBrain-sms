@@ -122,7 +122,7 @@ const Features = () => {
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link
                 to="/requestdemo"
-                className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#161418]"
+                className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                 rel="noreferrer"
               >
                 Get in touch with us →

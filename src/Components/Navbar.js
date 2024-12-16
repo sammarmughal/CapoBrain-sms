@@ -198,19 +198,14 @@ function Navbar() {
                         FAQs
                       </Link>
                     </li>
-                    <li>
-                      {/* <Link
-                        to="/userlogin"
+                    <li>                      
+                      <button
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
+                          handleGenerateTicketClick();
+
                         }}
-                        className="block px-4 py-2 hover:text-purple-600"
-                      >
-                        Generate Ticket
-                      </Link> */}
-                      <button
-                        onClick={handleGenerateTicketClick}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
                         Generate Ticket

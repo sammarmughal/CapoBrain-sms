@@ -1,266 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Public Pages -->
-  <url>
-    <loc>https://capobrain.com/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/features</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/features/cloud-based-school-management-system</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/cutting-edge-educational-technologies</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/computer-based-exam-management</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/ai-driven-school-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/data-security</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/students-and-parent-portals</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/online-daily-diary-feature</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/school-management-mobile-app</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/whatsapp-messaging</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/biometric-attendance</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/salary-and-fee-management</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/inventory-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/student-and-staff-ledgers</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/reminders-for-fee-collection</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/expense-and-assets-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/online-paper-generation</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/exams-and-results-management</loc>
-    <priority>0.7</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/features/comprehensive-reporting</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/multi-campuses-management</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/features/school-college-front-website</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-   <url>
-    <loc>https://capobrain.com/features/transportation-management</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/help</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/blog</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/faq</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/contact</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/userlogin</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/signup</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/requestdemo</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/usermanual</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/usermanual/dashboard</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/visitors-meeting</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/phone-call-log</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/postal-dispatch</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/postal-receive</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/online-complains-list</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/configure-front-office</loc>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://capobrain.com/usermanual/teaching-staff</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/non-teaching-staff</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/staff-todos</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/staff-withdraw</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/staff-review</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/feedback-list</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/new-admission</loc>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://capobrain.com/usermanual/students-list</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/online-admissions</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/family-record</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/promote-students</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/withdraw-students</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/passout-students</loc>
-    <priority>0.6</priority>
-  </url>
-   <url>
-    <loc>https://capobrain.com/usermanual/students-review</loc>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://capobrain.com/usermanual/feedback-record</loc>
-    <priority>0.6</priority>
-  </url>  
-  <url>
-    <loc>https://capobrain.com/demo</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/addblog</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/blogs</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/categories</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/demousers</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/changepassword</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/adminpanel/tickets</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://capobrain.com/404</loc>
-    <priority>0.1</priority>
-  </url>
-</urlset>
+
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url><loc>https://capobrain.com/</loc></url>
+<url><loc>https://capobrain.com/about</loc></url>
+<url><loc>https://capobrain.com/features/cloud-based-school-management-system</loc></url>
+<url><loc>https://capobrain.com/features/cutting-edge-educational-technologies</loc></url>
+<url><loc>https://capobrain.com/features/computer-based-exam-management</loc></url>
+<url><loc>https://capobrain.com/features/ai-powered-reporting-analytics</loc></url>
+<url><loc>https://capobrain.com/features/data-security</loc></url>
+<url><loc>https://capobrain.com/features/students-and-parent-portals</loc></url>
+<url><loc>https://capobrain.com/features/online-daily-diary-feature</loc></url>
+<url><loc>https://capobrain.com/features/school-management-mobile-app</loc></url>
+<url><loc>https://capobrain.com/features/mobile-app-support</loc></url>
+<url><loc>https://capobrain.com/features/biometric-attendance</loc></url>
+<url><loc>https://capobrain.com/features/fee-and-payment-management</loc></url>
+<url><loc>https://capobrain.com/features/inventory-management</loc></url>
+<url><loc>https://capobrain.com/features/student-and-staff-management-with-task-assignments</loc></url>
+<url><loc>https://capobrain.com/features/reminders-for-fee-collection</loc></url>
+<url><loc>https://capobrain.com/features/expense-and-financial-administration</loc></url>
+<url><loc>https://capobrain.com/features/auto-paper-generation</loc></url>
+<url><loc>https://capobrain.com/features/streamlined-exam-grading-results-management</loc></url>
+<url><loc>https://capobrain.com/features/comprehensive-reporting</loc></url>
+<url><loc>https://capobrain.com/features/multi-campus-integration</loc></url>
+<url><loc>https://capobrain.com/features/school-website-management</loc></url>
+<url><loc>https://capobrain.com/features/transport-management-system</loc></url>
+<url><loc>https://capobrain.com/features/real-time-notifications</loc></url>
+<url><loc>https://capobrain.com/features/admission-test-automation</loc></url>
+<url><loc>https://capobrain.com/features/time-table-and-scheduling-management-system</loc></url>
+<url><loc>https://capobrain.com/features/teacher-portal</loc></url>
+<url><loc>https://capobrain.com/features/reception-management</loc></url>
+<url><loc>https://capobrain.com/features/summer-task-resources-management</loc></url>
+<url><loc>https://capobrain.com/features/parent-teacher-communication-portal</loc></url>
+<url><loc>https://capobrain.com/features/salary-advance-loan-management-system</loc></url>
+<url><loc>https://capobrain.com/features/certificates-id-card-generation-tool</loc></url>
+<url><loc>https://capobrain.com/features/comprehensive-library-management-with-digital-integration</loc></url>
+<url><loc>https://capobrain.com/features/integration-with-third-party-educational-tools-apis</loc></url>
+<url><loc>https://capobrain.com/features/interactive-learning-guidelines</loc></url>
+<url><loc>https://capobrain.com/features/role-based-access-control-for-secure-user-management</loc></url>
+<url><loc>https://capobrain.com/features/seamless-integration-with-modern-educational-tools</loc></url>
+<url><loc>https://capobrain.com/features/sports-and-extra-curricular-activities-management</loc></url>
+<url><loc>https://capobrain.com/features/student-progress-performance-tracking</loc></url>
+<url><loc>https://capobrain.com/usermanual</loc></url>
+<url><loc>https://capobrain.com/usermanual/dashboard</loc></url>
+<url><loc>https://capobrain.com/usermanual/visitors-meeting</loc></url>
+<url><loc>https://capobrain.com/usermanual/phone-call-log</loc></url>
+<url><loc>https://capobrain.com/usermanual/postal-dispatch</loc></url>
+<url><loc>https://capobrain.com/usermanual/postal-recieve</loc></url>
+<url><loc>https://capobrain.com/usermanual/online-complains-list</loc></url>
+<url><loc>https://capobrain.com/usermanual/configure-front-office</loc></url>
+<url><loc>https://capobrain.com/usermanual/teaching-staff</loc></url>
+<url><loc>https://capobrain.com/usermanual/non-teaching-staff</loc></url>
+<url><loc>https://capobrain.com/usermanual/staff-todos</loc></url>
+<url><loc>https://capobrain.com/usermanual/staff-withdraw</loc></url>
+<url><loc>https://capobrain.com/usermanual/staff-review</loc></url>
+<url><loc>https://capobrain.com/usermanual/feedback-list</loc></url>
+<url><loc>https://capobrain.com/usermanual/new-admission</loc></url>
+<url><loc>https://capobrain.com/usermanual/students-list</loc></url>
+<url><loc>https://capobrain.com/usermanual/online-admissions</loc></url>
+<url><loc>https://capobrain.com/usermanual/family-record</loc></url>
+<url><loc>https://capobrain.com/usermanual/promote-students</loc></url>
+<url><loc>https://capobrain.com/usermanual/withdraw-students</loc></url>
+<url><loc>https://capobrain.com/usermanual/passout-students</loc></url>
+<url><loc>https://capobrain.com/usermanual/students-review</loc></url>
+<url><loc>https://capobrain.com/usermanual/feedback-record</loc></url>
+<url><loc>https://capobrain.com/blog</loc></url>
+<url><loc>https://capobrain.com/contact</loc></url>
+<url><loc>https://capobrain.com/demo</loc></url>
+<url><loc>https://capobrain.com/help</loc></url>
+<url><loc>https://capobrain.com/faq</loc></url>
+    </urlset>
+  

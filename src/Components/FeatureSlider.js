@@ -17,7 +17,6 @@ import Client9 from "../img/schools/10.png";
 import Client11 from "../img/schools/school11.png";
 import Client12 from "../img/schools/school12.png";
 import Client13 from "../img/schools/school13.png";
-import Client14 from "../img/schools/school14.png";
 import Client15 from "../img/schools/school15.png";
 import Client16 from "../img/schools/school16.png";
 import Client17 from "../img/schools/school17.png";
@@ -29,6 +28,7 @@ import Client22 from "../img/schools/school22.png";
 import Client23 from "../img/schools/school23.png";
 import Client24 from "../img/schools/school24.png";
 import Client25 from "../img/schools/school25.png";
+import Client26 from "../img/schools/school26.png";
 
 
 const FeatureSlider = () => {
@@ -271,7 +271,7 @@ const FeatureSlider = () => {
             <div className="px-2">
               <img
                 className="rounded-xl carousel-image"
-                src={Client14}
+                src={Client25}
                 alt="School Report Card Software"
                 width="242"
                 height="auto"
@@ -362,6 +362,15 @@ const FeatureSlider = () => {
               <img
                 className="rounded-xl carousel-image"
                 src={Client24}
+                alt="School ERP Software Solutions"
+                width="242"
+                height="auto"
+              />
+            </div>   
+            <div className="px-2">
+              <img
+                className="rounded-xl carousel-image"
+                src={Client26}
                 alt="School ERP Software Solutions"
                 width="242"
                 height="auto"

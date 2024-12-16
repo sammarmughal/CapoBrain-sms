@@ -37,7 +37,7 @@ const Footer = () => {
               <NavLink link="/features/data-security" label="Data Security" />
               <NavLink link="/features/school-management-mobile-app" label="Mobile App" />
               <NavLink link="/features/online-daily-diary-feature" label="Online Daily Diary" />
-              <NavLink link="/features/exams--results-management" label="Exams & Results " />
+              <NavLink link="/features/streamlined-exam-grading-results-management" label="Exams & Results " />
               <NavLink link="/features/biometric-attendance" label="Biometric Attendance" />
 
             </LinkGroup>
