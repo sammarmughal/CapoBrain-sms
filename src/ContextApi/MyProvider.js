@@ -49,6 +49,15 @@ const MyProvider = ({ children }) => {
         const signInUser = JSON.parse(sessionStorage.getItem("User"))
         signInUser ? setSignUser(signInUser) : setSignUser("")
     }, [category, posts]);
+    useEffect(() => {
+        const signInUser = JSON.parse(sessionStorage.getItem("User"));
+        if (signInUser) {
+            setSignUser(signInUser);
+        } else {
+            setSignUser("");
+        }
+    }, []);  // This runs only once when the component mounts
+
 
     return (
         <MyContext.Provider value={{ filterPosts, posts, uniqueCategory, setCategory, allMessages, ticketMessages, signUser, setSignUser }}>

@@ -98,11 +98,11 @@ const FeatureSlider = () => {
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
               <h3 className="mb-3 heading-body">
-              Delivering Excellence to Over 100+ Educational Institutions with Our Best School Management Software</h3>
+              Delivering Excellence to Over 50+ Educational Institutions with Our Best School Management Software</h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">
               <p>
-              Our best school management software is trusted by over 30 schools, enhancing their management efficiency. Join us in transforming educational experiences and driving success with our comprehensive solutions.
+              Our best educational management software is trusted by over 50+ schools, enhancing their management efficiency. Join us in transforming educational experiences and driving success with our comprehensive solutions.
               </p>
             </div>
           </div>
@@ -112,6 +112,7 @@ const FeatureSlider = () => {
             src={OnlineEducation}
             height={100}
             alt="Online Education"
+            title="Best School Management System in Pakistan"
           />
 
           </div>
@@ -142,7 +143,7 @@ const FeatureSlider = () => {
           alt="Mobile-Friendly School ERP"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
         /> */}
-        <div className="verticel-carousel pt-10">
+        <div className="verticel-carousel sm:pt-10">
           <Slider {...slider1}>
             <div className="px-2">
               <img
@@ -257,7 +258,7 @@ const FeatureSlider = () => {
             </div>
           </Slider>
         </div>
-        <div className="verticel-carousel mt-4 pb-8">
+        <div className="verticel-carousel mt-4 sm:pb-8">
           <Slider {...slider2}>
             <div className="px-2">
               <img

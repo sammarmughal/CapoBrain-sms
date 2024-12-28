@@ -2,21 +2,26 @@ import React, { useEffect, useState } from "react";
 import {Link, useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { Helmet } from "react-helmet";
-
+import twittercard from "../img/twiiter-card.jpg";
 
 export default function Blogcat() {
   const { postSlug } = useParams();
   const [posts, setPosts] = useState({});
+  const [loading, setLoading] = useState(true); 
   useEffect(() => {
     const postData = async () => {
-      await fetch(
-        `https://capobrain-backend.vercel.app/api/auth/getpost/${postSlug}`,
-        {
-          method: "GET",
-        }
-      )
-        .then((res) => res.json())
-        .then((data) => setPosts(data));
+      try {
+        const response = await fetch(
+          `https://capobrain-backend.vercel.app/api/auth/getpost/${postSlug}`,
+          { method: "GET" }
+        );
+        const data = await response.json();
+        setPosts(data);
+      } catch (error) {
+        console.error("Error fetching post data:", error);
+      } finally {
+        setLoading(false); 
+      }
     };
     postData();
   }, [postSlug]);
@@ -24,8 +29,6 @@ export default function Blogcat() {
     if (!htmlContent) return "";
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlContent, "text/html");
-
-    // Find all images and add alt attributes
     doc.querySelectorAll("img").forEach((img, index) => {
       if (!img.alt || img.alt.trim() === "") {
         img.alt = posts.title || `Blog Image ${index + 1}`;
@@ -40,8 +43,9 @@ export default function Blogcat() {
   };
   // const sanitizedContent = { __html: DOMPurify.sanitize(posts.content) };
   const metaDescription = posts.content
-  ? posts.content.replace(/<[^>]*>/g, '').slice(0, 150) + '...'
+  ? posts.content.replace(/<[^>]*>/g, '').slice(0, 120) + '...'
   : '';
+  const metaTitle = posts.title ? posts.title.slice(0, 50) : "Default Title";
 
 
   return (
@@ -55,21 +59,40 @@ export default function Blogcat() {
           content="school management software, education technology, Capobrain, education transformation"
         />
         <meta name="robots" content="index, follow" />
-        <title>{posts.title}</title>
+        <title>{metaTitle}</title>
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={posts.title} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content={`https://capobrain-sms.vercel.app/${postSlug}`} />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content={`https://capobrain.com/${postSlug}`}/>
         <meta property="og:type" content="article" />
-
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:title" content={posts.title} />
         <meta name="twitter:description" content={metaDescription} />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href={`https://capobrain.com/blog/${postSlug}`}/>
+
       </Helmet>
+      {loading ? (
+       
+        <section className="relative bg-purple-900">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
+          <div className="space-y-5 max-w-8xl mx-auto text-center">
+            <h1 className="heading-hero"> Loading... </h1>
+          </div>
+        </div>       
+        <div
+          className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+          style={{
+            background:
+              "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
+          }}
+        ></div>
+      </section> 
+      ) : (
+        <>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
@@ -157,6 +180,8 @@ export default function Blogcat() {
             dangerouslySetInnerHTML={sanitizedContent}
           ></div>
         </div>
+        </>
+      )}
     </>
   );
 }

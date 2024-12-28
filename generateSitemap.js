@@ -1,9 +1,8 @@
 const fs = require("fs");
-
-// List your React app routes here
 const routes = [
   "/",
   "/about",
+  "/features",
   "/features/cloud-based-school-management-system",
   "/features/cutting-edge-educational-technologies",
   "/features/computer-based-exam-management",
@@ -65,31 +64,82 @@ const routes = [
   "/usermanual/students-review",
   "/usermanual/feedback-record",  
   "/blog",
+  "/blog/educational-software-excellence-optimal-features-for-learning",
+  "/blog/campus-management-systems-elevating-excellence",
+  "/blog/overhauling-with-capobrain-education-management-system",
+  "/blog/school-management-software-the-power-of-an-ideal-solution",
+  "/blog/free-school-management-software-by-capobrain",
+  "/blog/school-administration-software-optimizing-school-management",
+  "/blog/college-management-system-navigating-efficiency-in-education",
+  "/blog/university-management-software-shaping-higher-education",
+  "/blog/exam-management-system-a-new-era-in-academic-evaluation",
+  "/blog/cloud-based-optimization-in-web-based-management-systems",
+  "/blog/computer-based-exam-shaping-the-future-of-digital-learning",
+  "/blog/digital-reporting-a-symphony-of-innovation-in-education",
+  "/blog/biometric-attendance-altering-biometric-verification-in-education",
+  "/blog/empowering-minds-the-power-of-mobile-apps-for-learning",
+  "/blog/data-protection-software-of-capobrain-safeguarding-education",
+  "/blog/decoding-progress-the-essence-of-evaluation-in-education",
+  "/blog/real-time-updates-whatsapp-s-instant-insights-in-education",
+  "/blog/bridging-the-gap-parent-teacher-communication",
+  "/blog/role-of-teachers-teacher-management-information-system",
+  "/blog/school-accounting-software-streamlining-finances-with-capobrain-s-salary-fee-management-feature",
+  "/blog/exams-management-system-streamlining-educational-processes-with-capobrain",
+  "/blog/inventory-management-made-easy-with-capobrain-enhancing-educational-operations",
+  "/blog/school-mobile-app-revolutionizing-school-management-with-capobrain",
+  "/blog/education-erp-excellence-exploring-capobrain-as-the-standard-solution",
+  "/blog/enterprise-learning-management-systems-enhancing-training-efficiency-with-capobrain-and-beyond",
+  "/blog/maximizing-school-budget-management-efficiency-with-capobrain-school-management-software",
+  "/blog/technology-in-education-transforming-learning-with-capobrain-school-management-software",
+  "/blog/campus-management-software-enhancing-educational-excellence-with-capobrain",
+  "/blog/library-management-system-enhancing-efficiency-in-school-and-college-libraries",
   "/contact",
   "/demo",
   "/help",
   "/faq",
+  "/privacy-policy",
+  "/term-and-services"
 ];
 
+// function generateXml(urls) {
+//   const xml = `
+//     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+//       ${urls.map((url) => `<url><loc>${url}</loc></url>`).join("\n")}
+//     </urlset>
+//   `;
+//   return xml;
+// }
 function generateXml(urls) {
-  const xml = `
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${urls.map((url) => `<url><loc>${url}</loc></url>`).join("\n")}
-    </urlset>
-  `;
-  return xml;
+  const today = new Date().toISOString().split("T")[0];
+
+  return `
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (url) => `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>${url === "https://capobrain.com" ? "1.0" : "0.8"}</priority>
+  </url>
+  `
+  )
+  .join("\n")}
+</urlset>
+  `.trim();
 }
 
 function generateSitemap() {
-  const fullUrls = routes.map((route) => `https://capobrain-sms.vercel.app${route}`);
+  const fullUrls = routes.map((route) => `https://capobrain.com${route}`);
   const xmlContent = generateXml(fullUrls);
 
   // Write the XML content to a file
-  const sitemapPath = "./public/sitemap.xml"; // Adjust the path as needed
+  const sitemapPath = "./public/sitemap.xml";
   fs.writeFileSync(sitemapPath, xmlContent);
 
   console.log(`Sitemap generated at ${sitemapPath}`);
 }
 
-// Run the function
 generateSitemap();

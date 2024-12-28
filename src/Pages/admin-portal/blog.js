@@ -258,8 +258,8 @@ const Blogs = () => {
           property="og:description"
           content="Manage and edit blogs related to Capobrain School Management System. From school updates to informative articles, manage all content in the admin panel with ease."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_BLOG_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/adminpanel/blogs" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -270,7 +270,7 @@ const Blogs = () => {
           name="twitter:description"
           content="Access the blog management section of Capobrain's Admin Panel. Easily manage, edit, and publish school-related blogs and updates from the admin dashboard."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

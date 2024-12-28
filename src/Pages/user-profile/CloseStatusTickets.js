@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from "react";
 import Sidebar from "./component/sidebar";
 import UserNav from "./component/user-nav";
-import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 const CloseStatusTickets = () => {
   const [allTickets, setAllTickets] = useState([])

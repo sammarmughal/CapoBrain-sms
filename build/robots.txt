@@ -4,4 +4,3 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /junk/
 Disallow: /cdn-cgi/
-Sitemap: https://capobrain-sms.vercel.app/sitemap.xml

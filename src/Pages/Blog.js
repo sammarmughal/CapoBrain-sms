@@ -1,11 +1,9 @@
 import React, { useState, useContext } from "react";
-import Blog1 from "../img/blog/blog1.png";
 import Blog2 from "../img/blog/blog2.png";
-import Blog3 from "../img/blog/blog3.png";
-import Blog4 from "../img/blog/blog4.png";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import MyContext from "../ContextApi/MyContext";
+import twittercard from "../img/twiiter-card.jpg";
 
 const Blog = () => {
   const { filterPosts, posts, uniqueCategory, setCategory } =
@@ -25,7 +23,7 @@ const Blog = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Read the latest insights and updates from Capobrain’s blog. Stay informed about school management, ERP software, education technology, and best practices for school administrators. Learn how to make the most of our School Management System and ERP solutions."
+          content="Read the latest insights and updates from Capobrain’s blog. Stay informed about school management, ERP software, education technology..."
         />
         <meta
           name="keywords"
@@ -33,7 +31,7 @@ const Blog = () => {
         />
         <meta name="robots" content="index, follow" />
         <title>
-          Blog - Capobrain | Insights on School Management and ERP Software
+          Blog - Insights on School Management Software
         </title>
         <meta
           property="og:title"
@@ -43,8 +41,8 @@ const Blog = () => {
           property="og:description"
           content="Explore Capobrain's blog for the latest articles on school management, ERP software, and education technology. Learn valuable tips and insights to optimize your use of our School Management System."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_BLOG_PAGE_URL" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/blog" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -54,8 +52,10 @@ const Blog = () => {
           name="twitter:description"
           content="Capobrain’s blog provides valuable insights into school management, ERP software, and education technology. Stay up to date with the latest trends and tips for better school administration."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/blog"/>
+       
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
@@ -65,7 +65,6 @@ const Blog = () => {
               <br />
               School Management Software{" "}
             </h1>
-            <p className="max-w-2xl mx-auto text-gray-200"></p>
           </div>
         </div>
         <div
@@ -80,7 +79,7 @@ const Blog = () => {
         <div className="container p-6 mx-auto space-y-8">
           <div className="space-y-2 text-center max-w-3xl mx-auto">
             <h2 className="heading-body">Explore Our Blog</h2>
-            <h3 className="text-neutral-500">
+            <h3 className="text-neutral-500 text-justify sm:text-center">
               {" "}
               Welcome to the CapoBrain blog! Discover articles, tips, and
               insights on School Management Software, SIS, and Education ERP
@@ -88,7 +87,6 @@ const Blog = () => {
               education tech trends in Pakistan, our blog covers it all.
             </h3>
           </div>
-          {/* Category Buttons */}
           <ul className="flex flex-wrap gap-4 text-center justify-center">
             {posts &&
               [...uniqueCategory].map((category) => {

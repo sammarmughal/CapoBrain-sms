@@ -3,6 +3,8 @@ import open from "../img/icon-plus.svg";
 import close from "../img/icon-minus.svg";
 import avatar from "../img/icon-star.svg";
 import { Helmet } from "react-helmet";
+import twittercard from "../img/twiiter-card.jpg";
+
 const FAQs = () => {
   const [active, setActive] = useState(0);
   const data = [
@@ -327,7 +329,7 @@ const FAQs = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Find answers to common questions about Capobrain's School Management System. Our FAQ section covers everything from school ERP features, setup, and customization to billing, technical support, and more."
+          content="Find answers to common questions about Capobrain's School Management System. Our FAQ section covers everything from school ERP..."
         />
         <meta
           name="keywords"
@@ -346,8 +348,8 @@ const FAQs = () => {
           property="og:description"
           content="Have questions about Capobrain’s School Management System? Visit our FAQ page to find detailed answers on everything from features to technical support for our ERP software."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_FAQS_PAGE_URL" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/faq" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -358,16 +360,19 @@ const FAQs = () => {
           name="twitter:description"
           content="Get answers to your questions about Capobrain's School Management System. Our FAQs cover features, support, billing, and more, helping you make the most of our School ERP software."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/faq"/>
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
-      </Helmet>
-      <section className="relative bg-purple-800">
+      </Helmet>      
+      <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
-            <h1 className="heading-hero">Top Questions About CapoBrain</h1>
+            <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-5xl">
+            Top Questions About CapoBrain
+            </h1>          
           </div>
         </div>
         <div
@@ -390,7 +395,7 @@ const FAQs = () => {
             Frequently Asked Questions
             </h2>
           </div>
-          <h3 className="px-4 sm:px-8 lg:px-24 mb-4 text-center text-neutral-600">
+          <h3 className="px-4 sm:px-8 lg:px-24 mb-4 text-justify sm:text-center text-neutral-600">
           Find answers to top common questions about our School ERP Software. Learn how our platform can simplify your school’s administrative tasks, improve student data management, and enhance communication between parents, teachers, and administrators.
           </h3>
         </div>

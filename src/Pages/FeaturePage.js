@@ -1,7 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import featurePagesData from "../data/featurePagesData.json";
-import capobrain from "../img/Capobrainheader.png";
+import capobrain from "../img/cta-bg.jpg";
+import Welcome from "../Components/Welcome";
+import twittercard from "../img/twiiter-card.jpg";
 
 function FeaturePage() {
   const { slug } = useParams();
@@ -31,23 +33,34 @@ function FeaturePage() {
     <>
       <Helmet>
         <title>{feature.meta.title}</title>
-        <meta name="description" content={feature.meta.description} />
+        <meta
+          name="description"
+          content={
+            feature.meta.description.length > 120
+              ? feature.meta.description.slice(0, 120) + "..."
+              : feature.meta.description
+          }
+        />
 
         <meta property="og:title" content={feature.meta.openGraph.title} />
         <meta
           property="og:description"
           content={feature.meta.openGraph.description}
         />
+        <meta name="robots" content="index, follow" />
         <meta property="og:url" content={feature.meta.openGraph.url} />
         <meta property="og:type" content={feature.meta.openGraph.type} />
-
+        <meta
+          property="og:image"
+          content={twittercard}
+        />
         <meta name="twitter:card" content={feature.meta.twitter.card} />
         <meta name="twitter:title" content={feature.meta.twitter.title} />
+        <meta name="twitter:image" content={twittercard} />
         <meta
           name="twitter:description"
           content={feature.meta.twitter.description}
         />
-
         <link rel="canonical" href={feature.meta.canonical} />
       </Helmet>
       <section className="relative bg-purple-900">
@@ -134,18 +147,67 @@ function FeaturePage() {
           }}
         ></div>
       </section>
-      <section className="cb-container mt-6">
+      <section className="cb-container mt-6 sm:mt-10 px-6">
         <div className="mb-8">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
-            {feature.content.heading}
+          <h2 className="text-2xl sm:text-3xl font-semibold text-purple-800">
+            Capobrain <strong> {feature.content.heading} </strong>
           </h2>
           <p className="text-lg text-gray-600 mt-4">
             {feature.content.description}
           </p>
         </div>
+        <div
+          className="items-center grid lg:grid-cols-2 mx-auto overflow-x-hidden lg:grid xl:pt-6"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          {/* Text Content */}
+          <div className="pr-2 md:mb-14 py-14 md:py-0">
+            <h3 className="text-2xl font-bold text-purple-800 sm:text-3xl">
+              {feature.content.imageheading}
+            </h3>
+            <p className="py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5">
+              {feature.content.imagepara}
+            </p>
+            {/* <div className="mt-4">
+              <Link
+                to="/contact"
+                className="px-5 py-3 text-lg tracking-wider text-white bg-purple-500 rounded-lg md:px-8 hover:bg-purple-600 group"
+              >
+                <span>Explore More</span>
+              </Link>
+            </div> */}
+          </div>
 
+          {/* Image */}
+          {/* <div className="pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0">
+            <img
+              id="heroImg1"
+              className="transition-all duration-300 object-contain ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0"
+              src={feature.content.imagecontent}
+              alt={feature.content.imagealt}
+              width="500"
+              height="488"
+            />
+          </div> */}
+          <div className="pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0">
+            <img
+              id="heroImg1"
+              className="transition-all duration-300 object-contain ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0"
+              src={
+                feature.content.imagecontent
+                  ? feature.content.imagecontent
+                  : "https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png"
+              }
+              alt={feature.content.imagealt || "Dummy Image"}
+              title={feature.content.imagetitle}
+              width="500"
+              height="488"
+            />
+          </div>
+        </div>
         <div className="mb-8">
-          <h3 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-purple-800">
             Key Benefits
           </h3>
           <ul className="list-disc list-inside mt-4 text-left text-gray-700">
@@ -157,7 +219,7 @@ function FeaturePage() {
           </ul>
         </div>
         <div className="pb-20">
-          <h3 className="text-2xl sm:text-3xl font-semibold text-indigo-800">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-purple-800">
             Why Choose This Feature?
           </h3>
           <p className="text-lg text-gray-600 mt-4">
@@ -169,7 +231,7 @@ function FeaturePage() {
         <div className="flex z-50 items-center justify-center py-20 relative">
           <div className="w-full mx-10 lg:justify-between relative z-20 lg:inline-flex lg:items-center lg:max-w-7xl">
             <div className="max-w-xl mb-4">
-              <h3 className="text-white font-extrabold text-4xl tracking-tight">
+              <h3 className="text-white font-bold text-3xl sm:text-4xl tracking-tight">
                 {" "}
                 Learn more about our
                 <span className="lg:block">

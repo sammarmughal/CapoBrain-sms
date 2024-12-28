@@ -74,11 +74,17 @@ const Features = () => {
             details="Stay connected on the go with Capobrain's mobile app support. Enable access to key features and updates anytime, anywhere, ensuring convenience for students and educators."
             icon={<i className="fa-solid fa-mobile-screen-button fa-3x"></i>}
           />
-          <FeaturesCard
+          {/* <FeaturesCard
             slug="mobile-app-support"
             title="Mobile App Support"
             details="Effortlessly communicate with students, parents, and staff through CapoBrain's integrated Mobile App Support for Anytime Access feature, facilitating instant updates and announcements for enhanced school communication."
             icon={<i className="fa-brands fa-mobile-screen fa-3x"></i>}
+          /> */}
+          <FeaturesCard
+            slug="comprehensive-reporting"
+            title="Comprehensive Reporting"
+            details="Gain valuable insights with CapoBrain's comprehensive reporting features, offering analytics and customizable reports for informed decision-making and enhanced school performance evaluation."
+            icon={<i className="fas fa-chart-bar fa-3x"></i>}
           />
           <FeaturesCard
             slug="biometric-attendance"
@@ -125,12 +131,7 @@ const Features = () => {
             details="Never miss a payment deadline with Capobrain's fee collection reminder feature, ensuring timely notifications for students and parents to stay on top of financial obligations."
             icon={<i className="far fa-bell fa-3x"></i>}
           />
-          <FeaturesCard
-            slug="comprehensive-reporting"
-            title="Comprehensive Reporting"
-            details="Gain valuable insights with CapoBrain's comprehensive reporting features, offering analytics and customizable reports for informed decision-making and enhanced school performance evaluation."
-            icon={<i className="fas fa-chart-bar fa-3x"></i>}
-          />
+          
           <FeaturesCard
             slug="multi-campus-integration"
             title="Multi-Campus Integration For Unified Operations"
@@ -193,8 +194,8 @@ const Features = () => {
             details="CapoBrain’s Summer Task & Resources Management system helps schools organize, track, and manage summer assignments, resources, and schedules for teachers and students."
             icon={<i className="fas fa-calendar fa-3x"></i>}
           />
-        
-           <FeaturesCard
+
+          <FeaturesCard
             slug="parent-teacher-communication-portal"
             title="Parent Teacher Communication Portal"
             details="Improve collaboration between parents and teachers with real-time updates, easy messaging, and seamless resource sharing."
@@ -224,7 +225,7 @@ const Features = () => {
             details="Expand your educational ecosystem with CapoBrain’s integration, connecting your system with third-party tools and APIs for enhanced functionality."
             icon={<i className="fa-solid fa-plug fa-3x"></i>}
           />
-           <FeaturesCard
+          <FeaturesCard
             slug="interactive-learning-guidelines"
             title="Interactive Learning Guidelines for Teacher & Student"
             details="Foster active participation and improve educational outcomes with CapoBrain’s Interactive Learning Guidelines, designed for both teachers and students."
@@ -250,7 +251,7 @@ const Features = () => {
           />
           <FeaturesCard
             slug="student-progress-performance-tracking"
-            title="Student Progress Tracking & Performance Tracking Analytics"
+            title="Student Progress & Performance Tracking Analytics"
             details="Monitor and analyze student progress effectively with CapoBrain’s Student Progress Tracking & Performance Analytics. Leverage data-driven insights to enhance student outcomes and performance tracking."
             icon={<i className="fas fa-chart-line fa-3x"></i>}
           />

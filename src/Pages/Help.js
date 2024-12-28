@@ -6,6 +6,8 @@ import CusrtomerSupport from "../img/help-center.png";
 import hero_helcenter from "../img/knowledgebase-banner.png";
 import FAQs from "../Components/Faq";
 import { Helmet } from "react-helmet";
+import twittercard from "../img/twiiter-card.jpg";
+
 
 const Help = () => {
   return (
@@ -15,11 +17,11 @@ const Help = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Visit Capobrain's Help Center for support and resources on using our School Management System. Find answers to common questions, troubleshooting guides, and more. Get the help you need to make the most of our School ERP software for efficient school management."
+          content="Visit Capobrain's Help Center for support and resources on using our School Management System. Find answers to common questions."
         />
         <meta
           name="keywords"
-          content="Capobrain, Help Center, School Management System Help, School ERP Support, School Software FAQ, Troubleshooting School Management Software, School ERP Guide, Capobrain Support, School Management Resources"
+          content="Capobrain, Help Center, School Management System Help, School ERP Support, School Software FAQ, Troubleshooting School Management..."
         />
         <meta name="robots" content="index, follow" />
         <title>
@@ -33,8 +35,8 @@ const Help = () => {
           property="og:description"
           content="Capobrain's Help Center provides comprehensive support for our School Management System. Find FAQs, troubleshooting tips, and user guides to help you navigate and use our School ERP software effectively."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_HELP_CENTER_PAGE_URL" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/help" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -44,11 +46,13 @@ const Help = () => {
           name="twitter:description"
           content="Get help and support for Capobrain's School Management System at our Help Center. Access FAQs, troubleshooting guides, and tips to use our School ERP software for efficient school management."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/help"/>
+
       </Helmet>
 
-      <div className="relative">
+      {/* <div className="relative">
         <div className="relative z-40 mx-auto max-w-5xl px-6 py-20 text-center md:px-12 md:py-16">
           <h1 className="text-3xl leading-[60px] mt-20 text-white font-semibold md:text-4xl lg:text-5xl">
               <span className="underline sm:mt-2 decoration-purple-700 underline-offset-4">
@@ -69,7 +73,28 @@ const Help = () => {
           src={hero_helcenter}
           alt="Capobrain School Management System Help Center"
         />
-      </div>
+      </div> */}
+      <section className="relative bg-purple-900">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
+          <div className="space-y-5 max-w-8xl mx-auto text-center">
+            <h1 className="mb-3 text-3xl font-bold leading-[1.2] text-white sm:text-5xl">
+            Capobrain Help Center
+            </h1>
+            <p className="max-w-2xl mx-auto text-gray-200">
+            Welcome to the CapoBrain Help Center. We're here to provide the
+            assistance and guidance you need for using our School Management
+            Software effectively.
+            </p>
+          </div>
+        </div>
+        <div
+          className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
+          style={{
+            background:
+              "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
+          }}
+        ></div>
+      </section>
       <div className="h-full w-full bg-gray-100 py-12 lg:py-28 p-4 lg:p-8">
         <div className="grid gap-14 md:grid-cols-3 md:gap-5">
           <div className="rounded-xl bg-white p-6 text-center shadow-xl">

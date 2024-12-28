@@ -114,15 +114,7 @@ const AddBlog = () => {
         photo: null,
       });
       setImage_url(null); 
-    } else {
-      Swal.fire({
-        title: "Error!",
-        text: "Please fix the errors in the form.",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-    }
-  };
+    } };
 
   return (
     <>
@@ -148,8 +140,8 @@ const AddBlog = () => {
           property="og:description"
           content="Easily add new blog posts to the Capobrain School Management System's blog. Create and publish articles, school news, and updates from the admin dashboard."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_ADD_BLOG_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/adminpanel/addblog" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -160,7 +152,7 @@ const AddBlog = () => {
           name="twitter:description"
           content="Add and publish new blog posts to Capobrain’s school management blog. Manage school updates, articles, and news from the admin panel."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

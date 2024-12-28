@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Desktop from "../img/capobrain-desktop.png";
+import Desktop from "../img/Ultimate-Guide-to-Capobrain-School-Management-Systems.png";
 import { Helmet } from "react-helmet";
+import twittercard from "../img/twiiter-card.jpg";
 
 const UserManual = () => {
   
@@ -12,7 +13,7 @@ const UserManual = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Explore the comprehensive user manual for Capobrain Cloud-Based School ERP Software. Learn how to use our School ERP software, from fee management to student data, attendance tracking, and more."
+          content="Explore the comprehensive user manual for Capobrain Cloud-Based School ERP Software. Learn how to use our School ERP software."
         />
         <meta
           name="keywords"
@@ -20,7 +21,7 @@ const UserManual = () => {
         />
         <meta name="robots" content="index, follow" />
         <title>
-          User Manual - Capobrain | Learn How to Use Cloud-Based School ERP Software
+          User Manual - Ultimate Guide to School Management Systems
         </title>
 
         <meta
@@ -31,8 +32,8 @@ const UserManual = () => {
           property="og:description"
           content="Access the detailed user manual for Capobrain’s Cloud-Based School ERP Software. Get step-by-step instructions on how to manage student data, fees, attendance, and more with our School ERP software."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_USER_MANUAL_PAGE_URL" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/usermanual" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -43,18 +44,18 @@ const UserManual = () => {
           name="twitter:description"
           content="Read the user manual for Capobrain’s Cloud-Based School ERP Software. Learn how to use all features of our School ERP software to manage school administration, attendance, fees, and more."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+       <link rel="canonical" href="https://capobrain.com/usermanual"/>
+
       </Helmet>
 
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1
-              className="heading-hero"
-              style={{ fontFamily: "Grotesk-Medium, Verdana, sans-serif" }}
-            >
-              Explore Our Software User Manual
+              className="heading-hero">
+              Ultimate Guide to Capobrain School Management Systems
             </h1>
           </div>
         </div>
@@ -67,8 +68,8 @@ const UserManual = () => {
         ></div>
       </section>
       <div className="cb-container my-4">
-        <h2 className="max-w-5xl text-center mb-6  pt-16 pb-5  heading-body leading-none tracking-tight text-purple-800 sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
+        <h2 className="max-w-5xl text-center sm:mb-6 pt-6 sm:pt-16 pb-5  heading-body leading-none tracking-tight sm:text-4xl md:mx-auto">
+          {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
@@ -92,17 +93,16 @@ const UserManual = () => {
               />
             </svg>
             <span className="relative"></span>
-          </span>{" "}
+          </span>{" "} */}
           Capobrain <span> User</span> Guide
         </h2>
-        <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
+        <p className="sm:text-lg sm:mt-4" style={{ textAlign: "justify" }}>
           Discover how to unlock the full potential of{" "}
-          <strong>CapoBrain’s School Management Software</strong> with our
-          detailed software user manual. This guide provides
+          CapoBrain’s Educational Software with our <strong>Ultimate Guide to School Management Systems.</strong> This guide provides
           step-by-step instructions on using CapoBrain’s comprehensive features,
           making it the ultimate{" "} online education management system.
         </p>
-        <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
+        <p className="sm:text-lg mt-4" style={{ textAlign: "justify" }}>
           The CapoBrain User Guide covers everything from
           course creation, grade tracking, and{" "}
           attendance management to real-time collaboration
@@ -111,7 +111,7 @@ const UserManual = () => {
           secure access controls through our{" "}
           <strong>Cloud-Based School Management Platform</strong>.
         </p>
-        <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
+        <p className="sm:text-lg mt-4" style={{ textAlign: "justify" }}>
           Whether you're an educator, student, or school administrator, this
           manual ensures you make the most of CapoBrain’s features.
           Revolutionize your experience with{" "}
@@ -119,7 +119,7 @@ const UserManual = () => {
           modern education with innovative, user-friendly tools. Explore all
           functionalities by reading our complete guide today.
         </p>
-        <p className="text-lg mt-4" style={{ textAlign: "justify" }}>
+        <p className="sm:text-lg mt-4" style={{ textAlign: "justify" }}>
           For further resources on online learning and skill development, visit{" "}
           <Link
             to="https://mentorsacademia.com/"
@@ -131,7 +131,7 @@ const UserManual = () => {
           , our partner platform for modern education solutions.
         </p>
       </div>
-      <div className="cb-container mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <div className="cb-container mx-auto sm:py-10 py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div className="lg:w-4/6 mb-6 lg:mb-12 min-h-fit">
             <h2 className="heading-body">
@@ -140,12 +140,12 @@ const UserManual = () => {
               by optimizing every process.
             </h2>
             <p className="mt-4">
-              CapoBrain School Management System provides a seamless platform
-              for school administration. From attendance tracking to grade
+             Ultimate Guide to Capobrain School Management Systems a seamless platform
+              for educational administration. From attendance tracking to grade
               management, it ensures that educators and staff can efficiently
               handle daily tasks with ease and precision.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center sm:justify-normal"> 
               <Link
                 className=" btn-anim  text-white rounded-full py-4 px-8"
                 to="/usermanual/dashboard"
@@ -154,11 +154,12 @@ const UserManual = () => {
               </Link>
             </div>
           </div>
-          <div className="relative w-1/2 mt-4 lg:mt-0 flex items-center justify-center mx-auto">
+          <div className="relative sm:w-1/2 mt-4 lg:mt-0 flex items-center justify-center mx-auto">
             <img
               className="h-full w-full object-cover "
               src={Desktop}
-              alt="Capobrain School Software Providers"
+              alt="Ultimate Guide to Capobrain School Management Systems"
+              title="Ultimate Guide to Capobrain School Management Systems"
             />
           </div>
         </div>

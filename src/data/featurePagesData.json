@@ -8,7 +8,7 @@
                 "openGraph": {
                     "title": "AI-Powered Reporting and Analytics",
                     "description": "Discover CapoBrain's AI-powered tools for reporting and analytics. Unlock actionable insights and streamline decision-making for effective school management.",
-                    "url": "https://capobrain-sms.vercel.app/features/ai-powered-reporting-analytics",
+                    "url": "https://capobrain.com/features/ai-powered-reporting-analytics",
                     "type": "website"
                 },
                 "twitter": {
@@ -16,12 +16,16 @@
                     "title": "AI-Powered Reporting and Analytics",
                     "description": "CapoBrain's AI-powered reporting and analytics offer intelligent insights to make data-driven decisions and optimize school management operations."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/ai-powered-reporting-analytics"
+                "canonical": "https://capobrain.com/features/ai-powered-reporting-analytics"
             },
             "content": {
                 "heroHeader": "AI-Powered Reporting and Analytics",
                 "heading": "AI-Powered Reporting and Analytics for Data-Driven Schools",
                 "description": "CapoBrain introduces AI-powered reporting and analytics, revolutionizing the way schools handle data. Our platform identifies trends, automates insights, and facilitates data-driven decision-making to enhance operational efficiency and educational outcomes.",
+                "imageheading":"Unlocking Insights with AI-Powered Reporting and Analytics",
+                "imagepara":"AI-powered reporting and analytics transform decision-making in educational institutions by providing actionable insights from complex data. These advanced tools analyze student performance, attendance, and resource utilization, enabling educators to identify trends and areas needing improvement. Predictive analytics assist in anticipating challenges, such as at-risk students or resource shortages, allowing proactive intervention. Visual dashboards and customizable reports simplify the presentation of data, making it accessible and easy to understand. By leveraging AI-driven insights, schools can make informed decisions that enhance operational efficiency, improve student outcomes, and create a data-driven culture for continuous growth and success.",
+                "imagecontent": "/img/features/ai-powered-reporting-analytics.png",
+                "imagealt": "AI-Powered Reporting and Analytics",
                 "keyBenefits": [
                     "Actionable insights from comprehensive data analysis",
                     "Automated reporting for streamlined processes",
@@ -35,12 +39,12 @@
         {
             "slug": "biometric-attendance",
             "meta": {
-              "title": "Biometric Attendance Management for Students & Staff | CapoBrain",
-              "description": "Track attendance accurately with CapoBrain's Biometric Attendance Management feature. Ensure secure, real-time monitoring for students and staff to improve school accountability.",
+              "title": "Biometric Attendance Management | CapoBrain",
+              "description": "Track attendance accurately with CapoBrain's Biometric Attendance Management feature. Ensure secure, real-time monitoring for students and staff.",
               "openGraph": {
                 "title": "Biometric Attendance Management System",
                 "description": "Ensure secure and accurate attendance tracking for students and staff with CapoBrain's Biometric Attendance Management system, enhancing accountability and efficiency.",
-                "url": "https://capobrain-sms.vercel.app/features/biometric-attendance",
+                "url": "https://capobrain.com/features/biometric-attendance",
                 "type": "website"
               },
               "twitter": {
@@ -48,12 +52,16 @@
                 "title": "Biometric Attendance Management System for Schools",
                 "description": "Efficiently monitor student and staff attendance with CapoBrain's Biometric Attendance Management feature for schools."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/biometric-attendance"
+              "canonical": "https://capobrain.com/features/biometric-attendance"
             },
             "content": {
               "heroHeader": "CapoBrain Biometric Attendance",
               "heading": "Biometric Attendance Management for Students & Staff",
               "description": "CapoBrain’s Biometric Attendance Management system provides schools with a secure and accurate method for tracking attendance. This technology minimizes manual errors, improves accountability, and offers a seamless experience for both students and staff.",
+              "imageheading":"Effortless Tracking with Biometric Attendance Management",
+              "imagepara":"Biometric attendance management ensures accurate and reliable tracking of students and staff by replacing traditional methods with advanced fingerprint or facial recognition systems. This technology eliminates the risk of proxy attendance and manual errors, enhancing accountability and efficiency. Real-time recording enables administrators to monitor attendance patterns instantly, while automated reporting saves time for educators. Biometric systems also integrate seamlessly with school management software, providing a comprehensive solution for attendance tracking. By streamlining this essential process, schools can foster punctuality, improve record-keeping accuracy, and focus on delivering quality education without administrative hassles.",
+              "imagecontent": "/img/features/biometric-attendance.jpg",
+              "imagealt": "Biometric Attendance Management for Students & Staff",
               "keyBenefits": [
                 "Accurate and real-time attendance monitoring",
                 "Fraud prevention through secure biometric authentication",
@@ -64,16 +72,15 @@
               "whyChoose": "Our Biometric Attendance Management system utilizes advanced biometric technology to track attendance accurately and securely. It integrates effortlessly with your school's database, providing real-time updates and reducing administrative workload, ensuring efficient and reliable attendance management."
             }
           },
-          
         {
             "slug": "cloud-based-school-management-system",
             "meta": {
                 "title": "Cloud-Based School Management System | CapoBrain",
-                "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere. Manage your school with a secure, reliable, and mobile-friendly platform.",
+                "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere. Manage your school with a secure platform.",
                 "openGraph": {
                     "title": "Cloud-Based School Management System",
                     "description": "Access your school management system from anywhere with CapoBrain's secure cloud-based platform. Manage data and administration effortlessly with mobile and web compatibility.",
-                    "url": "https://capobrain-sms.vercel.app/features/cloud-based-school-management-system",
+                    "url": "https://capobrain.com/features/cloud-based-school-management-system",
                     "type": "website"
                 },
                 "twitter": {
@@ -81,12 +88,16 @@
                     "title": "Cloud-Based School Management System",
                     "description": "CapoBrain's cloud-based school management system ensures seamless access to your school data from anywhere."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/cloud-based-school-management-system"
+                "canonical": "https://capobrain.com/features/cloud-based-school-management-system"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Cloud-Based School Management System",
                 "heading": "Cloud-Based School Management System",
                 "description": "CapoBrain’s comprehensive cloud-based school management system allows schools to manage operations from any location, providing secure, real-time data  access. This flexible, mobile-friendly solution eliminates the need for local servers and reduces IT infrastructure costs.",
+                "imageheading":"Streamline Operations with a Cloud-Based School Management System",
+                "imagepara":"A cloud-based school management system revolutionizes the way educational institutions operate by providing seamless, secure, and efficient solutions for managing administrative and academic tasks. These systems centralize data, enabling educators, students, and parents to access information anytime, anywhere. Features like attendance tracking, grade management, and communication tools enhance collaboration and transparency. The cloud infrastructure ensures scalability, data security, and regular updates without the need for costly hardware. By automating time-consuming processes, schools can focus on delivering quality education while reducing operational costs, fostering better engagement, and preparing for a digitally connected future.",
+                "imagecontent": "/img/features/cloud-based-school-management-system.png",
+                "imagealt": "Cloud-Based School Management System",
                 "keyBenefits": [
                     "Secure, remote access from anywhere",
                     "Real-time data updates and backups",
@@ -105,7 +116,7 @@
                 "openGraph": {
                     "title": "Computer-Based Exam Management",
                     "description": "Enhance the efficiency of school assessments with CapoBrain’s computer-based exam management. Automated grading and instant results ensure a seamless experience for teachers and students.",
-                    "url": "https://capobrain-sms.vercel.app/features/computer-based-exam-management",
+                    "url": "https://capobrain.com/features/computer-based-exam-management",
                     "type": "website"
                 },
                 "twitter": {
@@ -113,12 +124,16 @@
                     "title": "Computer-Based Exam Management",
                     "description": "CapoBrain’s computer-based exam solutions provide automated grading and instant results, streamlining school assessments and reporting."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/computer-based-exam-management"
+                "canonical": "https://capobrain.com/features/computer-based-exam-management"
             },
             "content": {
                 "heroHeader": "Features of Computer-Based Exam Management Software",
                 "heading": "Computer-Based Exam Management",
                 "description": "CapoBrain's computer-based exam management software offers schools an efficient, accurate, and user-friendly way to conduct assessments. With automated grading and instant results, educators can focus on delivering quality education rather than managing paper-based exams.",
+                "imageheading":"Simplify Assessments with Computer-Based Exam Management",
+                "imagepara":"Computer-based exam management transforms traditional assessment methods, offering a streamlined and efficient way to conduct examinations. This innovative approach automates exam creation, delivery, and grading, saving time for educators and administrators. It ensures secure and fair testing environments with features like question randomization, timer controls, and anti-cheating mechanisms. Students benefit from an interactive and user-friendly interface, enhancing their test-taking experience. Detailed analytics and instant feedback enable educators to identify strengths and areas for improvement quickly. By reducing the reliance on paper and manual processes, computer-based exam management supports sustainability while improving the accuracy and efficiency of the assessment process.",
+                "imagecontent": "/img/features/computer-based-exam-management.png",
+                "imagealt": "Computer-Based Exam Management",
                 "keyBenefits": [
                     "Automated grading for faster result generation",
                     "Instant access to exam results and feedback",
@@ -137,7 +152,7 @@
                 "openGraph": {
                     "title": "Comprehensive Reporting",
                     "description": "Unlock valuable insights with CapoBrain's advanced reporting tools. Customize reports for financial, academic, and performance evaluation to enhance school management.",
-                    "url": "https://capobrain-sms.vercel.app/features/comprehensive-reporting",
+                    "url": "https://capobrain.com/features/comprehensive-reporting",
                     "type": "website"
                 },
                 "twitter": {
@@ -145,12 +160,17 @@
                     "title": "Comprehensive Reporting | CapoBrain",
                     "description": "CapoBrain's customizable reporting feature offers data analytics for schools, improving decision-making and enhancing overall performance."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/comprehensive-reporting"
+                "canonical": "https://capobrain.com/features/comprehensive-reporting"
             },
             "content": {
                 "heroHeader": "Comprehensive School Reporting",
                 "heading": "Comprehensive Reporting",
                 "description": "CapoBrain’s comprehensive reporting tools empower schools to generate detailed reports on academic performance, financial activities, and overall school operations. These customizable reports are designed to help administrators make informed decisions.",
+                "imageheading":"Making Informed Decisions with Comprehensive Reporting",
+                "imagepara":"Comprehensive reporting is essential for effective school management, offering detailed insights into every aspect of institutional operations. These reports cover areas like student performance, attendance, finances, and resource allocation. Customizable templates and filters allow schools to tailor reports to specific needs, ensuring the data is relevant and actionable. Visual aids such as graphs and charts make complex information easy to interpret. By providing a holistic view of the institution’s performance, comprehensive reporting empowers administrators to make data-driven decisions, identify inefficiencies, and implement improvements. This robust feature fosters transparency, accountability, and continuous growth in the education sector.",
+                "imagecontent": "/img/features/comprehensive-reporting.png",
+                "imagealt": "Comprehensive School Reporting",
+              "imagetitle":"Comprehensive School Reporting",
                 "keyBenefits": [
                     "Customizable report templates for various needs",
                     "Detailed student performance and attendance reports",
@@ -169,7 +189,7 @@
                 "openGraph": {
                     "title": "Cutting-Edge Educational Technologies",
                     "description": "CapoBrain uses the latest cutting-edge educational technologies to provide an efficient and seamless school management experience. Stay ahead with innovative solutions.",
-                    "url": "https://capobrain-sms.vercel.app/features/cutting-edge-educational-technologies",
+                    "url": "https://capobrain.com/features/cutting-edge-educational-technologies",
                     "type": "website"
                 },
                 "twitter": {
@@ -177,12 +197,17 @@
                     "title": "Cutting-Edge Educational Technologies",
                     "description": "Experience unparalleled performance with CapoBrain’s cutting-edge educational technologies, providing seamless school management solutions."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/cutting-edge-educational-technologies"
+                "canonical": "https://capobrain.com/features/cutting-edge-educational-technologies"
             },
             "content": {
                 "heroHeader": "Features of Cutting-Edge Educational Technologies",
                 "heading": "Cutting-Edge Educational Technologies",
                 "description": "CapoBrain is at the forefront of innovation, using the latest cutting-edge technologies to provide efficient and user-friendly school management solutions. Our platform ensures seamless integration of data and operations, making it easier for administrators, teachers, and students to collaborate and succeed.",
+                "imageheading":"Revolutionizing Learning with Cutting-Edge Educational Technologies",
+                "imagepara": "In today's fast-paced world, cutting-edge educational technologies are revolutionizing learning environments, making education more accessible, engaging, and personalized. These advanced tools leverage artificial intelligence, virtual reality, and adaptive learning systems to cater to individual student needs and foster a deeper understanding of complex concepts. Interactive platforms enhance collaboration, while data analytics provide insights to educators for informed decision-making. Cloud-based solutions ensure seamless access to learning materials anytime, anywhere. By integrating these technologies, schools and institutions empower learners to acquire skills for the digital age, bridging gaps in traditional education methods and preparing students for a rapidly evolving global landscape.",
+                "imagecontent": "/img/features/cutting-edge-educational-technologies.png",             
+                "imagealt": "Cutting-Edge Educational Technologies",
+                "imagetitle": "Cutting-Edge Educational Technologies",
                 "keyBenefits": [
                     "Advanced tools for seamless management",
                     "Efficient, reliable, and secure technology",
@@ -197,11 +222,11 @@
             "slug": "online-daily-diary-feature",
             "meta": {
                 "title": "Online Daily Diary Feature | CapoBrain",
-                "description": "Stay organized and informed with CapoBrain's online daily diary feature, allowing students and teachers to record tasks, deadlines, and progress updates effortlessly.",
+                "description": "Stay organized and informed with CapoBrain's online daily diary feature, allowing students and teachers to record tasks and progress updates.",
                 "openGraph": {
                     "title": "Online Daily Diary Feature",
                     "description": "CapoBrain's online daily diary feature enhances organization by allowing students and teachers to easily record tasks and deadlines.",
-                    "url": "https://capobrain-sms.vercel.app/features/online-daily-diary-feature",
+                    "url": "https://capobrain.com/features/online-daily-diary-feature",
                     "type": "website"
                 },
                 "twitter": {
@@ -209,12 +234,17 @@
                     "title": "Online Daily Diary Feature",
                     "description": "Stay organized with CapoBrain's online daily diary feature for students and teachers."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/online-daily-diary-feature"
+                "canonical": "https://capobrain.com/features/online-daily-diary-feature"
             },
             "content": {
                 "heroHeader": "Comprehensive Online Daily Diary Feature",
                 "heading": "Online Daily Diary Feature",
                 "description": "CapoBrain's comprehensive online daily diary feature helps students and teachers stay organized and informed. Effortlessly record tasks, deadlines, and progress updates to enhance productivity and accountability.",
+                "imageheading":"Streamlining Communication with the Online Daily Diary Feature",
+                "imagepara":"The online daily diary feature revolutionizes communication by digitizing traditional diaries, ensuring seamless interaction between teachers, students, and parents. Teachers can share assignments, important announcements, and personalized feedback in real time, reducing delays in communication. Students benefit from clear instructions and deadlines, helping them stay organized and focused. Parents receive instant updates about their child’s activities, fostering greater involvement in their education. With notifications and reminders, this feature ensures nothing important is missed. By enhancing efficiency and accessibility, the online daily diary promotes collaboration and creates a cohesive learning environment, supporting students’ academic and personal development.",
+                "imagecontent": "/img/features/online-daily-diary-feature.png",
+                "imagealt": "Online Daily Diary Feature",
+                "imagetitle": "Online Daily Diary Feature",
                 "keyBenefits": [
                     "Streamlined task management for students and teachers",
                     "Easy recording of deadlines and important events",
@@ -229,11 +259,11 @@
             "slug": "data-security",
             "meta": {
                 "title": "Data Security in School Management | CapoBrain",
-                "description": "CapoBrain provides robust data security measures to safeguard sensitive information within the school management system, ensuring privacy and protection for all users.",
+                "description": "CapoBrain provides robust data security measures to safeguard sensitive information within the school management system.",
                 "openGraph": {
                     "title": "Data Security in School Management",
                     "description": "Ensure comprehensive data security with CapoBrain's robust protection measures for school management systems.",
-                    "url": "https://capobrain-sms.vercel.app/features/data-security",
+                    "url": "https://capobrain.com/features/data-security",
                     "type": "website"
                 },
                 "twitter": {
@@ -241,12 +271,17 @@
                     "title": "Data Security in School Management",
                     "description": "Safeguard sensitive information with CapoBrain's robust data security measures."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/data-security"
+                "canonical": "https://capobrain.com/features/data-security"
             },
             "content": {
                 "heroHeader": "Comprehensive Data Security for Your School Management",
                 "heading": "Data Security in School Management Software",
                 "description": "CapoBrain's data security measures are designed to safeguard sensitive information within the school management system. Our robust protection ensures comprehensive security and privacy for all users, allowing schools to operate with confidence.",
+                "imageheading":"Ensuring Robust Data Security",
+                "imagepara":"Data security is a cornerstone of modern school management systems, safeguarding sensitive information like student records, grades, and financial details. Advanced encryption protocols and secure access controls protect data from unauthorized access and breaches. Role-based permissions ensure that only authorized personnel can access specific information, enhancing confidentiality. Regular system updates and backups further fortify security measures. By prioritizing data security, schools not only comply with privacy regulations but also build trust with students, parents, and staff. This commitment to safeguarding data creates a safe digital environment, allowing educational institutions to focus on delivering quality education without security concerns.",
+                "imagecontent": "/img/features/data-security.png",
+                "imagealt": "Data Security in School Management Software",
+                "imagetitle": "Data Security in School Management Software",
                 "keyBenefits": [
                     "Robust encryption to protect sensitive data",
                     "Regular security audits and updates",
@@ -265,7 +300,7 @@
               "openGraph": {
                 "title": "Expense and Financial Administration for Schools",
                 "description": "CapoBrain's Financial Administration tools provide efficient tracking of expenses, asset management, and budgeting features for schools.",
-                "url": "https://capobrain-sms.vercel.app/features/expense-and-financial-administration",
+                "url": "https://capobrain.com/features/expense-and-financial-administration",
                 "type": "website"
               },
               "twitter": {
@@ -273,12 +308,17 @@
                 "title": "Financial Administration Tools for Schools",
                 "description": "Streamline school expense tracking and budgeting with CapoBrain’s Financial Administration tools for effective financial management."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/expense-and-financial-administration"
+              "canonical": "https://capobrain.com/features/expense-and-financial-administration"
             },
             "content": {
               "heroHeader": "CapoBrain Financial Administration Tools",
               "heading": "Expense and Financial Administration for Schools",
               "description": "CapoBrain’s Expense and Financial Administration School ERP Management system offers schools a comprehensive suite of tools to manage expenses, track assets, and optimize budgets. This system ensures financial transparency and streamlined operations, empowering schools to make informed decisions.",
+              "imageheading":"Optimizing Finances with Expense and Financial Administration",
+              "imagepara":"Expense and financial administration systems simplify the management of school budgets and expenditures, ensuring transparency and efficiency. These tools provide a detailed overview of financial transactions, helping administrators allocate resources effectively. Features like automated expense tracking, payment scheduling, and budget analysis reduce manual workload and minimize errors. Schools can generate financial reports, monitor cash flow, and ensure compliance with financial regulations. By centralizing financial processes, these systems enhance accountability and provide actionable insights for better decision-making. A streamlined approach to financial management allows institutions to focus on academic excellence while maintaining financial stability.",
+              "imagecontent": "/img/features/expense-and-financial-administration.png",
+              "imagealt": "Expense and Financial Administration for Schools",
+              "imagetitle": "Expense and Financial Administration for Schools",
               "keyBenefits": [
                 "Accurate tracking of all school expenses and assets",
                 "Advanced budgeting and financial forecasting tools",
@@ -297,7 +337,7 @@
               "openGraph": {
                 "title": "Fee & Payment Management System",
                 "description": "Manage fees and payments seamlessly with CapoBrain’s system. Automated reminders and secure gateways streamline financial operations in educational institutions.",
-                "url": "https://capobrain-sms.vercel.app/features/fee-and-payment-management",
+                "url": "https://capobrain.com/features/fee-and-payment-management",
                 "type": "website"
               },
               "twitter": {
@@ -305,12 +345,17 @@
                 "title": "Fee & Payment Management System",
                 "description": "Streamline fee collection and payment processes with CapoBrain's Fee & Payment Management feature for educational institutions."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/fee-and-payment-management"
+              "canonical": "https://capobrain.com/features/fee-and-payment-management"
             },
             "content": {
               "heroHeader": "Fee & Payment Management",
               "heading": "Automated Fee & Payment Management for Schools",
               "description": "CapoBrain’s Fee & Payment Management system revolutionizes how schools handle financial transactions. From automated reminders to secure payment gateways, this system simplifies operations and ensures accuracy and transparency.",
+              "imageheading":"Streamlined Fee Management with Automated Reminders",
+              "imagepara":"Comprehensive fee and payment management simplifies financial operations for educational institutions, offering an organized and transparent system for fee collection. Features like automated reminders notify parents of due dates, reducing the chances of missed payments and ensuring timely transactions. Schools can manage multiple fee structures, generate receipts, and maintain detailed financial records effortlessly. Online payment options further enhance convenience, allowing parents to make payments securely from anywhere. By automating fee management, schools reduce administrative workload, improve cash flow, and ensure a smooth financial process that benefits both institutions and families.",
+              "imagecontent": "/img/features/fee-and-payment-management.png",
+              "imagealt": "Automated Fee & Payment Management for Schools",
+              "imagetitle": "Automated Fee & Payment Management for Schools",
               "keyBenefits": [
                 "Automated reminders for fee payments to reduce delays in School ERP",
                 "Customizable fee structures to cater to diverse needs",
@@ -325,25 +370,30 @@
           {
             "slug": "school-website-management",
             "meta": {
-              "title": "School Website Management with Dynamic Features | CapoBrain",
+              "title": "School Website Management | CapoBrain",
               "description": "CapoBrain’s customizable school website management solution enables institutions to create a dynamic online presence. Showcase important information, events, and engage the community with ease.",
               "openGraph": {
                 "title": "School Website Management with Dynamic Features",
                 "description": "Build a dynamic and customizable website for your school with CapoBrain’s feature, offering event management, announcements, and a professional online presence.",
-                "url": "https://capobrain-sms.vercel.app/features/school-website-management",
+                "url": "https://capobrain.com/features/school-website-management",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "School Website Management with Dynamic Features | CapoBrain",
+                "title": "School Website Management | CapoBrain",
                 "description": "Create an interactive school website with CapoBrain’s customizable features, showcasing your institution’s values, events, and achievements."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/school-website-management"
+              "canonical": "https://capobrain.com/features/school-website-management"
             },
             "content": {
               "heroHeader": "Dynamic and Customizable School Website Management",
               "heading": "School Website Management with Dynamic Features",
               "description": "CapoBrain’s website management system for schools allows institutions to design dynamic, responsive websites that reflect their values and engage the community. Manage events, announcements, and provide key information in a seamless online experience.",
+              "imageheading":"Efficient School Website Management with Dynamic Features",
+              "imagepara":"A well-managed school website with dynamic features plays a vital role in enhancing communication, engagement, and information sharing. Dynamic elements such as event calendars, announcements, and interactive forums keep the website fresh and relevant. Administrators can easily update content, manage galleries, and provide real-time updates to students, parents, and staff. Features like online admissions, fee payment integration, and live chat support improve user experience and simplify administrative tasks. With a responsive design, the website ensures accessibility across devices, ensuring that all stakeholders stay connected and informed. A dynamic school website fosters a positive digital presence and strengthens the school community.",
+              "imagecontent": "/img/features/school-website-management.png",
+              "imagealt": "School Website Management with Dynamic Features",
+              "imagetitle":"School Website Management with Dynamic Features",
               "keyBenefits": [
                 "Customizable templates tailored for school and college websites",
                 "Responsive design optimized for both mobile and desktop users",
@@ -359,12 +409,12 @@
         {
             "slug": "inventory-management",
             "meta": {
-              "title": "Inventory & Resource Management for Schools | CapoBrain ERP",
+              "title": "Inventory & Resource Management | CapoBrain",
               "description": "Optimize school resources with CapoBrain’s Inventory & Resource Management. Track supplies, automate reorders, and enhance operational efficiency.",
               "openGraph": {
                 "title": "Inventory & Resource Management System for Schools",
                 "description": "CapoBrain’s Inventory Management system ensures schools efficiently track supplies and academic resources, providing seamless inventory management.",
-                "url": "https://capobrain-sms.vercel.app/features/inventory-management",
+                "url": "https://capobrain.com/features/inventory-management",
                 "type": "website"
               },
               "twitter": {
@@ -372,12 +422,17 @@
                 "title": "Efficient Inventory Management System for Schools",
                 "description": "Track and replenish school supplies easily with CapoBrain’s Inventory & Resource Management feature for enhanced operational efficiency."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/inventory-management"
+              "canonical": "https://capobrain.com/features/inventory-management"
             },
             "content": {
               "heroHeader": "Efficient Inventory & Resource Management",
               "heading": "Streamline Inventory and Resource Management for Academic Supplies",
               "description": "CapoBrain’s Inventory & Resource Management system provides schools with an efficient way to manage supplies, equipment, and other essential resources. It ensures optimal stock levels, prevents resource shortages, and improves overall operational efficiency.",
+              "imageheading":"Efficient Resource Allocation with Inventory Management",
+              "imagepara":"Inventory and resource management systems help schools maintain and track academic supplies, ensuring optimal resource utilization. These tools keep detailed records of items like books, lab equipment, stationery, and other resources, preventing shortages or wastage. Automated stock alerts inform administrators about replenishment needs, while detailed reporting provides insights into usage trends. The system also streamlines distribution processes, ensuring resources are allocated efficiently to classrooms and departments. By enhancing oversight and minimizing inefficiencies, inventory management systems enable schools to focus on delivering quality education without interruptions caused by resource mismanagement.",
+              "imagecontent": "/img/features/inventory-management.png",
+              "imagealt": "Efficient Inventory & Resource Management",
+              "imagetitle": "Efficient Inventory & Resource Management",
               "keyBenefits": [
                 "Real-time tracking of academic supplies and equipment",
                 "Automated alerts for low stock and replenishment",
@@ -392,11 +447,11 @@
             "slug": "school-management-mobile-app",
             "meta": {
                 "title": "School Management Mobile App | CapoBrain",
-                "description": "CapoBrain’s School Management Mobile App allows students, teachers, and administrators to access essential features, updates, and information from anywhere with a mobile-friendly interface.",
+                "description": "CapoBrain’s School Management Mobile App allows students, teachers, and administrators to access essential features, updates, and information from anywhere.",
                 "openGraph": {
                     "title": "School Management Mobile App",
                     "description": "Stay connected with CapoBrain's mobile app. Access key school management features on the go, ensuring a seamless experience for students and educators alike.",
-                    "url": "https://capobrain-sms.vercel.app/features/school-management-mobile-app",
+                    "url": "https://capobrain.com/features/school-management-mobile-app",
                     "type": "website"
                 },
                 "twitter": {
@@ -404,12 +459,17 @@
                     "title": "School Management Mobile App",
                     "description": "Access essential school management features and updates with CapoBrain’s mobile app. Convenient for students, teachers, and administrators on the go."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/school-management-mobile-app"
+                "canonical": "https://capobrain.com/features/school-management-mobile-app"
             },
             "content": {
                 "heroHeader": "CapoBrain School Management Mobile App",
                 "heading": "Manage Your School On the Go with Our Mobile App",
                 "description": "The CapoBrain School Management Mobile App provides students, teachers, and administrators with seamless access to essential features and updates, anytime, anywhere. Whether you're managing attendance, communicating with parents, or checking class schedules, everything is available at your fingertips.",
+                "imageheading":"Enhancing Accessibility with a School Management Mobile App",
+                "imagepara":"A school management mobile app provides a convenient, on-the-go solution for managing educational activities and communication. Designed for parents, students, and staff, the app offers real-time access to essential information such as schedules, attendance, grades, and announcements. Teachers can manage tasks like assigning homework or sending updates, while parents stay informed about their child’s progress and school activities. With push notifications, important reminders are never missed. The app’s user-friendly interface ensures accessibility for all users. By integrating essential features into a mobile platform, the school management app enhances engagement, streamlines communication, and ensures a seamless educational experience.",
+                "imagecontent": "/img/features/school-management-mobile-app.png",
+                "imagealt": "CapoBrain School Management Mobile App",
+                "imagetitle": "CapoBrain School Management Mobile App",
                 "keyBenefits": [
                     "Instant access to important school updates and notifications",
                     "Real-time communication between teachers, students, and parents",
@@ -428,7 +488,7 @@
               "openGraph": {
                 "title": "Multi-Campus Integration for Schools",
                 "description": "CapoBrain’s Multi-Campus Integration ensures seamless management and coordination across multiple campuses with centralized control for efficient educational operations.",
-                "url": "https://capobrain-sms.vercel.app/features/multi-campus-integration",
+                "url": "https://capobrain.com/features/multi-campus-integration",
                 "type": "website"
               },
               "twitter": {
@@ -436,12 +496,17 @@
                 "title": "Multi-Campus Integration for Schools | CapoBrain",
                 "description": "Streamline your school operations across multiple campuses with CapoBrain’s integrated system for centralized management and coordination."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/multi-campus-integration"
+              "canonical": "https://capobrain.com/features/multi-campus-integration"
             },
             "content": {
               "heroHeader": "Unified Management for Multi-Campus Operations",
               "heading": "Multi-Campus Integration For Unified Operations",
               "description": "CapoBrain’s Multi-Campus Integration system enables schools to manage multiple campuses or branches from a centralized platform. With this solution, you can streamline administration, enhance coordination, and ensure consistency across all locations.",
+              "imageheading":"Unified Operations with Multi-Campus Integration",
+              "imagepara":"Multi-campus integration enables schools with multiple locations to operate as a unified entity, streamlining management and communication. Administrators can oversee student records, staff data, financial reports, and academic performance across all campuses from a single platform. This system fosters consistency by standardizing processes like curriculum management, fee collection, and resource allocation. Real-time data sharing enhances collaboration among campuses, improving decision-making and efficiency. With multi-campus integration, schools can reduce redundancy, maintain uniform quality standards, and ensure seamless operations, ultimately providing students with a cohesive and high-quality educational experience across all locations.",
+              "imagecontent": "/img/features/multi-campus-integration.png",
+              "imagealt": "Multi-Campus Integration For Unified Operations",
+              "imagetitle":"Multi-Campus Integration For Unified Operations",
               "keyBenefits": [
                 "Centralized dashboard for managing all campuses",
                 "Efficient monitoring, reporting, and decision-making",
@@ -455,12 +520,12 @@
         {
             "slug": "auto-paper-generation",
             "meta": {
-              "title": "Auto Paper Generation Aligned With Curriculum Standards | CapoBrain",
+              "title": "Auto Paper Generation | CapoBrain",
               "description": "Streamline exam creation with CapoBrain's Auto Paper Generation feature. Align assessments with curriculum standards for seamless and efficient educational processes.",
               "openGraph": {
                 "title": "Auto Paper Generation for Schools",
                 "description": "CapoBrain simplifies the exam process with automated paper generation tools aligned to curriculum standards, saving time and enhancing academic efficiency.",
-                "url": "https://capobrain-sms.vercel.app/features/auto-paper-generation",
+                "url": "https://capobrain.com/features/auto-paper-generation",
                 "type": "website"
               },
               "twitter": {
@@ -468,12 +533,17 @@
                 "title": "Auto Paper Generation | CapoBrain",
                 "description": "Generate curriculum-aligned exams effortlessly with CapoBrain's Auto Paper Generation tools for schools."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/auto-paper-generation"
+              "canonical": "https://capobrain.com/features/auto-paper-generation"
             },
             "content": {
               "heroHeader": "Automate Your Assessment Process",
               "heading": "Auto Paper Generation Aligned With Curriculum Standards",
               "description": "CapoBrain’s Auto Paper Generation feature provides an innovative way to create exams and assignments effortlessly, ensuring alignment with curriculum standards. This tool streamlines the process, saving educators time and enabling them to focus on enhancing learning outcomes.",
+              "imageheading":"Effortless Assessment with Auto Paper Generation",
+              "imagepara":"Auto paper generation systems simplify the creation of exam papers by aligning questions with curriculum standards and predefined learning outcomes. Educators can select topics, difficulty levels, and question types, and the system generates balanced papers within minutes. This reduces manual effort while ensuring consistency and accuracy in assessments. Features like question banks and automated formatting further enhance the process. By streamlining exam preparation, schools can save time, improve efficiency, and ensure assessments are fair and aligned with educational objectives. This innovative approach empowers teachers to focus on delivering quality education while maintaining rigorous academic standards.",
+              "imagecontent": "/img/features/auto-paper-generation.png",
+              "imagetitle":"Auto Paper Generation Aligned With Curriculum Standards",
+              "imagealt": "Auto Paper Generation Aligned With Curriculum Standards",
               "keyBenefits": [
                 "Curriculum-aligned exam creation",
                 "Customizable templates for assessments",
@@ -493,7 +563,7 @@
                 "openGraph": {
                     "title": "Reminders for Fee Collection",
                     "description": "Never miss a payment deadline with CapoBrain's fee collection reminder feature, ensuring timely notifications for students and parents.",
-                    "url": "https://capobrain-sms.vercel.app/features/reminders-for-fee-collection",
+                    "url": "https://capobrain.com/features/reminders-for-fee-collection",
                     "type": "website"
                 },
                 "twitter": {
@@ -501,12 +571,17 @@
                     "title": "Reminders for Fee Collection | CapoBrain",
                     "description": "Stay on top of financial obligations with timely notifications from CapoBrain’s fee collection reminder feature."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/reminders-for-fee-collection"
+                "canonical": "https://capobrain.com/features/reminders-for-fee-collection"
             },
             "content": {
                 "heroHeader": "Comprehensive Fee Collection Management",
                 "heading": "Reminders for Fee Collection",
-                "description": "CapoBrain's fee collection reminder feature helps schools ensure timely notifications for students and parents, allowing them to stay on top of their financial obligations and avoid missed payment deadlines.",
+                "description": "CapoBrain's comprehensive fee collection reminder feature helps schools ensure timely notifications for students and parents, allowing them to stay on top of their financial obligations and avoid missed payment deadlines.",
+                "imageheading":"Timely Alerts with Reminders for Fee Collection",
+                "imagepara":"Fee collection reminders ensure timely payments, reducing administrative workload and enhancing financial stability for schools. Automated notifications are sent to parents via email or mobile apps, keeping them informed about upcoming deadlines and overdue fees. These reminders can be customized based on payment schedules, ensuring effective communication. The system also supports integration with online payment gateways, simplifying the transaction process. By streamlining fee collection and reducing manual follow-ups, schools can maintain steady cash flow, minimize missed payments, and foster a professional relationship with parents through clear and consistent communication.",
+                "imagecontent": "/img/features/reminders-for-fee-collection.png",
+                "imagealt": "Comprehensive Fee Collection Management",
+                "imagetitle":"Comprehensive Fee Collection Management",
                 "keyBenefits": [
                     "Automated payment reminders for students and parents",
                     "Customizable notification settings for different payment deadlines",
@@ -521,11 +596,11 @@
             "slug": "streamlined-exam-grading-results-management",
             "meta": {
               "title": "Streamlined Exam, Grading & Results Management | CapoBrain",
-              "description": "CapoBrain’s comprehensive exam, grading, and results management module streamlines the entire process, from scheduling to results tracking, for enhanced academic success and efficient administration.",
+              "description": "CapoBrain’s comprehensive exam, grading, and results management module streamlines the entire process, from scheduling to results tracking.",
               "openGraph": {
                 "title": "Streamlined Exam & Results Management System",
                 "description": "CapoBrain simplifies exam management, grading, and results tracking to improve academic performance and administrative efficiency for schools.",
-                "url": "https://capobrain-sms.vercel.app/features/streamlined-exam-grading-results-management",
+                "url": "https://capobrain.com/features/streamlined-exam-grading-results-management",
                 "type": "website"
               },
               "twitter": {
@@ -533,12 +608,17 @@
                 "title": "Streamlined Exam Management for Schools",
                 "description": "Manage exams, grading, and results effortlessly with CapoBrain's comprehensive module for streamlined academic administration."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/streamlined-exam-grading-results-management"
+              "canonical": "https://capobrain.com/features/streamlined-exam-grading-results-management"
             },
             "content": {
               "heroHeader": "Efficient Exams, Grading & Results Management",
               "heading": "Streamlined Exam, Grading & Results Management",
               "description": "CapoBrain’s advanced exams and results management module provides a seamless approach to scheduling exams, grading assignments, and tracking results. This tool ensures smooth academic administration and timely reporting, supporting schools in their efforts for academic excellence.",
+              "imageheading":"Simplifying Academics with Streamlined Exam, Grading & Results Management",
+              "imagepara":"Streamlined exam, grading, and results management systems revolutionize assessment processes in schools, making them more efficient and accurate. These tools enable educators to create, schedule, and administer exams effortlessly, ensuring a smooth examination experience for students. Automated grading systems reduce the time and effort required for evaluating tests, while detailed analytics provide insights into student performance. Instant result generation and digital report cards enhance transparency and accessibility for parents and students. By automating time-consuming tasks, these systems improve accuracy, foster better communication, and allow educators to focus on teaching, ultimately enhancing overall academic performance.",
+              "imagecontent": "/img/features/streamlined-exam-grading-results-management.jpg",
+              "imagealt": "Streamlined Exam, Grading & Results Management",
+              "imagetitle":"Streamlined Exam, Grading & Results Management",
               "keyBenefits": [
                 "Automated exam scheduling and organization",
                 "Efficient grading and result calculation",
@@ -557,7 +637,7 @@
                 "openGraph": {
                     "title": "Students & Parent Portals",
                     "description": "Empower students and parents with CapoBrain's dedicated portals for enhanced engagement in academic activities.",
-                    "url": "https://capobrain-sms.vercel.app/features/students--parent-portals",
+                    "url": "https://capobrain.com/features/students-and-parent-portals",
                     "type": "website"
                 },
                 "twitter": {
@@ -565,12 +645,17 @@
                     "title": "Students & Parent Portals",
                     "description": "CapoBrain provides dedicated portals for students and parents, enhancing engagement through easy access to academic information."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/students--parent-portals"
+                "canonical": "https://capobrain.com/features/students-and-parent-portals"
             },
             "content": {
                 "heroHeader": "Comprehensive Features of Students & Parent Portals",
                 "heading": "Students & Parent Portals",
-                "description": "CapoBrain's dedicated portals empower students and parents by providing easy access to academic records, schedules, and essential communication tools. This enhances engagement and fosters a collaborative educational environment.",
+                "description": "CapoBrain's comprehensive portals empower students and parents with seamless access to academic records, personalized schedules, and advanced communication tools. By enhancing engagement and facilitating transparent collaboration, we foster a connected and thriving educational ecosystem.",
+                "imageheading":"Empowering Connections Through Student & Parent Portals",
+                "imagepara":"Student and parent portals bridge the communication gap between educational institutions and families, offering real-time access to important updates. These portals provide detailed insights into attendance, academic performance, assignments, and school events. Parents can monitor their child’s progress while staying informed about school activities, fostering collaboration and engagement. For students, the portals serve as a personalized hub to access resources, track achievements, and receive teacher feedback. With user-friendly interfaces and mobile compatibility, these portals enhance convenience and transparency. By streamlining communication, student and parent portals empower families to actively participate in their child’s educational journey.",
+                "imagecontent": "/img/features/students-and-parent-portals.jpg",
+                "imagealt": "Students & Parent Portals",
+                "imagetitle":"Students & Parent Portals",
                 "keyBenefits": [
                     "Easy access to academic records and performance data",
                     "Real-time notifications and updates",
@@ -584,25 +669,30 @@
         {
             "slug": "student-and-staff-management-with-task-assignments",
             "meta": {
-              "title": "Student & Staff Management With Task Assignments | CapoBrain",
+              "title": "Student & Staff Management With Task Assignments",
               "description": "CapoBrain’s Student & Staff Management with Task Assignments feature enables seamless task distribution, progress tracking, and better coordination between students and staff.",
               "openGraph": {
                 "title": "Streamline Student & Staff Management with Task Assignments",
                 "description": "Manage student and staff tasks efficiently with CapoBrain. Assign, track, and monitor tasks to improve coordination and workflow.",
-                "url": "https://capobrain-sms.vercel.app/features/student-and-staff-management-with-task-assignments",
+                "url": "https://capobrain.com/features/student-and-staff-management-with-task-assignments",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Task Management for Students & Staff | CapoBrain",
+                "title": "Task Management for Students & Staff",
                 "description": "Simplify task assignments and track progress effectively with CapoBrain’s feature for managing students and staff roles and responsibilities."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/student-and-staff-management-with-task-assignments"
+              "canonical": "https://capobrain.com/features/student-and-staff-management-with-task-assignments"
             },
             "content": {
               "heroHeader": "Effective Management of Student & Staff Tasks",
               "heading": "Student & Staff Management With Task Assignments",
               "description": "CapoBrain’s task management feature allows efficient assignment and tracking of effective tasks for both students and staff. With this tool, you can assign tasks, set deadlines, and track the progress of each task, ensuring that both students and staff remain on top of their responsibilities. By automating task assignments and improving task visibility, CapoBrain enhances workflow coordination and accountability across the school.",
+              "imageheading":"Efficient Student & Staff Management with Task Assignments",
+              "imagepara":"Effective student and staff management is vital for streamlined operations in educational institutions. Advanced systems allow administrators to maintain comprehensive records of student and staff details, such as personal information, attendance, and performance. Task assignment features enable efficient delegation of responsibilities to staff members, ensuring accountability and productivity. Teachers can track student progress and assign specific tasks, enhancing personalized learning experiences. Real-time updates and reminders ensure tasks are completed on time. By centralizing data and facilitating seamless communication, these systems improve organizational efficiency and create a structured, collaborative environment for both staff and students.",
+              "imagecontent": "/img/features/student-and-staff-management-with-task-assignments.png",
+              "imagealt": "Student & Staff Management With Task Assignments",
+              "imagetitle": "Student & Staff Management With Task Assignments",
               "keyBenefits": [
                 "Seamless task assignment and tracking for students and staff",
                 "Improved coordination and communication between teams",
@@ -612,8 +702,7 @@
               ],
               "whyChoose": "With CapoBrain’s Student & Staff Management with Task Assignments, your school can enhance productivity and ensure a smooth workflow, making task distribution and tracking more efficient, transparent, and manageable for both students and staff."
             }
-          }
-          ,
+          },
         {
             "slug": "mobile-app-support",
             "meta": {
@@ -622,7 +711,7 @@
                 "openGraph": {
                     "title": "Mobile App Support for Schools | CapoBrain",
                     "description": "Access essential school management tools anytime with CapoBrain's Mobile App Support. Engage with your school community and streamline tasks on the go.",
-                    "url": "https://capobrain-sms.vercel.app/features/mobile-app-support",
+                    "url": "https://capobrain.com/features/mobile-app-support",
                     "type": "website"
                 },
                 "twitter": {
@@ -630,12 +719,18 @@
                     "title": "Mobile App Support | CapoBrain School Management",
                     "description": "Stay connected with your school community through CapoBrain’s Mobile App Support. Manage tasks and communicate effortlessly from anywhere."
                 },
-                "canonical": "https://capobrain-sms.vercel.app/features/mobile-app-support"
+                "canonical": "https://capobrain.com/features/mobile-app-support"
             },
             "content": {
                 "heroHeader": "CapoBrain Mobile App Support",
                 "heading": "Mobile App Support For Anytime Access",
                 "description": "CapoBrain’s Mobile App Support offers school administrators, teachers, and parents the convenience of managing and accessing key school functions anytime, anywhere. With real-time updates and seamless communication, the mobile app ensures efficiency and connectivity for the entire school community.",
+                "imageheading":"",
+                "imagepara":"",
+                "imagecontent": "",
+                "imagealt": "",
+
+              "imagetitle":"",
                 "keyBenefits": [
                     "Access school management tools on the go",
                     "Receive real-time updates and notifications",
@@ -650,12 +745,12 @@
         {
             "slug": "transport-management-system",
             "meta": {
-              "title": "Transport Management System with Route Optimization | CapoBrain",
+              "title": "Transport Management System with Route Optimization",
               "description": "CapoBrain's Transport Management System optimizes school transportation. Track vehicles, manage routes, and ensure safe, reliable student transport with route optimization features.",
               "openGraph": {
                 "title": "Transport Management System for Schools",
                 "description": "Optimize and manage school transportation with CapoBrain's system. Track vehicles, routes, and schedules with real-time data for safe and efficient transportation.",
-                "url": "https://capobrain-sms.vercel.app/features/transport-management-system",
+                "url": "https://capobrain.com/features/transport-management-system",
                 "type": "website"
               },
               "twitter": {
@@ -663,12 +758,17 @@
                 "title": "Efficient School Transport Management | CapoBrain",
                 "description": "CapoBrain’s Transport Management System streamlines school transport, optimizing routes and tracking vehicles for safe and timely student transportation."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/transport-management-system"
+              "canonical": "https://capobrain.com/features/transport-management-system"
             },
             "content": {
               "heroHeader": "School Transport Management with Route Optimization",
               "heading": "Transport Management System with Route Optimization",
               "description": "CapoBrain’s Transport Management System ensures safe and efficient school transportation. With real-time vehicle tracking, route optimization, and schedule management, transportation operations are streamlined and reliable.",
+              "imageheading":"Streamlined Transport Management with Route Optimization",
+              "imagepara":"A transport management system with route optimization enhances efficiency and safety for school transportation. By analyzing traffic patterns and student locations, the system generates the most efficient routes, reducing travel time and fuel costs. Real-time tracking ensures buses are monitored, and any delays or issues are immediately addressed. The system also enables schools to manage bus schedules, student assignments, and emergency contacts efficiently. With route optimization, schools can minimize environmental impact, ensure timely arrivals, and enhance the overall safety and reliability of school transport services, making it a convenient and cost-effective solution for both parents and administrators.",
+              "imagecontent": "/img/features/transport-management-system.png",
+              "imagealt": "School Transport Management with Route Optimization",
+              "imagetitle": "School Transport Management with Route Optimization",
               "keyBenefits": [
                 "Real-time vehicle tracking for enhanced safety",
                 "Efficient route optimization to save time and costs",
@@ -681,12 +781,12 @@
           },{
             "slug": "real-time-notifications",
             "meta": {
-              "title": "Real-Time Notification and Instant Information Sharing | CapoBrain",
+              "title": "Real-Time Notification | CapoBrain",
               "description": "CapoBrain's Real-Time Notification and Instant Information Sharing system ensures seamless communication with real-time updates, improving responsiveness and collaboration in educational environments.",
               "openGraph": {
                 "title": "Instant Notification & Information Sharing for Schools",
                 "description": "Enhance communication and operational efficiency with CapoBrain’s Real-Time Notification system. Share updates instantly with students, staff, and parents for seamless interaction.",
-                "url": "https://capobrain-sms.vercel.app/features/real-time-notifications",
+                "url": "https://capobrain.com/features/real-time-notifications",
                 "type": "website"
               },
               "twitter": {
@@ -694,12 +794,17 @@
                 "title": "Instant Updates with Real-Time Notifications | CapoBrain",
                 "description": "CapoBrain’s Real-Time Notification system empowers schools with instant communication for timely updates, improving engagement and operational coordination."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/real-time-notifications"
+              "canonical": "https://capobrain.com/features/real-time-notifications"
             },
             "content": {
               "heroHeader": "Stay Informed with Real-Time Notifications and Instant Information Sharing",
               "heading": "Real-Time Notification and Instant Information Sharing",
               "description": "CapoBrain’s Real-Time Notification system streamlines communication by delivering instant alerts and updates. Whether it’s about class schedules, events, or important announcements, users receive timely information to stay informed.",
+              "imageheading":"Real-Time Notifications and Instant Information Sharing",
+              "imagepara":"Real-time notifications and instant information sharing are essential for efficient communication within educational institutions. These systems send immediate updates to students, parents, and staff regarding important events, emergencies, schedule changes, or announcements. Whether through mobile apps, emails, or SMS, real-time notifications ensure that all parties are informed and can act quickly when necessary. This feature enhances coordination, reduces misunderstandings, and ensures that key information reaches everyone without delays. By enabling instant communication, schools can foster a more connected and responsive community, improving overall efficiency and engagement in the educational process.",
+              "imagecontent": "/img/features/real-time-notifications.png",
+              "imagealt": "Real-Time Notification and Instant Information Sharing",
+              "imagetitle":"Real-Time Notification and Instant Information Sharing",
               "keyBenefits": [
                 "Instant notifications to students, parents, and staff",
                 "Seamless integration with mobile and web platforms",
@@ -718,7 +823,7 @@
               "openGraph": {
                 "title": "Admission Test Automation for Schools | CapoBrain",
                 "description": "CapoBrain’s Admission Test Automation and Integration system offers a complete solution to streamline admissions. Automate test scheduling, scoring, and integrate easily with your student management system.",
-                "url": "https://capobrain-sms.vercel.app/features/admission-test-automation",
+                "url": "https://capobrain.com/features/admission-test-automation",
                 "type": "website"
               },
               "twitter": {
@@ -726,12 +831,17 @@
                 "title": "Efficient Admission Test Automation | CapoBrain",
                 "description": "CapoBrain provides an automated admission test solution, offering fast, accurate results with seamless integration to your student management system, making your admissions process smooth and efficient."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/admission-test-automation"
+              "canonical": "https://capobrain.com/features/admission-test-automation"
             },
             "content": {
               "heroHeader": "Revolutionize Admission Testing with Automation and Integration",
               "heading": "Admission Test Automation and Integration",
               "description": "CapoBrain’s Revolutionize Admission Testing with Automation and Integration system simplifies the admission process by automating scheduling, scoring, and integrating directly with your student management system. With this seamless system, schools can quickly and efficiently handle admission tests without the hassle of manual processing.",
+              "imageheading":"Streamlined Admission Test Automation and Integration",
+              "imagepara":"Admission test automation and integration simplify the process of evaluating and admitting students by using technology to streamline testing, grading, and selection. The system automates test creation, scoring, and result generation, eliminating manual errors and saving valuable time. It integrates with school management systems to ensure seamless data transfer, allowing for easy access to student records and test results. By providing real-time updates and automated notifications, schools can keep applicants informed throughout the process. This efficient solution enhances transparency, reduces administrative burden, and ensures that the admission process is fair, consistent, and hassle-free for both students and staff.",
+              "imagecontent": "/img/features/admission-test-automation.png",
+              "imagealt": "Admission Test Automation and Integration",
+              "imagetitle":"Admission Test Automation and Integration",
               "keyBenefits": [
                 "Automated test scheduling and result processing",
                 "Instant test scoring and reporting",
@@ -750,7 +860,7 @@
               "openGraph": {
                 "title": "Time Table and Scheduling Management System for Schools | CapoBrain",
                 "description": "Simplify class scheduling and time table management with CapoBrain’s system. Automate and optimize scheduling to reduce conflicts and enhance efficiency in educational institutions.",
-                "url": "https://capobrain-sms.vercel.app/features/time-table-and-scheduling-management-system",
+                "url": "https://capobrain.com/features/time-table-and-scheduling-management-system",
                 "type": "website"
               },
               "twitter": {
@@ -758,12 +868,17 @@
                 "title": "Efficient Time Table and Scheduling Management | CapoBrain",
                 "description": "CapoBrain’s Time Table and Scheduling Management System allows for seamless class schedule management, reducing conflicts and enhancing operational efficiency in schools and institutions."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/time-table-and-scheduling-management-system"
+              "canonical": "https://capobrain.com/features/time-table-and-scheduling-management-system"
             },
             "content": {
               "heroHeader": "Efficient Time Table and Scheduling Management for Schools",
               "heading": "Time Table and Scheduling Management System",
               "description": "CapoBrain’s Time Table and Scheduling Management System is designed to streamline the process of creating, managing, and optimizing class schedules. This solution is ideal for schools, colleges, and universities looking to eliminate scheduling conflicts and improve overall efficiency. By automating the timetable management process, institutions can ensure that both students and teachers have clear, conflict-free schedules.",
+              "imageheading":"Streamlined Admission Test Automation and Integration with Class Schedule Management System",
+              "imagepara":"Admission test automation and integration with a class schedule management system simplify the process of evaluating and admitting students by using technology to streamline testing, grading, and selection. The system automates test creation, scoring, and result generation, eliminating manual errors and saving valuable time. By integrating with the class schedule management system, the admission process aligns seamlessly with the academic calendar, ensuring no conflicts with class schedules. It also allows for easy access to student records and test results. With real-time updates and automated notifications, schools can keep applicants informed throughout the process, making the entire admission journey efficient and hassle-free for both students and staff.",
+              "imagecontent": "/img/features/time-table-and-scheduling-management-system.png",
+              "imagealt": "Class Schedule Management System",
+              "imagetitle":"Time Table and Scheduling Management for Schools",
               "keyBenefits": [
                 "Automated timetable creation and schedule management",
                 "Conflict-free scheduling for classes, exams, and events",
@@ -782,7 +897,7 @@
               "openGraph": {
                 "title": "Teacher Portal for Educational Institutions | CapoBrain",
                 "description": "Manage classes, track student performance, and enhance communication with CapoBrain's Teacher Portal, designed to streamline teaching tasks and improve educational outcomes.",
-                "url": "https://capobrain-sms.vercel.app/features/teacher-portal",
+                "url": "https://capobrain.com/features/teacher-portal",
                 "type": "website"
               },
               "twitter": {
@@ -790,12 +905,17 @@
                 "title": "Teacher Portal for Schools and Colleges | CapoBrain",
                 "description": "CapoBrain’s Teacher Portal simplifies class management, student tracking, and communication, allowing teachers to efficiently perform their duties."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/teacher-portal"
+              "canonical": "https://capobrain.com/features/teacher-portal"
             },
             "content": {
               "heroHeader": "Streamline Your Teaching with the Teacher Portal",
               "heading": "Teacher Portal",
               "description": "CapoBrain’s Teacher Portal is a powerful, centralized platform that allows teachers to manage their classes, track student progress, and communicate effectively with students and staff. Whether you're managing grades, scheduling lessons, or providing feedback, the Teacher Portal streamlines these tasks to improve efficiency and educational outcomes.",
+              "imageheading":"Empowering Educators with a Teacher Portal",
+              "imagepara":"A teacher portal empowers educators by providing a centralized platform for managing classroom activities and student information. Teachers can access and update lesson plans, grade assignments, and track student progress. The portal also offers tools for communication with students and parents, enabling better collaboration and support. Teachers can create and distribute educational resources, schedule tests, and provide instant feedback, all while keeping parents informed of their child's academic journey. With secure access to data and customizable features, the teacher portal enhances efficiency, improves teaching quality, and fosters a more interactive and organized learning environment.",
+              "imagecontent": "/img/features/teacher-portal.png",
+              "imagealt": "Teacher Portal for Schools and Colleges",
+              "imagetitle":"Teacher Portal for Schools and Colleges",
               "keyBenefits": [
                 "Centralized platform for class management",
                 "Track student performance and attendance in real-time",
@@ -814,7 +934,7 @@
               "openGraph": {
                 "title": "Reception Management System for Institutions | CapoBrain",
                 "description": "Streamline your institution’s front-desk operations with CapoBrain’s Reception Management system, designed for efficient visitor tracking, scheduling, and enhanced security.",
-                "url": "https://capobrain-sms.vercel.app/features/reception-management",
+                "url": "https://capobrain.com/features/reception-management",
                 "type": "website"
               },
               "twitter": {
@@ -822,12 +942,17 @@
                 "title": "Efficient Reception Management for Institutions | CapoBrain",
                 "description": "CapoBrain’s Reception Management system helps streamline front-desk operations, track visitors, manage appointments, and enhance the security of your institution."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/reception-management"
+              "canonical": "https://capobrain.com/features/reception-management"
             },
             "content": {
               "heroHeader": "Efficient Reception Management for Your Institution",
               "heading": "Reception Management",
               "description": "CapoBrain’s Reception Management system is designed to optimize front-desk operations in institutions. From tracking visitors to managing appointments, this system ensures that reception tasks are handled efficiently, improving security and streamlining communication with other departments.",
+              "imageheading":"Efficient Reception Management System",
+              "imagepara":"An efficient reception management system streamlines visitor tracking and enhances overall security in educational institutions. By automating check-in processes, the system provides real-time data on visitors, staff attendance, and students' arrivals and departures. Receptionists can easily issue visitor badges, log appointments, and maintain detailed records of interactions. It also allows parents or guardians to schedule meetings with teachers and staff efficiently. With integrated communication features, schools can ensure quick response times and improve visitor experience. This system enhances security, improves administrative workflow, and helps maintain a smooth operation throughout the day.",
+              "imagecontent": "/img/features/reception-management.png",
+              "imagealt": "Reception Management System",
+              "imagetitle": "Reception Management System",
               "keyBenefits": [
                 "Automated visitor check-in and tracking",
                 "Appointment scheduling and reminders for staff and visitors",
@@ -846,7 +971,7 @@
               "openGraph": {
                 "title": "Summer Task & Resources Management for Schools | CapoBrain",
                 "description": "Streamline the management of summer tasks, assignments, and educational resources with CapoBrain’s system, designed to improve efficiency for teachers and students.",
-                "url": "https://capobrain-sms.vercel.app/features/summer-task-resources-management",
+                "url": "https://capobrain.com/features/summer-task-resources-management",
                 "type": "website"
               },
               "twitter": {
@@ -854,12 +979,17 @@
                 "title": "Efficient Summer Task & Resources Management | CapoBrain",
                 "description": "Optimize the management of summer tasks and educational resources for both teachers and students with CapoBrain’s Summer Task & Resources Management system."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/summer-task-resources-management"
+              "canonical": "https://capobrain.com/features/summer-task-resources-management"
             },
             "content": {
-              "heroHeader": "Efficient Summer Task & Resources Management",
-              "heading": "Summer Task & Resources Management",
+              "heroHeader": "Summer Task & Resources Management",
+              "heading": "Capobrain Summer Task & Resources Management",
               "description": "CapoBrain’s Summer Task & Resources Management system simplifies the organization of summer assignments, resources, and schedules for educational institutions. This tool helps teachers manage tasks and resources effectively, ensuring that students are well-prepared for the upcoming academic year.",
+              "imageheading":"Organized Summer Task & Resources Management",
+              "imagepara":"Summer task and resources management systems help schools organize and streamline activities and resources during the summer break. These tools allow educators and administrators to plan summer programs, assign tasks to staff, and manage available resources efficiently. From organizing enrichment activities and assignments to ensuring that facilities are maintained, the system keeps track of every detail. It also facilitates the management of educational materials, ensuring resources are available when needed. By automating these processes, schools can ensure a smooth transition back to regular sessions while also providing opportunities for continued learning and development during the break.",
+              "imagecontent": "/img/features/summer-task-resources-management.png ",
+              "imagealt": "Summer Task & Resources Management",
+              "imagetitle": "Summer Task & Resources Management",
               "keyBenefits": [
                 "Organize summer assignments and resources for students and teachers",
                 "Track task completion and student progress",
@@ -873,25 +1003,30 @@
           {
             "slug": "interactive-learning-guidelines",
             "meta": {
-              "title": "Interactive Learning Guidelines for Teacher & Student | CapoBrain",
+              "title": "Interactive Learning Guidelines | CapoBrain",
               "description": "CapoBrain’s Interactive Learning Guidelines provide teachers and students with comprehensive tools to engage in active learning, fostering better educational outcomes.",
               "openGraph": {
                 "title": "Interactive Learning Guidelines for Teachers and Students | CapoBrain",
                 "description": "Engage students and enhance learning with CapoBrain’s Interactive Learning Guidelines. These guidelines provide teachers with the tools to foster effective learning and student engagement.",
-                "url": "https://capobrain-sms.vercel.app/features/interactive-learning-guidelines",
+                "url": "https://capobrain.com/features/interactive-learning-guidelines",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Interactive Learning Guidelines for Teachers and Students | CapoBrain",
+                "title": "Interactive Learning Guidelines | CapoBrain",
                 "description": "Foster active learning with CapoBrain’s Interactive Learning Guidelines. These tools help teachers and students engage in more effective and meaningful educational experiences."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/interactive-learning-guidelines"
+              "canonical": "https://capobrain.com/features/interactive-learning-guidelines"
             },
             "content": {
               "heroHeader": "Enhance Engagement with Interactive Learning Guidelines",
               "heading": "Interactive Learning Guidelines for Teacher & Student",
               "description": "CapoBrain’s Enhance Engagement with Interactive Learning Guidelines empower teachers and students to engage in active, student-centered learning. These guidelines provide a structured approach to teaching and learning, encouraging participation, collaboration, and deeper understanding.",
+              "imageheading":"Interactive Learning Guidelines for Teachers & Students",
+              "imagepara":"Interactive learning guidelines provide a structured yet flexible approach to teaching and learning, fostering a collaborative and engaging classroom environment. For teachers, these guidelines offer strategies for implementing interactive technologies, designing participatory activities, and leveraging multimedia resources to enhance learning outcomes. Students benefit from clear instructions on how to engage with digital content, participate in discussions, and collaborate on projects. This approach encourages active learning, promotes critical thinking, and ensures that both teachers and students are well-equipped to navigate the modern educational landscape. By prioritizing interactivity, schools create a more engaging and effective learning experience for all involved.",
+              "imagecontent": "/img/features/interactive-learning-guidelines.png",
+              "imagealt": "Interactive Learning Guidelines for Teacher & Student",
+              "imagetitle": "Interactive Learning Guidelines for Teacher & Student",
               "keyBenefits": [
                 "Tools for creating engaging and interactive lesson plans",
                 "Student-centered learning strategies for active participation",
@@ -910,7 +1045,7 @@
               "openGraph": {
                 "title": "Salary, Advance & Loan Management System for Businesses | CapoBrain",
                 "description": "Easily manage employee salary, advance, and loan details with CapoBrain’s system. Simplify payroll management, track payments, and ensure accurate calculations.",
-                "url": "https://capobrain-sms.vercel.app/features/salary-advance-loan-management-system",
+                "url": "https://capobrain.com/features/salary-advance-loan-management-system",
                 "type": "website"
               },
               "twitter": {
@@ -918,15 +1053,20 @@
                 "title": "Efficient Salary, Advance & Loan Management | CapoBrain",
                 "description": "Streamline your company’s salary, advance, and loan management with CapoBrain. Our system simplifies payroll and loan tracking for smoother business operations."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/salary-advance-loan-management-system"
+              "canonical": "https://capobrain.com/features/salary-advance-loan-management-system"
             },
             "content": {
               "heroHeader": "Streamline Salary, Advance & Loan Management",
               "heading": "Salary, Advance & Loan Management System",
               "description": "CapoBrain’s Salary, Advance & Loan Management System helps businesses manage their employees' salaries, advances, and loans efficiently. With real-time tracking, automated calculations, and clear reporting, the system ensures accurate payroll processing and financial transparency.",
+              "imageheading":"Efficient Salary, Advance & Loan Management System",
+              "imagepara":"A salary, advance, and loan management system automates and streamlines payroll processes, ensuring timely and accurate payments. This system allows schools to manage employee salaries, calculate bonuses, advances, and loan deductions seamlessly. It also tracks loan repayments, generating alerts for due dates and outstanding amounts. The system integrates with other school management tools for a comprehensive view of finances, making it easier to monitor and generate reports. By automating these processes, schools can reduce manual errors, improve transparency, and ensure compliance with financial policies, leading to a more efficient and stress-free administrative experience for HR teams and employees.",
+              "imagecontent": "/img/features/salary-advance-loan-management-system.png",
+              "imagealt": "Salary, Advance & Loan Management System",
+              "imagetitle": "Salary, Advance & Loan Management System",
               "keyBenefits": [
                 "Real-time tracking of salaries, advances, and loan payments",
-                "Automated salary calculations based on custom parameters",
+                "Automated streamline salary calculations based on custom parameters",
                 "Easy integration with existing payroll systems",
                 "Detailed reports for transparency and compliance",
                 "Ensures timely loan repayments and advances management"
@@ -942,7 +1082,7 @@
               "openGraph": {
                 "title": "Certificates & ID Card Generation Tool | CapoBrain",
                 "description": "Generate professional certificates and ID cards with CapoBrain’s intuitive tool. Customize designs and streamline the printing process for a variety of needs.",
-                "url": "https://capobrain-sms.vercel.app/features/certificates-id-card-generation-tool",
+                "url": "https://capobrain.com/features/certificates-id-card-generation-tool",
                 "type": "website"
               },
               "twitter": {
@@ -950,12 +1090,17 @@
                 "title": "Efficient Certificate & ID Card Generation Tool | CapoBrain",
                 "description": "Create personalized certificates and ID cards with ease using CapoBrain’s intuitive design tool. Simplify the creation process for any organization."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/certificates-id-card-generation-tool"
+              "canonical": "https://capobrain.com/features/certificates-id-card-generation-tool"
             },
             "content": {
               "heroHeader": "Streamline Your Certificate & ID Card Generation",
               "heading": "Certificates & ID Card Generation Tool",
-              "description": "CapoBrain’s Certificates & ID Card Generation Tool allows businesses, schools, and organizations to effortlessly create customized certificates and ID cards. The user-friendly interface makes it easy to design and print professional-looking documents that suit your needs.",
+              "description": "CapoBrain’s Streamline Certificates & ID Card Generation Tool allows businesses, schools, and organizations to effortlessly create customized certificates and ID cards. The user-friendly interface makes it easy to design and print professional-looking documents that suit your needs.",
+              "imageheading":"Simplified Certificates & ID Card Generation Tool",
+              "imagepara":"A certificates and ID card generation tool streamlines the process of creating and issuing essential documents for students and staff. With customizable templates, the system allows schools to generate certificates for achievements, attendance, and graduation, along with personalized ID cards for identification and access. The tool automates the formatting, data entry, and printing processes, saving valuable time and reducing errors. By integrating with the school's database, it ensures that all personal details are accurate and up-to-date. This system enhances operational efficiency, reduces administrative burden, and provides a smooth experience for both school staff and recipients.",
+              "imagecontent": "/img/features/certificates-id-card-generation-tool.png",
+              "imagealt": "Certificates & ID Card Generation Tool",
+              "imagetitle":"Certificates & ID Card Generation Tool",
               "keyBenefits": [
                 "Customizable templates for certificates and ID cards",
                 "Easy-to-use design interface with drag-and-drop features",
@@ -969,25 +1114,30 @@
           {
             "slug": "comprehensive-library-management-with-digital-integration",
             "meta": {
-              "title": "Comprehensive Library Management With Digital Integration | CapoBrain",
+              "title": "Comprehensive Library Management| CapoBrain",
               "description": "CapoBrain’s Comprehensive Library Management system with digital integration streamlines library operations, allowing for efficient book tracking, cataloging, and access with advanced technology.",
               "openGraph": {
                 "title": "Comprehensive Library Management With Digital Integration",
                 "description": "Streamline your library management with digital integration. Track, catalog, and access books seamlessly with CapoBrain's advanced system.",
-                "url": "https://capobrain-sms.vercel.app/features/comprehensive-library-management-with-digital-integration",
+                "url": "https://capobrain.com/features/comprehensive-library-management-with-digital-integration",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Advanced Library Management with Digital Integration | CapoBrain",
+                "title": "Advanced Library Management| CapoBrain",
                 "description": "Enhance your library's management with CapoBrain's digital integration, making book tracking, cataloging, and access more efficient and user-friendly."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/comprehensive-library-management-with-digital-integration"
+              "canonical": "https://capobrain.com/features/comprehensive-library-management-with-digital-integration"
             },
             "content": {
               "heroHeader": "Digital Integration for Comprehensive Library Management",
               "heading": "Comprehensive Library Management With Digital Integration",
               "description": "CapoBrain’s Comprehensive Library Management system revolutionizes the way libraries operate. With digital integration, it provides seamless book tracking, cataloging, and access, ensuring more efficient and user-friendly management. The system allows libraries to optimize their resources, track inventory, and enhance the user experience for students, staff, and visitors.",
+              "imageheading":"Comprehensive Library Management with Digital Integration",
+              "imagepara":"A comprehensive library management system with digital integration enhances the way educational institutions manage and track their resources. The system allows for easy cataloging of books, journals, and digital media, ensuring that students and staff can access materials efficiently. With features like barcode scanning, search filters, and automated checkouts, the process becomes seamless and user-friendly. Integration with digital platforms allows for the inclusion of e-books, audiobooks, and other online resources. This system also tracks book availability, overdue items, and generates real-time reports. By incorporating digital tools, libraries can provide a more versatile and efficient service to their users.",
+              "imagecontent": "/img/features/comprehensive-library-management-with-digital-integration.png",
+              "imagealt": "Comprehensive Library Management With Digital Integration",
+              "imagetitle": "Comprehensive Library Management With Digital Integration",
               "keyBenefits": [
                 "Seamless digital cataloging and book tracking",
                 "Easy search functionality for quick access",
@@ -1001,25 +1151,30 @@
           {
             "slug": "integration-with-third-party-educational-tools-apis",
             "meta": {
-              "title": "Integration with Third-party Educational Tools & APIs | CapoBrain",
+              "title": "Integration with Third-party Educational Tools & APIs",
               "description": "CapoBrain’s Integration with Third-party Educational Tools & APIs enhances the functionality of your educational system by connecting with a wide range of external tools and services.",
               "openGraph": {
                 "title": "Integration with Third-party Educational Tools & APIs | CapoBrain",
                 "description": "Enhance your educational ecosystem by integrating CapoBrain with third-party tools and APIs, enabling better functionality and seamless data flow.",
-                "url": "https://capobrain-sms.vercel.app/features/integration-with-third-party-educational-tools-apis",
+                "url": "https://capobrain.com/features/integration-with-third-party-educational-tools-apis",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Third-party Educational Tools & API Integration | CapoBrain",
+                "title": "Third-party Educational Tools & API Integration",
                 "description": "CapoBrain offers integration with third-party educational tools and APIs, allowing seamless interaction and enhancing educational systems with external data and features."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/integration-with-third-party-educational-tools-apis"
+              "canonical": "https://capobrain.com/features/integration-with-third-party-educational-tools-apis"
             },
             "content": {
               "heroHeader": "Enhance Your Education System with API Integration",
               "heading": "Integration with Third-party Educational Tools & APIs",
               "description": "CapoBrain’s integration with third-party educational tools and APIs empowers your system with added functionalities, providing access to a variety of external services. From digital textbooks and learning management systems (LMS) to interactive learning platforms, the integration offers seamless data exchange and enhanced user experiences.",
+              "imageheading":"Seamless Integration with Third-Party Educational Tools & APIs",
+              "imagepara":"Integration with third-party educational tools and APIs enhances the functionality of school management systems by connecting with a wide range of specialized applications. This integration allows schools to incorporate features such as learning management systems (LMS), assessment tools, and virtual classrooms into their existing infrastructure. By syncing with external tools like Google Classroom, Zoom, or e-learning platforms, schools can provide a more dynamic and flexible learning environment. It also simplifies data sharing, ensuring that information flows smoothly between different systems, reducing manual input and enhancing the overall educational experience for students, teachers, and administrators.",
+              "imagecontent": "/img/features/integration-with-third-party-educational-tools-apis.png",
+              "imagealt": "Integration with Third-party Educational Tools & APIs",
+              "imagetitle": "Integration with Third-party Educational Tools & APIs",
               "keyBenefits": [
                 "Seamless integration with popular educational tools and platforms",
                 "Enhanced data flow and improved system functionalities",
@@ -1038,7 +1193,7 @@
               "openGraph": {
                 "title": "Seamless Parent Teacher Communication Portal",
                 "description": "Facilitate better collaboration between parents and teachers with CapoBrain's Parent Teacher Communication Portal, improving student outcomes and engagement.",
-                "url": "https://capobrain-sms.vercel.app/features/parent-teacher-communication-portal",
+                "url": "https://capobrain.com/features/parent-teacher-communication-portal",
                 "type": "website"
               },
               "twitter": {
@@ -1046,12 +1201,17 @@
                 "title": "Effective Parent Teacher Communication Portal | CapoBrain",
                 "description": "Enhance school communication with CapoBrain’s Parent Teacher Portal, designed to improve collaboration, engagement, and student performance."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/parent-teacher-communication-portal"
+              "canonical": "https://capobrain.com/features/parent-teacher-communication-portal"
             },
             "content": {
               "heroHeader": "Parent Teacher Communication for Student Success",
               "heading": "Parent Teacher Communication Portal",
-              "description": "CapoBrain’s Parent Teacher Communication Portal streamlines and enhances communication between parents and teachers. This platform fosters collaboration, allowing real-time updates on student progress, attendance, assignments, and more. With the ability to message, share resources, and track important notifications, this tool ensures that both parents and teachers are aligned in their efforts to support students’ academic growth.",
+              "description": "CapoBrain’s Parent Teacher Communication Portal for student success streamlines and enhances communication between parents and teachers. This platform fosters collaboration, allowing real-time updates on student progress, attendance, assignments, and more. With the ability to message, share resources, and track important notifications, this tool ensures that both parents and teachers are aligned in their efforts to support students’ academic growth.",
+              "imageheading":"Enhanced Communication with Parent-Teacher Portal",
+              "imagepara":"A parent-teacher communication portal strengthens collaboration between educators and parents, fostering a supportive learning environment for students. This platform allows teachers to share updates on student progress, attendance, assignments, and behavioral observations with parents in real-time. Parents can also communicate directly with teachers to address concerns or ask questions. With features like secure messaging, appointment scheduling, and event notifications, the portal ensures clear and consistent communication. By providing a direct line of contact, the parent-teacher portal promotes transparency, builds stronger school-home partnerships, and ultimately enhances student performance and well-being.",
+              "imagecontent": "/img/features/parent-teacher-communication-portal.png",
+              "imagealt": "Parent Teacher Communication Portal",
+              "imagetitle": "Parent Teacher Communication Portal",
               "keyBenefits": [
                 "Real-time communication between parents and teachers",
                 "Instant updates on student performance and attendance",
@@ -1065,25 +1225,30 @@
           {
             "slug": "role-based-access-control-for-secure-user-management",
             "meta": {
-              "title": "Role-Based Access Control For Secure User Management | CapoBrain",
+              "title": "Role-Based Access Control For User Management",
               "description": "CapoBrain’s Role-Based Access Control system ensures secure user management by assigning access based on roles, protecting sensitive data and streamlining permissions.",
               "openGraph": {
                 "title": "Secure User Management with Role-Based Access Control",
                 "description": "CapoBrain's Role-Based Access Control provides secure user management by assigning specific roles and access levels, safeguarding sensitive data across the system.",
-                "url": "https://capobrain-sms.vercel.app/features/role-based-access-control-for-secure-user-management",
+                "url": "https://capobrain.com/features/role-based-access-control-for-secure-user-management",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Role-Based Access Control for Secure User Management | CapoBrain",
+                "title": "Role-Based Access Control for User Management",
                 "description": "Control user access and ensure the security of your platform with CapoBrain's Role-Based Access Control system, offering streamlined and protected data management."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/role-based-access-control-for-secure-user-management"
+              "canonical": "https://capobrain.com/features/role-based-access-control-for-secure-user-management"
             },
             "content": {
               "heroHeader": "Efficient User Management with Role-Based Access Control",
               "heading": "Role-Based Access Control For Secure User Management",
               "description": "CapoBrain’s Role-Based Access Control (RBAC) system enables efficient and secure management of users across your platform. By defining specific roles and permissions, RBAC ensures that only authorized users can access sensitive data and features. This robust security system enhances data protection, streamlines administrative workflows, and minimizes the risk of unauthorized access.",
+              "imageheading":"Role-Based Access Control for Secure User Management",
+              "imagepara":"Role-based access control (RBAC) is a security feature that ensures only authorized users have access to sensitive data and resources within an educational management system. By assigning specific roles and permissions to users such as administrators, teachers, students, and parents, RBAC helps prevent unauthorized access to confidential information. Teachers may have access to student performance data, while students can only view their own progress. This system promotes secure data management by enforcing policies based on user responsibilities, reducing the risk of data breaches, and ensuring that each user has access only to the information relevant to their role within the institution.",
+              "imagecontent": "/img/features/role-based-access-control-for-secure-user-management.png",
+              "imagealt": "Role-Based Access Control For Secure User Management",
+              "imagetitle": "Role-Based Access Control For Secure User Management",
               "keyBenefits": [
                 "Granular control over user access and permissions",
                 "Enhanced security by limiting access to sensitive data",
@@ -1097,25 +1262,29 @@
           {
             "slug": "seamless-integration-with-modern-educational-tools",
             "meta": {
-              "title": "Seamless Integration With Modern Educational Tools | CapoBrain",
+              "title": "Seamless Integration With Modern Educational Tools",
               "description": "CapoBrain ensures seamless integration with modern educational tools, providing a unified platform to enhance learning and improve student outcomes.",
               "openGraph": {
                 "title": "Effortless Integration With Modern Educational Tools",
                 "description": "CapoBrain's seamless integration with modern educational tools streamlines the learning experience, improving student performance and classroom efficiency.",
-                "url": "https://capobrain-sms.vercel.app/features/seamless-integration-with-modern-educational-tools",
+                "url": "https://capobrain.com/features/seamless-integration-with-modern-educational-tools",
                 "type": "website"
               },
               "twitter": {
                 "card": "summary_large_image",
-                "title": "Modern Educational Tools Integration | CapoBrain",
+                "title": "Modern Educational Tools Integration",
                 "description": "Integrate modern educational tools with CapoBrain’s platform, creating a cohesive learning environment that enhances student engagement and academic success."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/seamless-integration-with-modern-educational-tools"
+              "canonical": "https://capobrain.com/features/seamless-integration-with-modern-educational-tools"
             },
             "content": {
               "heroHeader": "Integration with Educational Tools",
               "heading": "Seamless Integration With Modern Educational Tools",
               "description": "CapoBrain’s platform seamlessly integrates with a variety of modern educational tools, creating a cohesive environment for teachers and students. By connecting with learning management systems, assessment tools, and collaboration platforms, our solution provides a unified interface for all your educational needs. This integration ensures that schools and educators can leverage the best tools available, enhancing the overall learning experience and boosting student success.",
+              "imageheading":"Integration with Modern Educational Tools",
+              "imagepara":"Seamless integration with modern educational tools enhances the functionality of school management systems, enabling a more dynamic and connected learning environment. By incorporating tools such as learning management systems (LMS), virtual classrooms, and digital assessment platforms, schools can provide a wide range of resources for both teachers and students. Integration with applications like Google Classroom, Zoom, and digital libraries allows for real-time updates, efficient content delivery, and collaborative learning experiences. This interoperability ensures that educators can make the most of innovative technologies while keeping all their tools in sync, reducing administrative overhead and enhancing the overall educational process.",
+              "imagecontent": "/img/features/seamless-integration-with-modern-educational-tools.jpg",
+              "imagealt": "Integration with Educational Tools",
               "keyBenefits": [
                 "Unified platform integrating with top educational tools",
                 "Streamlined learning experience for both students and teachers",
@@ -1134,7 +1303,7 @@
               "openGraph": {
                 "title": "Streamline Sports & Extra Curricular Activities Management",
                 "description": "CapoBrain’s Sports & Extra Curricular Activities Management system helps schools efficiently manage sports teams, events, and extra-curricular activities with ease.",
-                "url": "https://capobrain-sms.vercel.app/features/sports-and-extra-curricular-activities-management",
+                "url": "https://capobrain.com/features/sports-and-extra-curricular-activities-management",
                 "type": "website"
               },
               "twitter": {
@@ -1142,12 +1311,17 @@
                 "title": "Efficient Sports & Extra Curricular Activities Management | CapoBrain",
                 "description": "Manage sports teams and extra-curricular activities effectively with CapoBrain's solution, enhancing school participation and event tracking."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/sports-and-extra-curricular-activities-management"
+              "canonical": "https://capobrain.com/features/sports-and-extra-curricular-activities-management"
             },
             "content": {
               "heroHeader": "Efficiently Manage Sports and Extra-Curricular Activities",
               "heading": "Sports & Extra Curricular Activities Management",
               "description": "CapoBrain’s Sports & Extra Curricular Activities Management system efficiently provides schools with the tools needed to track, manage, and organize sports teams, clubs, and other extra-curricular activities. The platform enables administrators to schedule events, monitor student participation, and generate detailed reports for a comprehensive view of student engagement in non-academic activities. By automating these processes, schools can improve overall event management and student involvement.",
+              "imageheading":"Sports & Extracurricular Activities Management",
+              "imagepara":"Sports and extracurricular activities management systems streamline the planning, organization, and tracking of student participation in non-academic pursuits. These systems allow schools to manage schedules, track student involvement, and ensure the proper allocation of resources such as equipment and facilities. From athletic events to cultural programs, the system helps coordinate registrations, attendance, and performance tracking. It also enables communication between coaches, teachers, and parents, ensuring that students receive the necessary support for balanced development. By automating and organizing these activities, schools can enhance student engagement, foster teamwork, and provide a more holistic educational experience.",
+              "imagecontent": "/img/features/sports-and-extra-curricular-activities-management.jpg",
+              "imagealt": "Sports & Extra Curricular Activities Management",
+              "imagetitle":"Sports & Extra Curricular Activities Management",
               "keyBenefits": [
                 "Streamlined scheduling of sports and extracurricular events",
                 "Comprehensive tracking of student participation in activities",
@@ -1161,12 +1335,12 @@
           {
             "slug": "student-progress-performance-tracking",
             "meta": {
-              "title": "Student Progress Tracking & Performance Tracking Analytics | CapoBrain",
+              "title": "Student Progress & Performance Tracking | CapoBrain",
               "description": "Track student progress and analyze performance with CapoBrain’s advanced tracking and analytics features. Get data-driven insights to help improve student outcomes and learning strategies.",
               "openGraph": {
                 "title": "Track Student Progress & Performance with CapoBrain",
                 "description": "CapoBrain offers comprehensive student progress tracking and performance analytics. Gain insights to improve learning strategies and student outcomes with real-time data and performance monitoring.",
-                "url": "https://capobrain-sms.vercel.app/features/student-progress-performance-tracking",
+                "url": "https://capobrain.com/features/student-progress-performance-tracking",
                 "type": "website"
               },
               "twitter": {
@@ -1174,12 +1348,17 @@
                 "title": "Student Progress & Performance Tracking Analytics | CapoBrain",
                 "description": "Track student performance and progress with CapoBrain’s analytics feature. Improve learning outcomes with detailed insights into student growth and achievement."
               },
-              "canonical": "https://capobrain-sms.vercel.app/features/student-progress-performance-tracking"
+              "canonical": "https://capobrain.com/features/student-progress-performance-tracking"
             },
             "content": {
               "heroHeader": "Advanced Student Progress & Performance Tracking Analytics",
               "heading": "Student Progress Tracking & Performance Tracking Analytics",
               "description": "CapoBrain’s Student Progress Tracking & Performance Tracking Analytics helps you monitor student growth, identify areas for improvement, and optimize teaching strategies. Our comprehensive analytics system provides real-time insights into student performance, allowing educators to make data-driven decisions that enhance learning outcomes. Whether tracking grades, test results, or overall academic progress, our system ensures you have all the tools needed to support each student's learning journey.",
+              "imageheading":"Student Progress & Performance Tracking Analytics",
+              "imagepara":"Student progress and performance tracking analytics empower educators and administrators to monitor academic development and identify areas for improvement. These analytics provide insights into individual and group performance across subjects, enabling data-driven decisions to enhance teaching strategies. By tracking attendance, grades, assignments, and exam results, the system creates comprehensive profiles for each student. This data helps teachers identify trends, assess learning gaps, and provide targeted support. With real-time updates and customizable reports, schools can proactively address challenges, promote student growth, and ensure that all students are progressing towards their academic goals efficiently.",
+              "imagecontent": "/img/features/student-progress-performance-tracking.jpg",
+              "imagealt": "Student Progress & Performance Tracking",
+              "imagetitle": "Student Progress & Performance Tracking",
               "keyBenefits": [
                 "Real-time tracking of student progress and performance",
                 "Detailed analytics to identify strengths and areas for improvement",

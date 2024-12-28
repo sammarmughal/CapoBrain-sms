@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from "react";
 import Sidebar from "./component/sidebar";
-import { Helmet } from "react-helmet";
 import UserNav from "./component/user-nav";
 import Swal from "sweetalert2";
 import { RiDeleteBinLine } from "react-icons/ri";

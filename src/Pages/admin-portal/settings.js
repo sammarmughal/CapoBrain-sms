@@ -129,15 +129,7 @@ const ChangePasswords = () => {
           confirmButtonText: "OK",
         });
       }
-    } else {
-      Swal.fire({
-        title: "Error!",
-        text: "Please fix the errors in the form.",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-    }
-  };
+    }};
 
 
   return (
@@ -164,10 +156,10 @@ const ChangePasswords = () => {
           property="og:description"
           content="Update your password for enhanced security. Protect your account in Capobrain’s Admin Panel by using a strong, unique password to safeguard your school management system."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta
           property="og:url"
-          content="YOUR_ADMIN_PANEL_CHANGE_PASSWORD_URL"
+          content="https://capobrain.com/adminpanel/changepassword"
         />
         <meta property="og:type" content="website" />
 
@@ -179,7 +171,7 @@ const ChangePasswords = () => {
           name="twitter:description"
           content="Secure your Capobrain Admin Panel account by changing your password. Update to a stronger password for enhanced security and access control."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

@@ -1,15 +1,15 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Welcome = () => {
   return (
     <div
-      className="items-center w-10/12 grid lg:grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5"
+      className="cb-container items-center w-10/12 grid lg:grid-cols-2 mx-auto overflow-x-hidden lg:grid xl:py-6"
       data-aos="fade-right"
       data-aos-duration="800"
     >
       {/* Text Content */}
       <div className="pr-2 md:mb-14 py-14 md:py-0">
-        <h1 className="text-3xl font-bold text-[#7a12d4] xl:text-4xl lg:text-3xl">
+        <h1 className="text-3xl font-bold text-purple-800 xl:text-4xl lg:text-3xl">
           <span className="block w-full">Welcome To Capobrain </span> School Management Software
         </h1>
         <p className="py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5">
@@ -17,7 +17,7 @@ const Welcome = () => {
         <div className="mt-4">
           <Link
             to="/contact"
-            className="px-5 py-3 text-lg tracking-wider text-white bg-violet-500 rounded-lg md:px-8 hover:bg-violet-600 group"
+            className="px-5 py-3 text-lg tracking-wider text-white bg-purple-500 rounded-lg md:px-8 hover:bg-purple-600 group"
           >
             <span>Explore More</span>
           </Link>

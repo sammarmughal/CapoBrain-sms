@@ -1,5 +1,5 @@
 import React from "react";
-import schoolimg from "../img/training_online_1.png";
+import schoolimg from "../img/best-school-software.png";
 import schoolimg2 from "../img/student-management-system.png";
 
 export default function Keyfeatures() {
@@ -12,12 +12,11 @@ export default function Keyfeatures() {
             <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-center md:flex md:items-center">
               <div className="w-full md:w-1/2 space-y-4">
                 <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
-                  How Our Best School Management Software Transforms Educational
-                  Culture
+                How Our Advanced Educational ERP Solution Transforms Learning Environments
                 </h3>
-                <p>
-                  Our comprehensive School Management System and Best School
-                  Management Software enhance the quality of academic
+                <p className="text-justify sm:text-left">
+                  Our comprehensive School Management System and <strong>Best School
+                  Management Software</strong> enhance the quality of academic
                   institutions by enabling efficient monitoring of daily
                   progress and performance. Our features set us apart, allowing
                   parents to stay informed about their children's performance
@@ -38,9 +37,9 @@ export default function Keyfeatures() {
             <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-evenly md:flex md:items-center md:flex-row-reverse">
               <div className="w-full md:w-1/2 space-y-4">
                 <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
-                  All-in-One Solution for the Best School Management System
+                All-in-One ERP Solution for Educational Institutions
                 </h3>
-                <p>
+                <p className="text-justify sm:text-left">
                   Managing an educational institution involves numerous
                   challenges, from handling students, staff, timetables, exams,
                   class tests, attendance, fee collection, and accounts, to
@@ -60,6 +59,7 @@ export default function Keyfeatures() {
                   src={schoolimg2}
                   height={450}
                   alt="Office content Best School Management Software"
+                  title="School ERP Software"
                 />{" "}
               </div>
             </div>

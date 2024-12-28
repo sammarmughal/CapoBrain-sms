@@ -5,6 +5,8 @@ import Desktop from "../img/capobrain-desktop.png";
 import About from "../img/about-us-sms.jpg";
 import Testimonials from "../Components/Testimonials";
 import { Helmet } from "react-helmet";
+import twittercard from "../img/twiiter-card.jpg";
+
 
 const AboutSection = () => {
   const servicesData = [
@@ -94,7 +96,7 @@ const AboutSection = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Learn more about Capobrain, a leading provider of school management software. Our School ERP solutions are designed to streamline administrative tasks, improve communication, and enhance student management in schools across Pakistan. Affordable, customizable, and mobile-friendly features for all institutions."
+          content="Learn more about Capobrain, a leading provider of school management software. Our School ERP solutions are designed to streamline..."
         />
         <meta
           name="keywords"
@@ -102,7 +104,7 @@ const AboutSection = () => {
         />
         <meta name="robots" content="index, follow" />
         <title>
-          About Us - Capobrain | Leading School Management Software in Pakistan
+          About Us - Leading School Management Software 
         </title>
 
         <meta
@@ -113,8 +115,8 @@ const AboutSection = () => {
           property="og:description"
           content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="https://capobrain-sms.vercel.app/about" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/about" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -125,8 +127,9 @@ const AboutSection = () => {
           name="twitter:description"
           content="Discover Capobrain, a leading provider of school management software in Pakistan. Our School ERP solutions are customizable and mobile-friendly, designed to simplify school operations and improve student management."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/about"/>
       </Helmet>
 
       <section className="relative bg-purple-900">
@@ -151,7 +154,7 @@ const AboutSection = () => {
           }}
         ></div>
       </section>
-      <section className="py-14 relative">
+      <section className="sm:py-14 relative cb-container">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
             <div className="img-box flex justify-center items-center">
@@ -182,27 +185,26 @@ const AboutSection = () => {
             </div>
             <div className="lg:pl-[100px] flex items-center lg:col-span-2">
               <div className="data w-full">
-                <h2 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center relative">
+                <h2 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-4 sm:mb-9 max-lg:text-center relative">
                   Welcome To Capobrain School Management Software{" "}
                 </h2>
-                <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
+                <p className="font-normal sm:text-xl sm:leading-8 text-gray-500 text-justify sm:text-left max-w-2xl mx-auto">
                 Introducing Capobrain, a leading school management system (SMS) designed to streamline operations and enhance efficiency for educational institutions. Whether you are managing a bustling school or a sprawling university, our school management system integrates all aspects of campus life, transforming the way institutions handle administrative tasks. From student admissions and attendance tracking to staff management and curriculum planning, Capobrain simplifies complex administrative tasks, making it the ideal solution for modern educational environments.
-
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>      
-      <section className="py-14 relative">
+      <section className="sm:py-14 py-6 relative cb-container">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-9">
             <div className="lg:pr-24 flex items-center">
               <div className="data w-full">
-                <h3 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-9 max-lg:text-center">
+                <h3 className="font-manrope font-bold text-3xl lg:text-4xl text-black mb-4 sm:mb-9 max-lg:text-center">
                   We are Creative Since 2020
                 </h3>
-                <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
+                <p className="font-normal sm:text-xl sm:leading-8 text-gray-500 text-justify sm:text-left max-w-2xl mx-auto">
                   Our Premier School Management Platform goes beyond aesthetics,
                   prioritizing accessibility and usability. Every element, from
                   the tiniest detail to the grandest layout, enhances
@@ -253,6 +255,7 @@ const AboutSection = () => {
           ))}
         </div>
       </section>
+      <Testimonials/>
       <section className="pt-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h3 className="font-manrope sm:text-4xl text-3xl text-center text-gray-900 font-bold mb-14">
@@ -269,7 +272,7 @@ const AboutSection = () => {
                     Schools Using Our Software
                   </h4>
                   <p className="text-xs text-gray-500 leading-5">
-                    Trusted by over 500 schools to streamline operations, manage
+                    Trusted by over 50+ schools to streamline operations, manage
                     student data, and enhance educational outcomes.
                   </p>
                 </div>
@@ -278,7 +281,7 @@ const AboutSection = () => {
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 bg-white transform transition-all duration-300 hover:scale-105 animate-fade-in p-6 rounded-2xl shadow-lg shadow-gray-100">
               <div className="flex gap-5">
                 <div className="font-manrope text-2xl font-bold text-purple-800">
-                  120+
+                  120k+
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl text-gray-900 font-semibold mb-2">
@@ -310,7 +313,6 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <Testimonials/>
     </>
   );
 };

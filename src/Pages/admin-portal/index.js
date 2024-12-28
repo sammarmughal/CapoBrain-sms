@@ -80,8 +80,8 @@ const AdminPortal = () => {
           property="og:description"
           content="Access the Capobrain Admin Panel to manage school operations. From student records to fee management, our dashboard provides complete control for school administrators."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_HOME_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -92,7 +92,7 @@ const AdminPortal = () => {
           name="twitter:description"
           content="The Capobrain Admin Panel helps school administrators manage all aspects of school operations, including student records, attendance, fee management, and more."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

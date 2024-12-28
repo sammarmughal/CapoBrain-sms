@@ -41,7 +41,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="grid max-w-md grid-cols-1 gap-6 mx-auto auto-rows-fr lg:grid-cols-3 lg:max-w-full">
+        <div className="grid max-w-md grid-cols-1 gap-8 sm:gap-6 mx-auto auto-rows-fr lg:grid-cols-3 lg:max-w-full">
           {[
             {
               name: "CapoBrain Essentials",

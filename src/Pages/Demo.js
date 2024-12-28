@@ -2,6 +2,7 @@ import React from "react";
 import demoImg from "../img/demo-img.png"; 
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import twittercard from "../img/twiiter-card.jpg";
 
 export default function Demo() {
 
@@ -12,7 +13,7 @@ export default function Demo() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Explore Capobrain’s live demo of our School Management System (SMS). See how our School ERP software works with real-world scenarios, including student management, fee collection, attendance tracking, and more. Try before you buy!"
+          content="Explore Capobrain’s live demo of our School Management System (SMS). See how our School ERP software works with real-world scenarios."
         />
         <meta
           name="keywords"
@@ -29,8 +30,8 @@ export default function Demo() {
           property="og:description"
           content="Check out the live demo of Capobrain’s School Management System. See how our School ERP software simplifies school operations, including student data management, fee processing, attendance tracking, and more."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_DEMO_PAGE_URL" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/demo" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -41,8 +42,10 @@ export default function Demo() {
           name="twitter:description"
           content="Explore the live demo of Capobrain’s School Management System. Understand how our School ERP software can improve school administration, fee management, attendance, and student data tracking."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/demo"/>
+
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
@@ -74,43 +77,43 @@ export default function Demo() {
               <p className="mt-2">
                 Demo Link:{" "}
                 <Link
-                  to="https://demo.capobrain-sms.vercel.app/"
+                  to="https://demo.capobrain.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-indigo-700 underline"
                 >
-                  https://demo.capobrain-sms.vercel.app/
+                  https://demo.capobrain.com/
                 </Link>
               </p>
-              <h4 className="mt-6 font-semibold text-2xl">Demo Credentials</h4>
+              <h3 className="mt-6 font-semibold text-2xl">Demo Credentials</h3>
               <div className="flex flex-row gap-4 mt-4">
                 <div className="w-full md:w-1/2">
-                  <h5 className="text-indigo-700 text-lg font-semibold">
+                  <h4 className="text-indigo-700 text-lg font-semibold">
                     School Admin Login
-                  </h5>
+                  </h4>
                   <p className="text-neutral-600">Username: CAPOUSER</p>
                   <p className="text-neutral-600">Password: 12345678</p>
                 </div>
                 <div className="w-full md:w-1/2">
-                  <h5 className="text-indigo-700 text-lg font-semibold">
+                  <h4 className="text-indigo-700 text-lg font-semibold">
                     Student Portal Access
-                  </h5>
+                  </h4>
                   <p className="text-neutral-600">Username: CAPO0923S001</p>
                   <p className="text-neutral-600">Password: 12345678</p>
                 </div>
               </div>
               <div className="flex flex-row gap-4 mt-4">
                 <div className="w-full md:w-1/2">
-                  <h5 className="text-indigo-700 text-lg font-semibold">
+                  <h4 className="text-indigo-700 text-lg font-semibold">
                     Teacher Portal Login
-                  </h5>
+                  </h4>
                   <p className="text-neutral-600">Username: CAPO0923T001</p>
                   <p className="text-neutral-600">Password: 12345678</p>
                 </div>
                 <div className="w-full md:w-1/2">
-                  <h5 className="text-indigo-700 text-lg font-semibold">
+                  <h4 className="text-indigo-700 text-lg font-semibold">
                     Parent Portal Access
-                  </h5>
+                  </h4>
                   <p className="text-neutral-600">Username: CAPO0923P001</p>
                   <p className="text-neutral-600">Password: 12345678</p>
                 </div>

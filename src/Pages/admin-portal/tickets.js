@@ -27,8 +27,8 @@ const Tickets = () => {
           property="og:description"
           content="Manage support tickets from users (staff, students, and parents) within Capobrain Admin Panel. Quickly assign, resolve, and track tickets to enhance school management."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_TICKETS_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/adminpanel/tickets" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -39,7 +39,7 @@ const Tickets = () => {
           name="twitter:description"
           content="Efficiently manage and resolve support tickets through Capobrain’s Admin Panel. Ensure swift responses to issues raised by staff, students, and parents."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

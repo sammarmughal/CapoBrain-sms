@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import bgp from "../img/background-pattern-desktop.svg";
 import open from "../img/icon-plus.svg";
 import close from "../img/icon-minus.svg";
 import avatar from "../img/icon-star.svg";

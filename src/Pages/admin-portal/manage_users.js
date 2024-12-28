@@ -46,8 +46,8 @@ const DemoUsers = () => {
           property="og:description"
           content="Easily manage users in the Capobrain Admin Panel. Add, edit, and remove users such as administrators, teachers, and students within the school management system."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_MANAGE_USERS_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/adminpanel/demousers" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -58,7 +58,7 @@ const DemoUsers = () => {
           name="twitter:description"
           content="Manage all user accounts including administrators, teachers, and students within the Capobrain Admin Panel. Efficient user administration for your school management system."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 

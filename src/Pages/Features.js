@@ -1,8 +1,9 @@
 import React from "react";
 import FeaturesContent from "../Components/Features";
-import capobrain from "../img/Capobrainheader.png";
+import capobrain from "../img/cta-bg.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import twittercard from "../img/twiiter-card.jpg";
 
 const Features = () => {
   return (
@@ -12,16 +13,14 @@ const Features = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Explore the powerful features of Capobrain's School Management System. Our School ERP software offers a range of tools to streamline administrative tasks, improve communication, manage student data, and more. Affordable, customizable, and mobile-friendly solutions for schools of all sizes."
+          content="Explore the powerful features of Capobrain's School Management System. Our School ERP software offers a range of tools to streamline administrative task."
         />
         <meta
           name="keywords"
           content="Capobrain, School Management Software, School ERP Features, School Software Features, Student Information System, School Fee Management, School Attendance Software, Timetable Scheduling, Parent-Teacher Communication, School Exam Management, Mobile-Friendly School ERP, Customizable School Software"
         />
         <meta name="robots" content="index, follow" />
-        <title>
-          Features - Capobrain | School Management Software with Advanced Tools
-        </title>
+        <title>Features of Educational Software with Advanced Tools</title>
 
         <meta
           property="og:title"
@@ -29,10 +28,13 @@ const Features = () => {
         />
         <meta
           property="og:description"
-          content="Discover the advanced features of Capobrain's School Management System. Our ERP software offers tools like fee management, student attendance, timetable scheduling, and more to help schools in Pakistan manage their operations efficiently."
+          content="Discover the advanced features of educational software. Our ERP software offers tools like fee management, student attendance, timetable scheduling, and more to help schools in Pakistan manage their operations efficiently."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_FEATURES_PAGE_URL" />
+        <meta
+          property="og:image"
+          content={twittercard}
+        />
+        <meta property="og:url" content="https://capobrain.com/features" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -41,22 +43,26 @@ const Features = () => {
         />
         <meta
           name="twitter:description"
-          content="Explore Capobrain’s School Management System features, including student information, fee management, attendance tracking, and more. Our customizable, mobile-friendly School ERP software helps schools streamline operations."
+          content="Explore Capobrain’s School Management System features, including student information, fee management, attendance tracking, and more."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta
+          name="twitter:image"
+          content={twittercard}
+        />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://capobrain.com/features" />
       </Helmet>
 
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
           <div className="space-y-5 max-w-8xl mx-auto text-center">
             <h1 className="heading-hero">
-              Standout Features of Our Comprehensive
-              <br />
-              School Management System
+              Standout Features of Educational Software
             </h1>
             <p className="max-w-2xl mx-auto text-gray-200">
-            Discover the powerful tools and seamless integration that make CapoBrain SMS the ultimate solution for efficient school management.
+              Discover the powerful tools and seamless integration that
+              highlight the features of educational software, making CapoBrain
+              SMS the ultimate solution for efficient school management.
             </p>
           </div>
         </div>
@@ -68,10 +74,10 @@ const Features = () => {
           }}
         ></div>
       </section>
-      <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <section className="px-6 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 className="max-w-lg mb-3 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            <span className="relative inline-block">
+          <h2 className="max-w-xl mb-3 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            {/* <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
@@ -95,12 +101,15 @@ const Features = () => {
                 />
               </svg>
               <span className="relative mr-1.5">The &#32;</span>
-            </span>
+            </span> */}
             &#32;Key Features of Capobrain's School Management System
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Over 20+ Modules you&nbsp;
-             <i className="fa fa-heart heart heartcolor text-red-600"></i> to use CapoBrain
+            Over 35+ Modules you&nbsp;
+           
+              love to use and explore the  <strong> features of educational software
+            </strong>{" "}
+            with CapoBrain.
           </p>
         </div>
         <FeaturesContent />
@@ -108,15 +117,16 @@ const Features = () => {
       <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
           <div className="max-w-full z-50 flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8">
-            <h3 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h3 className="heading-body tracking-tight text-white">
               Learn more about our <br />
-              <span className="text--500">
-                
+              <span >
                 Advanced School Management Software
               </span>
             </h3>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Maximize efficiency with CapoBrain, your standout school management software. Simplify operations and prioritize student success.
+            <p className="mt-6 sm:text-lg leading-8 text-gray-100">
+              Maximize efficiency with CapoBrain, your standout school
+              management software. Simplify operations and prioritize student
+              success.
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link
@@ -139,8 +149,9 @@ const Features = () => {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={capobrain}
-              alt="Capobrain School Management Software"
+              alt="Features of Educational Software"
               className="absolute inset-0 w-full h-full object-cover"
+              title="Features of Educational Software"
             />
           </div>
           <svg

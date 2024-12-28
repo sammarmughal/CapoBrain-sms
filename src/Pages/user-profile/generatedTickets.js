@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import Sidebar from "./component/sidebar";
-import { Helmet } from "react-helmet";
 import UserNav from "./component/user-nav";
 import MyContext from "../../ContextApi/MyContext";
 import Swal from "sweetalert2";

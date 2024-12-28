@@ -58,15 +58,15 @@ const PostSlider = () => {
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.8,
               slidesToScroll: 1,
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.8,
-              slidesToScroll: 1,
+              slidesToShow: 1.5,
+              slidesToScroll: 1.5,
             }
           }
         ]
@@ -85,15 +85,15 @@ const PostSlider = () => {
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.8,
               slidesToScroll: 1.3,
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.8,
-              slidesToScroll: 1.2,
+              slidesToShow: 1.5,
+              slidesToScroll: 1.3,
             }
           }
         ]
@@ -112,14 +112,14 @@ const PostSlider = () => {
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.8,
               slidesToScroll: 1.1,
             }
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1.8,
+              slidesToShow: 1.5,
               slidesToScroll: 1.1,
             }
           }
@@ -127,7 +127,7 @@ const PostSlider = () => {
       };
    
   return (
-    <div className="w-full pt-10 pb-8" id="faq">
+    <div className="w-full pt-4 pb-2 sm:pb-8" id="faq">
       <div className="flex px-4 flex-wrap">
         <div className="cb-container flex min-h-fit">
           <div className="w-full lg:w-4/6 mb-6 lg:mb-12 min-h-fit">
@@ -136,11 +136,11 @@ const PostSlider = () => {
             </div>
             <div className="pb-markdown min-h-fit pt-4 lg:py-5">
               <h3 className="mb-3 text-3xl font-bold leading-[1.2] text-black sm:text-4xl">
-              Best School Management Software with 30+ Modules to Enhance Your Institution's Efficiency </h3>
+              Best Software ERP Solution with 30+ Modules to Enhance Your Institution's Efficiency </h3>
             </div>
             <div className="pb-markdown min-h-fit mv-type--body text-cool-grey-600 hidden lg:block">
               <p>
-              Transform your educational experience with our comprehensive school management software solutions, designed to enhance communication, streamline processes, and empower administrators, teachers, and students across diverse institutions.
+              Transform your educational experience with our comprehensive educational management software solutions, designed to enhance communication, streamline processes, and empower administrators, teachers, and students across diverse institutions.
               </p>
             </div>
           </div>
@@ -149,6 +149,7 @@ const PostSlider = () => {
             className="w-full p-3 h-auto object-cover"
             src={SchoolPng}
             alt="School Software Modeules"
+            title="School Software Solutions in Pakistan"
           />
           </div>
         </div>
@@ -157,7 +158,7 @@ const PostSlider = () => {
         <Slider {...slider1}>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={cloudComputing}
               alt="Cloud Computing School Management System"
               width="512"
@@ -167,7 +168,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={edge}
               alt="Cutting-edge School Management Software"
               width="512"
@@ -177,17 +178,18 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={computerBased}
               alt="Computer Based School Management Software"
               width="512"
               height="230"
+              title="Computer Based Best School Management System"
             />
           </div>
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={AiDriven}
               alt="AI Driven School Management Software"
               width="512"
@@ -196,7 +198,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={DataSecurity}
               alt="Data Security School Management Software"
               width="512"
@@ -205,7 +207,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={studentstaff}
               alt="Student and Staffs Ledgers"
               width="512"
@@ -214,7 +216,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={StudentParentsPortals}
               alt="Students & Parents Portals School Software"
               width="512"
@@ -223,7 +225,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={AdmissionTestAutomation}
               alt="Admission Test Automation & Management"
               width="512"
@@ -232,7 +234,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={AdvanceDynamic}
               alt="Advanced Dynamic Website Features"
               width="512"
@@ -241,7 +243,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={CertificateIdCard}
               alt="Certificates & ID Card Generation Tool"
               width="512"
@@ -250,7 +252,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={ComprehensiveResources}
               alt="Comprehensive Library Management with Digital Integration"
               width="512"
@@ -259,7 +261,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={IntegrationThirdParty}
               alt="Integration with Third-Party Educational Tools & APIs"
               width="512"
@@ -268,7 +270,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={InteractiveLearningGuidelines}
               alt="Interactive Learning Guidelines for Teachers and Students"
               width="512"
@@ -277,7 +279,7 @@ const PostSlider = () => {
           </div>  
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={salaryLoan}
               alt="Salary, Advance and Loan Managemnet For Staff"
               width="512"
@@ -287,11 +289,11 @@ const PostSlider = () => {
         
         </Slider>
       </div>
-      <div className="verticel-carousel mt-4 md:mt-10">
+      <div className="verticel-carousel mt-1 sm:mt-4 md:mt-10">
         <Slider {...slider2}>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={DailyDiray}
               alt="Online Daily Diary School Management Software"
               width="512"
@@ -301,7 +303,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={MobileApp}
               alt="School Management Mobile App"
               width="512"
@@ -311,7 +313,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={WhatsAppMessaging}
               alt="School Software WhatsApp Messaging"
               width="512"
@@ -321,7 +323,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={BiometricAttendance}
               alt="School Biometric Attendance Software"
               width="512"
@@ -330,7 +332,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={SalaryFee}
               alt="Salary & Fee Management System"
               width="512"
@@ -340,7 +342,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={InventoryManagement}
               alt="School Inventory Management System"
               width="512"
@@ -349,17 +351,18 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={LearningManagementSystem}
               alt="Learning Management System (LMS) for E-Learning & Blended Education"
               width="512"
               height="230"
+              title="Learning ERP"
             />
           </div>
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={ParentTeacher}
               alt="Parent-Teacher Communication Portal"
               width="512"
@@ -368,7 +371,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={RealTimeNotification}
               alt="Real-Time Notifications and Instant Information Sharing"
               width="512"
@@ -378,7 +381,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={Reception}
               alt="Reception Management"
               width="512"
@@ -387,7 +390,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={RoleBasedAccessControl}
               alt="Role-Based Access Control for Secure User Management"
               width="512"
@@ -397,7 +400,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={SeamlessIntegration}
               alt="Seamless Integration with Modern Educational Tools"
               width="512"
@@ -406,7 +409,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={BasicReporting}
               alt="Basic Reporting System"
               width="512"
@@ -416,11 +419,11 @@ const PostSlider = () => {
         
         </Slider>
       </div>
-      <div className="verticel-carousel mt-4 md:mt-10">
+      <div className="verticel-carousel mt-1 sm:mt-4 md:mt-10">
         <Slider {...slider3}>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={RemainderFeeCollection}
               alt="Remainder Fee Collection School Management System"
               width="512"
@@ -430,7 +433,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={Reporting}
               alt="Reportion School Management"
               width="512"
@@ -440,7 +443,7 @@ const PostSlider = () => {
 
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={ExpenseAndAssets}
               alt="Expense and Assets School Management Software"
               width="512"
@@ -449,7 +452,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={OnlinePaperGeneration}
               alt="Online Paper Generation School Management Software"
               width="512"
@@ -458,7 +461,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={ExamResultManagement}
               alt="Exam & Result School Management Software"
               width="512"
@@ -467,7 +470,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={MultiCampus}
               alt="MultiCampus Student Information System"
               width="512"
@@ -476,16 +479,17 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={SchoolCollegeWeb}
               alt="School & College Webs Portal"
               width="512"
               height="230"
+              title="School ERP Software Solution in Pakistan"
             />
           </div>  
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={SportsExtraCurricular}
               alt="Sports & Extracurricular Activities Management"
               width="512"
@@ -494,7 +498,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={StudentProgressTracking}
               alt="Student Progress Tracking & Performance Analytics"
               width="512"
@@ -503,7 +507,7 @@ const PostSlider = () => {
           </div>       
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={SummerTaskResources}
               alt="Summer Tasks & Resource Management"
               width="512"
@@ -512,7 +516,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={Teachers}
               alt="Teachers’ Portal"
               width="512"
@@ -521,7 +525,7 @@ const PostSlider = () => {
           </div>       
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={TimetableSheduling}
               alt="Timetable & Scheduling Management System"
               width="512"
@@ -530,7 +534,7 @@ const PostSlider = () => {
           </div>
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={TransportManagementSystem}
               alt="Transport Management System with Route Optimization"
               width="512"
@@ -539,7 +543,7 @@ const PostSlider = () => {
           </div>    
           <div className="px-4">
             <img
-              className="img-fluid rounded-2xl carousel-image"
+              className="img-fluid rounded-xl sm:rounded-2xl carousel-image"
               src={StreamlineExamGrading}
               alt="Streamline Exam, Grading & Result Management"
               width="512"

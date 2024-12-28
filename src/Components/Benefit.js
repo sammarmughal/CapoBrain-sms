@@ -1,21 +1,20 @@
 import React from "react";
 import { IoLibraryOutline } from "react-icons/io5";
-import { MdPeopleOutline, MdSecurity  } from "react-icons/md";
+import { MdPeopleOutline, MdSecurity } from "react-icons/md";
 import { FaRegMoneyBill1 } from "react-icons/fa6";
 import { GrScorecard } from "react-icons/gr";
 import { SiAntdesign } from "react-icons/si";
 import { ImUserCheck } from "react-icons/im";
 import { FaComments } from "react-icons/fa";
 
-
 export const Benefit = () => {
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12">
           <h2 className="max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
-              <svg
+              {/* <svg
                 viewBox="0 0 52 24"
                 fill="currentColor"
                 className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-18 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-12 sm:block animate-pulse"
@@ -36,13 +35,14 @@ export const Benefit = () => {
                   width="52"
                   height="24"
                 />
-              </svg>
+              </svg> */}
+        
               <span className="relative"></span>
             </span>{" "}
-            Benefits of Using CapoBrain's School Management Software
+            Benefits of Using CapoBrain's Educational Management Software
           </h2>
           <p className="text-base text-gray-500 md:text-lg">
-            CapoBrain's school management software simplifies academic and
+            CapoBrain's School ERP Software Solutions simplifies academic and
             administrative processes, enhancing productivity and ensuring
             seamless communication between teachers, students, and parents.
           </p>
@@ -58,7 +58,7 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                  <IoLibraryOutline className="text-xl w-10 mb-2 h-10 text-purple-800">😎</IoLibraryOutline>
+                  <IoLibraryOutline className="text-xl w-10 mb-2 h-10 text-purple-800"></IoLibraryOutline>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Library Management System
                   </h3>
@@ -80,15 +80,15 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <FaRegMoneyBill1 className="text-xl w-10 mb-2 h-10 text-purple-800">😎</FaRegMoneyBill1>
+                  <FaRegMoneyBill1 className="text-xl w-10 mb-2 h-10 text-purple-800"></FaRegMoneyBill1>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
-                    School Fee Management System
+                    Fee Management System
                   </h3>
                 </div>
                 <p className="text-gray-600">
                   Streamline fee collection, generate comprehensive financial
                   reports, track payments, and efficiently manage student
-                  accounts with our school management software.{" "}
+                  accounts with our <strong>campus management software.</strong>{" "}
                 </p>
               </div>
             </div>
@@ -101,15 +101,15 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <GrScorecard className="text-xl w-10 mb-2 h-10 text-purple-800">😎</GrScorecard>
+                  <GrScorecard className="text-xl w-10 mb-2 h-10 text-purple-800"></GrScorecard>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Grade and Report Card Generation
                   </h3>
                 </div>
                 <p className="text-gray-600">
                   Effortlessly calculate and generate accurate grades and report
-                  cards with our school ERP software solutions, ensuring timely
-                  and efficient results effectively.{" "}
+                  cards with our <strong>school ERP software solutions</strong>,
+                  ensuring timely and efficient results effectively.{" "}
                 </p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <MdSecurity  className="text-xl w-10 mb-2 h-10 text-purple-800">😎</MdSecurity >
+                  <MdSecurity className="text-xl w-10 mb-2 h-10 text-purple-800"></MdSecurity>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Data Security{" "}
                   </h3>
@@ -145,7 +145,7 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <MdPeopleOutline  className="text-xl w-10 mb-2 h-10 text-purple-800">😎</MdPeopleOutline >
+                  <MdPeopleOutline className="text-xl w-10 mb-2 h-10 text-purple-800"></MdPeopleOutline>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Parent-Teacher Communication
                   </h3>
@@ -166,15 +166,19 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <SiAntdesign className="text-xl w-10 mb-2 h-10 text-purple-800">😎</SiAntdesign>
+                  <SiAntdesign className="text-xl w-10 mb-2 h-10 text-purple-800"></SiAntdesign>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Intuitive Design{" "}
                   </h3>
                 </div>
                 <p className="text-gray-600">
-                  Our Best School Management Software ensures ease of use with a
-                  user-friendly interface that requires minimal training,
-                  enhancing the user experience for staff and students.
+                  Our{" "}
+                  <strong>
+                    Best Education Administration System in Pakistan
+                  </strong>{" "}
+                  ensures ease of use with a user-friendly interface that
+                  requires minimal training, enhancing the user experience for
+                  staff and students.
                 </p>
               </div>
             </div>
@@ -187,15 +191,16 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <ImUserCheck className="text-xl w-10 mb-2 h-10 text-purple-800">😎</ImUserCheck>
+                  <ImUserCheck className="text-xl w-10 mb-2 h-10 text-purple-800"></ImUserCheck>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Automated Attendance Tracking
                   </h3>
                 </div>
                 <p className="text-gray-600">
-                  Simplifies attendance management through our School Management
-                  System (SMS) by automatically recording student attendance,
-                  reducing manual entry errors, and saving time for teachers.
+                  Simplifies attendance management through our Educational
+                  Institution Manager by automatically recording student
+                  attendance, reducing manual entry errors, and saving time for
+                  teachers.
                 </p>
               </div>
             </div>
@@ -208,13 +213,13 @@ export const Benefit = () => {
               ></span>
               <div className="relative p-6 bg-white border-2 border-[#9b37f2]  rounded-lg hover:scale-105 transition duration-500">
                 <div className="flex items-center">
-                <FaComments className="text-xl w-10 mb-2 h-10 text-purple-800">😎</FaComments>
+                  <FaComments className="text-xl w-10 mb-2 h-10 text-purple-800"></FaComments>
                   <h3 className="my-2 ml-4 text-lg font-bold text-gray-800 ">
                     Enhanced Communication
                   </h3>
                 </div>
                 <p className="text-gray-600">
-                  Our School Management System (SMS) facilitates seamless
+                  Our School Information System (SIS) facilitates seamless
                   communication between stakeholders, including parents,
                   teachers, and administrators, through instant messaging and
                   notifications

@@ -3,7 +3,6 @@ import Sidebar from "./component/sidebar";
 import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
-import { FaEye } from "react-icons/fa";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { FiEdit } from "react-icons/fi";
 
@@ -203,8 +202,8 @@ const Categories = () => {
           property="og:description"
           content="Manage and organize blog categories from Capobrain’s Admin Panel. Set category names, assign posts, and structure your content effectively for easy navigation."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="YOUR_ADMIN_PANEL_CATEGORY_URL" />
+        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta property="og:url" content="https://capobrain.com/adminpanel/categories" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -215,7 +214,7 @@ const Categories = () => {
           name="twitter:description"
           content="Organize and manage your blog categories through Capobrain’s Admin Panel. Efficient content organization for school management system blogs."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <div className="w-full flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
