@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -102,7 +102,7 @@ const Contact = () => {
           content="Need assistance? Contact Capobrain today for support with our School Management System. Our team will help you with any queries regarding School ERP software, implementation, and more."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/contact" />
+        <meta property="og:url" content="https://capobrain.com/contact/" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -114,7 +114,7 @@ const Contact = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/contact"/>
+        <link rel="canonical" href="https://capobrain.com/contact/"/>
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">

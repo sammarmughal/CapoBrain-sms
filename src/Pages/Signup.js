@@ -283,7 +283,7 @@ const SignUp = () => {
                       <h3 className="text-sm text-center text-gray-500 ">
                         Already Have an Account?{" "}
                         <Link
-                          to="/userlogin"
+                          to="/userlogin/"
                           className="font-medium text-indigo-600 hover:underline"
                         >
                           Sign in

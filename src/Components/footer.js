@@ -128,7 +128,7 @@ const Footer = () => {
                   <li>
                     <Link
                       className=" text-gray-800 hover:text-purple-500"
-                      to="/contact"
+                      to="/contact/"
                     >
                       Contact
                     </Link>
@@ -136,7 +136,7 @@ const Footer = () => {
                   <li>
                     <Link
                       className=" text-gray-800 hover:text-purple-500"
-                      to="/about"
+                      to="/about/"
                     >
                       About
                     </Link>
@@ -160,7 +160,7 @@ const Footer = () => {
                   <li>
                     <Link
                       className=" text-gray-800 hover:text-purple-500"
-                      to="/help"
+                      to="/help/"
                     >
                       Help
                     </Link>

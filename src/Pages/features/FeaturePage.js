@@ -1,9 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import featurePagesData from "../data/featurePagesData.json";
-import capobrain from "../img/cta-bg.jpg";
-import Welcome from "../Components/Welcome";
-import twittercard from "../img/twiiter-card.jpg";
+import featurePagesData from "../../data/featurePagesData.json";
+import capobrain from "../../img/cta-bg.jpg";
+import Welcome from "../../Components/Welcome";
+import twittercard from "../../img/twiiter-card.jpg";
 
 function FeaturePage() {
   const { slug } = useParams();
@@ -110,7 +110,7 @@ function FeaturePage() {
               </li>
               <li className="flex items-center">
                 <Link
-                  to="/features"
+                  to="/features/"
                   className="text-base cursor-pointer font-medium text-white hover:text-primary"
                 >
                   Features
@@ -243,7 +243,7 @@ function FeaturePage() {
             <div className="flex flex-col lg:ml-auto sm:flex-row ">
               <Link
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
-                to="/requestdemo"
+                to="/requestdemo/"
               >
                 {" "}
                 Get in touch with us →&nbsp;&nbsp;

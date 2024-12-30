@@ -1,9 +1,9 @@
 import React from "react";
-import FeaturesContent from "../Components/Features";
-import capobrain from "../img/cta-bg.jpg";
+import FeaturesContent from "../../Components/Features";
+import capobrain from "../../img/cta-bg.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const Features = () => {
   return (
@@ -34,7 +34,7 @@ const Features = () => {
           property="og:image"
           content={twittercard}
         />
-        <meta property="og:url" content="https://capobrain.com/features" />
+        <meta property="og:url" content="https://capobrain.com/features/" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -50,7 +50,7 @@ const Features = () => {
           content={twittercard}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/features" />
+        <link rel="canonical" href="https://capobrain.com/features/" />
       </Helmet>
 
       <section className="relative bg-purple-900">
@@ -130,7 +130,7 @@ const Features = () => {
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link
-                to="/requestdemo"
+                to="/requestdemo/"
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                 rel="noreferrer"
               >

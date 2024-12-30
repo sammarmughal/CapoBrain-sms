@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="py-8">
         <div className="sm:flex justify-between">
             <nav className="flex flex-wrap justify-center sm:text-lg font-medium">
-                <div className="px-3 py-2"><Link to="/contact">Contact</Link></div>
-                <div className="px-3 py-2"><Link to="/about">About</Link></div>
+                <div className="px-3 py-2"><Link to="/contact/">Contact</Link></div>
+                <div className="px-3 py-2"><Link to="/about/">About</Link></div>
                 <div className="px-3 py-2"><Link to="/privacy-policy">Privacy</Link></div>
                 <div className="px-3 py-2"><Link to="/term-and-services">Terms</Link></div>
-                <div className="px-3 py-2"><Link to="/help">Help</Link></div>
+                <div className="px-3 py-2"><Link to="/help/">Help</Link></div>
             </nav>
             <div className="flex items-center justify-center footerSocialLinks gap-2">
                     <a

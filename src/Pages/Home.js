@@ -233,14 +233,14 @@ export default function Home() {
                 </div>
                 <div className="flex relative z-30 flex-col md:flex-row gap-3 md:gap-5 justify-center mt-6 mb-10 lg:mb-12 lg:w-1/2 m-auto min-h-fit">
                   <Link
-                    to="/requestdemo"
+                    to="/requestdemo/"
                     className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                     data-test="webinars-button"
                   >
                     Become a member
                   </Link>
                   <Link
-                    to="/usermanual/dashboard"
+                    to="/usermanual/dashboard/"
                     className="base-button min-h-fit mx-0 lg:mx-0 flex-grow-0 btn-a"
                     data-test="webinars-button"
                   >
@@ -319,7 +319,7 @@ export default function Home() {
             <div className="flex flex-col lg:ml-auto sm:flex-row ">
               <Link
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
-                to="/requestdemo"
+                to="/requestdemo/"
               >
                 {" "}
                 Get in touch with us →&nbsp;&nbsp;

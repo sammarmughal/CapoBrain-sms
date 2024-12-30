@@ -1,8 +1,8 @@
 const fs = require("fs");
 const routes = [
   "/",
-  "/about",
-  "/features",
+  "/about/",
+  "/features/",
   "/features/cloud-based-school-management-system",
   "/features/cutting-edge-educational-technologies",
   "/features/computer-based-exam-management",
@@ -40,8 +40,8 @@ const routes = [
   "/features/seamless-integration-with-modern-educational-tools",
   "/features/sports-and-extra-curricular-activities-management",
   "/features/student-progress-performance-tracking",
-  "/usermanual",
-  "/usermanual/dashboard",
+  "/usermanual/",
+  "/usermanual/dashboard/",
   "/usermanual/visitors-meeting",
   "/usermanual/phone-call-log",
   "/usermanual/postal-dispatch",
@@ -63,7 +63,7 @@ const routes = [
   "/usermanual/passout-students",
   "/usermanual/students-review",
   "/usermanual/feedback-record",  
-  "/blog",
+  "/blog/",
   "/blog/educational-software-excellence-optimal-features-for-learning",
   "/blog/campus-management-systems-elevating-excellence",
   "/blog/overhauling-with-capobrain-education-management-system",
@@ -93,10 +93,9 @@ const routes = [
   "/blog/technology-in-education-transforming-learning-with-capobrain-school-management-software",
   "/blog/campus-management-software-enhancing-educational-excellence-with-capobrain",
   "/blog/library-management-system-enhancing-efficiency-in-school-and-college-libraries",
-  "/contact",
-  "/demo",
-  "/help",
-  "/faq",
+  "/contact/",
+  "/help/",
+  "/faq/",
   "/privacy-policy",
   "/term-and-services"
 ];
@@ -111,6 +110,7 @@ const routes = [
 // }
 function generateXml(urls) {
   const today = new Date().toISOString().split("T")[0];
+
 
   return `
 <?xml version="1.0" encoding="UTF-8"?>
@@ -134,8 +134,6 @@ ${urls
 function generateSitemap() {
   const fullUrls = routes.map((route) => `https://capobrain.com${route}`);
   const xmlContent = generateXml(fullUrls);
-
-  // Write the XML content to a file
   const sitemapPath = "./public/sitemap.xml";
   fs.writeFileSync(sitemapPath, xmlContent);
 

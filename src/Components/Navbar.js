@@ -60,7 +60,7 @@ function Navbar() {
         navigate("/userprofile/generated-tickets");
       }
     } else {
-      navigate("/userlogin");
+      navigate("/userlogin/");
     }
   };
   return (
@@ -126,13 +126,13 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="nav-list" onClick={handleToggle}>
+                <Link to="/about/" className="nav-list" onClick={handleToggle}>
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/features"
+                  to="/features/"
                   className="nav-list"
                   onClick={handleToggle}
                 >
@@ -141,7 +141,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/usermanual"
+                  to="/usermanual/"
                   className="nav-list"
                   onClick={handleToggle}
                 >
@@ -164,7 +164,7 @@ function Navbar() {
                   <ul className="flex flex-col dropmenu lg:py-2">
                     <li>
                       <Link
-                        to="/help"
+                        to="/help/"
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
@@ -176,7 +176,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/blog"
+                        to="/blog/"
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
@@ -188,7 +188,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/faq"
+                        to="/faq/"
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
@@ -213,7 +213,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/contact"
+                        to="/contact/"
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
@@ -255,7 +255,7 @@ function Navbar() {
                   </div>
                 ) : (
                   <Link
-                    to="/userlogin"
+                    to="/userlogin/"
                     onClick={handleToggle}
                     className="flex items-center"
                   >
@@ -265,7 +265,7 @@ function Navbar() {
               </div>
               <div className="lg:hidden gap-2 block">
                 <Link
-                  to="/requestdemo"
+                  to="/requestdemo/"
                   onClick={handleToggle}
                   className="flex items-center gap-1"
                 >
@@ -318,14 +318,14 @@ function Navbar() {
               </div>
             ) : (
               <Link
-                to="/userlogin"
+                to="/userlogin/"
                 className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
               >
                 <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
               </Link>
             )}
 
-            <Link to="/requestdemo" className="btn h-[2.2rem]">
+            <Link to="/requestdemo/" className="btn h-[2.2rem]">
               Request a Demo{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

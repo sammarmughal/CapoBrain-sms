@@ -11,18 +11,18 @@ import Home from "./Pages/Home";
 import Footer from "./Components/footer.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fontsource/noto-sans/400.css";
-import About from "./Pages/About";
-import Features from "./Pages/Features";
-import Help from "./Pages/Help";
-import Blog from "./Pages/Blog";
-import FAQs from "./Pages/Faq";
-import Contact from "./Pages/Contact";
-import Login from "./Pages/Login";
+import About from "./Pages/about/index.js";
+import Features from "./Pages/features/index.js";
+import Help from "./Pages/help/index.js";
+import Blog from "./Pages/blog/index.js";
+import FAQs from "./Pages/faq/index.js";
+import Contact from "./Pages/contact/index.js";
+import Login from "./Pages/userlogin/Login.js";
 import SignUp from "./Pages/Signup";
-import RequestDemo from "./Pages/RequestDemo";
-import UserManual from "./Pages/Usermanual";
-import FeaturePage from "./Pages/FeaturePage";
-import UserManualData from "./Pages/UsermanualData";
+import RequestDemo from "./Pages/requestdemo/index.js";
+import UserManual from "./Pages/usermanual/index.js";
+import FeaturePage from "./Pages/features/FeaturePage.js";
+import UserManualData from "./Pages/usermanual/UsermanualData.js";
 import Demo from "./Pages/Demo";
 import ScrollToTop from "./Components/scrollToTop";
 import AdminPortal from "./Pages/admin-portal";
@@ -39,11 +39,10 @@ import GeneratedTickets from "./Pages/user-profile/generatedTickets.js";
 import CloseStatusTickets from "./Pages/user-profile/CloseStatusTickets.js";
 import OpenStatusTickets from "./Pages/user-profile/openStatusTickets.js";
 import MyProvider from "./ContextApi/MyProvider";
-import BlogData from "./Pages/BlogData.js";
+import BlogData from "./Pages/blog/BlogData.js";
 import TermsAndServices from "./Pages/TermAndServices.js";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.js";
 import WhatsAppChat from "./Components/whatsapp.js";
-import { RemoveTrailingSlash } from "./Components/TrailingSlash.jsx";
 
 function App() {
   return (
@@ -65,23 +64,22 @@ function AppWithRoutes() {
       {!isAdminPanel && !isUserProfile && <Navbar />}
       <WhatsAppChat />
       <ScrollToTop />
-      <RemoveTrailingSlash/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/about/" element={<About />} />
+        <Route path="/features/" element={<Features />} />
         <Route path="/features/:slug" element={<FeaturePage />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/help/" element={<Help />} />
+        <Route path="/blog/" element={<Blog />} />
         <Route path="/blog/:postSlug" element={<BlogData />} />
-        <Route path="/faq" element={<FAQs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/userlogin" element={<Login />} />
+        <Route path="/faq/" element={<FAQs />} />
+        <Route path="/contact/" element={<Contact />} />
+        <Route path="/userlogin/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/requestdemo" element={<RequestDemo />} />
+        <Route path="/requestdemo/" element={<RequestDemo />} />
         <Route path="/term-and-services" element={<TermsAndServices />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/usermanual" element={<UserManual />} />
+        <Route path="/usermanual/" element={<UserManual />} />
         <Route path="/usermanual/:id" element={<UserManualData />} />
         <Route path="/demo" element={<Demo />} />
         {/* <Route path="/adminpanel" element={<AdminPanel />}> */}

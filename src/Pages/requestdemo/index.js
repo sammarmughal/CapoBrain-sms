@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import CapobrainDemo from "../img/capobrain-demo.avif";
+import CapobrainDemo from "../../img/capobrain-demo.avif";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const RequestDemo = () => {
   const [credentials, setCredentials] = useState({
@@ -138,7 +138,7 @@ const RequestDemo = () => {
           property="og:image"
           content={twittercard}
         />
-        <meta property="og:url" content="https://capobrain.com/requestdemo" />
+        <meta property="og:url" content="https://capobrain.com/requestdemo/" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -153,7 +153,7 @@ const RequestDemo = () => {
           content={twittercard}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/requestdemo"/>
+        <link rel="canonical" href="https://capobrain.com/requestdemo/"/>
 
       </Helmet>
       <section className="relative bg-purple-900">

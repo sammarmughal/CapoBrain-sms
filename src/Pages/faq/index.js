@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import open from "../img/icon-plus.svg";
-import close from "../img/icon-minus.svg";
-import avatar from "../img/icon-star.svg";
+import open from "../../img/icon-plus.svg";
+import close from "../../img/icon-minus.svg";
+import avatar from "../../img/icon-star.svg";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const FAQs = () => {
   const [active, setActive] = useState(0);
@@ -349,7 +349,7 @@ const FAQs = () => {
           content="Have questions about Capobrain’s School Management System? Visit our FAQ page to find detailed answers on everything from features to technical support for our ERP software."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/faq" />
+        <meta property="og:url" content="https://capobrain.com/faq/" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -362,7 +362,7 @@ const FAQs = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/faq"/>
+        <link rel="canonical" href="https://capobrain.com/faq/"/>
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

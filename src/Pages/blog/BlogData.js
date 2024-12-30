@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {Link, useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 export default function Blogcat() {
   const { postSlug } = useParams();
@@ -140,7 +140,7 @@ export default function Blogcat() {
               </li>
               <li className="flex items-center">
                 <Link
-                  to="/blog"
+                  to="/blog/"
                   className="text-base cursor-pointer font-medium text-white hover:text-primary"
                 >
                   Blogs

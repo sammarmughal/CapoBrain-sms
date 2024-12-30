@@ -1,11 +1,11 @@
 import React from "react";
-import phone from "../img/capobrain-phone.png";
-import tablet from "../img/capobrain-tab.png";
-import Desktop from "../img/capobrain-desktop.png";
-import About from "../img/about-us-sms.jpg";
-import Testimonials from "../Components/Testimonials";
+import phone from "../../img/capobrain-phone.png";
+import tablet from "../../img/capobrain-tab.png";
+import Desktop from "../../img/capobrain-desktop.png";
+import About from "../../img/about-us-sms.jpg";
+import Testimonials from "../../Components/Testimonials";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 
 const AboutSection = () => {
@@ -116,7 +116,7 @@ const AboutSection = () => {
           content="Capobrain offers innovative School ERP solutions that simplify school management. Learn more about how we help schools in Pakistan enhance communication, streamline tasks, and improve student management with our customizable and mobile-friendly software."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/about" />
+        <meta property="og:url" content="https://capobrain.com/about/" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -129,7 +129,7 @@ const AboutSection = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/about"/>
+        <link rel="canonical" href="https://capobrain.com/about/"/>
       </Helmet>
 
       <section className="relative bg-purple-900">

@@ -19,7 +19,7 @@ const Avatars = () => {
             </p>
             <div className="my-6 pt-3">
               <Link
-                to="/requestdemo"
+                to="/requestdemo/"
                 className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group"
               >
                 Become a Member

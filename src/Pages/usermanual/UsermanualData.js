@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import data from "../data/usermanualData.json";
-import Navigation from "../Components/Navigation";
-import twittercard from "../img/twiiter-card.jpg";
+import data from "../../data/usermanualData.json";
+import Navigation from "../../Components/Navigation";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const UserManualData = () => {
   const { id } = useParams();

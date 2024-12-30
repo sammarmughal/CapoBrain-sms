@@ -2,11 +2,10 @@ import React from "react";
 import { MdOutlineSupportAgent, MdOutlineQueryStats } from "react-icons/md";
 import { FaTicket } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import CusrtomerSupport from "../img/help-center.png";
-import hero_helcenter from "../img/knowledgebase-banner.png";
-import FAQs from "../Components/Faq";
+import CusrtomerSupport from "../../img/help-center.png";
+import FAQs from "../../Components/Faq";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 
 const Help = () => {
@@ -36,7 +35,7 @@ const Help = () => {
           content="Capobrain's Help Center provides comprehensive support for our School Management System. Find FAQs, troubleshooting tips, and user guides to help you navigate and use our School ERP software effectively."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/help" />
+        <meta property="og:url" content="https://capobrain.com/help/" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -48,7 +47,7 @@ const Help = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/help"/>
+        <link rel="canonical" href="https://capobrain.com/help/"/>
 
       </Helmet>
 
@@ -170,7 +169,7 @@ const Help = () => {
               </ul>
               <p className="mt-4">
                 Need further assistance?{" "}
-                <Link to="/userlogin" className="text-purple-500 hover:underline">
+                <Link to="/userlogin/" className="text-purple-500 hover:underline">
                   Generate a ticket
                 </Link>{" "}
                 at our help center, and our support team will guide you through
@@ -310,7 +309,7 @@ const Help = () => {
         <FAQs />
         <div className="flex justify-center items-center w-full">
           <button className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group">
-            <Link to="/faq">View More Faqs</Link>
+            <Link to="/faq/">View More Faqs</Link>
           </button>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Desktop from "../img/Ultimate-Guide-to-Capobrain-School-Management-Systems.png";
+import Desktop from "../../img/Ultimate-Guide-to-Capobrain-School-Management-Systems.png";
 import { Helmet } from "react-helmet";
-import twittercard from "../img/twiiter-card.jpg";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const UserManual = () => {
   
@@ -33,7 +33,7 @@ const UserManual = () => {
           content="Access the detailed user manual for Capobrain’s Cloud-Based School ERP Software. Get step-by-step instructions on how to manage student data, fees, attendance, and more with our School ERP software."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/usermanual" />
+        <meta property="og:url" content="https://capobrain.com/usermanual/" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -46,7 +46,7 @@ const UserManual = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-       <link rel="canonical" href="https://capobrain.com/usermanual"/>
+       <link rel="canonical" href="https://capobrain.com/usermanual/"/>
 
       </Helmet>
 
@@ -148,7 +148,7 @@ const UserManual = () => {
             <div className="mt-8 flex justify-center sm:justify-normal"> 
               <Link
                 className=" btn-anim  text-white rounded-full py-4 px-8"
-                to="/usermanual/dashboard"
+                to="/usermanual/dashboard/"
               >
                 Go to Dashboard
               </Link>

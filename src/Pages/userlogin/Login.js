@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import CapobrainDemo from "../img/signin-capobrain.png";
-import MyContext from "../ContextApi/MyContext";
-import twittercard from "../img/twiiter-card.jpg";
+import CapobrainDemo from "../../img/signin-capobrain.png";
+import MyContext from "../../ContextApi/MyContext";
+import twittercard from "../../img/twiiter-card.jpg";
 
 
 const Login = () => {
@@ -132,7 +132,7 @@ const Login = () => {
           property="og:image"
           content={twittercard}
         />
-        <meta property="og:url" content="https://capobrain.com/userlogin" />
+        <meta property="og:url" content="https://capobrain.com/userlogin/" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -148,8 +148,7 @@ const Login = () => {
           content={twittercard}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/userlogin"/>
-
+        <link rel="canonical" href="https://capobrain.com/userlogin/"/>
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">

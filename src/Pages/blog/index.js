@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
-import Blog2 from "../img/blog/blog2.png";
+import Blog2 from "../../img/blog/blog2.png";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import MyContext from "../ContextApi/MyContext";
-import twittercard from "../img/twiiter-card.jpg";
+import MyContext from "../../ContextApi/MyContext";
+import twittercard from "../../img/twiiter-card.jpg";
 
 const Blog = () => {
   const { filterPosts, posts, uniqueCategory, setCategory } =
@@ -42,7 +42,7 @@ const Blog = () => {
           content="Explore Capobrain's blog for the latest articles on school management, ERP software, and education technology. Learn valuable tips and insights to optimize your use of our School Management System."
         />
         <meta property="og:image" content={twittercard} />
-        <meta property="og:url" content="https://capobrain.com/blog" />
+        <meta property="og:url" content="https://capobrain.com/blog/" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -54,7 +54,7 @@ const Blog = () => {
         />
         <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/blog"/>
+        <link rel="canonical" href="https://capobrain.com/blog/"/>
        
       </Helmet>
       <section className="relative bg-purple-900">

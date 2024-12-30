@@ -8,7 +8,7 @@
         "openGraph": {
           "title": "CapoBrain School Management System - Dashboard",
           "description": "Access the CapoBrain Dashboard for a detailed view of school operations, student and staff accounts, inventory stats, and much more to manage your school efficiently.",
-          "url": "https://capobrain.com/usermanual/dashboard",
+          "url": "https://capobrain.com/usermanual/dashboard/",
           "type": "website"
         },
         "twitter": {
@@ -17,7 +17,7 @@
           "description": "View essential school stats, student and staff accounts, and financial updates with CapoBrain's intuitive Dashboard.",
           "image": "/img/dash.avif"
         },
-        "canonical": "https://capobrain.com/usermanual/dashboard"
+        "canonical": "https://capobrain.com/usermanual/dashboard/"
       },
       "content": {
         "heroHeader": "CapoBrain Dashboard - School Management Overview",
