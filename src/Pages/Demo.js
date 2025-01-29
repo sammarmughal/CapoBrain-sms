@@ -123,6 +123,7 @@ export default function Demo() {
             <img
               className="w-full object-cover h-auto"
               src={demoImg}
+              loading="lazy"
               alt="School ERP Software Demo"
             />           
             </div>

@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import featurePagesData from "../../data/featurePagesData.json";
@@ -8,7 +9,11 @@ import twittercard from "../../img/twiiter-card.jpg";
 function FeaturePage() {
   const { slug } = useParams();
   const feature = featurePagesData.features.find((f) => f.slug === slug);
+  const [activeIndex, setActiveIndex] = useState(null);
 
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   if (!feature) {
     return (
       <>
@@ -41,7 +46,6 @@ function FeaturePage() {
               : feature.meta.description
           }
         />
-
         <meta property="og:title" content={feature.meta.openGraph.title} />
         <meta
           property="og:description"
@@ -61,7 +65,7 @@ function FeaturePage() {
           name="twitter:description"
           content={feature.meta.twitter.description}
         />
-        <link rel="canonical" href={feature.meta.canonical} />
+        <link rel="canonical" href={`https://capobrain.com/features/${slug}`} />
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
@@ -69,7 +73,7 @@ function FeaturePage() {
             <h1 className="heading-hero">{feature.content.heroHeader}</h1>
           </div>
         </div>
-        <div className="cb-container">
+        <div className="cb-container relative z-40">
           <div className="w-full pb-8">
             <ul className="flex items-center">
               <li className="flex items-center">
@@ -193,6 +197,7 @@ function FeaturePage() {
           <div className="pb-10 overflow-hidden md:p-10 lg:p-0 sm:pb-0">
             <img
               id="heroImg1"
+              loading="lazy"
               className="transition-all duration-300 object-contain ease-in-out hover:scale-105 lg:w-full sm:mx-auto sm:w-4/6 sm:pb-12 lg:pb-0"
               src={
                 feature.content.imagecontent
@@ -218,7 +223,7 @@ function FeaturePage() {
             ))}
           </ul>
         </div>
-        <div className="pb-20">
+        <div className="pb-10">
           <h3 className="text-2xl sm:text-3xl font-semibold text-purple-800">
             Why Choose This Feature?
           </h3>
@@ -226,6 +231,82 @@ function FeaturePage() {
             {feature.content.whyChoose}
           </p>
         </div>
+        <div>
+      <h3 className="text-2xl sm:text-3xl font-semibold text-purple-800">Frequently Asked Questions</h3>
+      {/* <div>
+        {feature.content.faqs.map((faq, index) => (
+          <div key={index} className="my-4">
+            <h4 className="text-xl font-semibold">{faq.question}</h4>
+            <p>{faq.answer}</p>
+          </div>
+        ))}
+      </div> */}      
+      <div className="mx-auto py-10">
+        <div className="accordion-group" data-accordion="default-accordion">
+          {feature.content.faqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`accordion border hover:bg-purple-50  border-solid border-gray-300 p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
+                activeIndex === index ? 'active:bg-purple-50 active:border-purple-600 active' : ''
+              }`}
+              id={`basic-heading-${index}`}
+            >
+              <button
+                className={`accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-purple-600 ${
+                  activeIndex === index ? 'active:font-medium active:text-purple-600' : ''
+                }`}
+                aria-controls={`basic-collapse-${index}`}
+                onClick={() => toggleAccordion(index)}
+              >
+                <h5>{faq.question}</h5>
+                <svg
+                  className={`w-6 h-6 text-gray-900 transition duration-500 block ${
+                    activeIndex === index ? 'active:text-purple-600 hidden' : ''
+                  } group-hover:text-purple-600 origin-center`}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 12H18M12 18V6"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+                <svg
+                  className={`w-6 h-6 text-gray-900 transition duration-500 hidden ${
+                    activeIndex === index ? 'active:text-purple-600 block' : ''
+                  } group-hover:text-purple-600`}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 12H18"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id={`basic-collapse-${index}`}
+                className="accordion-content w-full overflow-hidden pr-4"
+                aria-labelledby={`basic-heading-${index}`}
+                style={{ maxHeight: activeIndex === index ? '250px' : '0' }}
+              >
+                <p className="text-base text-gray-900 font-normal leading-6">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
       </section>
       <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
@@ -243,7 +324,7 @@ function FeaturePage() {
             <div className="flex flex-col lg:ml-auto sm:flex-row ">
               <Link
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
-                to="/requestdemo/"
+                to="/requestdemo"
               >
                 {" "}
                 Get in touch with us →&nbsp;&nbsp;
@@ -261,6 +342,7 @@ function FeaturePage() {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={capobrain}
+              loading="lazy"
               alt="Capobrain School Management Modules"
               className="absolute inset-0 w-full h-full object-cover"
             />

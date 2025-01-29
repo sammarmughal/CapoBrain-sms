@@ -80,8 +80,10 @@ const Login = () => {
   
           // Redirect based on user role
           if (json.email === "capobrain@gmail.com") {
+            console.log("Navigating to admin panel...");
             setTimeout(() => navigate("/adminpanel"), 200);
           } else {
+            console.log("Navigating to user profile...");
             setTimeout(() => navigate("/userprofile"), 200);
           }
   
@@ -132,7 +134,7 @@ const Login = () => {
           property="og:image"
           content={twittercard}
         />
-        <meta property="og:url" content="https://capobrain.com/userlogin/" />
+        <meta property="og:url" content="https://capobrain.com/userlogin" />
         <meta property="og:type" content="website" />
 
         <meta
@@ -148,7 +150,7 @@ const Login = () => {
           content={twittercard}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/userlogin/"/>
+        <link rel="canonical" href="https://capobrain.com/userlogin"/>
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">

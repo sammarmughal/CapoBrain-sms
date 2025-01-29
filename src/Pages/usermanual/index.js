@@ -148,7 +148,7 @@ const UserManual = () => {
             <div className="mt-8 flex justify-center sm:justify-normal"> 
               <Link
                 className=" btn-anim  text-white rounded-full py-4 px-8"
-                to="/usermanual/dashboard/"
+                to="/usermanual/dashboard"
               >
                 Go to Dashboard
               </Link>
@@ -158,6 +158,7 @@ const UserManual = () => {
             <img
               className="h-full w-full object-cover "
               src={Desktop}
+              loading="lazy"
               alt="Ultimate Guide to Capobrain School Management Systems"
               title="Ultimate Guide to Capobrain School Management Systems"
             />

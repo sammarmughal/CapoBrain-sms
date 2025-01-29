@@ -8,8 +8,9 @@ const MyProvider = ({ children }) => {
     const [allMessages, setAllMessages] = useState([])
     const [filterPosts, setFilterPosts] = useState([])
     const [uniqueCategory, setUniqueCategory] = useState(new Set());
+
     const Getallposts = async () => {
-        await fetch("https://capobrain-backend.vercel.app/api/auth/getallposts", {
+        await fetch('https://capobrain-backend.vercel.app/api/auth/getallposts', {
             method: "GET",
         })
             .then((res) => res.json())
@@ -24,7 +25,7 @@ const MyProvider = ({ children }) => {
     };
 
     const ticketMessages = async () => {
-        const res = await fetch("https://capobrain-backend.vercel.app/api/auth/messages", {
+        const res = await fetch('https://capobrain-backend.vercel.app/api/auth/messages', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

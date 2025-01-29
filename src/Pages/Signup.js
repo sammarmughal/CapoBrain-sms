@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import twittercard from "../img/twiiter-card.jpg";
 
-
 const SignUp = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [credentials, setCredentials] = useState({
@@ -21,6 +20,7 @@ const SignUp = () => {
     password: "",
     number: "",
   });
+  const API_URL = process.env.REACT_APP_API_URL;
   const togglePasswordVisibility = () => {
     setPasswordVisible((prev) => !prev);
   };
@@ -57,7 +57,7 @@ const SignUp = () => {
     if (validateForm()) {
       try {
         const res = await fetch(
-          "https://capobrain-backend.vercel.app/api/auth/signUpUser",
+          `${API_URL}/api/auth/signUpUser`,
           {
             method: "POST",
             headers: {
@@ -283,7 +283,7 @@ const SignUp = () => {
                       <h3 className="text-sm text-center text-gray-500 ">
                         Already Have an Account?{" "}
                         <Link
-                          to="/userlogin/"
+                          to="/userlogin"
                           className="font-medium text-indigo-600 hover:underline"
                         >
                           Sign in

@@ -1105,7 +1105,7 @@ function Navigation() {
           >
             <div className="space-y-2 mt-4">
               <div>
-                <Link className="text-white" to="/usermanual/dashboard/">
+                <Link className="text-white" to="/usermanual/dashboard">
                   <button
                     className="w-full text-left px-4 py-2 bg-transparent text-white"
                     type="button"
@@ -1133,7 +1133,7 @@ function Navigation() {
       )}
       {!isSmallScreen && (
         <div>
-          <Link className="text-white" to="/usermanual/dashboard/">
+          <Link className="text-white" to="/usermanual/dashboard">
             <button
               className="w-full text-left px-4 py-2 bg-transparent text-white"
               type="button"

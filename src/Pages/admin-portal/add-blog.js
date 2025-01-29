@@ -1,27 +1,33 @@
-import React, { useState } from "react";
+import React, { useState ,useRef } from "react";
 import Sidebar from "./component/sidebar";
 import AdminNav from "./component/admin-nav";
 import { SiBloglovin } from "react-icons/si";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const AddBlog = () => {
   const [image_url, setImage_url] = useState(null);
   const [formData, setFormData] = useState({
-    blogName: "",
+    title: "",
     category: "",
-    blogSlug: "",
+    slug: "",
     content: "",
-    photo: null,
+    image: null,
   });
 
   const [errors, setErrors] = useState({
-    blogName: "",
+    title: "",
     category: "",
-    blogSlug: "",
+    slug: "",
     content: "",
-    photo: "",
+    image: "",
   });
+  const quillRef = useRef(null);
+  const handleContentChange = (value, delta, source, editor) => {
+    setFormData({ ...formData, content: editor.getHTML() });
+  };
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -36,43 +42,38 @@ const AddBlog = () => {
         alert("Please select a valid image file.");
         return;
       }
-      setImage_url(URL.createObjectURL(file)); 
+      setImage_url(URL.createObjectURL(file));
       setFormData({
         ...formData,
-        photo: file, 
+        image: file,
       });
     }
   };
+
   const handleCancel = () => {
     setImage_url(null);
     setFormData({
       ...formData,
-      photo: null, 
+      image: null,
     });
     const fileInput = document.getElementById("fileInput");
     if (fileInput) {
       fileInput.value = "";
-    }  };
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    setFormData({
-      ...formData,
-      photo: file,
-    });
+    }
   };
 
   const validateForm = () => {
     let isValid = true;
     const newErrors = {
-      blogName: "",
+      title: "",
       category: "",
-      blogSlug: "",
+      slug: "",
       content: "",
-      photo: "",
+      image: "",
     };
 
-    if (!formData.blogName.trim()) {
-      newErrors.blogName = "Blog name is required.";
+    if (!formData.title.trim()) {
+      newErrors.title = "Blog name is required.";
       isValid = false;
     }
 
@@ -81,13 +82,18 @@ const AddBlog = () => {
       isValid = false;
     }
 
+    if (!formData.slug.trim()) {
+      newErrors.slug = "Slug is required.";
+      isValid = false;
+    }
+
     if (!formData.content.trim()) {
       newErrors.content = "Blog content is required.";
       isValid = false;
     }
 
-    if (!formData.photo) {
-      newErrors.photo = "You must upload a photo.";
+    if (!formData.image) {
+      newErrors.image = "You must upload a photo.";
       isValid = false;
     }
 
@@ -95,26 +101,65 @@ const AddBlog = () => {
     return isValid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      Swal.fire({
-        title: "Success!",
-        text: "Blog has been uploaded successfully!",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
+      const formDataToSend = new FormData();
+      formDataToSend.append("title", formData.title);
+      formDataToSend.append("category", formData.category);
+      formDataToSend.append("slug", formData.slug);
+      formDataToSend.append("content", formData.content);
+      formDataToSend.append("image", formData.image);
+      for (let [key, value] of formDataToSend.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+      try {
+        const response = await fetch("https://capobrain-backend.vercel.app/api/auth/createpost", {
+          method: "POST",
+          body: formDataToSend,
+        });
 
-      setFormData({
-        blogName: "",
-        category: "",
-        blogSlug: "",
-        content: "",
-        photo: null,
-      });
-      setImage_url(null); 
-    } };
+        if (response.ok) {
+          const result = await response.json();
+          const imageUrl = result.imageUrl; 
+
+          Swal.fire({
+            title: "Success!",
+            text: "Blog has been uploaded successfully!",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+
+          setFormData({
+            title: "",
+            category: "",
+            slug: "",
+            content: "",
+            image: null,
+          });
+          setImage_url(null);
+        } else {
+          const errorText = await response.text();
+          console.error(`Error ${response.status}: ${errorText}`);
+          Swal.fire({
+            title: "Error!",
+            text: `Failed to upload blog. ${errorText}`,
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        Swal.fire({
+          title: "Error!",
+          text: "An error occurred while uploading the blog.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
+    }
+  }
 
   return (
     <>
@@ -140,8 +185,14 @@ const AddBlog = () => {
           property="og:description"
           content="Easily add new blog posts to the Capobrain School Management System's blog. Create and publish articles, school news, and updates from the admin dashboard."
         />
-        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
-        <meta property="og:url" content="https://capobrain.com/adminpanel/addblog" />
+        <meta
+          property="og:image"
+          content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png"
+        />
+        <meta
+          property="og:url"
+          content="https://capobrain.com/adminpanel/addblog"
+        />
         <meta property="og:type" content="website" />
 
         <meta
@@ -152,10 +203,12 @@ const AddBlog = () => {
           name="twitter:description"
           content="Add and publish new blog posts to Capobrain’s school management blog. Manage school updates, articles, and news from the admin panel."
         />
-        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta
+          name="twitter:image"
+          content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <div className="flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
         <AdminNav />
         <Sidebar />
@@ -179,13 +232,13 @@ const AddBlog = () => {
                     className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     type="text"
                     placeholder="Enter Blog Name"
-                    name="blogName"
-                    value={formData.blogName}
+                    name="title"
+                    value={formData.title}
                     onChange={handleChange}
                   />
-                  {errors.blogName && (
+                  {errors.title && (
                     <div className="text-sm text-red-500">
-                      {errors.blogName}
+                      {errors.title}
                     </div>
                   )}
                 </div>
@@ -220,6 +273,9 @@ const AddBlog = () => {
                     className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     type="text"
                     placeholder="Enter Blog Slug"
+                    name="slug"
+                    value={formData.slug}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -227,13 +283,64 @@ const AddBlog = () => {
                   <label className="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">
                     Blog Content
                   </label>
-                  <textarea
-                    className="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                    name="content"
+                  {/* <ReactQuill
                     value={formData.content}
-                    onChange={handleChange}
+                    onChange={handleContentChange}
                     placeholder="Type Content"
-                  />
+                    modules={modules}
+                    formats={formats}
+                  /> */}
+                  <ReactQuill
+                   ref={quillRef}
+                    className="py-2 px-1 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:border-transparent realtive h-max"
+                style={{ backgroundColor: "white" }}
+                theme="snow"
+                value={formData.content}
+                onChange={handleContentChange}
+                modules={{
+                  toolbar: [
+                    [
+                      { header: "1" },
+                      { header: "2" },
+                      {
+                        header: "3",
+                        attributes: { className: "custom-header" },
+                      },
+                      {
+                        header: "4",
+                        attributes: { className: "custom-header" },
+                      },
+                      {
+                        header: "5",
+                        attributes: { className: "custom-header" },
+                      },
+                      { font: [] },
+                    ],
+                    ["bold", "italic", "underline", "strike", "blockquote"],
+                    [{ list: "ordered" }, { list: "bullet" }],
+                    ["link", "image"],
+                    [{ color: [] }, { background: [] }],
+                    ["clean"],
+                    [{ align: [] }],
+                  ],
+                }}
+                formats={[
+                  "header",
+                  "font",
+                  "bold",
+                  "italic",
+                  "underline",
+                  "strike",
+                  "blockquote",
+                  "list",
+                  "bullet",
+                  "link",
+                  "image",
+                  "color",
+                  "background",
+                  "align",
+                ]}
+              />
                   {errors.content && (
                     <div className="text-sm text-red-500">{errors.content}</div>
                   )}
@@ -267,6 +374,7 @@ const AddBlog = () => {
                         <input
                           id="fileInput"
                           type="file"
+                          name="image"
                           className="hidden"
                           onChange={handlePhotoChange}
                         />
@@ -276,6 +384,8 @@ const AddBlog = () => {
                         <img
                           src={image_url}
                           alt="Uploaded"
+                          
+                          loading="lazy"
                           className="w-36 h-36 object-cover rounded-md"
                         />
                         <button
@@ -288,8 +398,8 @@ const AddBlog = () => {
                       </div>
                     )}
                   </div>
-                  {errors.photo && (
-                    <div className="text-sm text-red-500">{errors.photo}</div>
+                  {errors.image && (
+                    <div className="text-sm text-red-500">{errors.image}</div>
                   )}
                 </div>
 
@@ -310,4 +420,3 @@ const AddBlog = () => {
   );
 };
 export default AddBlog;
-// export default withAuth(AddBlogs, ["admin"]);

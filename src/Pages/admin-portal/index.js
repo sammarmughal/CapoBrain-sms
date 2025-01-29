@@ -3,6 +3,7 @@ import Sidebar from "./component/sidebar";
 import AdminNav from "./component/admin-nav";
 import { Helmet } from "react-helmet";
 import Welcome from "../../img/welcome.png"
+
 const AdminPortal = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
   useEffect(() => {
@@ -112,7 +113,8 @@ const AdminPortal = () => {
                 <img
                   className="w-20 h-auto"
                   src={Welcome}
-                  alt="" />
+                  loading="lazy"
+                  alt="Capobrain Admin Panel" />
               </div>
             </div>
 

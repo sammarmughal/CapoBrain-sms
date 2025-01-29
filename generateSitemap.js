@@ -41,7 +41,7 @@ const routes = [
   "/features/sports-and-extra-curricular-activities-management",
   "/features/student-progress-performance-tracking",
   "/usermanual/",
-  "/usermanual/dashboard/",
+  "/usermanual/dashboard",
   "/usermanual/visitors-meeting",
   "/usermanual/phone-call-log",
   "/usermanual/postal-dispatch",
@@ -95,6 +95,7 @@ const routes = [
   "/blog/library-management-system-enhancing-efficiency-in-school-and-college-libraries",
   "/contact/",
   "/help/",
+  "/top-schools-in-gujranwala/",
   "/faq/",
   "/privacy-policy",
   "/term-and-services"
@@ -122,7 +123,7 @@ ${urls
     <loc>${url}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>daily</changefreq>
-    <priority>${url === "https://capobrain.com" ? "1.0" : "0.8"}</priority>
+    <priority>${url === "https://capobrain.com/" ? "1.0" : "0.8"}</priority>
   </url>
   `
   )

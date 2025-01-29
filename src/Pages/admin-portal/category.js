@@ -19,6 +19,7 @@ const Categories = () => {
   });
   const [isAddModalOpen, setIsAddModalOpen] = useState(false); // For Add Category Modal
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const API_URL = process.env.REACT_APP_API_URL;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -40,7 +41,7 @@ const Categories = () => {
     return isValid;
   };
   const Getcategory = async () => {
-    await fetch("https://capobrain-backend.vercel.app/api/auth/getcategory", {
+    await fetch (`${API_URL}/api/auth/getcategory`, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -52,7 +53,7 @@ const Categories = () => {
   // Fetch a single category by ID
   const viewCategory = async (id) => {
     await fetch(
-      `https://capobrain-backend.vercel.app/api/auth/getcategory/${id}`,
+      `${API_URL}/api/auth/getcategory/${id}`,
       {
         method: "GET",
       }
@@ -75,7 +76,7 @@ const Categories = () => {
 
     if (isConfirmed) {
       await fetch(
-        `https://capobrain-backend.vercel.app/api/auth/delcategory/${id}`,
+        `${API_URL}/api/auth/delcategory/${id}`,
         {
           method: "DELETE",
         }

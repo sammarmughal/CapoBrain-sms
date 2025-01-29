@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import navLogo from "../img/capobrain-logo-white.png";
 import navLogoMob from "../img/capobrain-logo.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,8 +9,9 @@ import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState({});
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownUser, setDropdownUser] = useState(false);
+  const dropdownRef = useRef(null);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -25,7 +26,22 @@ function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
 
+    if (dropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownOpen]);
   useEffect(() => {
     const user = JSON.parse(sessionStorage.getItem("User"));
     if (user) {
@@ -60,7 +76,7 @@ function Navbar() {
         navigate("/userprofile/generated-tickets");
       }
     } else {
-      navigate("/userlogin/");
+      navigate("/userlogin");
     }
   };
   return (
@@ -72,6 +88,7 @@ function Navbar() {
               src={navLogo}
               width="224"
               height="57"
+              loading="lazy"
               className="h-12  w-full object-fit"
               style={{ maxWidth: "18rem" }}
               alt="school-management-software"
@@ -148,7 +165,16 @@ function Navbar() {
                   User Manual
                 </Link>
               </li>
-              <li className="relative">
+              <li>
+                <Link
+                  to="/top-schools-in-gujranwala/"
+                  onClick={handleToggle}
+                  className="nav-list"
+                >
+                  Schools
+                </Link>
+              </li>
+              <li className="relative" ref={dropdownRef}>
                 <button
                   onClick={toggleDropdown}
                   className="flex items-center nav-list focus:outline-none"
@@ -158,8 +184,9 @@ function Navbar() {
                 </button>
                 <div
                   className={`mv-navi__drawer ${
-                    dropdownOpen ? "hidden" : "block"
+                    dropdownOpen ? "block" : "hidden"
                   } lg:absolute top-full  lg:mt-2 left-0 w-full lg::block`}
+                  onMouseLeave={() => setDropdownOpen(false)}
                 >
                   <ul className="flex flex-col dropmenu lg:py-2">
                     <li>
@@ -198,13 +225,12 @@ function Navbar() {
                         FAQs
                       </Link>
                     </li>
-                    <li>                      
+                    <li>
                       <button
                         onClick={() => {
                           handleToggle();
                           toggleDropdown();
                           handleGenerateTicketClick();
-
                         }}
                         className="block px-4 py-2 hover:text-purple-600"
                       >
@@ -255,7 +281,7 @@ function Navbar() {
                   </div>
                 ) : (
                   <Link
-                    to="/userlogin/"
+                    to="/userlogin"
                     onClick={handleToggle}
                     className="flex items-center"
                   >
@@ -265,7 +291,7 @@ function Navbar() {
               </div>
               <div className="lg:hidden gap-2 block">
                 <Link
-                  to="/requestdemo/"
+                  to="/requestdemo"
                   onClick={handleToggle}
                   className="flex items-center gap-1"
                 >
@@ -318,14 +344,14 @@ function Navbar() {
               </div>
             ) : (
               <Link
-                to="/userlogin/"
+                to="/userlogin"
                 className="text-white mr-3 flex gap-1 items-center hover:text-violet-400 font-medium text-lg nav-list"
               >
                 <MdLogin className="w-5 h-5 text-white hover:text-violet-400" />
               </Link>
             )}
 
-            <Link to="/requestdemo/" className="btn h-[2.2rem]">
+            <Link to="/requestdemo" className="btn h-[2.2rem]">
               Request a Demo{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

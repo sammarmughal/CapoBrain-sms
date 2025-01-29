@@ -20,21 +20,20 @@ const Blogs = () => {
   const [searchCategory, setSearchCategory] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-
-  // Function to open the modal
+  const APIURL = process.env.API_URL;
   const openModal = () => setIsModalOpen(true);
   const openEditModal = () => setIsEditModalOpen(true);
-
-  // Function to close the modal
   const closeModal = () => setIsModalOpen(false);
-  const closeEditModal = () => {setIsEditModalOpen(false);
+  const closeEditModal = () => {
+    setIsEditModalOpen(false);
     setEditPost({
       title: "",
       slug: "",
       category: "",
       content: "",
-    }); 
-  }
+      image: "",
+    });
+  };
 
   const Getallposts = async () => {
     try {
@@ -127,7 +126,7 @@ const Blogs = () => {
   const Getcategory = async () => {
     try {
       const res = await fetch(
-        "https://capobrain-backend.vercel.app/api/auth/getcategory",
+        `https://capobrain-backend.vercel.app/api/auth/getcategory`,
         { method: "GET" }
       );
       const data = await res.json();
@@ -141,7 +140,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       const res = await fetch(
-        "https://capobrain-backend.vercel.app/api/auth/getposts"
+        `https://capobrain-backend.vercel.app/api/auth/getposts`
       );
       const data = await res.json();
       setPosts(data);
@@ -184,13 +183,20 @@ const Blogs = () => {
 
   const updatePost = async () => {
     try {
-      const res = await fetch(`https://capobrain-backend.vercel.app/api/auth/editposts/${postId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(editPost),
-      });
+      const { title, slug, category, content, image } = editPost;
+      const formData = new FormData();
+      formData.append("title", title);
+      formData.append("slug", slug);
+      formData.append("category", category);
+      formData.append("content", content);
+      formData.append("image", image);
+      const res = await fetch(
+        `https://capobrain-backend.vercel.app/api/auth/editposts/${postId}`,
+        {
+          method: "PUT",
+          body: formData,
+        }
+      );
       if (res.ok) {
         const updatedData = await res.json();
         Swal.fire({
@@ -221,7 +227,13 @@ const Blogs = () => {
     }
   };
   const validateForm = () => {
-    if (!editPost.title || !editPost.slug || !editPost.category || !editPost.content) {
+    if (
+      !editPost.title ||
+      !editPost.slug ||
+      !editPost.category ||
+      !editPost.content ||
+      !editPost.image
+    ) {
       Swal.fire({
         title: "Error!",
         text: "All fields are required.",
@@ -232,7 +244,6 @@ const Blogs = () => {
     }
     return true;
   };
-  
 
   return (
     <>
@@ -258,8 +269,14 @@ const Blogs = () => {
           property="og:description"
           content="Manage and edit blogs related to Capobrain School Management System. From school updates to informative articles, manage all content in the admin panel with ease."
         />
-        <meta property="og:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
-        <meta property="og:url" content="https://capobrain.com/adminpanel/blogs" />
+        <meta
+          property="og:image"
+          content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png"
+        />
+        <meta
+          property="og:url"
+          content="https://capobrain.com/adminpanel/blogs"
+        />
         <meta property="og:type" content="website" />
 
         <meta
@@ -270,10 +287,12 @@ const Blogs = () => {
           name="twitter:description"
           content="Access the blog management section of Capobrain's Admin Panel. Easily manage, edit, and publish school-related blogs and updates from the admin dashboard."
         />
-        <meta name="twitter:image" content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png" />
+        <meta
+          name="twitter:image"
+          content="https://capobrain.com/static/media/capobrain-logo.adec461fe08022b24b28.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <div className="w-full flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
         <AdminNav />
         <Sidebar />
@@ -352,7 +371,7 @@ const Blogs = () => {
                     >
                       <path
                         fillRule="evenodd"
-                        d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                        d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 011.414 1.414l-3 3a1 1 01-1.414 0l-3-3a1 1 010-1.414z"
                         clipRule="evenodd"
                       />
                     </svg>
@@ -423,6 +442,12 @@ const Blogs = () => {
                         scope="col"
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                       >
+                        Image
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
                         Actions
                       </th>
                     </tr>
@@ -442,6 +467,15 @@ const Blogs = () => {
                             {" "}
                             {formatDate(post.date)}
                           </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-800">
+                          {post.image && (
+                            <img
+                              src={post.image}
+                              alt={post.title}
+                              className="w-16 h-16 object-cover"
+                            />
+                          )}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-neutral-800">
                           <div className="flex items-center gap-1">
@@ -728,6 +762,77 @@ const Blogs = () => {
                               ]}
                             />
                           </div>
+                          <div className="mb-6">
+                            <label
+                              htmlFor="image"
+                              className="block text-lg font-medium text-gray-800 mb-1"
+                            >
+                              Blog Image
+                            </label>
+                            {editPost.image ? (
+                              <div className="space-y-4">
+                                <img
+                                  src={
+                                    typeof editPost.image === "string"
+                                      ? editPost.image
+                                      : URL.createObjectURL(editPost.image)
+                                  }
+                                  alt="Blog Preview"
+                                  className="max-w-full h-auto rounded-md"
+                                />
+                                <div className="flex items-center gap-4">
+                                  <button
+                                    type="button"
+                                    onClick={() =>
+                                      onchange({
+                                        target: { name: "image", value: null },
+                                      })
+                                    }
+                                    className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+                                  >
+                                    Remove Image
+                                  </button>
+                                  <label
+                                    htmlFor="new-image"
+                                    className="px-4 py-2 bg-indigo-500 text-white rounded-md cursor-pointer hover:bg-indigo-600"
+                                  >
+                                    Upload New Image
+                                  </label>
+                                  <input
+                                    type="file"
+                                    id="new-image"
+                                    name="image"
+                                    accept="image/*"
+                                    onChange={(e) =>
+                                      onchange({
+                                        target: {
+                                          name: "image",
+                                          value: e.target.files[0],
+                                        },
+                                      })
+                                    }
+                                    className="hidden"
+                                  />
+                                </div>
+                              </div>
+                            ) : (
+                              <input
+                                type="file"
+                                id="image"
+                                name="image"
+                                accept="image/*"
+                                onChange={(e) =>
+                                  onchange({
+                                    target: {
+                                      name: "image",
+                                      value: e.target.files[0],
+                                    },
+                                  })
+                                }
+                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                              />
+                            )}
+                          </div>
                         </form>
                       </div>
                       <div className="flex items-center gap-4 justify-end px-6 py-4 border-t">
@@ -742,7 +847,8 @@ const Blogs = () => {
                           type="button"
                           className="btn-anim text-white px-6 py-2 rounded-md"
                           data-bs-dismiss="modal"
-                          onClick={updatePost}>
+                          onClick={updatePost}
+                        >
                           Update
                         </button>
                       </div>

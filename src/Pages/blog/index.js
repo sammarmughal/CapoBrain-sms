@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Blog2 from "../../img/blog/blog2.png";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -8,14 +8,24 @@ import twittercard from "../../img/twiiter-card.jpg";
 const Blog = () => {
   const { filterPosts, posts, uniqueCategory, setCategory } =
     useContext(MyContext);
-    const [selectedCategory, setSelectedCategory] = useState(null);
-    const handleCategoryClick = (category) => {
-      setSelectedCategory(category);
-    };    
-    const filteredPosts = selectedCategory
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const filteredPosts = selectedCategory
     ? posts.filter((post) => post.category === selectedCategory)
-    : posts; 
-   
+    : posts;
+    
   return (
     <>
       <Helmet>
@@ -88,51 +98,80 @@ const Blog = () => {
             </h3>
           </div>
           <ul className="flex flex-wrap gap-4 text-center justify-center">
-            {posts &&
-              [...uniqueCategory].map((category) => {
-                const isActive = category === selectedCategory;
-
-                return (
+            {loading
+              ? Array.from({ length: 5 }).map((_, index) => (
                   <li
-                    key={category} 
-                    className={`cursor-pointer px-4 py-2 rounded-full ${
-                      isActive
-                        ? "btn-anim text-white" 
-                        : "bg-gray-200 text-gray-800" 
-                    }`}
-                    onClick={() => handleCategoryClick(category)}
-                    >
-                    {category}
+                    key={index}
+                    className="animate-pulse bg-gray-200 text-gray-800 cursor-pointer px-4 py-2 rounded-full"
+                  >
+                    &nbsp;
                   </li>
-                );
-              })}            
+                ))
+              : posts &&
+                [...uniqueCategory].map((category) => {
+                  const isActive = category === selectedCategory;
+
+                  return (
+                    <li
+                      key={category}
+                      className={`cursor-pointer px-4 py-2 rounded-full ${
+                        isActive
+                          ? "btn-anim text-white"
+                          : "bg-gray-200 text-gray-800"
+                      }`}
+                      onClick={() => handleCategoryClick(category)}
+                    >
+                      {category}
+                    </li>
+                  );
+                })}
           </ul>
-          <div className="grid grid-cols-1 mx-auto gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">           
-            {filteredPosts.map((post) => {
-              return (
-                <article className="flex flex-col">
-                  <Link style={{ textDecoration: "none" }} to={`/blog/${post.slug}`}>
-                    <img
-                      alt="Blog Image"
-                      className="object-cover w-full h-52"
-                      src={Blog2}
-                    />
-                    <div className="flex flex-col flex-1 px-2 py-4">                      
-                        {post.category}
-                      <p className="flex-1 py-2 text-lg font-semibold leading-snug">
-                        {post.title.length > 50
+          <div className="grid grid-cols-1 mx-auto gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+            {loading
+              ? Array.from({ length: 8 }).map((_, index) => (
+                  <article key={index} className="flex flex-col animate-pulse">
+                    <div className="object-cover w-full h-52 bg-gray-300"></div>
+                    <div className="flex flex-col flex-1 px-2 py-4">
+                      <div className="h-4 bg-gray-300 rounded w-1/2 mb-2"></div>
+                      <div className="h-6 bg-gray-300 rounded w-full mb-2"></div>
+                      <div className="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
+                      <div className="flex justify-between pt-3 space-x-2 text-xs">
+                        <div className="h-4 bg-gray-300 rounded w-1/4"></div>
+                        <div className="h-4 bg-gray-300 rounded w-1/4"></div>
+                      </div>
+                    </div>
+                  </article>
+                ))
+              : filteredPosts.map((post) => {
+                  return (
+                    <article key={post.slug} className="flex flex-col">
+                      <Link
+                        style={{ textDecoration: "none" }}
+                        to={`/blog/${post.slug}`}
+                      >
+                        <img
+                          alt={post.title}
+                          title={post.title}
+                          loading="lazy"
+                          className="object-cover w-full h-52"
+                          src={post.image? post.image : Blog2}
+                        />
+                        <div className="flex flex-col flex-1 px-2 py-4">
+                          {post.category}
+                          <p className="flex-1 py-2 text-lg font-semibold leading-snug">
+                            {post.title.length > 50
                               ? post.title.slice(0, 50) + "..."
                               : post.title}
-                      </p>
-                      <div className="flex justify-between pt-3 space-x-2 text-xs">
-                        <span>{post.date}</span>
-                        <span>2.8K views</span>
-                      </div>
-                    </div>                   
-                  </Link>
-                </article>
-              );
-            })}
+                          </p>
+                          <div className="flex justify-between pt-3 space-x-2 text-xs">
+                            <span>{post.date}</span>
+                            <span>2.8K views</span>
+                          </div>
+                        </div>
+                      </Link>
+                    </article>
+                  );
+                })}
           </div>
         </div>
       </section>

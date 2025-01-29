@@ -130,7 +130,7 @@ const Features = () => {
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <Link
-                to="/requestdemo/"
+                to="/requestdemo"
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                 rel="noreferrer"
               >
@@ -150,6 +150,7 @@ const Features = () => {
             <img
               src={capobrain}
               alt="Features of Educational Software"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
               title="Features of Educational Software"
             />

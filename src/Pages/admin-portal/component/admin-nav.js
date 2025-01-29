@@ -27,6 +27,7 @@ function Admin_Nav() {
         <img
             className="p-0 sm:p-4 pl-10"
             src={Logo}
+            loading="lazy"
             alt="Capobrain Best School Management Software"
           />
           </Link>
@@ -35,6 +36,7 @@ function Admin_Nav() {
           <img
             className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden"
             src={Avatar}
+            loading="lazy"
             alt="Best School Management Software Avatar"
           />
           <span className="hidden md:block">ADMIN</span>

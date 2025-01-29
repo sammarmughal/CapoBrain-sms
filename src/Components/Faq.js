@@ -53,7 +53,7 @@ const FAQs = () => {
       <div className="cb-container mt-10 sm:mt-20 mb-5">
         {" "}
         <div className="flex justify-center w-full items-center my-4">
-            <img src={avatar} alt="FAQ School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
+            <img src={avatar} alt="FAQ School Management System" loading="lazy" className="w-[1.6em] mr-6 md:w-[2em]" />
             <h3 className="text-3xl text-Dark_purple font-bold md:text-4xl">
             Frequently Asked Questions
             </h3>
@@ -74,6 +74,7 @@ const FAQs = () => {
                   </h3>
                   <img
                     src={active === item.id ? close : open}
+                    loading="lazy"
                     alt="open or close School Management System"
                     className="cursor-pointer w-[2.3em] md:w-[2.8em]"
                     onClick={() =>

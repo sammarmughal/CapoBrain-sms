@@ -162,7 +162,7 @@ const AboutSection = () => {
                 src={Desktop}
                 width="1519"
                 height="557"
-                loading="eager"
+                loading="lazy"
                 alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover hidden lg:flex"
               />
@@ -170,15 +170,15 @@ const AboutSection = () => {
                 src={tablet}
                 width="319"
                 height="557"
-                loading="eager"
+                loading="lazy"
                 alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover hidden sm:flex lg:hidden"
               />
               <img
                 src={phone}
                 width="319"
+                loading="lazy"
                 height="557"
-                loading="eager"
                 alt="Capobrain School Management System (SMS)"
                 className="lg:mx-auto object-cover flex sm:hidden"
               />
@@ -215,6 +215,7 @@ const AboutSection = () => {
             <div className="img-box">
               <img
                 src={About}
+                loading="lazy"
                 alt="About Us School Management System"
                 className="block object-cover"
               />

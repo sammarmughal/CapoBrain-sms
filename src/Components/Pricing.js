@@ -371,7 +371,7 @@ const Pricing = () => {
                   {plan.price}
                   <span className="text-xl text-gray-900">/mo</span>
                 </p>
-                <p className="text-center">{plan.description}</p>
+                <p cl assName="text-center">{plan.description}</p>
               </div>
               <div className="flex flex-col items-center px-2 py-8">
                 <ul className="self-stretch flex-1 space-y-2">

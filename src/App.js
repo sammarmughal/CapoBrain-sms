@@ -1,11 +1,13 @@
 import "./App.css";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
-  Navigate
+  Navigate,
 } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./Components/footer.js";
@@ -24,9 +26,8 @@ import UserManual from "./Pages/usermanual/index.js";
 import FeaturePage from "./Pages/features/FeaturePage.js";
 import UserManualData from "./Pages/usermanual/UsermanualData.js";
 import Demo from "./Pages/Demo";
-import ScrollToTop from "./Components/scrollToTop";
+import ScrollTop from "././Components/scrollTop.js";
 import AdminPortal from "./Pages/admin-portal";
-import AdminPanel from "./Pages/admin-portal/adminpanel.js";
 import AddBlog from "./Pages/admin-portal/add-blog";
 import Blogs from "./Pages/admin-portal/blog";
 import Category from "./Pages/admin-portal/category";
@@ -43,15 +44,19 @@ import BlogData from "./Pages/blog/BlogData.js";
 import TermsAndServices from "./Pages/TermAndServices.js";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.js";
 import WhatsAppChat from "./Components/whatsapp.js";
-
+import ProtectedRoute from "./utils/ProtectedRoute.js";
+import Schools from "./Pages/schools/index.js";
 function App() {
   return (
     <>
-      <Router>
-        <MyProvider>
-          <AppWithRoutes />
-        </MyProvider>
-      </Router>
+      {" "}
+      <HelmetProvider>
+        <Router>
+          <MyProvider>
+            <AppWithRoutes />
+          </MyProvider>
+        </Router>
+      </HelmetProvider>
     </>
   );
 }
@@ -59,11 +64,12 @@ function AppWithRoutes() {
   const location = useLocation();
   const isAdminPanel = location.pathname.startsWith("/adminpanel");
   const isUserProfile = location.pathname.startsWith("/userprofile");
+
   return (
     <>
       {!isAdminPanel && !isUserProfile && <Navbar />}
       <WhatsAppChat />
-      <ScrollToTop />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about/" element={<About />} />
@@ -71,41 +77,139 @@ function AppWithRoutes() {
         <Route path="/features/:slug" element={<FeaturePage />} />
         <Route path="/help/" element={<Help />} />
         <Route path="/blog/" element={<Blog />} />
+        <Route path="/top-schools-in-gujranwala/" element={<Schools />} />
         <Route path="/blog/:postSlug" element={<BlogData />} />
         <Route path="/faq/" element={<FAQs />} />
         <Route path="/contact/" element={<Contact />} />
-        <Route path="/userlogin/" element={<Login />} />
+        <Route path="/userlogin" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/requestdemo/" element={<RequestDemo />} />
+        <Route path="/requestdemo" element={<RequestDemo />} />
         <Route path="/term-and-services" element={<TermsAndServices />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/usermanual/" element={<UserManual />} />
         <Route path="/usermanual/:id" element={<UserManualData />} />
         <Route path="/demo" element={<Demo />} />
-        {/* <Route path="/adminpanel" element={<AdminPanel />}> */}
-          <Route path="/adminpanel" element={<AdminPortal />} />
-          <Route path="/adminpanel/addblog" element={<AddBlog />} />
-          <Route path="/adminpanel/blogs" element={<Blogs />} />
-          <Route path="/adminpanel/categories" element={<Category />} />
-          <Route path="/adminpanel/demousers" element={<DemoUsers />} />
-          <Route
-            path="/adminpanel/changepassword"
-            element={<ChangePassword />}
-          />
-          <Route path="/adminpanel/tickets" element={<Tickets />} />
+        <Route
+          path="/adminpanel"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <AdminPortal />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/addblog"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <AddBlog />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/blogs"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <Blogs />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/changepassword"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <ChangePassword />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/demousers"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <DemoUsers />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/categories"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <Category />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/adminpanel/tickets"
+          element={
+            <ProtectedRoute
+              allowedEmail="capobrain@gmail.com"
+              redirectPath="/userprofile"
+            >
+              <Tickets />
+            </ProtectedRoute>
+          }
+        />
         {/* </Route> */}
-        <Route path="/userprofile" element={<UserProfile />} />
+        <Route
+          path="/userprofile/*"
+          element={
+            <ProtectedRoute
+              restrictEmail="capobrain@gmail.com" // Restrict admin from accessing user profile
+              redirectPath="/adminpanel"
+            >
+              <UserProfile />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/userprofile/generated-tickets"
-          element={<GeneratedTickets />}
+          element={
+            <ProtectedRoute
+              restrictEmail="capobrain@gmail.com"
+              redirectPath="/adminpanel"
+            >
+              <GeneratedTickets />
+            </ProtectedRoute>
+          }
         />
         <Route
           path="/userprofile/openstatus-tickets"
-          element={<OpenStatusTickets />}
+          element={
+            <ProtectedRoute
+              restrictEmail="capobrain@gmail.com"
+              redirectPath="/adminpanel"
+            >
+              <OpenStatusTickets />
+            </ProtectedRoute>
+          }
         />
         <Route
           path="/userprofile/closestatus-tickets"
-          element={<CloseStatusTickets />}
+          element={
+            <ProtectedRoute
+              restrictEmail="capobrain@gmail.com"
+              redirectPath="/adminpanel"
+            >
+              <CloseStatusTickets />
+            </ProtectedRoute>
+          }
         />
         <Route path="*" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/" />} />

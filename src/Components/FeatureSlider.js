@@ -3,32 +3,32 @@ import Slider from "react-slick";
 import phone from "../img/capobrain-phone.png";
 import tablet from "../img/capobrain-tab.png";
 import Desktop from "../img/capobrain-desktop.png";
-import AlliedSchool from "../img/schools/1.png";
-import EducatorsSchool from "../img/schools/2.png";
+import AlliedSchool from "../img/schools/1.webp";
+import EducatorsSchool from "../img/schools/2.webp";
 import OnlineEducation from  "../img/online-education.png";
-import Client2 from "../img/schools/3.png";
-import Client3 from "../img/schools/4.png";
-import Client4 from "../img/schools/5.png";
-import Client5 from "../img/schools/9.png";
-import Client6 from "../img/schools/6.png";
-import Client7 from "../img/schools/7.png";
-import Client8 from "../img/schools/8.png";
-import Client9 from "../img/schools/10.png";
-import Client11 from "../img/schools/school11.png";
-import Client12 from "../img/schools/school12.png";
-import Client13 from "../img/schools/school13.png";
-import Client15 from "../img/schools/school15.png";
-import Client16 from "../img/schools/school16.png";
-import Client17 from "../img/schools/school17.png";
-import Client18 from "../img/schools/school18.png";
-import Client19 from "../img/schools/school19.png";
-import Client20 from "../img/schools/school20.png";
-import Client21 from "../img/schools/school21.png";
-import Client22 from "../img/schools/school22.png";
-import Client23 from "../img/schools/school23.png";
-import Client24 from "../img/schools/school24.png";
-import Client25 from "../img/schools/school25.png";
-import Client26 from "../img/schools/school26.png";
+import Client2 from "../img/schools/3.webp";
+import Client3 from "../img/schools/4.webp";
+import Client4 from "../img/schools/5.webp";
+import Client5 from "../img/schools/9.webp";
+import Client6 from "../img/schools/6.webp";
+import Client7 from "../img/schools/7.webp";
+import Client8 from "../img/schools/8.webp";
+import Client9 from "../img/schools/10.webp";
+import Client11 from "../img/schools/school11.webp";
+import Client12 from "../img/schools/school12.webp";
+import Client13 from "../img/schools/school13.webp";
+import Client15 from "../img/schools/school15.webp";
+import Client16 from "../img/schools/school16.webp";
+import Client17 from "../img/schools/school17.webp";
+import Client18 from "../img/schools/school18.webp";
+import Client19 from "../img/schools/school19.webp";
+import Client20 from "../img/schools/school20.webp";
+import Client21 from "../img/schools/school21.webp";
+import Client22 from "../img/schools/school22.webp";
+import Client23 from "../img/schools/school23.webp";
+import Client24 from "../img/schools/school24.webp";
+import Client25 from "../img/schools/school25.webp";
+import Client26 from "../img/schools/school26.webp";
 
 
 const FeatureSlider = () => {
@@ -111,6 +111,7 @@ const FeatureSlider = () => {
             className="w-full p-3 h-auto object-cover"
             src={OnlineEducation}
             height={100}
+            loading="lazy"
             alt="Online Education"
             title="Best School Management System in Pakistan"
           />
@@ -123,6 +124,7 @@ const FeatureSlider = () => {
           src={Desktop}
           width="1519"
           height="557"
+          loading="lazy"
           loading="eager"
           alt="Capobrain School Management System Dashboard"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden lg:flex"
@@ -131,6 +133,7 @@ const FeatureSlider = () => {
           src={tablet}
           width="319"
           height="557"
+          loading="lazy"
           loading="eager"
           alt="Customizable School ERP Software"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 hidden sm:flex lg:hidden"
@@ -139,6 +142,7 @@ const FeatureSlider = () => {
           src={phone}
           width="319"
           height="557"
+          loading="lazy"
           loading="eager"
           alt="Mobile-Friendly School ERP"
           className="absolute w-auto left-1/2 top-0 transform -translate-x-1/2 h-full z-10 flex sm:hidden"
@@ -150,6 +154,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={AlliedSchool}
                 alt="Allied School Management System"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -160,6 +165,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={EducatorsSchool}
                 alt="The Educators School ERP Software Solutions"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -170,6 +176,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client2}
                 alt="Allied School ERP Software Solutions"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -180,6 +187,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client3}
                 alt="Allied Best School Management Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -189,6 +197,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client4}
                 alt="Best School ERP Software for Institutions"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -198,6 +207,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client5}
                 alt="Allied School ERP for Fee Collection"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -207,6 +217,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client6}
                 alt="Allied School ERP System for Administration"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -216,6 +227,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client7}
                 alt="Allied School Gradebook Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -225,6 +237,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client8}
                 alt="Cloud-Based School ERP Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -234,6 +247,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client9}
                 alt="Allied School Gradebook Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -243,6 +257,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client11}
                 alt="The Educators School Management System (SMS)"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -252,6 +267,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client12}
                 alt="Allied School Management System (SMS)"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -265,6 +281,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client13}
                 alt="Education Software Development"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -274,6 +291,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client25}
                 alt="School Report Card Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -283,6 +301,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client15}
                 alt="Student Attendance Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -292,6 +311,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client16}
                 alt="Timetable Scheduling Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -301,6 +321,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client17}
                 alt="School Software Solutions in Pakistan"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -310,6 +331,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client18}
                 alt="Allied School Exam Management Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -319,6 +341,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client19}
                 alt="Student Information System (SIS)"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -328,6 +351,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client20}
                 alt="The Educators School Management System (SMS)"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -337,6 +361,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client21}
                 alt="Allied Student Information System (SIS)"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -346,6 +371,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client22}
                 alt="Best School Management Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -355,6 +381,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client23}
                 alt="All-in-One School Management Software"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -364,6 +391,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client24}
                 alt="School ERP Software Solutions"
+                loading="lazy"
                 width="242"
                 height="auto"
               />
@@ -373,6 +401,7 @@ const FeatureSlider = () => {
                 className="rounded-xl carousel-image"
                 src={Client26}
                 alt="School ERP Software Solutions"
+                loading="lazy"
                 width="242"
                 height="auto"
               />

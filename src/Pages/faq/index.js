@@ -33,11 +33,12 @@ const FAQs = () => {
       id: 4,
     },
     {
-      heading: "Can I log phone calls using CapoBrain?",
+      heading: "What are the key features of educational software?",
       paragraph:
-        "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your School Management processes.",
+        "Educational software typically includes features like interactive learning modules, assessment tools, progress tracking, collaboration tools, and integration with learning management systems (LMS). These features enhance the learning experience and provide a personalized approach to education.",
       id: 5,
     },
+    
     {
       heading: "How can I add teaching and non-teaching staff to CapoBrain?",
       paragraph:
@@ -153,6 +154,12 @@ const FAQs = () => {
       paragraph:
         "Please contact our sales team or visit our pricing page for detailed information on CapoBrain's pricing plans and licensing options for our School Management Platform.",
       id: 23,
+    },
+    {
+      heading: "Can I log phone calls using CapoBrain?",
+      paragraph:
+        "Yes, CapoBrain's Phone Call Log feature enables you to keep track of all incoming and outgoing phone calls efficiently, further streamlining your School Management processes.",
+      id: 24,
     },
   ];
  const schemaMarkup={
@@ -390,7 +397,7 @@ const FAQs = () => {
         <div className="cb-container pt-10 sm:pt-20 mb-5">
           {" "}
           <div className="flex justify-center w-full items-center my-4">
-            <img src={avatar} alt="Frequently Asked Questions of School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
+            <img src={avatar} loading="lazy" alt="Frequently Asked Questions of School Management System" className="w-[1.6em] mr-6 md:w-[2em]" />
             <h2 className="text-3xl text-Dark_purple font-bold md:text-4xl">
             Frequently Asked Questions
             </h2>

@@ -19,7 +19,7 @@ const Avatars = () => {
             </p>
             <div className="my-6 pt-3">
               <Link
-                to="/requestdemo/"
+                to="/requestdemo"
                 className="btn-anim px-5 py-3 text-lg tracking-wider text-white rounded-full md:px-8 group"
               >
                 Become a Member
@@ -31,37 +31,44 @@ const Avatars = () => {
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={Allied}
+                    loading="lazy"
                     alt="Allied School Management System"
                   />
                    <img
                     className="h-10 w-10 hidden rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={Allied}
                     alt="Best School Management System and Software ERP Solutions in Pakistan"
+                    loading="lazy"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={AIS}
                     alt="Abdullah International School Management System"
+                    loading="lazy"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={TES}
                     alt="The Educators School Management System"
+                    loading="lazy"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={BFS}
                     alt="Bright Future School Management System"
+                    loading="lazy"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={TWS}
                     alt="Tameer-e-Wattan School Management System"
+                    loading="lazy"
                   />
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-gray-200 hover:scale-105 tranform duration-100"
                     src={Qurtaba}
                     alt="Qurtaba School Management System"
+                    loading="lazy"
                   /> 
                 </div>
                 <div className="block gap-1 text-left"><p className="font-semibold">50+ Schools and Growing</p> <p className="text-neutral-600 text-xs font-medium">Since 2020</p></div>

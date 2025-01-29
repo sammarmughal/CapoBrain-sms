@@ -332,6 +332,7 @@ const ChangePasswords = () => {
               <div className="w-full absolute flex items-center justify-end right-10">
                 <img
                   className="h-auto"
+                  loading="lazy"
                   src={Change_password}
                   alt="Change Password"
                 />

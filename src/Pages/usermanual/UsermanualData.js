@@ -6,7 +6,8 @@ import Navigation from "../../Components/Navigation";
 import twittercard from "../../img/twiiter-card.jpg";
 
 const UserManualData = () => {
-  const { id } = useParams();
+  
+  const { id, slug } = useParams();
   const [manualData, setManualData] = useState(null);
   const [menu, setMenu] = useState([]);
 
@@ -107,8 +108,8 @@ const UserManualData = () => {
       </section>
       <div className="mx-auto">
         <div className="w-full mx-auto max-w-[1800px]">
-          <div className="flex flex-col md:flex-row">
-            <div className="lg:w-full md:max-w-[350px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 py-4 gap-10 rounded-b-2xl">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-full lg:max-w-[350px] flex flex-col flex-1 overflow-y-auto bg-gradient-to-b from-purple-900 to-purple-600 py-4 gap-10 rounded-b-2xl">
               <div className="py-4 w-full">
                 <Navigation menu={menu} />
               </div>
@@ -129,7 +130,9 @@ const UserManualData = () => {
                 <img
                   src={manualData.content.image.src}
                   alt={manualData.content.image.alt}
+                  title={manualData.content.image.alt}
                   className="max-w-full h-auto rounded-md shadow-lg"
+                  loading="lazy"
                 />
               </div>
             </div>{" "}

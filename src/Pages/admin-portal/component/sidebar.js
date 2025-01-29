@@ -2,13 +2,59 @@ import { useEffect, useState } from "react";
 import { SiBloglovin } from "react-icons/si";
 import { FaBlog } from "react-icons/fa";
 import { FaTag } from "react-icons/fa6";
-import { TiDocumentAdd , TiTicket } from "react-icons/ti";
+import { TiDocumentAdd, TiTicket } from "react-icons/ti";
 import { MdEmojiPeople } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-
 const Sidebar = () => {
+  const [stats, setStats] = useState({
+    totalBlogs: 0,
+    totalCategories: 0,
+    demoUsers: 0,
+    tickets: 0,
+  });
+
+  const fetchStats = async () => {
+    try {
+      const blogsResponse = await fetch(
+        "https://capobrain-backend.vercel.app/api/auth/getallposts"
+      );
+      const blogsData = await blogsResponse.json();
+      const totalBlogsLength = blogsData?.length;
+
+      const categoriesResponse = await fetch(
+        "https://capobrain-backend.vercel.app/api/auth/getcategory"
+      );
+      const categoriesData = await categoriesResponse.json();
+      const totalCatLength = categoriesData?.length;
+
+      const demoUsersResponse = await fetch(
+        "https://capobrain-backend.vercel.app/api/auth/getDemoUsers"
+      );
+      const demoUsersData = await demoUsersResponse.json();
+      const totalUsersLength = demoUsersData?.length;
+
+      const messageResponse = await fetch(
+        "https://capobrain-backend.vercel.app/api/auth/messages"
+      );
+      const messageData = await messageResponse.json();
+      const totalMessageLength = messageData?.length;
+
+      setStats({
+        totalBlogs: totalBlogsLength,
+        demoUsers: totalUsersLength,
+        totalCategories: totalCatLength,
+        tickets: totalMessageLength,
+      });
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchStats();
+  }, []);
   return (
     <div className="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-purple-900 h-full text-white transition-all duration-300 border-none z-10 sidebar">
       <div className="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
@@ -21,10 +67,7 @@ const Sidebar = () => {
             </div>
           </li>
           <li>
-            <Link
-              to="/adminpanel"
-              className="admin-sidemenu"
-            >
+            <Link to="/adminpanel" className="admin-sidemenu">
               <span className="inline-flex justify-center items-center ml-4">
                 <svg
                   className="w-5 h-5"
@@ -47,26 +90,18 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/adminpanel/blogs"
-              className="admin-sidemenu"
-            >
+            <Link to="/adminpanel/blogs" className="admin-sidemenu">
               <span className="inline-flex justify-center items-center ml-4">
                 <SiBloglovin className="w-6 h-5"></SiBloglovin>
               </span>
-              <span className="ml-2 text-sm tracking-wide truncate">
-                Blogs 
-              </span>
+              <span className="ml-2 text-sm tracking-wide truncate">Blogs</span>
               <span className="hidden md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
-                10
+                {stats.totalBlogs}
               </span>
             </Link>
           </li>
           <li>
-            <Link
-              to="/adminpanel/addblog"
-              className="admin-sidemenu"
-            >
+            <Link to="/adminpanel/addblog" className="admin-sidemenu">
               <span className="inline-flex justify-center items-center ml-4">
                 <FaBlog className="w-6 h-5" />
               </span>
@@ -76,44 +111,41 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="/adminpanel/categories"
-              className="admin-sidemenu"
-            >
-              <span className="inline-flex justify-center items-center ml-4">               
+            <Link to="/adminpanel/categories" className="admin-sidemenu">
+              <span className="inline-flex justify-center items-center ml-4">
                 <FaTag className="w-6 h-5"></FaTag>
               </span>
               <span className="ml-2 text-sm tracking-wide truncate">
                 Categories
               </span>
               <span className="hidden md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
-                10
-              </span>
-            </Link>
-          </li>          
-          <li>
-            <Link
-              to="/adminpanel/demousers"
-              className="admin-sidemenu"
-            >
-              <span className="inline-flex justify-center items-center ml-4">
-                <MdEmojiPeople className="w-6 h-6"/>
-              </span>
-              <span className="ml-2 text-sm tracking-wide truncate">
-                Demo Users
+                {stats.totalCategories}
               </span>
             </Link>
           </li>
           <li>
-            <Link
-              to="/adminpanel/tickets"
-              className="admin-sidemenu"
-            >
+            <Link to="/adminpanel/demousers" className="admin-sidemenu">
               <span className="inline-flex justify-center items-center ml-4">
-              <TiTicket className="w-6 h-6"></TiTicket>
+                <MdEmojiPeople className="w-6 h-6" />
+              </span>
+              <span className="ml-2 text-sm tracking-wide truncate">
+                Demo Users
+              </span>
+              <span className="hidden md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
+                {stats.demoUsers}{" "}
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/adminpanel/tickets" className="admin-sidemenu">
+              <span className="inline-flex justify-center items-center ml-4">
+                <TiTicket className="w-6 h-6"></TiTicket>
               </span>
               <span className="ml-2 text-sm tracking-wide truncate">
                 Tickets
+              </span>
+              <span className="hidden md:block px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
+                {stats.tickets}{" "}
               </span>
             </Link>
           </li>
@@ -127,7 +159,7 @@ const Sidebar = () => {
           <li className="">
             <Link to="/adminpanel/changepassword" className="admin-sidemenu">
               <span className="inline-flex justify-center items-center ml-4">
-                <RiLockPasswordFill className="w-6 h-5"/>
+                <RiLockPasswordFill className="w-6 h-5" />
               </span>
               <span className="ml-2 text-sm tracking-wide truncate">
                 Change Password

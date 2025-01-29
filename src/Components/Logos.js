@@ -84,6 +84,7 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={laravel}
+            loading="lazy"
             alt="School Management System Laravel Development"
             height="60"
             width="160"
@@ -114,6 +115,7 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={SaaS}
+            loading="lazy"
             alt="SaaS School Software Solutions"
             height="100"
             width="120"
@@ -123,6 +125,7 @@ const Logos = () => {
         <div className="text-gray-400 ">
           <img
             src={js}
+            loading="lazy"
             alt="Vanila Javscript Custom School Software Development" 
             height="60"
             width="80"

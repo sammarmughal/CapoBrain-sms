@@ -27,6 +27,7 @@ export default function Keyfeatures() {
                 <img
                   className="w-full h-full cover rounded-lg"
                   src={schoolimg}
+                  loading="lazy"
                   height={400}
                   alt="Office Affordable School Management Software"
                 />{" "}
@@ -58,6 +59,7 @@ export default function Keyfeatures() {
                   className="w-full h-full cover rounded-lg"
                   src={schoolimg2}
                   height={450}
+                  loading="lazy"
                   alt="Office content Best School Management Software"
                   title="School ERP Software"
                 />{" "}

@@ -277,3 +277,6 @@ html {
   display: block;
 }
 
+.blog-cont img{
+  border-radius: 20px;
+}

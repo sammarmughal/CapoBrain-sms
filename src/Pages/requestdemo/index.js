@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import twittercard from "../../img/twiiter-card.jpg";
 
 const RequestDemo = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
@@ -50,6 +51,8 @@ const RequestDemo = () => {
   const formRef = useRef();
   const handlesubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
     const { name, email, schoolName, number } = credentials;
 
     if (validateForm()) {
@@ -104,8 +107,12 @@ const RequestDemo = () => {
           icon: "error",
           confirmButtonText: "OK",
         });
+      } finally {
+        setIsSubmitting(false);
       }
-    } 
+    } else {
+      setIsSubmitting(false);
+    }
   };
   const onchange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
@@ -134,11 +141,8 @@ const RequestDemo = () => {
           property="og:description"
           content="Request a personalized demo of Capobrain’s School Management System. See how our School ERP software can simplify school administration, student management, fee collection, and more."
         />
-        <meta
-          property="og:image"
-          content={twittercard}
-        />
-        <meta property="og:url" content="https://capobrain.com/requestdemo/" />
+        <meta property="og:image" content={twittercard} />
+        <meta property="og:url" content="https://capobrain.com/requestdemo" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"
@@ -148,13 +152,9 @@ const RequestDemo = () => {
           name="twitter:description"
           content="Request a demo of Capobrain’s School Management System. Discover the features of our School ERP software for better school administration, including fee management, attendance, and student data."
         />
-        <meta
-          name="twitter:image"
-          content={twittercard}
-        />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://capobrain.com/requestdemo/"/>
-
+        <link rel="canonical" href="https://capobrain.com/requestdemo" />
       </Helmet>
       <section className="relative bg-purple-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
@@ -258,13 +258,14 @@ const RequestDemo = () => {
                       {errors.schoolName}
                     </div>
                   )}
-                </div>               
+                </div>
                 <div className="relative py-2">
                   <button
                     type="submit"
                     className="text-white rounded-md px-6 py-1 btn-anim"
+                    disabled={isSubmitting}
                   >
-                    Send Request{" "}
+                    {isSubmitting ? "Sending..." : "Send Request"}
                   </button>
                 </div>
               </form>

@@ -1,29 +1,32 @@
-import React, { useRef, useState } from "react";
-import Img from "../img/best-software-solution-erp-in-pakistan-bg.jpg";
-import Keyfeatures from "../Components/Keyfeatures";
-import { Benefit } from "../Components/Benefit";
-import Avatars from "../Components/Avater";
-import PostSlider from "../Components/PostSlider";
-import FeatureSlider from "../Components/FeatureSlider";
-import Pricing from "../Components/Pricing";
+import React, { useRef, useState, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Waves from "../img/waves.png";
 import Desktop from "../img/cta-bg-2.jpg";
 import twittercard from "../img/twiiter-card.jpg";
+import { Benefit } from "../Components/Benefit";
+const Keyfeatures = lazy(() => import("../Components/Keyfeatures"));
+const Avatars = lazy(() => import("../Components/Avater"));
+const PostSlider = lazy(() => import("../Components/PostSlider"));
+const FeatureSlider = lazy(() => import("../Components/FeatureSlider"));
+const Pricing = lazy(() => import("../Components/Pricing"));
 
 export default function Home() {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const iframeRef = useRef(null);
-  const [originalSrc] = useState(
-    "https://www.youtube.com/embed/7k4E6ZveXkI?si=q13MoBvkdhEbuuDA"
-  );
+  const originalSrc =
+    "https://www.youtube.com/embed/7k4E6ZveXkI?si=q13MoBvkdhEbuuDA";
+  const thumbnailSrc =
+    "https://img.youtube.com/vi/7k4E6ZveXkI/maxresdefault.jpg";
 
-  function blockIframe() {
-    const iframe = iframeRef.current;
-    if (iframe) {
-      iframe.src = "";
+  const loadVideo = () => {
+    setIsVideoLoaded(true);
+  };
+  const blockIframe = () => {
+    if (iframeRef.current) {
+      iframeRef.current.src = "";
     }
-  }
+  };
 
   return (
     <>
@@ -34,6 +37,28 @@ export default function Home() {
           name="description"
           content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Our All-in-One software solutions..."
         />
+        <link rel="preload" as="image" href={Waves} />
+        <link
+          rel="preload"
+          href="https://use.typekit.net/sxs8zte.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>{`<link rel="stylesheet" href="https://use.typekit.net/sxs8zte.css" />`}</noscript>
+        <link
+          rel="preload"
+          href="https://p.typekit.net/p.css?s=1&k=sxs8zte&ht=tk&f=54726&a=256&app=typekit&e=css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>{`<link rel="stylesheet" href="https://p.typekit.net/p.css?s=1&k=sxs8zte&ht=tk&f=54726&a=256&app=typekit&e=css" />`}</noscript>
+        <link
+          rel="preload"
+          href="/css/main.ab87456e.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>{`<link rel="stylesheet" href="/css/main.ab87456e.css" />`}</noscript>
         <meta
           name="keywords"
           content="Capobrain, School Management System (SMS), School ERP Software Solutions, Best School Software in Pakistan, All-in-One School Management Software"
@@ -52,10 +77,7 @@ export default function Home() {
           property="og:description"
           content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Our customizable, mobile-friendly software covers student information, fee management, attendance, and more for schools of all sizes."
         />
-        <meta
-          property="og:image"
-          content={twittercard}
-        />
+        <meta property="og:image" content={twittercard} />
         <meta property="og:url" content="https://capobrain.com/" />
         <meta property="og:type" content="website" />
 
@@ -68,10 +90,7 @@ export default function Home() {
           name="twitter:description"
           content="Capobrain offers the best School Management System (SMS) and School ERP Software in Pakistan. Customizable, mobile-friendly, and affordable school software for fee management, attendance, timetable scheduling, and more."
         />
-        <meta
-          name="twitter:image"
-          content={twittercard}
-        />
+        <meta name="twitter:image" content={twittercard} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://capobrain.com/" />
         <script type="application/ld+json">{`
@@ -99,7 +118,6 @@ export default function Home() {
       </Helmet>
       <section>
         <div className="relative bg-purple-900">
-          {/* <div className="block z-10 overlay"></div> */}
           <div className="w-full h-full bg-cover bg-top bg-no-repeat">
             <span className="absolute z-20 top-20 sm:left-20 left-5">
               <svg
@@ -233,14 +251,14 @@ export default function Home() {
                 </div>
                 <div className="flex relative z-30 flex-col md:flex-row gap-3 md:gap-5 justify-center mt-6 mb-10 lg:mb-12 lg:w-1/2 m-auto min-h-fit">
                   <Link
-                    to="/requestdemo/"
+                    to="/requestdemo"
                     className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-purple-800"
                     data-test="webinars-button"
                   >
                     Become a member
                   </Link>
                   <Link
-                    to="/usermanual/dashboard/"
+                    to="/usermanual/dashboard"
                     className="base-button min-h-fit mx-0 lg:mx-0 flex-grow-0 btn-a"
                     data-test="webinars-button"
                   >
@@ -262,20 +280,47 @@ export default function Home() {
                           onClick={blockIframe}
                         ></button>
                       </div>
-                      <div className="" id="modalBody">
-                        <div className="w-full h-full aspect-video ">
-                          <iframe
-                            ref={iframeRef}
-                            width="860"
-                            height="915"
-                            src={originalSrc}
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            loading="lazy"
-                            className="w-full h-full"
-                            allowFullScreen
-                          ></iframe>
+                      <div id="modalBody">
+                        <div className="w-full h-full aspect-video">
+                          {!isVideoLoaded ? (
+                            <div
+                              className="w-full h-full flex items-center justify-center bg-transparent relative"
+                              style={{
+                                backgroundImage: `url(${thumbnailSrc})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                              }}
+                            >
+                              <div className="absolute inset-0 flex items-center justify-center">
+                                <button
+                                  className="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center"
+                                  onClick={loadVideo}
+                                >
+                                  <svg
+                                    className="w-8 h-8"
+                                    fill="white"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          ) : (
+                            <iframe
+                              ref={iframeRef}
+                              width="860"
+                              height="915"
+                              src={originalSrc}
+                              title="YouTube video player"
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              loading="lazy"
+                              className="w-full h-full"
+                              allowFullScreen
+                            ></iframe>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -292,16 +337,23 @@ export default function Home() {
             }}
           ></div>
           <div className="absolute bottom-20 z-20">
-            <img src={Waves} alt="Waves" className="w-full object-cover" />
+            <img
+              src={Waves}
+              alt="Waves"
+              loading="lazy"
+              className="w-full object-cover"
+            />
           </div>
           <div className="absolute top-0"></div>
         </div>
       </section>
-      <Avatars />
-      <PostSlider />
-      <FeatureSlider />
-      <Keyfeatures />
-      <Pricing />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Avatars />
+        <PostSlider />
+        <FeatureSlider />
+        <Keyfeatures />
+        <Pricing />
+      </Suspense>
       <Benefit />
       <section className="relative isolate overflow-hidden bg-purple-900">
         <div className="flex z-50 items-center justify-center py-20 relative">
@@ -319,7 +371,7 @@ export default function Home() {
             <div className="flex flex-col lg:ml-auto sm:flex-row ">
               <Link
                 className="base-button min-h-fit mx-0 btn-a btn-b bg-white text-[#7a12d4]"
-                to="/requestdemo/"
+                to="/requestdemo"
               >
                 {" "}
                 Get in touch with us →&nbsp;&nbsp;
@@ -337,6 +389,7 @@ export default function Home() {
             <div className="bg-purple-800 opacity-85 z-30 inset-0 absolute"></div>
             <img
               src={Desktop}
+              loading="lazy"
               alt="Capobrain School Management Modules"
               className="absolute inset-0 w-full h-full object-cover"
             />
